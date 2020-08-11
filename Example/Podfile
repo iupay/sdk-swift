@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SuperDDAIuPay_Example' do
+  pod 'SuperDDAIuPay', :path => '../'
+
+  target 'SuperDDAIuPay_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
