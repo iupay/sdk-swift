@@ -1,0 +1,16 @@
+PODS:
+  - SuperDDAIuPay (0.1.0)
+
+DEPENDENCIES:
+  - SuperDDAIuPay (from `../`)
+
+EXTERNAL SOURCES:
+  SuperDDAIuPay:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SuperDDAIuPay: 16726958c76e13a342ddd4a539cb279e1cbd79c5
+
+PODFILE CHECKSUM: 7a3fb0120380188309e2dd692ef31027e731ca82
+
+COCOAPODS: 1.9.2

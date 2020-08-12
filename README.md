@@ -1,6 +1,6 @@
 # SuperDDAIuPay
 
-[![CI Status](https://img.shields.io/travis/lucianobohrer/SuperDDAIuPay.svg?style=flat)](https://travis-ci.org/lucianobohrer/SuperDDAIuPay)
+[![Build Status](https://travis-ci.com/lucianobohrer/superdda-iupay.svg?branch=develop)](https://travis-ci.com/lucianobohrer/superdda-iupay)
 [![Version](https://img.shields.io/cocoapods/v/SuperDDAIuPay.svg?style=flat)](https://cocoapods.org/pods/SuperDDAIuPay)
 [![License](https://img.shields.io/cocoapods/l/SuperDDAIuPay.svg?style=flat)](https://cocoapods.org/pods/SuperDDAIuPay)
 [![Platform](https://img.shields.io/cocoapods/p/SuperDDAIuPay.svg?style=flat)](https://cocoapods.org/pods/SuperDDAIuPay)
