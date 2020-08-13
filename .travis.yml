@@ -3,7 +3,6 @@ os: osx
 osx_image: xcode11.6
 xcode_workspace: Example/SuperDDAIuPay.xcworkspace
 xcode_scheme: SuperDDAIuPay-Example
-podfile: Example/Podfile
 xcode_destination: platform=iOS Simulator,OS=13.6,name=iPhone 11
 
 notifications:

@@ -1,4 +1,5 @@
 use_frameworks!
+platform :ios, '11.4'
 
 target 'SuperDDAIuPay_Example' do
   pod 'SuperDDAIuPay', :path => '../'
@@ -6,6 +7,5 @@ target 'SuperDDAIuPay_Example' do
   target 'SuperDDAIuPay_Tests' do
     inherit! :search_paths
 
-    
   end
 end

@@ -19,6 +19,10 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'SuperDDAIuPay'
 ```
+Add the following line inside `didFinishLaunchingWithOptions` on app delegate:
+```swift
+UIFont.loadIuPayFonts
+```
 
 ## Author
 

@@ -1,0 +1,40 @@
+{
+  "name": "SuperDDAIuPay",
+  "version": "0.1.0",
+  "summary": "A short description of SuperDDAIuPay.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lucianobohrer/SuperDDAIuPay",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lucianobohrer": "bohrerluciano@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/lucianobohrer/SuperDDAIuPay.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://linkedin.com/in/lucianobohrer",
+  "platforms": {
+    "ios": "11.4"
+  },
+  "swift_versions": "5.0",
+  "dependencies": {
+    "Valley": [
+
+    ],
+    "Material": [
+
+    ]
+  },
+  "source_files": "SuperDDAIuPay/Source/**/*",
+  "resources": "SuperDDAIuPay/**/*.{ttf}",
+  "resource_bundles": {
+    "SuperDDAIuPay": [
+      "SuperDDAIuPay/Source/Assets/*.png"
+    ]
+  },
+  "frameworks": "UIKit",
+  "swift_version": "5.0"
+}
