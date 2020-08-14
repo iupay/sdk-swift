@@ -135,6 +135,8 @@
 		A733988268C909A487F490BE5D821C62 /* UIImageView+Valley.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD117BF849C3841FDEC874FD91916F7A /* UIImageView+Valley.swift */; };
 		A88EE86FB2E0668E83F7780B697A9FB5 /* MotionProgressRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5DA0089113FC8CDF68B12C1DD59864 /* MotionProgressRunner.swift */; };
 		ABDE93CFDAA758B83C10246DB8D09907 /* Material+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69629874900D8C9E7C26911B46EA975 /* Material+Array.swift */; };
+		AD6F7DB824E6233000B787BE /* MonthSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F7DB724E6233000B787BE /* MonthSelectorView.swift */; };
+		AD6F7DBA24E62A6200B787BE /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F7DB924E62A6200B787BE /* DateExtensions.swift */; };
 		B0CF8B84EBFC7690145C99DFB2B73232 /* PresenterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F7084D663BD557821825BDCE935887 /* PresenterCard.swift */; };
 		B1D5C76C788D9E26EC96CD4F69D4B36D /* ErrorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12012B8377CD09CEE8996002A33FDCA5 /* ErrorTextField.swift */; };
 		B32C2CF57BC4C25792CF711507845D73 /* Motion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ABC3C0C68B8516989387302C68F59C /* Motion-dummy.m */; };
@@ -303,36 +305,36 @@
 		158F1975AF7872E7B1EDC469C5151D76 /* BaseButtonGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseButtonGroup.swift; path = Sources/iOS/ButtonGroup/BaseButtonGroup.swift; sourceTree = "<group>"; };
 		1671B0941DB7D41C06E8060092432FC9 /* Material+UIColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIColor.swift"; path = "Sources/iOS/Extension/Material+UIColor.swift"; sourceTree = "<group>"; };
 		18ABC3C0C68B8516989387302C68F59C /* Motion-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Motion-dummy.m"; sourceTree = "<group>"; };
-		194D41817117BCCA2679E49711BE7DD7 /* NunitoSans-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "NunitoSans-Light.ttf"; sourceTree = "<group>"; };
-		19706FDC967DBABDA6D299FC08516D31 /* Pods_SuperDDAIuPay_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SuperDDAIuPay_Tests.framework; path = "Pods-SuperDDAIuPay_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		194D41817117BCCA2679E49711BE7DD7 /* NunitoSans-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "NunitoSans-Light.ttf"; sourceTree = "<group>"; };
+		19706FDC967DBABDA6D299FC08516D31 /* Pods_SuperDDAIuPay_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperDDAIuPay_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19EE04ECE2A1FD34D64572FE1DCDE64F /* Shape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shape.swift; path = Sources/iOS/Type/Shape.swift; sourceTree = "<group>"; };
 		1A9CF2AD24FF59307A8B5C80CB7C743C /* Icon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = Sources/iOS/Icon/Icon.swift; sourceTree = "<group>"; };
 		1C1E35972E52831EFEADF3A0B6F77E8E /* Application.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Application.swift; path = Sources/Application.swift; sourceTree = "<group>"; };
 		1C8484FCF6B9C1DCE5F7262F089CC1F8 /* FABButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FABButton.swift; path = Sources/iOS/Button/FABButton.swift; sourceTree = "<group>"; };
-		1E6A857222B3F165FF8BA8BE6EEE0245 /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
+		1E6A857222B3F165FF8BA8BE6EEE0245 /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
 		1F6CB0D78C15B3F1F2B67C8CAE1A72B1 /* Pods-SuperDDAIuPay_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SuperDDAIuPay_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		204399AB181EF15EC5408A6A21692A62 /* Material+CALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+CALayer.swift"; path = "Sources/iOS/Extension/Material+CALayer.swift"; sourceTree = "<group>"; };
 		20DDACC0ACAFF28B461DDF6E7C4A7746 /* Dialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dialog.swift; path = Sources/iOS/Dialogs/Dialog.swift; sourceTree = "<group>"; };
 		214BD9C061D74377481C6AF4BBA47FF2 /* Sizes+Fonts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Sizes+Fonts.swift"; sourceTree = "<group>"; };
 		24109D125AF7C0D981F7C1491EEA9568 /* Snackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Snackbar.swift; path = Sources/iOS/Snackbar/Snackbar.swift; sourceTree = "<group>"; };
 		2485B5A9D8C831647A227447448DAFCE /* Material.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Material.debug.xcconfig; sourceTree = "<group>"; };
-		249F424A28030F974C747C3D8926F8B1 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
+		249F424A28030F974C747C3D8926F8B1 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
 		25332ADFF73C523048FE8D2A00E4D552 /* ChipBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChipBarController.swift; path = Sources/iOS/Chip/ChipBarController.swift; sourceTree = "<group>"; };
-		25833F7B82962EC5CC8FCA05D1BDDB37 /* SuperDDAIuPay.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SuperDDAIuPay.bundle; path = "SuperDDAIuPay-SuperDDAIuPay.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25833F7B82962EC5CC8FCA05D1BDDB37 /* SuperDDAIuPay.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperDDAIuPay.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B7AEB4DB787B0EAE0CD86BC8C950939 /* TabsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabsController.swift; path = Sources/iOS/Tab/TabsController.swift; sourceTree = "<group>"; };
-		2D23229FB9FCEA7ACCC8EE98D3E65D67 /* Roboto-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Light.ttf"; path = "Sources/Font/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		2D23229FB9FCEA7ACCC8EE98D3E65D67 /* Roboto-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "Sources/Font/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		2EE5956F8C4F02D3443775EF882B89D4 /* MotionTransition+Complete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotionTransition+Complete.swift"; path = "Sources/Transition/MotionTransition+Complete.swift"; sourceTree = "<group>"; };
 		30ED756154FA0DB824BDD76DD45D9E0A /* MotionCoreAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionCoreAnimator.swift; path = Sources/Animator/MotionCoreAnimator.swift; sourceTree = "<group>"; };
 		31C24A89F31DBA6885E3BDD533235A1C /* Valley.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Valley.release.xcconfig; sourceTree = "<group>"; };
 		341AAF964D0D121E9520DA130A407314 /* ResourceBundle-com.cosmicmind.material.fonts-Material-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-com.cosmicmind.material.fonts-Material-Info.plist"; sourceTree = "<group>"; };
 		34A2BFC50922571E13F1B8ECA917CF27 /* SnackbarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnackbarController.swift; path = Sources/iOS/Snackbar/SnackbarController.swift; sourceTree = "<group>"; };
-		359CD3E4D01B974F0173F86386E198EB /* Roboto-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Medium.ttf"; path = "Sources/Font/Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
-		3673AEFB9C06011508FE1B71ECF4852C /* NunitoSans-SemiBold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "NunitoSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		359CD3E4D01B974F0173F86386E198EB /* Roboto-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "Sources/Font/Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		3673AEFB9C06011508FE1B71ECF4852C /* NunitoSans-SemiBold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "NunitoSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		3816BDC75DFA4F6962FBF72FA7E5D434 /* DialogController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogController.swift; path = Sources/iOS/Dialogs/DialogController.swift; sourceTree = "<group>"; };
 		38AC43D7DC9286BDBC3E04924897DBD2 /* ResourceBundle-com.cosmicmind.material.icons-Material-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-com.cosmicmind.material.icons-Material-Info.plist"; sourceTree = "<group>"; };
 		38B6D7261FCBD113CEDAB1B06E1C3895 /* CornerRadius.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CornerRadius.swift; path = Sources/iOS/Type/CornerRadius.swift; sourceTree = "<group>"; };
 		394CC9EF61702B0B8BFB22D5A1FC893A /* Pods-SuperDDAIuPay_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SuperDDAIuPay_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3B012B9D6D84E6566D6336662636BAD8 /* Pods_SuperDDAIuPay_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SuperDDAIuPay_Example.framework; path = "Pods-SuperDDAIuPay_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B012B9D6D84E6566D6336662636BAD8 /* Pods_SuperDDAIuPay_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperDDAIuPay_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B0DCE0F5244088874F6B95700B18D34 /* Layer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layer.swift; path = Sources/iOS/Layer/Layer.swift; sourceTree = "<group>"; };
 		3C015DB81EF5E247DCB7B3D32CD5121D /* Motion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Motion.release.xcconfig; sourceTree = "<group>"; };
 		3DFA41C32372C9F960876CD1C5EA84E7 /* HeightPreset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeightPreset.swift; path = Sources/iOS/Height/HeightPreset.swift; sourceTree = "<group>"; };
@@ -342,7 +344,7 @@
 		4101F610F58788FCE6CBC357EC354826 /* MotionViewTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionViewTransition.swift; path = Sources/MotionViewTransition.swift; sourceTree = "<group>"; };
 		41DCF72E2CD9B9CD5ABA92CB1298B836 /* MatchPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchPreprocessor.swift; path = Sources/Preprocessors/MatchPreprocessor.swift; sourceTree = "<group>"; };
 		41F81F9F1E1B02961D2F2B89152F117C /* TransitionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionController.swift; path = Sources/iOS/Transition/TransitionController.swift; sourceTree = "<group>"; };
-		443FA6EAD8AD94038AA34DE1C97850C9 /* Material.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Material.framework; path = Material.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		443FA6EAD8AD94038AA34DE1C97850C9 /* Material.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Material.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44925926323AB21F497749A685CC6952 /* Pods-SuperDDAIuPay_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SuperDDAIuPay_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		451656E062D5E6F21E87CF80A0DB1CE0 /* Valley-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valley-umbrella.h"; sourceTree = "<group>"; };
 		45726FC4837DC483892F296C37B703A9 /* Material+UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIButton.swift"; path = "Sources/iOS/Extension/Material+UIButton.swift"; sourceTree = "<group>"; };
@@ -352,7 +354,7 @@
 		4B30BAA587A629447779C802B5EB4032 /* NavigationDrawerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationDrawerController.swift; path = Sources/iOS/NavigationDrawer/NavigationDrawerController.swift; sourceTree = "<group>"; };
 		4B4D3FE89E29357C5B391F872DB56383 /* Pods-SuperDDAIuPay_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SuperDDAIuPay_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4BAFADB96717F49DF609D60D0B8AB019 /* Valley.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Valley.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F02F5881B09228B56B19920719AD1A2 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Bold.ttf"; path = "Sources/Font/Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		4F02F5881B09228B56B19920719AD1A2 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "Sources/Font/Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		50A32734C11C9D2C918562DF18632FB7 /* MotionPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionPreprocessor.swift; path = Sources/Preprocessors/MotionPreprocessor.swift; sourceTree = "<group>"; };
 		512F5E991BB16346881858D264A6FFB9 /* Pods-SuperDDAIuPay_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SuperDDAIuPay_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		523FCF62E54A514491B0237A8282548D /* SuperDDAIuPay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SuperDDAIuPay-prefix.pch"; sourceTree = "<group>"; };
@@ -366,7 +368,7 @@
 		59AE009C80A5008FB66FE408BECA7E66 /* Motion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Motion.modulemap; sourceTree = "<group>"; };
 		5AD6D653FB0D4BFCC0F6B4E8AC9724AD /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Sources/iOS/Layout/LayoutConstraint.swift; sourceTree = "<group>"; };
 		5BD7831E2A35F05B5A2F3F4FF506749B /* MotionModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionModifier.swift; path = Sources/MotionModifier.swift; sourceTree = "<group>"; };
-		5CB14BBF3B5A9C9C744A7F8251E99C50 /* SuperDDAIuPay.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SuperDDAIuPay.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5CB14BBF3B5A9C9C744A7F8251E99C50 /* SuperDDAIuPay.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SuperDDAIuPay.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5E37192AB69A0029507E14DEA0BE6B2D /* Material+MotionAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+MotionAnimation.swift"; path = "Sources/iOS/Extension/Material+MotionAnimation.swift"; sourceTree = "<group>"; };
 		62B9C20BF697D27BC303A4ADDFBBDE25 /* FABMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FABMenuController.swift; path = Sources/iOS/FABMenu/FABMenuController.swift; sourceTree = "<group>"; };
 		63BD0126B2B3AC18722104BF0AC4D265 /* Button.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Button.swift; path = Sources/iOS/Button/Button.swift; sourceTree = "<group>"; };
@@ -400,11 +402,11 @@
 		8C5C050EABFD23BCE1D9D45796DDA36D /* BeneficiaryCardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BeneficiaryCardView.swift; sourceTree = "<group>"; };
 		8C890702D7E27D305253D322E07B8DC1 /* Material-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Material-dummy.m"; sourceTree = "<group>"; };
 		8C97BF6F055F6855E95A8AA87DC4F829 /* Pods-SuperDDAIuPay_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SuperDDAIuPay_Example.modulemap"; sourceTree = "<group>"; };
-		8DE1A8BE15111EE5E13B598C75CD468E /* Roboto-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Regular.ttf"; path = "Sources/Font/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		8DE1A8BE15111EE5E13B598C75CD468E /* Roboto-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "Sources/Font/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		9030B50FC418F5571E1BE3ED1F76D9D1 /* SuperDDAIuPay-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SuperDDAIuPay-Info.plist"; sourceTree = "<group>"; };
 		9061192B600A49BDFC8AD335199A29F3 /* Offset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Offset.swift; path = Sources/iOS/Type/Offset.swift; sourceTree = "<group>"; };
 		906A122B4D98511FC232F67714522932 /* MotionAnimatorViewContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionAnimatorViewContext.swift; path = Sources/Animator/MotionAnimatorViewContext.swift; sourceTree = "<group>"; };
-		906DCF7AE09E64FEC6089566F3CDD431 /* com.cosmicmind.material.fonts.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = com.cosmicmind.material.fonts.bundle; path = "Material-com.cosmicmind.material.fonts.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		906DCF7AE09E64FEC6089566F3CDD431 /* com.cosmicmind.material.fonts.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.cosmicmind.material.fonts.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		91481E3616E36A462152675526476BC6 /* TableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = Sources/iOS/Table/TableViewController.swift; sourceTree = "<group>"; };
 		923A3D8A7A74114C08B242986B13AFA8 /* LayoutAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutAttribute.swift; path = Sources/iOS/Layout/LayoutAttribute.swift; sourceTree = "<group>"; };
 		92D1165EA65DBE787851C1803480C2DA /* Valley.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Valley.modulemap; sourceTree = "<group>"; };
@@ -421,7 +423,7 @@
 		9BA2DE6B3B40D1065856E1F5B47BAF95 /* Material+UILabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UILabel.swift"; path = "Sources/iOS/Extension/Material+UILabel.swift"; sourceTree = "<group>"; };
 		9BE8E53CA63FE4CC1B94D5F1B775B81F /* Material+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIView.swift"; path = "Sources/iOS/Extension/Material+UIView.swift"; sourceTree = "<group>"; };
 		9CA18938CC2BE435E9AB36D6D6A54758 /* Material+UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIImage.swift"; path = "Sources/iOS/Extension/Material+UIImage.swift"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F91F5D4046EA9388CB5986F30466C0B /* RadioButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadioButton.swift; path = Sources/iOS/Button/RadioButton.swift; sourceTree = "<group>"; };
 		A0261764DE3B9253CB6153ECB99B33A6 /* MotionTransition+CustomTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotionTransition+CustomTransition.swift"; path = "Sources/Transition/MotionTransition+CustomTransition.swift"; sourceTree = "<group>"; };
 		A0533F634016645DBE74892F53513A6D /* RadioButtonGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadioButtonGroup.swift; path = Sources/iOS/ButtonGroup/RadioButtonGroup.swift; sourceTree = "<group>"; };
@@ -430,6 +432,8 @@
 		AB0B2BD130F0CB5D0E2D379BC08890B1 /* MotionViewOrderStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionViewOrderStrategy.swift; path = Sources/MotionViewOrderStrategy.swift; sourceTree = "<group>"; };
 		AB90FB0B2E2D73008C92B5A9659F3A98 /* MotionCorePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionCorePreprocessor.swift; path = Sources/Preprocessors/MotionCorePreprocessor.swift; sourceTree = "<group>"; };
 		AD117BF849C3841FDEC874FD91916F7A /* UIImageView+Valley.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Valley.swift"; path = "Valley/Source/Extensions/UIImageView+Valley.swift"; sourceTree = "<group>"; };
+		AD6F7DB724E6233000B787BE /* MonthSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthSelectorView.swift; sourceTree = "<group>"; };
+		AD6F7DB924E62A6200B787BE /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		ADD89CC9B96D6F6B114CA79D4A101526 /* MotionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionAnimator.swift; path = Sources/Animator/MotionAnimator.swift; sourceTree = "<group>"; };
 		B0534B8DC18376AB59E8D344A5D4EB8E /* ResourceBundle-SuperDDAIuPay-SuperDDAIuPay-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SuperDDAIuPay-SuperDDAIuPay-Info.plist"; sourceTree = "<group>"; };
 		B389CFC5A5DD3B134D146CE54BA47535 /* Material.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Material.modulemap; sourceTree = "<group>"; };
@@ -438,10 +442,10 @@
 		B4775DEABC5E940E913C51DEEF4DFCAE /* Motion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Motion-umbrella.h"; sourceTree = "<group>"; };
 		B5D251664DCA6E056DD473A52C1EE88F /* MotionTargetState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionTargetState.swift; path = Sources/MotionTargetState.swift; sourceTree = "<group>"; };
 		B623BE1D58AE83FA9C13521AF6B65A85 /* Material+UIFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIFont.swift"; path = "Sources/iOS/Extension/Material+UIFont.swift"; sourceTree = "<group>"; };
-		B62CB21CBD272B860AE23CA195CF56EF /* SuperDDAIuPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SuperDDAIuPay.framework; path = SuperDDAIuPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62CB21CBD272B860AE23CA195CF56EF /* SuperDDAIuPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SuperDDAIuPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B683693BD1F9CBA535C3D0858976E804 /* MotionPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionPlugin.swift; path = Sources/MotionPlugin.swift; sourceTree = "<group>"; };
 		B6B8EB41FD5C596FD9935B4DF4212DAF /* IconButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IconButton.swift; path = Sources/iOS/Button/IconButton.swift; sourceTree = "<group>"; };
-		B6D68CFE4935144FCFB49484DA566E2B /* Valley.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Valley.framework; path = Valley.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D68CFE4935144FCFB49484DA566E2B /* Valley.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Valley.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA3F6172D793EE432194F102DCF24F9B /* Valley.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Valley.swift; path = Valley/Source/Valley.swift; sourceTree = "<group>"; };
 		BADAB83E87E336DFBA9C990FBCF7961A /* MotionTransition+Start.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotionTransition+Start.swift"; path = "Sources/Transition/MotionTransition+Start.swift"; sourceTree = "<group>"; };
 		BB0717ACE25E7C6A9C9179EA869C2ECA /* DialogView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogView.swift; path = Sources/iOS/Dialogs/DialogView.swift; sourceTree = "<group>"; };
@@ -473,7 +477,7 @@
 		D3A1A6312354682E617E27BFEB8C4264 /* Pods-SuperDDAIuPay_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SuperDDAIuPay_Example-dummy.m"; sourceTree = "<group>"; };
 		D419FEA2B38FECC44757573A715881A6 /* ValleyFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValleyFile.swift; path = Valley/Source/ValleyFile.swift; sourceTree = "<group>"; };
 		D4750D5D13E510EEDC503C8DD6694098 /* Motion-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Motion-prefix.pch"; sourceTree = "<group>"; };
-		D4F6A2860CB523B85235F862573290FC /* com.cosmicmind.material.icons.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = com.cosmicmind.material.icons.bundle; path = "Material-com.cosmicmind.material.icons.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F6A2860CB523B85235F862573290FC /* com.cosmicmind.material.icons.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.cosmicmind.material.icons.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7F57BAE971973B75DB64D97F1343E76 /* Motion+Obj-C.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Motion+Obj-C.swift"; path = "Sources/Extensions/Motion+Obj-C.swift"; sourceTree = "<group>"; };
 		D80C06DE2873AF3FB6A72428EFA07ED2 /* Material-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Material-umbrella.h"; sourceTree = "<group>"; };
 		D98CD91DD88AE82455EB7ED41A0E310B /* MotionTransition+Interactive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotionTransition+Interactive.swift"; path = "Sources/Transition/MotionTransition+Interactive.swift"; sourceTree = "<group>"; };
@@ -488,18 +492,18 @@
 		E65BF591DEEFB2BC926855E13FAF2DFA /* TransitionPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionPreprocessor.swift; path = Sources/Preprocessors/TransitionPreprocessor.swift; sourceTree = "<group>"; };
 		E6A05C83E429D8A4D20A5E051BCCCF39 /* ValleyCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValleyCache.swift; path = Valley/Source/ValleyCache.swift; sourceTree = "<group>"; };
 		E7FD17CB96274721DCCD2DCA5FAD469D /* Motion+CAMediaTimingFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Motion+CAMediaTimingFunction.swift"; path = "Sources/Extensions/Motion+CAMediaTimingFunction.swift"; sourceTree = "<group>"; };
-		E9E83947349F7E8028823F3766451329 /* Motion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Motion.framework; path = Motion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E83947349F7E8028823F3766451329 /* Motion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Motion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5DA0089113FC8CDF68B12C1DD59864 /* MotionProgressRunner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionProgressRunner.swift; path = Sources/Transition/MotionProgressRunner.swift; sourceTree = "<group>"; };
 		EB9C73EDE1CBC107C6E46C93E255FD44 /* MotionCAAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionCAAnimation.swift; path = Sources/MotionCAAnimation.swift; sourceTree = "<group>"; };
 		EC7A34E31924B8C821DDB2A003C8F76A /* Border.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Border.swift; path = Sources/iOS/Type/Border.swift; sourceTree = "<group>"; };
-		EDF65EA1D80695731AC02AF377DCC299 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		EDF65EA1D80695731AC02AF377DCC299 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		EFAD279C434528FC0C0C971B2E3F7F21 /* Pods-SuperDDAIuPay_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SuperDDAIuPay_Tests-dummy.m"; sourceTree = "<group>"; };
 		F14F3DF71253E66AB443C2303BDAE57C /* UIImage+Valley.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Valley.swift"; path = "Valley/Source/Extensions/UIImage+Valley.swift"; sourceTree = "<group>"; };
 		F24F020B7A26567DAA268676FFD0E581 /* RaisedButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisedButton.swift; path = Sources/iOS/Button/RaisedButton.swift; sourceTree = "<group>"; };
 		F3409108AFCE1819DB099E0A5EC93C04 /* LayoutAnchor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutAnchor.swift; path = Sources/iOS/Layout/LayoutAnchor.swift; sourceTree = "<group>"; };
-		F43F7FE90E5DF549AE351EC2EE27F1D1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F43F7FE90E5DF549AE351EC2EE27F1D1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F5A01568CBF77A0E77DBC06939439976 /* CollectionViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewLayout.swift; path = Sources/iOS/Collection/CollectionViewLayout.swift; sourceTree = "<group>"; };
-		F683BFB0398972D992FEC83C54AE3E4A /* Roboto-Thin.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Thin.ttf"; path = "Sources/Font/Roboto/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		F683BFB0398972D992FEC83C54AE3E4A /* Roboto-Thin.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Thin.ttf"; path = "Sources/Font/Roboto/Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		F804CD0E8886527EED8D8E545687BBFB /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sources/Assets.xcassets; sourceTree = "<group>"; };
 		F819FE663B2BF7D06D9CABDA4834FD3D /* Motion+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Motion+UIView.swift"; path = "Sources/Extensions/Motion+UIView.swift"; sourceTree = "<group>"; };
 		F86D806D6542CA17BE5E7D541FC503A6 /* CheckButtonGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckButtonGroup.swift; path = Sources/iOS/ButtonGroup/CheckButtonGroup.swift; sourceTree = "<group>"; };
@@ -688,7 +692,6 @@
 				4653C7CE4C14E840FF3DA28CECDD0341 /* Core */,
 				9B6036067E5DC2248CD0261029286C1F /* Support Files */,
 			);
-			name = Motion;
 			path = Motion;
 			sourceTree = "<group>";
 		};
@@ -775,7 +778,6 @@
 				B2012126CB91D756DE46CD3CE5805A69 /* Core */,
 				EB81AED239C6B050E2EAD14460B93296 /* Support Files */,
 			);
-			name = Material;
 			path = Material;
 			sourceTree = "<group>";
 		};
@@ -952,6 +954,7 @@
 			isa = PBXGroup;
 			children = (
 				8C5C050EABFD23BCE1D9D45796DDA36D /* BeneficiaryCardView.swift */,
+				AD6F7DB724E6233000B787BE /* MonthSelectorView.swift */,
 			);
 			name = Components;
 			path = SuperDDAIuPay/Source/Components;
@@ -979,6 +982,7 @@
 			children = (
 				214BD9C061D74377481C6AF4BBA47FF2 /* Sizes+Fonts.swift */,
 				FD5B1D53976818BBE0D52A7929F2E09C /* Fonts */,
+				AD6F7DB924E62A6200B787BE /* DateExtensions.swift */,
 			);
 			name = Utils;
 			path = SuperDDAIuPay/Source/Utils;
@@ -996,7 +1000,6 @@
 				B3C47D62B9B55B4306A52F7251CFEBED /* ValleyPinning.swift */,
 				F73FF10D48FC15F68A4B1AE3CCB4FFF2 /* Support Files */,
 			);
-			name = Valley;
 			path = Valley;
 			sourceTree = "<group>";
 		};
@@ -1023,7 +1026,6 @@
 				249F424A28030F974C747C3D8926F8B1 /* NunitoSans-Regular.ttf */,
 				3673AEFB9C06011508FE1B71ECF4852C /* NunitoSans-SemiBold.ttf */,
 			);
-			name = Fonts;
 			path = Fonts;
 			sourceTree = "<group>";
 		};
@@ -1382,6 +1384,8 @@
 				CD8BF70D57240C23F0DA5D67EABDF2F8 /* NunitoSans-Bold.ttf in Sources */,
 				1C85735678C7476C291B80FAA48A698E /* NunitoSans-Light.ttf in Sources */,
 				67B46B1E4F6E736B0DDE68A859768365 /* NunitoSans-Regular.ttf in Sources */,
+				AD6F7DB824E6233000B787BE /* MonthSelectorView.swift in Sources */,
+				AD6F7DBA24E62A6200B787BE /* DateExtensions.swift in Sources */,
 				D0284F7999A26B0BF0D41DC0917AF5A5 /* NunitoSans-SemiBold.ttf in Sources */,
 				2380AE984C58316238FBC552C2190146 /* Sizes+Fonts.swift in Sources */,
 				EDE0C38EA0E7F7988E9A03C64FAED9D3 /* SuperDDAIuPay-dummy.m in Sources */,
@@ -1802,8 +1806,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

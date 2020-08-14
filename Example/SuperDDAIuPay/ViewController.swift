@@ -12,6 +12,7 @@ import SuperDDAIuPay
 class ViewController: UIViewController {
 
     @IBOutlet weak var beneficiaryCard: BeneficiaryCardView!
+    @IBOutlet weak var monthSelector: MonthSelectorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,12 @@ class ViewController: UIViewController {
         
         self.beneficiaryCard.handleSelectorChange = { [weak self] isOn in
             self?.presentAlert(withTitle: "Toggle", message: "You set toggle to \(isOn)")
+        }
+        
+        
+        self.monthSelector.set(currentMonth: 2)
+        self.monthSelector.handleMonthChange = { [weak self] month in
+            self?.presentAlert(withTitle: "Month Tab", message: "Month selected \(month)")
         }
         
     }
