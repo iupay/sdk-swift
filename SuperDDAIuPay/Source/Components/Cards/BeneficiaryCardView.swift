@@ -105,45 +105,38 @@ public class BeneficiaryCardView: UIView {
     ///     - selectorColor: Selector color
     ///     - cardTitle: Card's title text
     ///     - cnpj: cnpj text
-    ///     - imageHeight: height desired for the image
-    ///     - imageWidth: width desired for the image
     ///     - activated: Set if selector is activated
     ///     - amountLimit: Amount limit value
     ///     - amountLimitText: Amount limit text
     ///     - imageUrl: Color of the left bar
     
-    public func configure(barColor: UIColor,
-                          cardTextColor: UIColor,
-                          selectorColor: UIColor,
-                          cardTitle: String,
-                          cnpj: String,
-                          imageHeight: Double = 32.0,
-                          imageWidth: Double = 64.0,
-                          activated: Bool,
-                          amountLimit: String,
-                          amountLimitTitle: String,
-                          text: String,
-                          imageUrl: String,
-                          type: CardType) {
+    public func configure(settings: BeneficiaryConfig) {
         
-        self.leftBarView.backgroundColor = barColor
-        self.titleLabel.text = cardTitle
-        self.imageView.valleyImage(url: imageUrl)
-        self.typeLabel.text = type.rawValue
-        self.cnpjLabel.text = "CNPJ: \(cnpj)"
-        self.limitLabel.text = "\(amountLimitTitle) \(amountLimit)"
-        self.textLabel.text = text
+        self.leftBarView.backgroundColor = settings.barColor
+        self.titleLabel.text = settings.cardTitle
+        self.typeLabel.text = settings.type.rawValue
+        self.cnpjLabel.text = "CNPJ: \(settings.cnpj)"
+        self.limitLabel.text = settings.limitFormatted
+        self.textLabel.text = settings.text
         
         [self.titleLabel,
          self.typeLabel,
          self.textLabel,
          self.cnpjLabel,
          self.limitLabel].forEach({ label in
-            label.textColor = cardTextColor
+            label.textColor = settings.cardTextColor
         })
         
-        self.toggleView.buttonOnColor = selectorColor
-        self.toggleView.trackOnColor = selectorColor.withAlphaComponent(0.7)
+        self.toggleView.isOn = settings.activated
+        self.toggleView.buttonOnColor = settings.selectorColor
+        self.toggleView.trackOnColor = settings.selectorColor.withAlphaComponent(0.7)
+        self.contentView.backgroundColor = .white
+        self.imageView.valleyImage(url: settings.imageUrl, transition: .curveEaseIn,
+                                   onSuccess: { [weak self] (image) in
+            self?.imageView.image = image.resize(toHeight: .largeMargin)
+            self?.imageView.widthAnchor.constraint(equalToConstant: self?.imageView.image?.size.width ?? .largeMargin).isActive = true
+            self?.imageView.layoutIfNeeded()
+        })
     }
     
     public override func layoutSubviews() {
@@ -171,8 +164,8 @@ public class BeneficiaryCardView: UIView {
         contentView: do {
             self.contentView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
             self.contentView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
-            self.contentView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-            self.contentView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+            self.contentView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+            self.contentView.heightAnchor.constraint(equalToConstant: 125).isActive = true
         }
         
         leftBarView: do {
@@ -186,9 +179,8 @@ public class BeneficiaryCardView: UIView {
             self.imageView.leadingAnchor.constraint(equalTo: self.leftBarView.trailingAnchor,
                                                     constant: .mediumMargin).isActive = true
             self.imageView.topAnchor.constraint(equalTo: self.contentView.topAnchor,
-                                                constant: .smallMargin).isActive = true
-            self.imageView.heightAnchor.constraint(equalToConstant: .largeMargin).isActive = true
-            self.imageView.widthAnchor.constraint(equalToConstant: .largeMargin).isActive = true
+                                                constant: .smallestMargin).isActive = true
+            self.imageView.heightAnchor.constraint(equalToConstant: .defaultArea).isActive = true
         }
         
         titleLabel: do {
@@ -203,6 +195,7 @@ public class BeneficiaryCardView: UIView {
             self.typeLabel.centerYAnchor.constraint(equalTo: self.imageView.centerYAnchor).isActive = true
             self.typeLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor,
                                                      constant: -.mediumMargin).isActive = true
+            self.typeLabel.widthAnchor.constraint(equalToConstant: .defaultArea * 2).isActive = true
         }
         
         cnpjLabel: do {
@@ -212,19 +205,22 @@ public class BeneficiaryCardView: UIView {
                                                     constant: .mediumMargin).isActive = true
             self.cnpjLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor,
                                                      constant: -.smallestMargin).isActive = true
+            self.cnpjLabel.heightAnchor.constraint(equalToConstant: .mediumMargin).isActive = true
         }
         
         textLabel: do {
             self.textLabel.topAnchor.constraint(equalTo: self.cnpjLabel.bottomAnchor,
-                                                constant: .mediumMargin).isActive = true
+                                                constant: .smallMargin).isActive = true
             self.textLabel.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor,
                                                     constant: .mediumMargin).isActive = true
+            self.textLabel.heightAnchor.constraint(equalToConstant: .mediumMargin).isActive = true
         }
         
         limitLabel: do {
             self.limitLabel.topAnchor.constraint(equalTo: self.textLabel.bottomAnchor).isActive = true
             self.limitLabel.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor,
                                                     constant: .mediumMargin).isActive = true
+            self.limitLabel.heightAnchor.constraint(equalToConstant: .mediumMargin).isActive = true
         }
         
         toggleView: do {
@@ -240,9 +236,51 @@ public class BeneficiaryCardView: UIView {
 }
 
 // MARK: Definitions
-public extension BeneficiaryCardView {
-    enum CardType: String {
-        case Account = "Conta"
-        case Monthly = "Mensalidade"
+
+public struct BeneficiaryConfig {
+    public init(barColor: UIColor,
+                cardTextColor: UIColor,
+                selectorColor: UIColor,
+                cardTitle: String,
+                cnpj: String,
+                activated: Bool,
+                amount: Double,
+                amountLabel: String,
+                text: String,
+                imageUrl: String,
+                type: BeneficiaryType) {
+        
+        self.barColor = barColor
+        self.cardTextColor = cardTextColor
+        self.selectorColor = selectorColor
+        self.cardTitle = cardTitle
+        self.cnpj = cnpj
+        self.activated = activated
+        self.amount = amount
+        self.amountLabel = amountLabel
+        self.text = text
+        self.imageUrl = imageUrl
+        self.type = type
+    }
+            
+    public enum BeneficiaryType: String {
+        case account = "Conta"
+        case monthly = "Mensalidade"
+    }
+    
+    var barColor: UIColor
+    var cardTextColor: UIColor
+    var selectorColor: UIColor
+    var cardTitle: String
+    var cnpj: String
+    var activated: Bool
+    var amount: Double
+    var amountLabel: String
+    var text: String
+    var imageUrl: String
+    var type: BeneficiaryType
+    
+    var limitFormatted: String {
+        return "\(self.amountLabel) \(String(format: "%.2f", self.amount))"
     }
 }

@@ -31,7 +31,7 @@
 		1EECABA1D83260703ABF79F90840C0CE /* Motion+Obj-C.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F57BAE971973B75DB64D97F1343E76 /* Motion+Obj-C.swift */; };
 		213BCBD931650A1356E20B91BBA2A706 /* BeneficiaryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5C050EABFD23BCE1D9D45796DDA36D /* BeneficiaryCardView.swift */; };
 		22CC3004E6294B17D42B8C69E274E843 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91481E3616E36A462152675526476BC6 /* TableViewController.swift */; };
-		2380AE984C58316238FBC552C2190146 /* Sizes+Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214BD9C061D74377481C6AF4BBA47FF2 /* Sizes+Fonts.swift */; };
+		2380AE984C58316238FBC552C2190146 /* DesignAtoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214BD9C061D74377481C6AF4BBA47FF2 /* DesignAtoms.swift */; };
 		24A3E8F30C60EEEE72153ABFC22743EE /* SearchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933F9D0AFF5FC36ADCE4351F4B66B783 /* SearchBarController.swift */; };
 		254F07DF0AB0B171F3ACB5A7D21E8FC2 /* Valley-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 642AFB881B90A6B3A32ED1B20354A28E /* Valley-dummy.m */; };
 		284E8DABC26CE05A398E1C5D1B36CA64 /* Offset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9061192B600A49BDFC8AD335199A29F3 /* Offset.swift */; };
@@ -137,6 +137,12 @@
 		ABDE93CFDAA758B83C10246DB8D09907 /* Material+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69629874900D8C9E7C26911B46EA975 /* Material+Array.swift */; };
 		AD6F7DB824E6233000B787BE /* MonthSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F7DB724E6233000B787BE /* MonthSelectorView.swift */; };
 		AD6F7DBA24E62A6200B787BE /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F7DB924E62A6200B787BE /* DateExtensions.swift */; };
+		ADBAA2D124ECBF9E0078C1EA /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBAA2D024ECBF9E0078C1EA /* Models.swift */; };
+		ADBC5E0F24E887A300CC0317 /* BaseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC5E0E24E887A300CC0317 /* BaseCardView.swift */; };
+		ADBC5E1124E8AEAC00CC0317 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC5E1024E8AEAC00CC0317 /* UIImageExtensions.swift */; };
+		ADBC5E1524E9DE3000CC0317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADBC5E1424E9DE3000CC0317 /* Assets.xcassets */; };
+		ADBC5E1824EAFEBC00CC0317 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC5E1724EAFEBC00CC0317 /* UIColorExtensions.swift */; };
+		ADBC5E1A24EB147600CC0317 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC5E1924EB147600CC0317 /* UIViewExtensions.swift */; };
 		B0CF8B84EBFC7690145C99DFB2B73232 /* PresenterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F7084D663BD557821825BDCE935887 /* PresenterCard.swift */; };
 		B1D5C76C788D9E26EC96CD4F69D4B36D /* ErrorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12012B8377CD09CEE8996002A33FDCA5 /* ErrorTextField.swift */; };
 		B32C2CF57BC4C25792CF711507845D73 /* Motion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ABC3C0C68B8516989387302C68F59C /* Motion-dummy.m */; };
@@ -315,7 +321,7 @@
 		1F6CB0D78C15B3F1F2B67C8CAE1A72B1 /* Pods-SuperDDAIuPay_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SuperDDAIuPay_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		204399AB181EF15EC5408A6A21692A62 /* Material+CALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+CALayer.swift"; path = "Sources/iOS/Extension/Material+CALayer.swift"; sourceTree = "<group>"; };
 		20DDACC0ACAFF28B461DDF6E7C4A7746 /* Dialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dialog.swift; path = Sources/iOS/Dialogs/Dialog.swift; sourceTree = "<group>"; };
-		214BD9C061D74377481C6AF4BBA47FF2 /* Sizes+Fonts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Sizes+Fonts.swift"; sourceTree = "<group>"; };
+		214BD9C061D74377481C6AF4BBA47FF2 /* DesignAtoms.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DesignAtoms.swift; sourceTree = "<group>"; };
 		24109D125AF7C0D981F7C1491EEA9568 /* Snackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Snackbar.swift; path = Sources/iOS/Snackbar/Snackbar.swift; sourceTree = "<group>"; };
 		2485B5A9D8C831647A227447448DAFCE /* Material.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Material.debug.xcconfig; sourceTree = "<group>"; };
 		249F424A28030F974C747C3D8926F8B1 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
@@ -434,6 +440,12 @@
 		AD117BF849C3841FDEC874FD91916F7A /* UIImageView+Valley.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Valley.swift"; path = "Valley/Source/Extensions/UIImageView+Valley.swift"; sourceTree = "<group>"; };
 		AD6F7DB724E6233000B787BE /* MonthSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthSelectorView.swift; sourceTree = "<group>"; };
 		AD6F7DB924E62A6200B787BE /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		ADBAA2D024ECBF9E0078C1EA /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		ADBC5E0E24E887A300CC0317 /* BaseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCardView.swift; sourceTree = "<group>"; };
+		ADBC5E1024E8AEAC00CC0317 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		ADBC5E1424E9DE3000CC0317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADBC5E1724EAFEBC00CC0317 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		ADBC5E1924EB147600CC0317 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		ADD89CC9B96D6F6B114CA79D4A101526 /* MotionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionAnimator.swift; path = Sources/Animator/MotionAnimator.swift; sourceTree = "<group>"; };
 		B0534B8DC18376AB59E8D344A5D4EB8E /* ResourceBundle-SuperDDAIuPay-SuperDDAIuPay-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SuperDDAIuPay-SuperDDAIuPay-Info.plist"; sourceTree = "<group>"; };
 		B389CFC5A5DD3B134D146CE54BA47535 /* Material.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Material.modulemap; sourceTree = "<group>"; };
@@ -791,6 +803,34 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		ADBC5E1324E9DDFF00CC0317 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				ADBC5E1424E9DE3000CC0317 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		ADBC5E1624EAFCAF00CC0317 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				8C5C050EABFD23BCE1D9D45796DDA36D /* BeneficiaryCardView.swift */,
+				ADBC5E0E24E887A300CC0317 /* BaseCardView.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		ADBC5E1B24EB148B00CC0317 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AD6F7DB924E62A6200B787BE /* DateExtensions.swift */,
+				ADBC5E1924EB147600CC0317 /* UIViewExtensions.swift */,
+				ADBC5E1724EAFEBC00CC0317 /* UIColorExtensions.swift */,
+				ADBC5E1024E8AEAC00CC0317 /* UIImageExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B2012126CB91D756DE46CD3CE5805A69 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -931,6 +971,7 @@
 		DF0488160762FA6D80AAD7FC0EDAEB2E /* SuperDDAIuPay */ = {
 			isa = PBXGroup;
 			children = (
+				ADBC5E1324E9DDFF00CC0317 /* Assets */,
 				E81C786E5514C5C146061F4B3E8E5D0C /* Components */,
 				2C97F8CDD72A3AFCF6112DFE9C2FAC3B /* Pod */,
 				9486835EA5A14870D59C9DCF1925EB5A /* Resources */,
@@ -953,8 +994,9 @@
 		E81C786E5514C5C146061F4B3E8E5D0C /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				8C5C050EABFD23BCE1D9D45796DDA36D /* BeneficiaryCardView.swift */,
+				ADBC5E1624EAFCAF00CC0317 /* Cards */,
 				AD6F7DB724E6233000B787BE /* MonthSelectorView.swift */,
+				ADBAA2D024ECBF9E0078C1EA /* Models.swift */,
 			);
 			name = Components;
 			path = SuperDDAIuPay/Source/Components;
@@ -980,9 +1022,9 @@
 		EFDBE92F06554BF645BC3DFB74D0BBDF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				214BD9C061D74377481C6AF4BBA47FF2 /* Sizes+Fonts.swift */,
+				214BD9C061D74377481C6AF4BBA47FF2 /* DesignAtoms.swift */,
 				FD5B1D53976818BBE0D52A7929F2E09C /* Fonts */,
-				AD6F7DB924E62A6200B787BE /* DateExtensions.swift */,
+				ADBC5E1B24EB148B00CC0317 /* Extensions */,
 			);
 			name = Utils;
 			path = SuperDDAIuPay/Source/Utils;
@@ -1346,6 +1388,7 @@
 				6DF6A645CACC09831496F3F0AF4C666B /* NunitoSans-Light.ttf in Resources */,
 				DB31C1C3438109808E51FC3FF1FD19DA /* NunitoSans-Regular.ttf in Resources */,
 				67C56C0CB92AABFBEF06B0CA47F8CCC7 /* NunitoSans-SemiBold.ttf in Resources */,
+				ADBC5E1524E9DE3000CC0317 /* Assets.xcassets in Resources */,
 				6A0204AD26F69795C15464C76E8B6D80 /* SuperDDAIuPay.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1383,12 +1426,17 @@
 				213BCBD931650A1356E20B91BBA2A706 /* BeneficiaryCardView.swift in Sources */,
 				CD8BF70D57240C23F0DA5D67EABDF2F8 /* NunitoSans-Bold.ttf in Sources */,
 				1C85735678C7476C291B80FAA48A698E /* NunitoSans-Light.ttf in Sources */,
+				ADBC5E1A24EB147600CC0317 /* UIViewExtensions.swift in Sources */,
+				ADBC5E1824EAFEBC00CC0317 /* UIColorExtensions.swift in Sources */,
 				67B46B1E4F6E736B0DDE68A859768365 /* NunitoSans-Regular.ttf in Sources */,
+				ADBC5E0F24E887A300CC0317 /* BaseCardView.swift in Sources */,
 				AD6F7DB824E6233000B787BE /* MonthSelectorView.swift in Sources */,
 				AD6F7DBA24E62A6200B787BE /* DateExtensions.swift in Sources */,
 				D0284F7999A26B0BF0D41DC0917AF5A5 /* NunitoSans-SemiBold.ttf in Sources */,
-				2380AE984C58316238FBC552C2190146 /* Sizes+Fonts.swift in Sources */,
+				2380AE984C58316238FBC552C2190146 /* DesignAtoms.swift in Sources */,
 				EDE0C38EA0E7F7988E9A03C64FAED9D3 /* SuperDDAIuPay-dummy.m in Sources */,
+				ADBC5E1124E8AEAC00CC0317 /* UIImageExtensions.swift in Sources */,
+				ADBAA2D124ECBF9E0078C1EA /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

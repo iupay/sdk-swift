@@ -109,7 +109,6 @@ public class MonthSelectorView: UIView {
         self.collectionView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         self.collectionView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
         self.collectionView.heightAnchor.constraint(equalToConstant: 34).isActive = true
-        
     }
     
     private func buildMenu() {
@@ -118,14 +117,15 @@ public class MonthSelectorView: UIView {
             self.currentMonthDate().getPreviousMonth(byDecreasing: 1),
             self.currentMonthDate()
         ]
-        for i in 1...8 {
+        
+        for i in 1...9 {
             months.append(self.currentMonthDate().getNextMonth(byAdding: i))
         }
         
         self.items = months
             .compactMap({ $0 })
-            .map({
-                MonthItem(id: $0.getMonthNumber, text: $0.getMonthName.uppercased(), selected: $0.getMonthNumber == self.currentMonth)
+            .map({ [weak self] item in
+                MonthItem(id: item.getMonthNumber, text: item.getMonthName.uppercased(), selected: item.getMonthNumber == self?.currentMonth)
             })
     }
     

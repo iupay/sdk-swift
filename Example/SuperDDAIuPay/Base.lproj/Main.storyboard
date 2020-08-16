@@ -19,20 +19,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2MN-xb-bz1" customClass="BeneficiaryCardView" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="16" y="143" width="343" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2MN-xb-bz1" customClass="BeneficiaryCardView" customModule="SuperDDAIuPay">
+                                <rect key="frame" x="16" y="32" width="343" height="125"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="bPd-lm-M8S"/>
+                                </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l6n-hQ-UUX" customClass="MonthSelectorView" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="10" y="357" width="350" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l6n-hQ-UUX" customClass="MonthSelectorView" customModule="SuperDDAIuPay">
+                                <rect key="frame" x="16" y="169" width="343" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Xe2-kZ-tMG"/>
+                                </constraints>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IX0-XT-5sN" customClass="BaseCardView" customModule="SuperDDAIuPay">
+                                <rect key="frame" x="16" y="233" width="343" height="125"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="5wH-vc-72z"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09e-Uw-LdI" customClass="BaseCardView" customModule="SuperDDAIuPay">
+                                <rect key="frame" x="0.0" y="378" width="375" height="160"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="goF-6A-iNd"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="09e-Uw-LdI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="2UK-kU-bCS"/>
+                            <constraint firstItem="09e-Uw-LdI" firstAttribute="top" secondItem="IX0-XT-5sN" secondAttribute="bottom" constant="20" id="5L2-D4-za6"/>
+                            <constraint firstAttribute="trailing" secondItem="2MN-xb-bz1" secondAttribute="trailing" constant="16" id="8cK-5f-AYU"/>
+                            <constraint firstItem="IX0-XT-5sN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="HS8-o1-f59"/>
+                            <constraint firstItem="2MN-xb-bz1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="Lfl-nV-hNu"/>
+                            <constraint firstAttribute="trailing" secondItem="09e-Uw-LdI" secondAttribute="trailing" id="RKH-1F-On3"/>
+                            <constraint firstItem="2MN-xb-bz1" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="32" id="Z4g-3n-XQa"/>
+                            <constraint firstItem="l6n-hQ-UUX" firstAttribute="top" secondItem="2MN-xb-bz1" secondAttribute="bottom" constant="12" id="cDJ-V2-ObW"/>
+                            <constraint firstItem="IX0-XT-5sN" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="cvq-XZ-5lc"/>
+                            <constraint firstItem="l6n-hQ-UUX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="sVF-Eb-zPX"/>
+                            <constraint firstAttribute="trailing" secondItem="l6n-hQ-UUX" secondAttribute="trailing" constant="16" id="v2l-ij-Cxs"/>
+                            <constraint firstItem="IX0-XT-5sN" firstAttribute="top" secondItem="l6n-hQ-UUX" secondAttribute="bottom" constant="16" id="xq6-n6-Pxv"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="baseCardView" destination="IX0-XT-5sN" id="g3l-n3-fHL"/>
                         <outlet property="beneficiaryCard" destination="2MN-xb-bz1" id="6A1-aZ-9nl"/>
+                        <outlet property="featuredCardView" destination="09e-Uw-LdI" id="IKh-mj-pNW"/>
                         <outlet property="monthSelector" destination="l6n-hQ-UUX" id="wIn-KQ-GHs"/>
                     </connections>
                 </viewController>

@@ -54,8 +54,16 @@ extension CGFloat {
     static let mediumMargin: CGFloat = 16.0
     /// Equals to: 24.0
     static let bigMediumMargin: CGFloat = 24.0
+    
+    static let preLargeMargin: CGFloat = 28.0
     /// Equals to: 32.0
     static let largeMargin: CGFloat = 32.0
     /// Equals to: 44.0
     static let defaultArea: CGFloat = 44.0
+}
+
+extension UIColor {
+    static let yellowKit: UIColor = .from(hex: "#ebbf10")
+    static let redKit: UIColor = .from(hex: "#e30613")
+    static let grayKit: UIColor = .from(hex: "#727272")
 }
