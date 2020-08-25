@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  IndividualCardsViewController.swift
 //  SuperDDAIuPay
 //
 //  Created by lucianobohrer on 08/11/2020.

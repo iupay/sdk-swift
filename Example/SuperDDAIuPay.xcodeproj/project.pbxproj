@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		4C4D482E80C7BEAF2D9D23CD /* Pods_SuperDDAIuPay_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6E1073427818463C6F020C /* Pods_SuperDDAIuPay_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACD81AFB9204008FA782 /* IndividualCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* IndividualCardsViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		AD24482324F03B64004930B8 /* CardsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD24482224F03B64004930B8 /* CardsCollectionViewController.swift */; };
 		C4748E2C7C336CA2F2AF65E5 /* Pods_SuperDDAIuPay_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22330849057DB64B32EF0D /* Pods_SuperDDAIuPay_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +37,7 @@
 		607FACD01AFB9204008FA782 /* SuperDDAIuPay_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperDDAIuPay_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* IndividualCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualCardsViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		77BD46168E2784BA30601603 /* Pods-SuperDDAIuPay_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperDDAIuPay_Tests.release.xcconfig"; path = "Target Support Files/Pods-SuperDDAIuPay_Tests/Pods-SuperDDAIuPay_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AD24482224F03B64004930B8 /* CardsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewController.swift; sourceTree = "<group>"; };
 		B47D36D02FB59DA9732C8FA2 /* Pods-SuperDDAIuPay_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperDDAIuPay_Example.release.xcconfig"; path = "Target Support Files/Pods-SuperDDAIuPay_Example/Pods-SuperDDAIuPay_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BA22330849057DB64B32EF0D /* Pods_SuperDDAIuPay_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperDDAIuPay_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A720A875D3BDDB941F2999 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -95,7 +97,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				ADFD772E24E380D000D0AFD0 /* Assets */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				607FACD71AFB9204008FA782 /* IndividualCardsViewController.swift */,
+				AD24482224F03B64004930B8 /* CardsCollectionViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -345,7 +348,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				607FACD81AFB9204008FA782 /* IndividualCardsViewController.swift in Sources */,
+				AD24482324F03B64004930B8 /* CardsCollectionViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

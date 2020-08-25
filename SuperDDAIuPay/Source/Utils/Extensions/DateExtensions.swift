@@ -20,6 +20,10 @@ extension Date {
         return Calendar.current.component(.month, from: self)
     }
     
+    var getDay: Int {
+        return Calendar.current.component(.day, from: self)
+    }
+    
     var getMonthName: String {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "pt-BR")

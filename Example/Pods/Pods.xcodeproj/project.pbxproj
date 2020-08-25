@@ -135,6 +135,8 @@
 		A733988268C909A487F490BE5D821C62 /* UIImageView+Valley.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD117BF849C3841FDEC874FD91916F7A /* UIImageView+Valley.swift */; };
 		A88EE86FB2E0668E83F7780B697A9FB5 /* MotionProgressRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5DA0089113FC8CDF68B12C1DD59864 /* MotionProgressRunner.swift */; };
 		ABDE93CFDAA758B83C10246DB8D09907 /* Material+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69629874900D8C9E7C26911B46EA975 /* Material+Array.swift */; };
+		AD24482624F03CCB004930B8 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD24482524F03CCB004930B8 /* CardListView.swift */; };
+		AD24482824F03D17004930B8 /* CardCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD24482724F03D17004930B8 /* CardCollectionCell.swift */; };
 		AD6F7DB824E6233000B787BE /* MonthSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F7DB724E6233000B787BE /* MonthSelectorView.swift */; };
 		AD6F7DBA24E62A6200B787BE /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F7DB924E62A6200B787BE /* DateExtensions.swift */; };
 		ADBAA2D124ECBF9E0078C1EA /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBAA2D024ECBF9E0078C1EA /* Models.swift */; };
@@ -438,6 +440,8 @@
 		AB0B2BD130F0CB5D0E2D379BC08890B1 /* MotionViewOrderStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionViewOrderStrategy.swift; path = Sources/MotionViewOrderStrategy.swift; sourceTree = "<group>"; };
 		AB90FB0B2E2D73008C92B5A9659F3A98 /* MotionCorePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionCorePreprocessor.swift; path = Sources/Preprocessors/MotionCorePreprocessor.swift; sourceTree = "<group>"; };
 		AD117BF849C3841FDEC874FD91916F7A /* UIImageView+Valley.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Valley.swift"; path = "Valley/Source/Extensions/UIImageView+Valley.swift"; sourceTree = "<group>"; };
+		AD24482524F03CCB004930B8 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
+		AD24482724F03D17004930B8 /* CardCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionCell.swift; sourceTree = "<group>"; };
 		AD6F7DB724E6233000B787BE /* MonthSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthSelectorView.swift; sourceTree = "<group>"; };
 		AD6F7DB924E62A6200B787BE /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		ADBAA2D024ECBF9E0078C1EA /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
@@ -803,6 +807,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AD24482424F03C8A004930B8 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				AD24482524F03CCB004930B8 /* CardListView.swift */,
+				AD24482724F03D17004930B8 /* CardCollectionCell.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
 		ADBC5E1324E9DDFF00CC0317 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -994,6 +1007,7 @@
 		E81C786E5514C5C146061F4B3E8E5D0C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				AD24482424F03C8A004930B8 /* Collection */,
 				ADBC5E1624EAFCAF00CC0317 /* Cards */,
 				AD6F7DB724E6233000B787BE /* MonthSelectorView.swift */,
 				ADBAA2D024ECBF9E0078C1EA /* Models.swift */,
@@ -1429,8 +1443,10 @@
 				ADBC5E1A24EB147600CC0317 /* UIViewExtensions.swift in Sources */,
 				ADBC5E1824EAFEBC00CC0317 /* UIColorExtensions.swift in Sources */,
 				67B46B1E4F6E736B0DDE68A859768365 /* NunitoSans-Regular.ttf in Sources */,
+				AD24482624F03CCB004930B8 /* CardListView.swift in Sources */,
 				ADBC5E0F24E887A300CC0317 /* BaseCardView.swift in Sources */,
 				AD6F7DB824E6233000B787BE /* MonthSelectorView.swift in Sources */,
+				AD24482824F03D17004930B8 /* CardCollectionCell.swift in Sources */,
 				AD6F7DBA24E62A6200B787BE /* DateExtensions.swift in Sources */,
 				D0284F7999A26B0BF0D41DC0917AF5A5 /* NunitoSans-SemiBold.ttf in Sources */,
 				2380AE984C58316238FBC552C2190146 /* DesignAtoms.swift in Sources */,

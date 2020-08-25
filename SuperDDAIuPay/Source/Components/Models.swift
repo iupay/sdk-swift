@@ -5,12 +5,42 @@
 //  Created by Luciano Bohrer on 19/08/2020.
 //
 
+// MARK: - CardItem
+public struct CardItem {
+    var barColor: UIColor
+    var cardTitle: String?
+    var dueDate: Date
+    var isPaid: Bool
+    var type: BaseCardType
+    var amount: Double
+    
+    public init(barColor: UIColor,
+                cardTitle: String?,
+                dueDate: Date,
+                isPaid: Bool,
+                type: BaseCardType,
+                amount: Double) {
+        self.barColor = barColor
+        self.cardTitle = cardTitle
+        self.dueDate = dueDate
+        self.isPaid = isPaid
+        self.type = type
+        self.amount = amount
+    }
+    
+    func formattedDate() -> String {
+        return "\(self.dueDate.getDay) \(self.dueDate.getMonthName)".uppercased()
+    }
+}
+
+
+// MARK: BaseCardType ENUM
 public enum BaseCardType {
     case netflix
     case nubank
     case lightbill(flag: BillFlagStatus)
     case spotify
-    case standard(image: String?)
+    case standard(imageUrl: String)
     
     var image: UIImage? {
         switch self {

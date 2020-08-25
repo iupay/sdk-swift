@@ -183,8 +183,8 @@ public class BaseCardView: UIView {
         
         switch settings.type {
         case .standard(let image):
-            guard let url = image else { return }
-            self.imageView.valleyImage(url: url, transition: .curveEaseIn,
+            guard !image.isEmpty else { return }
+            self.imageView.valleyImage(url: image, transition: .curveEaseIn,
                                        onSuccess: { [weak self] (image) in
                 self?.imageView.image = image.resize(toHeight: .preLargeMargin)
                 self?.imageView.widthAnchor.constraint(equalToConstant: self?.imageView.image?.size.width ?? .largeMargin).isActive = true
@@ -342,7 +342,7 @@ public struct BaseConfig {
     var imageUrl: String? = nil
     var featured: Bool = false
     var featuredColor: UIColor? = nil
-    var type: BaseCardType = .standard(image: nil)
+    var type: BaseCardType = .standard(imageUrl: "")
     
     public init(barColor: UIColor,
          dueText: String,
@@ -359,7 +359,7 @@ public struct BaseConfig {
          imageUrl: String? = nil,
          featured: Bool = false,
          featuredColor: UIColor? = nil,
-         type: BaseCardType = .standard(image: nil)) {
+         type: BaseCardType = .standard(imageUrl: "")) {
         self.barColor = barColor
         self.dueText = dueText
         self.cardTextColor = cardTextColor

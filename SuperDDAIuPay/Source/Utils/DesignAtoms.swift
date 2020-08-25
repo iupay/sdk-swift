@@ -66,4 +66,5 @@ extension UIColor {
     static let yellowKit: UIColor = .from(hex: "#ebbf10")
     static let redKit: UIColor = .from(hex: "#e30613")
     static let grayKit: UIColor = .from(hex: "#727272")
+    static let lightGrayKit: UIColor = .from(hex: "#7a7a7b")
 }

@@ -1,46 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xzv-Ri-Wfo">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Cards and Month selector-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SuperDDAIuPay_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="IndividualCardsViewController" customModule="SuperDDAIuPay_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2MN-xb-bz1" customClass="BeneficiaryCardView" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="16" y="32" width="343" height="125"/>
+                                <rect key="frame" x="16" y="82" width="568" height="125"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="bPd-lm-M8S"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l6n-hQ-UUX" customClass="MonthSelectorView" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="16" y="169" width="343" height="48"/>
+                                <rect key="frame" x="16" y="219" width="568" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Xe2-kZ-tMG"/>
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IX0-XT-5sN" customClass="BaseCardView" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="16" y="233" width="343" height="125"/>
+                                <rect key="frame" x="20" y="283" width="560" height="125"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="5wH-vc-72z"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09e-Uw-LdI" customClass="BaseCardView" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="0.0" y="378" width="375" height="160"/>
+                                <rect key="frame" x="0.0" y="428" width="600" height="160"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="goF-6A-iNd"/>
@@ -63,6 +61,7 @@
                             <constraint firstItem="IX0-XT-5sN" firstAttribute="top" secondItem="l6n-hQ-UUX" secondAttribute="bottom" constant="16" id="xq6-n6-Pxv"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Cards and Month selector" id="z6f-JB-J3H"/>
                     <connections>
                         <outlet property="baseCardView" destination="IX0-XT-5sN" id="g3l-n3-fHL"/>
                         <outlet property="beneficiaryCard" destination="2MN-xb-bz1" id="6A1-aZ-9nl"/>
@@ -72,7 +71,134 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="2036" y="-743.47826086956525"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="p7x-ym-1rD">
+            <objects>
+                <tableViewController id="Xcp-uB-etc" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="i0Y-Nn-bNR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <sections>
+                            <tableViewSection id="qhJ-lM-XkH">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="9Ul-iO-N2f">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Ul-iO-N2f" id="BjZ-OS-ora">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Individual cards and month selector" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yc-Gw-ieF">
+                                                    <rect key="frame" x="20" y="11" width="560" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="8Yc-Gw-ieF" secondAttribute="trailing" id="16p-Go-YhP"/>
+                                                <constraint firstItem="8Yc-Gw-ieF" firstAttribute="leading" secondItem="BjZ-OS-ora" secondAttribute="leadingMargin" id="FpQ-vD-6Sq"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="8Yc-Gw-ieF" secondAttribute="bottom" id="KsR-v3-bFE"/>
+                                                <constraint firstItem="8Yc-Gw-ieF" firstAttribute="top" secondItem="BjZ-OS-ora" secondAttribute="topMargin" id="kZu-aH-wma"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="vXZ-lx-hvc" kind="show" id="vNe-VU-JvY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Khb-YU-KCJ">
+                                        <rect key="frame" x="0.0" y="71.5" width="600" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Khb-YU-KCJ" id="rsn-nM-gxY">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card collection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hE2-ua-7BD">
+                                                    <rect key="frame" x="20" y="11" width="560" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hE2-ua-7BD" secondAttribute="bottom" id="51t-0l-Nn4"/>
+                                                <constraint firstItem="hE2-ua-7BD" firstAttribute="top" secondItem="rsn-nM-gxY" secondAttribute="topMargin" id="54M-RK-fMw"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hE2-ua-7BD" secondAttribute="trailing" id="bue-3p-Pnc"/>
+                                                <constraint firstItem="hE2-ua-7BD" firstAttribute="leading" secondItem="rsn-nM-gxY" secondAttribute="leadingMargin" id="p50-Kc-OEf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hrl-2Q-kgt" kind="show" id="s3i-de-UUg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Xcp-uB-etc" id="WO0-Tq-gHG"/>
+                            <outlet property="delegate" destination="Xcp-uB-etc" id="gSX-iD-82o"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="CPD-gw-pjK"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uED-1N-AA1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="930.39999999999998" y="-556.37181409295351"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ue0-2P-Zxb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xzv-Ri-Wfo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="j7z-A2-d0g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xcp-uB-etc" kind="relationship" relationship="rootViewController" id="CcD-zC-y5W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eeY-Uz-CcW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8.8000000000000007" y="-556.37181409295351"/>
+        </scene>
+        <!--Card Collection-->
+        <scene sceneID="kJi-ES-JdB">
+            <objects>
+                <viewController id="hrl-2Q-kgt" customClass="CardsCollectionViewController" customModule="SuperDDAIuPay_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JcQ-KX-bea"/>
+                        <viewControllerLayoutGuide type="bottom" id="lop-in-Hz3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yHw-FZ-Bqf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bcj-qO-erX" customClass="CardListView" customModule="SuperDDAIuPay">
+                                <rect key="frame" x="0.0" y="98" width="600" height="255"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bcj-qO-erX" firstAttribute="leading" secondItem="yHw-FZ-Bqf" secondAttribute="leading" id="LdK-Gw-JuL"/>
+                            <constraint firstItem="bcj-qO-erX" firstAttribute="top" secondItem="JcQ-KX-bea" secondAttribute="bottom" constant="48" id="Qq0-3C-FcS"/>
+                            <constraint firstAttribute="trailing" secondItem="bcj-qO-erX" secondAttribute="trailing" id="Wjd-6Z-Erl"/>
+                            <constraint firstItem="lop-in-Hz3" firstAttribute="top" secondItem="bcj-qO-erX" secondAttribute="bottom" constant="247" id="neM-Hx-75a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Card Collection" id="4rg-ue-38K"/>
+                    <connections>
+                        <outlet property="cardsView" destination="bcj-qO-erX" id="KJa-2i-74u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dnf-w1-jyP" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2036" y="-27.436281859070466"/>
         </scene>
     </scenes>
 </document>
