@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		AD24482324F03B64004930B8 /* CardsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD24482224F03B64004930B8 /* CardsCollectionViewController.swift */; };
+		AD84E49724F4AD070066AF12 /* SelectorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD84E49624F4AD070066AF12 /* SelectorsViewController.swift */; };
 		C4748E2C7C336CA2F2AF65E5 /* Pods_SuperDDAIuPay_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22330849057DB64B32EF0D /* Pods_SuperDDAIuPay_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		77BD46168E2784BA30601603 /* Pods-SuperDDAIuPay_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperDDAIuPay_Tests.release.xcconfig"; path = "Target Support Files/Pods-SuperDDAIuPay_Tests/Pods-SuperDDAIuPay_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AD24482224F03B64004930B8 /* CardsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewController.swift; sourceTree = "<group>"; };
+		AD84E49624F4AD070066AF12 /* SelectorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorsViewController.swift; sourceTree = "<group>"; };
 		B47D36D02FB59DA9732C8FA2 /* Pods-SuperDDAIuPay_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperDDAIuPay_Example.release.xcconfig"; path = "Target Support Files/Pods-SuperDDAIuPay_Example/Pods-SuperDDAIuPay_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BA22330849057DB64B32EF0D /* Pods_SuperDDAIuPay_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperDDAIuPay_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A720A875D3BDDB941F2999 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				ADFD772E24E380D000D0AFD0 /* Assets */,
 				607FACD71AFB9204008FA782 /* IndividualCardsViewController.swift */,
 				AD24482224F03B64004930B8 /* CardsCollectionViewController.swift */,
+				AD84E49624F4AD070066AF12 /* SelectorsViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -351,6 +354,7 @@
 				607FACD81AFB9204008FA782 /* IndividualCardsViewController.swift in Sources */,
 				AD24482324F03B64004930B8 /* CardsCollectionViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				AD84E49724F4AD070066AF12 /* SelectorsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

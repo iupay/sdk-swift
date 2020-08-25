@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xzv-Ri-Wfo">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,31 +16,25 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2MN-xb-bz1" customClass="BeneficiaryCardView" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="16" y="82" width="568" height="125"/>
+                                <rect key="frame" x="16" y="76" width="343" height="125"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="bPd-lm-M8S"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l6n-hQ-UUX" customClass="MonthSelectorView" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="16" y="219" width="568" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="Xe2-kZ-tMG"/>
-                                </constraints>
-                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IX0-XT-5sN" customClass="BaseCardView" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="20" y="283" width="560" height="125"/>
+                                <rect key="frame" x="16" y="277" width="343" height="125"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="5wH-vc-72z"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09e-Uw-LdI" customClass="BaseCardView" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="0.0" y="428" width="600" height="160"/>
+                                <rect key="frame" x="0.0" y="422" width="375" height="160"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="goF-6A-iNd"/>
@@ -48,17 +44,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="09e-Uw-LdI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="2UK-kU-bCS"/>
+                            <constraint firstItem="IX0-XT-5sN" firstAttribute="top" secondItem="2MN-xb-bz1" secondAttribute="bottom" constant="76" id="2zw-La-Iea"/>
                             <constraint firstItem="09e-Uw-LdI" firstAttribute="top" secondItem="IX0-XT-5sN" secondAttribute="bottom" constant="20" id="5L2-D4-za6"/>
                             <constraint firstAttribute="trailing" secondItem="2MN-xb-bz1" secondAttribute="trailing" constant="16" id="8cK-5f-AYU"/>
                             <constraint firstItem="IX0-XT-5sN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="HS8-o1-f59"/>
                             <constraint firstItem="2MN-xb-bz1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="Lfl-nV-hNu"/>
                             <constraint firstAttribute="trailing" secondItem="09e-Uw-LdI" secondAttribute="trailing" id="RKH-1F-On3"/>
                             <constraint firstItem="2MN-xb-bz1" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="32" id="Z4g-3n-XQa"/>
-                            <constraint firstItem="l6n-hQ-UUX" firstAttribute="top" secondItem="2MN-xb-bz1" secondAttribute="bottom" constant="12" id="cDJ-V2-ObW"/>
                             <constraint firstItem="IX0-XT-5sN" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="cvq-XZ-5lc"/>
-                            <constraint firstItem="l6n-hQ-UUX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="sVF-Eb-zPX"/>
-                            <constraint firstAttribute="trailing" secondItem="l6n-hQ-UUX" secondAttribute="trailing" constant="16" id="v2l-ij-Cxs"/>
-                            <constraint firstItem="IX0-XT-5sN" firstAttribute="top" secondItem="l6n-hQ-UUX" secondAttribute="bottom" constant="16" id="xq6-n6-Pxv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Cards and Month selector" id="z6f-JB-J3H"/>
@@ -66,33 +59,32 @@
                         <outlet property="baseCardView" destination="IX0-XT-5sN" id="g3l-n3-fHL"/>
                         <outlet property="beneficiaryCard" destination="2MN-xb-bz1" id="6A1-aZ-9nl"/>
                         <outlet property="featuredCardView" destination="09e-Uw-LdI" id="IKh-mj-pNW"/>
-                        <outlet property="monthSelector" destination="l6n-hQ-UUX" id="wIn-KQ-GHs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2036" y="-743.47826086956525"/>
+            <point key="canvasLocation" x="1790" y="-1571"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="p7x-ym-1rD">
             <objects>
                 <tableViewController id="Xcp-uB-etc" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="i0Y-Nn-bNR">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <sections>
                             <tableViewSection id="qhJ-lM-XkH">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="9Ul-iO-N2f">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Ul-iO-N2f" id="BjZ-OS-ora">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Individual cards and month selector" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yc-Gw-ieF">
-                                                    <rect key="frame" x="20" y="11" width="560" height="22"/>
+                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -110,14 +102,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Khb-YU-KCJ">
-                                        <rect key="frame" x="0.0" y="71.5" width="600" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="71.5" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Khb-YU-KCJ" id="rsn-nM-gxY">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card collection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hE2-ua-7BD">
-                                                    <rect key="frame" x="20" y="11" width="560" height="22"/>
+                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -132,6 +124,31 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="hrl-2Q-kgt" kind="show" id="s3i-de-UUg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="lcm-vF-yU4">
+                                        <rect key="frame" x="0.0" y="115" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lcm-vF-yU4" id="n0C-cU-VY0">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selectors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlZ-nl-AtP">
+                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="zlZ-nl-AtP" secondAttribute="trailing" id="0f6-Ii-N22"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="zlZ-nl-AtP" secondAttribute="bottom" id="WAH-gE-EoX"/>
+                                                <constraint firstItem="zlZ-nl-AtP" firstAttribute="top" secondItem="n0C-cU-VY0" secondAttribute="topMargin" id="ZLk-rs-SnP"/>
+                                                <constraint firstItem="zlZ-nl-AtP" firstAttribute="leading" secondItem="n0C-cU-VY0" secondAttribute="leadingMargin" id="a44-ZV-QvA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="rwp-WT-OZF" kind="show" id="s2y-z5-ozv"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -175,11 +192,11 @@
                         <viewControllerLayoutGuide type="bottom" id="lop-in-Hz3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yHw-FZ-Bqf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bcj-qO-erX" customClass="CardListView" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="0.0" y="98" width="600" height="255"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="328"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                         </subviews>
@@ -198,7 +215,53 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dnf-w1-jyP" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2036" y="-27.436281859070466"/>
+            <point key="canvasLocation" x="1791" y="-811"/>
+        </scene>
+        <!--Selectors-->
+        <scene sceneID="9Ct-1u-UxL">
+            <objects>
+                <viewController id="rwp-WT-OZF" customClass="SelectorsViewController" customModule="SuperDDAIuPay_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5HS-U8-y1u"/>
+                        <viewControllerLayoutGuide type="bottom" id="tVC-eg-o29"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hit-sY-qsE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AHM-S4-uIu" customClass="TabSelectorView" customModule="SuperDDAIuPay">
+                                <rect key="frame" x="0.0" y="63" width="375" height="46"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Ipg-1T-OId"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dyb-Qf-OmY" customClass="MonthSelectorView" customModule="SuperDDAIuPay">
+                                <rect key="frame" x="0.0" y="109" width="375" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="Cuo-mS-t1i"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dyb-Qf-OmY" firstAttribute="top" secondItem="AHM-S4-uIu" secondAttribute="bottom" id="A52-gK-gGh"/>
+                            <constraint firstItem="AHM-S4-uIu" firstAttribute="leading" secondItem="Hit-sY-qsE" secondAttribute="leading" id="W71-DW-tmF"/>
+                            <constraint firstItem="dyb-Qf-OmY" firstAttribute="leading" secondItem="AHM-S4-uIu" secondAttribute="leading" id="aUB-JO-WMb"/>
+                            <constraint firstItem="dyb-Qf-OmY" firstAttribute="trailing" secondItem="AHM-S4-uIu" secondAttribute="trailing" id="c3h-DZ-dER"/>
+                            <constraint firstItem="AHM-S4-uIu" firstAttribute="top" secondItem="5HS-U8-y1u" secondAttribute="bottom" constant="19" id="kbu-tG-hXe"/>
+                            <constraint firstAttribute="trailing" secondItem="AHM-S4-uIu" secondAttribute="trailing" id="rJl-9F-Qcf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Selectors" id="cT8-5N-IQ8"/>
+                    <connections>
+                        <outlet property="monthSelector" destination="dyb-Qf-OmY" id="ZJi-XQ-pgC"/>
+                        <outlet property="tabSelector" destination="AHM-S4-uIu" id="ZcV-iF-UTy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jkD-4j-xbE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1789.5999999999999" y="-54.422788605697157"/>
         </scene>
     </scenes>
 </document>

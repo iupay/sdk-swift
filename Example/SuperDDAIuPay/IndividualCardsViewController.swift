@@ -12,7 +12,6 @@ import SuperDDAIuPay
 class IndividualCardsViewController: UIViewController {
 
     @IBOutlet weak var beneficiaryCard: BeneficiaryCardView!
-    @IBOutlet weak var monthSelector: MonthSelectorView!
     @IBOutlet weak var baseCardView: BaseCardView!
     @IBOutlet weak var featuredCardView: BaseCardView!
 
@@ -36,12 +35,6 @@ class IndividualCardsViewController: UIViewController {
         
         self.beneficiaryCard.handleSelectorChange = { [weak self] isOn in
             self?.presentAlert(withTitle: "Toggle", message: "You set toggle to \(isOn)")
-        }
-        
-        
-        // MARK: - Month Selector
-        self.monthSelector.handleMonthChange = { [weak self] month in
-            self?.presentAlert(withTitle: "Month Tab", message: "Month selected \(month)")
         }
         
         // MARK: Base Card View
