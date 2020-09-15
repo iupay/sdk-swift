@@ -34,7 +34,7 @@ public struct CardItem {
 }
 
 
-// MARK: BaseCardType ENUM
+// MARK: - BaseCardType ENUM
 public enum BaseCardType {
     case netflix
     case nubank
@@ -72,4 +72,30 @@ public enum BaseCardType {
             }
         }
     }
+}
+
+// MARK: - Payment
+public struct Payment: Codable {
+    let companyLogo: String
+    let companyName, cnpj, cardNumber: String
+    let isAutomaticDebit, isFromIuPay, isUserAdded, authorizedLimit: Bool
+    let autoPayment: Bool
+    let cardHolderName: String
+    let paymentHistory: [PaymentHistory]
+    let billDetails: BillDetails
+}
+
+// MARK: - BillDetails
+public struct BillDetails: Codable {
+    let barCode, billDate, dueDate, emissionDate: String
+    let interestInstallmentFine, interestInstallmentRate, interestInstallmentRateCET, interestRate: Int
+    let interestRateCET: Double
+    let minimumPaymentValue, totalLimitValue, totalWithdrawLimitValue: Int
+    let value: Double
+}
+
+// MARK: - PaymentHistory
+public struct PaymentHistory: Codable {
+    let date: String
+    let value: Double
 }

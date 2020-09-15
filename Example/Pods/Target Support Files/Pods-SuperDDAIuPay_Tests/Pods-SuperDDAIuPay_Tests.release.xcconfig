@@ -1,7 +1,7 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Material" "${PODS_CONFIGURATION_BUILD_DIR}/Motion" "${PODS_CONFIGURATION_BUILD_DIR}/SuperDDAIuPay" "${PODS_CONFIGURATION_BUILD_DIR}/Valley"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Material" "${PODS_CONFIGURATION_BUILD_DIR}/Motion" "${PODS_CONFIGURATION_BUILD_DIR}/RadioGroup" "${PODS_CONFIGURATION_BUILD_DIR}/SuperDDAIuPay" "${PODS_CONFIGURATION_BUILD_DIR}/SweeterSwift" "${PODS_CONFIGURATION_BUILD_DIR}/Valley"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Material/Material.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Motion/Motion.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SuperDDAIuPay/SuperDDAIuPay.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Valley/Valley.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "Foundation" -framework "Material" -framework "Motion" -framework "SuperDDAIuPay" -framework "UIKit" -framework "Valley"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Material/Material.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Motion/Motion.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/RadioGroup/RadioGroup.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SuperDDAIuPay/SuperDDAIuPay.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SweeterSwift/SweeterSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Valley/Valley.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "Foundation" -framework "Material" -framework "Motion" -framework "RadioGroup" -framework "SuperDDAIuPay" -framework "SweeterSwift" -framework "UIKit" -framework "Valley" -weak_framework "SwiftUI"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

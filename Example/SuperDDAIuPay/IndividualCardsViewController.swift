@@ -34,7 +34,11 @@ class IndividualCardsViewController: UIViewController {
                                         type: .monthly))
         
         self.beneficiaryCard.handleSelectorChange = { [weak self] isOn in
-            self?.presentAlert(withTitle: "Toggle", message: "You set toggle to \(isOn)")
+            guard let self = self, isOn else { return }
+            BeneficiaryModalViewController.showModal(from: self)
+//            PaymentLimitModalViewController.showModal(from: self) { [weak self] (selected, query) in
+//                self?.presentAlert(withTitle: "Result", message: "Selected: \(selected)\nQuery:\(String(describing: query))")
+//            }
         }
         
         // MARK: Base Card View

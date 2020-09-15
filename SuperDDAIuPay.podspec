@@ -32,6 +32,7 @@ TODO: Add long description of the pod here.
   s.swift_versions = '5.0'
   s.dependency 'Valley'
   s.dependency 'Material'
+  s.dependency 'RadioGroup'
   s.source_files  = 'SuperDDAIuPay/Source/**/*'
   s.resources = "SuperDDAIuPay/**/*.{ttf}"
 
