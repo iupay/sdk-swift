@@ -34,8 +34,9 @@ class IndividualCardsViewController: UIViewController {
                                         type: .monthly))
         
         self.beneficiaryCard.handleSelectorChange = { [weak self] isOn in
-            guard let self = self, isOn else { return }
-            BeneficiaryModalViewController.showModal(from: self)
+            guard let self = self, isOn, let payment = self.generatePaymentData() else { return }
+            
+            BillDetailsModalViewController.showModal(from: self, payment: payment,  highlightColor: .systemRed, type: .benificiary)
 //            PaymentLimitModalViewController.showModal(from: self) { [weak self] (selected, query) in
 //                self?.presentAlert(withTitle: "Result", message: "Selected: \(selected)\nQuery:\(String(describing: query))")
 //            }
@@ -73,7 +74,18 @@ class IndividualCardsViewController: UIViewController {
                                         featuredColor: UIColor(red: 30/255, green: 215/255, blue: 96/255, alpha: 0.7),
                                         type: .lightbill(flag: .yellow)))
     }
-
+    
+    
+    private func generatePaymentData() -> Payment? {
+        guard
+            let url = Bundle.main.url(forResource: "PaymentDetailsData", withExtension: "json"),
+            let data = try? Data(contentsOf: url),
+            let payment = try? JSONDecoder().decode(Payment.self, from: data)
+        else {
+            return nil
+        }
+        return payment
+    }
 }
 
 extension UIViewController {

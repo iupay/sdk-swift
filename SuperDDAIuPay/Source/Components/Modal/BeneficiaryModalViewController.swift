@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class BeneficiaryModalViewController: UIViewController, UIGestureRecognizerDelegate {
+public class BillDetailsModalViewController: UIViewController, UIGestureRecognizerDelegate {
     
     private lazy var contentView: UIView = {
         $0.backgroundColor = .white
@@ -75,6 +75,7 @@ public class BeneficiaryModalViewController: UIViewController, UIGestureRecogniz
     
     public func setup(data: Payment, highlightColor: UIColor) {
         
+        
     }
     
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
@@ -98,9 +99,9 @@ public class BeneficiaryModalViewController: UIViewController, UIGestureRecogniz
     }
 }
 
-extension BeneficiaryModalViewController {
+extension BillDetailsModalViewController {
     public static func showModal(from vc: UIViewController)  {
-        let modalViewController = BeneficiaryModalViewController()
+        let modalViewController = BillDetailsModalViewController()
         modalViewController.modalPresentationStyle = .overCurrentContext
         vc.present(modalViewController, animated: false, completion: nil)
     }

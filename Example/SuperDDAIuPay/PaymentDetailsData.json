@@ -1,0 +1,51 @@
+{
+  "companyLogo": "https://cdn2.downdetector.com/static/uploads/logo/Nubank_logo.png",
+  "companyName": "Nu Pagamentos S.A.",
+  "cnpj": "18.236.120/0001-58",
+  "cardNumber": "5162 **** **** 9090",
+  "isAutomaticDebit": true,
+  "automaticDebitBankName": "Banco Itaú",
+  "isFromIuPay": true,
+  "isUserAdded": false,
+  "authorizedLimit": false,
+  "autoPayment": false,
+  "cardHolderName": "Roberto de Oliveira Santos",
+  "cardHolderAddress": "Avenida Sete de Setembro 32/1101 Icaraí - Niterói - RJ",
+  "paymentHistory": [
+    {
+      "date": "2020-01",
+      "value": 2589.99
+    },
+    {
+      "date": "2020-02",
+      "value": 1330.45
+    },
+    {
+      "date": "2020-03",
+      "value": 998.22
+    },
+    {
+      "date": "2020-04",
+      "value": 1660.89
+    },
+    {
+      "date": "2020-05",
+      "value": 1289.55
+    }
+  ],
+  "billDetails": {
+    "barCode": "34191.09065 44830. 1285 40141.906 8 00001.83120.59475",
+    "billDate": "2020-06",
+    "dueDate": "2020-06-19T23:00:00.000Z",
+    "emissionDate": "2020-06-06T23:00:00.000Z",
+    "interestInstallmentFine": 22,
+    "interestInstallmentRate": 12,
+    "interestInstallmentRateCET": 15,
+    "interestRate": 14,
+    "interestRateCET": 385.17,
+    "minimumPaymentValue": 400,
+    "totalLimitValue": 1200,
+    "totalWithdrawLimitValue": 600,
+    "value": 1230.89
+  }
+}

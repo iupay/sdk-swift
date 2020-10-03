@@ -143,7 +143,7 @@ public class BaseCardView: UIView {
         
         let focusedAttribute = [
             NSAttributedString.Key.font: UIFont.customFont(ofSize: 17, weight: .bold),
-            NSAttributedString.Key.foregroundColor: UIColor.from(hex: "#7a7a7b")
+            NSAttributedString.Key.foregroundColor: UIColor.lightGrayKit
         ]
         
         let totalAmount = NSAttributedString(string: String(format: "%2.f", settings.amount), attributes: focusedAttribute as [NSAttributedString.Key : Any])
