@@ -12,8 +12,8 @@ public class PaidDetailsViewController: UIViewController {
     @objc public var handleReceiptClick: (() -> ())?
     
     private var beneficiaryName, navTitle, imageUrl, paymentMessage: String?
-    private var paidDate: Date? = Date()
-    private var dueDate: Date? = Date()
+    private var paidDate: Date?
+    private var dueDate: Date?
     private var paymentAmount: Double?
     private var baseColor: UIColor = .red
     private var receiptAvailable: Bool = false

@@ -9,14 +9,15 @@ import UIKit
 
 public class ReceiptViewController: UIViewController {
 
-    @objc public var handleButtonClick: (() -> ())?
+    @objc public var handleShareClick: (() -> ())?
+    @objc public var handleOptionsClick: (() -> ())?
     
     private var cedentName: String?
     private var cnpj: String?
     private var payerName: String?
     private var barcode: String?
     private var dueDate: Date?
-    private var paidDate: String?
+    private var paidDate: Date?
     private var value: Double?
     private var discount: Double?
     private var interest: Double?
@@ -36,9 +37,23 @@ public class ReceiptViewController: UIViewController {
     private lazy var titleLabel: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.font = UIFont.customFont(ofSize: 15, weight: .regular)
+        $0.text = "Comprovante"
         $0.textColor = .darkGray
         return $0
     }(UILabel(frame: .zero))
+    
+    private lazy var dotsButton: UIButton = {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.setImage(UIImage.bundleImage(named: "dots-menu"), for: .normal)
+        $0.addTarget(self, action: #selector(self.handleOptions), for: .touchUpInside)
+        $0.tintColor = .darkGray
+        return $0
+    }(UIButton(frame: .zero))
+    
+    private lazy var scrollView: UIScrollView = {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        return $0
+    }(UIScrollView(frame: .zero))
     
     private lazy var stackView: UIStackView = {
         $0.translatesAutoresizingMaskIntoConstraints = false
@@ -51,7 +66,7 @@ public class ReceiptViewController: UIViewController {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.layer.cornerRadius = 8
         $0.titleLabel?.font = UIFont.customFont(ofSize: 16, weight: .bold)
-        $0.addTarget(self, action: #selector(self.handleClick), for: .touchUpInside)
+        $0.addTarget(self, action: #selector(self.handleShare), for: .touchUpInside)
         return $0
     }(UIButton(frame: .zero))
     
@@ -60,7 +75,7 @@ public class ReceiptViewController: UIViewController {
          payerName: String,
          barcode: String,
          dueDate: Date,
-         paidDate: String,
+         paidDate: Date,
          value: Double,
          discount: Double,
          interest: Double,
@@ -70,7 +85,19 @@ public class ReceiptViewController: UIViewController {
          baseColor: UIColor) {
         
         super.init(nibName: nil, bundle: nil)
-        self.setContent
+        self.setContent(cedentName: cedentName,
+                        cnpj: cnpj,
+                        payerName: payerName,
+                        barcode: barcode,
+                        dueDate: dueDate,
+                        paidDate: paidDate,
+                        value: value,
+                        discount: discount,
+                        interest: interest,
+                        fine: fine,
+                        chargedValue: chargedValue,
+                        authCode: authCode,
+                        baseColor: baseColor)
     }
     
     required init?(coder: NSCoder) {
@@ -93,8 +120,10 @@ public class ReceiptViewController: UIViewController {
     }
     
     private func setupConstraints() {
-        self.view.addSubview(self.stackView)
+        self.view.addSubview(self.scrollView)
+        self.scrollView.addSubview(self.stackView)
         self.view.addSubview(self.mainButton)
+        self.view.addSubview(self.dotsButton)
         self.view.addSubview(self.backButton)
         self.view.addSubview(self.titleLabel)
         
@@ -106,12 +135,25 @@ public class ReceiptViewController: UIViewController {
         self.titleLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         self.titleLabel.centerYAnchor.constraint(equalTo: self.backButton.centerYAnchor).isActive = true
         self.titleLabel.heightAnchor.constraint(equalToConstant: .largeMargin).isActive = true
-       
-        self.stackView.topAnchor.constraint(equalTo: self.backButton.bottomAnchor, constant: .bigMediumMargin).isActive = true
-        self.stackView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
-        self.stackView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
-        self.stackView.heightAnchor.constraint(equalToConstant: 440).isActive = true
-    
+        
+        self.dotsButton.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -.mediumMargin).isActive = true
+        self.dotsButton.centerYAnchor.constraint(equalTo: self.backButton.centerYAnchor).isActive = true
+        self.dotsButton.heightAnchor.constraint(equalToConstant: .bigMediumMargin).isActive = true
+        self.dotsButton.widthAnchor.constraint(equalToConstant: .bigMediumMargin).isActive = true
+        
+        self.scrollView.topAnchor.constraint(equalTo: self.backButton.bottomAnchor, constant: .bigMediumMargin).isActive = true
+        self.scrollView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
+        self.scrollView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
+        self.scrollView.bottomAnchor.constraint(equalTo: self.mainButton.topAnchor, constant: -.smallestMargin).isActive = true
+        
+        self.stackView.topAnchor.constraint(equalTo: self.scrollView.topAnchor).isActive = true
+        self.stackView.leadingAnchor.constraint(equalTo: self.scrollView.leadingAnchor).isActive = true
+        self.stackView.trailingAnchor.constraint(equalTo: self.scrollView.trailingAnchor).isActive = true
+        self.stackView.bottomAnchor.constraint(equalTo: self.scrollView.bottomAnchor).isActive = true
+        self.stackView.heightAnchor.constraint(equalToConstant: 600).isActive = true
+
+        scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height+300)
+
         self.mainButton.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -.mediumMargin).isActive = true
         self.mainButton.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: .bigMediumMargin).isActive = true
         self.mainButton.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -.bigMediumMargin).isActive = true
@@ -123,6 +165,78 @@ public class ReceiptViewController: UIViewController {
         self.mainButton.setTitleColor(.white, for: .normal)
         self.mainButton.setTitle("Compartilhar Comprovante", for: .normal)
         
+        self.stackView.addArrangedSubview(self.label(caption: "Cedente:",
+                                                     text: cedentName ?? "",
+                                                     sizeCaption: 13,
+                                                     sizeText: 15,
+                                                     textColor: .grayKit))
+        
+        self.stackView.addArrangedSubview(self.label(caption: "CNPJ:",
+                                                     text: cnpj ?? "",
+                                                     sizeCaption: 13,
+                                                     sizeText: 15,
+                                                     textColor: .grayKit))
+        
+        self.stackView.addArrangedSubview(self.label(caption: "Pagador:",
+                                                     text: payerName ?? "",
+                                                     sizeCaption: 13,
+                                                     sizeText: 15,
+                                                     textColor: .grayKit))
+        
+        self.stackView.addArrangedSubview(self.label(caption: "Código de Barras:",
+                                                     text: cedentName ?? "",
+                                                     sizeCaption: 13,
+                                                     sizeText: 15,
+                                                     textColor: .grayKit))
+        
+        self.stackView.addArrangedSubview(self.label(caption: "Data de Vencimento:",
+                                                     text: dueDate?.formatDate(format: "dd/MM/yyyy") ?? "",
+                                                     sizeCaption: 13,
+                                                     sizeText: 15,
+                                                     textColor: .grayKit))
+        
+        self.stackView.addArrangedSubview(self.label(caption: "Data de Pagamento:",
+                                                     text: paidDate?.formatDate(format: "dd/MM/yyyy") ?? "",
+                                                     sizeCaption: 13,
+                                                     sizeText: 15,
+                                                     textColor: .grayKit))
+        
+        self.stackView.addArrangedSubview(self.label(caption: "Valor do Documento:",
+                                                     text: "R$ " + "\(value ?? 0.0)".currencyInputFormatting(),
+                                                     sizeCaption: 13,
+                                                     sizeText: 15,
+                                                     textColor: .grayKit))
+        
+        self.stackView.addArrangedSubview(self.label(caption: "Descontos:",
+                                                     text: String(format: "%.2f", discount ?? 0.0),
+                                                     sizeCaption: 13,
+                                                     sizeText: 15,
+                                                     textColor: .grayKit))
+        
+        self.stackView.addArrangedSubview(self.label(caption: "Juros:",
+                                                     text: String(format: "%.2f", interest ?? 0.0),
+                                                     sizeCaption: 13,
+                                                     sizeText: 15,
+                                                     textColor: .grayKit))
+
+        self.stackView.addArrangedSubview(self.label(caption: "Multa:",
+                                                     text: String(format: "%.2f", fine ?? 0.0),
+                                                     sizeCaption: 13,
+                                                     sizeText: 15,
+                                                     textColor: .grayKit))
+
+        self.stackView.addArrangedSubview(self.label(caption: "Valor Cobrado:",
+                                                     text: "R$ " + "\(chargedValue ?? 0.0)".currencyInputFormatting(),
+                                                     sizeCaption: 13,
+                                                     sizeText: 15,
+                                                     textColor: .grayKit))
+        
+        self.stackView.addArrangedSubview(self.label(caption: "Código de Autenticação:",
+                                                     text: authCode ?? "",
+                                                     sizeCaption: 13,
+                                                     sizeText: 15,
+                                                     textColor: .grayKit))
+
     }
     
     public func setContent(cedentName: String,
@@ -130,7 +244,7 @@ public class ReceiptViewController: UIViewController {
                            payerName: String,
                            barcode: String,
                            dueDate: Date,
-                           paidDate: String,
+                           paidDate: Date,
                            value: Double,
                            discount: Double,
                            interest: Double,
@@ -209,8 +323,12 @@ public class ReceiptViewController: UIViewController {
         return container
     }
 
-    @objc private func handleClick() {
-        self.handleButtonClick?()
+    @objc private func handleShare() {
+        self.handleShareClick?()
+    }
+    
+    @objc private func handleOptions() {
+        self.handleOptionsClick?()
     }
     
     @objc private func closeAction() {

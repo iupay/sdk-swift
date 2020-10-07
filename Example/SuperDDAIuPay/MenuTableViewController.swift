@@ -24,7 +24,7 @@ class MenuTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return 6
     }
 
     /*
@@ -107,6 +107,28 @@ class MenuTableViewController: UITableViewController {
             
             payDetailsVC.handleButtonClick = {
                 MessageModalViewController.showModal(from: self, title: "Agendamento da Conta", message: "O seu pagamento será debitado às 16h do dia de pagamento\n\nVocê pode cancelar o agendamento / pagamento até às 16hs do dia.")
+            }
+        } else if let receiptVC = segue.destination as? ReceiptViewController {
+            receiptVC.setContent(cedentName: "COMPANHIA DE ELETRICIDADE DO RIO DE JANEIRO",
+                                 cnpj: "15.139.629/0001-99",
+                                 payerName: "ROBERTO DE OLIVEIRA SANTOS",
+                                 barcode: "34191.09065 44830. 1285 40141.906 8 00001.83120.59475",
+                                 dueDate: Date(),
+                                 paidDate: Date(),
+                                 value: 223.24,
+                                 discount: 0.0,
+                                 interest: 0.0,
+                                 fine: 0.0,
+                                 chargedValue: 223.24,
+                                 authCode: "A.6DE.DF4.75E.DBB,128",
+                                 baseColor: .systemRed)
+            
+            receiptVC.handleShareClick = {
+                print("SHARE")
+            }
+            
+            receiptVC.handleOptionsClick = {
+                print("OPTIONS")
             }
         }
     }
