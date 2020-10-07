@@ -200,6 +200,28 @@ public class BaseCardView: UIView {
             self.imageView.image = settings.type.image?.resize(toHeight: .largeMargin)
             self.imageView.widthAnchor.constraint(equalToConstant: self.imageView.image?.size.width ?? .largeMargin).isActive = true
         }
+        
+        if case BaseCardType.locked = settings.type {
+            self.imageView.image = settings.type.image?.tint(with: settings.barColor)
+            self.titleLabel.text = "Boleto protegido por senha"
+            self.titleLabel.textColor = settings.barColor
+            self.badgesStackView.isHidden = true
+            
+            [self.dateLabel,
+             self.amountLabel,
+             self.paidLabel,
+             self.cnpjLabel,
+             self.textLabel].forEach { (label) in
+                label.textColor = .lightGrayDarkerBg
+            }
+            
+            self.cnpjLabel.text = "█████"
+            self.textLabel.text = "█████████"
+            self.paidLabel.isHidden = true
+            self.amountLabel.text = "█"
+            self.dateLabel.text = "██"
+            
+        }
     }
     
     public override func layoutSubviews() {

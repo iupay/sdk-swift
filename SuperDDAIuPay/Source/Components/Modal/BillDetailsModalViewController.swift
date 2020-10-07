@@ -1,5 +1,5 @@
 //
-//  BeneficiaryModalViewController.swift
+//  BillDetailsModalViewController.swift
 //  SuperDDAIuPay
 //
 //  Created by Luciano Bohrer on 08/09/2020.

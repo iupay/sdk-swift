@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
   s.resources = "SuperDDAIuPay/**/*.{ttf}"
 
   s.resource_bundles = {
-      'SuperDDAIuPay' => ['SuperDDAIuPay/Source/Assets/*.png']
+      'SuperDDAIuPay' => ['SuperDDAIuPay/Source/Resources/Assets/*.png']
   }
    
   # s.public_header_files = 'Pod/Classes/**/*.h'

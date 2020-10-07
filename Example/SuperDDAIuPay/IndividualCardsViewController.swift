@@ -53,7 +53,7 @@ class IndividualCardsViewController: UIViewController {
                                     amount: 50,
                                     date: "03 Ago",
                                     text: "Tipo de Plano: Premium ULTRA HD",
-                                    type: .netflix))
+                                    type: .locked))
         
         
         // MARK: Base Card View as Featured

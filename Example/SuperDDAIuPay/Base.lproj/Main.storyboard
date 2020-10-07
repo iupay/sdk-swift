@@ -40,6 +40,14 @@
                                     <constraint firstAttribute="height" constant="160" id="goF-6A-iNd"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrw-x0-QHt" customClass="FilterView" customModule="SuperDDAIuPay">
+                                <rect key="frame" x="79.5" y="590" width="216" height="42"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="8BO-xn-tHA"/>
+                                    <constraint firstAttribute="width" constant="216" id="SWX-FV-Fny"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -51,7 +59,9 @@
                             <constraint firstItem="2MN-xb-bz1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="Lfl-nV-hNu"/>
                             <constraint firstAttribute="trailing" secondItem="09e-Uw-LdI" secondAttribute="trailing" id="RKH-1F-On3"/>
                             <constraint firstItem="2MN-xb-bz1" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="32" id="Z4g-3n-XQa"/>
+                            <constraint firstItem="wrw-x0-QHt" firstAttribute="top" secondItem="09e-Uw-LdI" secondAttribute="bottom" constant="8" id="aZg-kR-bNK"/>
                             <constraint firstItem="IX0-XT-5sN" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="cvq-XZ-5lc"/>
+                            <constraint firstItem="wrw-x0-QHt" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="p1o-1D-UPe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Cards and Month selector" id="z6f-JB-J3H"/>
@@ -63,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1790" y="-1571"/>
+            <point key="canvasLocation" x="1789.5999999999999" y="-1571.0644677661171"/>
         </scene>
         <!-- -->
         <scene sceneID="p7x-ym-1rD">

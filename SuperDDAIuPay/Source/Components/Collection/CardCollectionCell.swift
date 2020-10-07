@@ -46,6 +46,8 @@ public class CardCollectionCell: UITableViewCell {
         return $0
     }(UILabel(frame: .zero))
     
+    private var imageWidthAnchor: NSLayoutConstraint?
+    
     private var isLast: Bool = false
     
     public override func setSelected(_ selected: Bool, animated: Bool) {
@@ -90,15 +92,26 @@ public class CardCollectionCell: UITableViewCell {
         self.isLast = isLast
         switch card.type {
         case .standard(let url):
-            self.logoImageView.valleyImage(url: url, transition: .curveEaseIn,
-                                       onSuccess: { [weak self] (image) in
-                self?.logoImageView.image = image.resize(toHeight: .preLargeMargin)
-                self?.logoImageView.widthAnchor.constraint(equalToConstant: self?.logoImageView.image?.size.width ?? .largeMargin).isActive = true
-                self?.logoImageView.layoutIfNeeded()
-            })
+            if card.isLocked {
+                self.logoImageView.image = UIImage.bundleImage(named: "lock")?.tint(with: card.barColor)
+                self.imageWidthAnchor?.constant = .bigMediumMargin
+                self.titleLabel.text = "Boleto protegido por senha"
+                self.titleLabel.textColor = card.barColor
+                self.dateLabel.textColor = .lightGrayDarkerBg
+                self.dateLabel.text = "██"
+                self.amountLabel.text = "████"
+                self.amountLabel.textColor = .lightGrayDarkerBg
+            } else {
+                self.logoImageView.valleyImage(url: url, transition: .curveEaseIn,
+                                           onSuccess: { [weak self] (image) in
+                    self?.logoImageView.image = image.resize(toHeight: .preLargeMargin)
+                    self?.imageWidthAnchor?.constant = self?.logoImageView.image?.size.width ?? .largeMargin
+                    self?.logoImageView.layoutIfNeeded()
+                })
+            }
         default:
             self.logoImageView.image = card.type.image?.resize(toHeight: .largeMargin)
-            self.logoImageView.widthAnchor.constraint(equalToConstant: self.logoImageView.image?.size.width ?? .largeMargin).isActive = true
+            self.imageWidthAnchor?.constant = self.logoImageView.image?.size.width ?? .largeMargin
         }
     }
     
@@ -123,7 +136,8 @@ public class CardCollectionCell: UITableViewCell {
                                                     constant: .smallMargin).isActive = true
             self.logoImageView.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor).isActive = true
             self.logoImageView.heightAnchor.constraint(equalToConstant: .defaultArea).isActive = true
-            self.logoImageView.widthAnchor.constraint(equalToConstant: .defaultArea).isActive = true
+            self.imageWidthAnchor = self.logoImageView.widthAnchor.constraint(equalToConstant: .defaultArea)
+            self.imageWidthAnchor?.isActive = true
         }
         
         titleLabel: do {
@@ -143,7 +157,7 @@ public class CardCollectionCell: UITableViewCell {
         }
         
         dateLabel: do {
-            self.dateLabel.bottomAnchor.constraint(equalTo: self.amountLabel.topAnchor).isActive = true
+            self.dateLabel.bottomAnchor.constraint(equalTo: self.amountLabel.topAnchor, constant: -4).isActive = true
             self.dateLabel.trailingAnchor.constraint(equalTo: self.amountLabel.trailingAnchor).isActive = true
         }
     }

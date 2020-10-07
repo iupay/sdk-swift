@@ -121,7 +121,7 @@ public class CardListView: UIView {
     }
     
     private func calculateTotal(dueOnly: Bool) -> Double {
-        let today = "\(Date().getDay) \(Date().getMonthName)".uppercased()
+        let today = "\(Date().getDay) \(Date().getMonthName())".uppercased()
         
         return self.source
                     .filter({ item in
