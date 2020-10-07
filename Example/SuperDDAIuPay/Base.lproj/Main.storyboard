@@ -226,6 +226,31 @@
                                             <segue destination="4Yt-dm-JQ3" kind="show" id="nGD-gZ-sPn"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="AJ4-tb-giZ" userLabel="beneficiary details">
+                                        <rect key="frame" x="0.0" y="289" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AJ4-tb-giZ" id="Cck-Zo-Tji">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beneficiary Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unp-Mi-e7f" userLabel="Payment details">
+                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="unp-Mi-e7f" firstAttribute="top" secondItem="Cck-Zo-Tji" secondAttribute="topMargin" id="8am-Lj-yw6"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="unp-Mi-e7f" secondAttribute="bottom" id="Asu-ON-p4K"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="unp-Mi-e7f" secondAttribute="trailing" id="E1n-8Z-vDQ"/>
+                                                <constraint firstItem="unp-Mi-e7f" firstAttribute="leading" secondItem="Cck-Zo-Tji" secondAttribute="leadingMargin" id="msl-MJ-Ihi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="fSW-FA-ext" kind="show" id="jtz-Bz-cJs"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -396,6 +421,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEb-zz-pkM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="146" y="474"/>
+        </scene>
+        <!--Beneficiary Details View Controller-->
+        <scene sceneID="S8r-UM-Sfz">
+            <objects>
+                <viewController id="fSW-FA-ext" customClass="BeneficiaryDetailsViewController" customModule="SuperDDAIuPay" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YIF-L8-WSC"/>
+                        <viewControllerLayoutGuide type="bottom" id="iF1-nT-12U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3DB-I3-laN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1vU-N6-tQf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KTc-TT-aVF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="930" y="-1571"/>
         </scene>
     </scenes>
 </document>

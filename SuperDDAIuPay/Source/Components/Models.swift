@@ -29,7 +29,7 @@ public struct CardItem {
     }
     
     func formattedDate() -> String {
-        return "\(self.dueDate.getDay) \(self.dueDate.getMonthName)".uppercased()
+        return "\(self.dueDate.getDay) \(self.dueDate.getMonthName())".uppercased()
     }
 }
 

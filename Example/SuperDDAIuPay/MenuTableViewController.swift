@@ -24,7 +24,7 @@ class MenuTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 6
+        return 7
     }
 
     /*
@@ -129,6 +129,11 @@ class MenuTableViewController: UITableViewController {
             
             receiptVC.handleOptionsClick = {
                 print("OPTIONS")
+            }
+        } else if let benDetails = segue.destination as? BeneficiaryDetailsViewController {
+            benDetails.setupContent(payment: self.generatePaymentData(), baseColor: UIColor.from(hex: "#8e05c2"))
+            benDetails.handleSeeDetails = {
+                BillDetailsModalViewController.showModal(from: benDetails, payment: self.generatePaymentData(),  highlightColor: UIColor.from(hex: "#8e05c2"), type: .benificiary)
             }
         }
     }

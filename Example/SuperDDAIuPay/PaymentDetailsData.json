@@ -7,7 +7,7 @@
   "automaticDebitBankName": "Banco Itaú",
   "isFromIuPay": true,
   "isUserAdded": false,
-  "authorizedLimit": false,
+  "authorizedLimit": true,
   "autoPayment": false,
   "cardHolderName": "Roberto de Oliveira Santos",
   "cardHolderAddress": "Avenida Sete de Setembro 32/1101 Icaraí - Niterói - RJ",

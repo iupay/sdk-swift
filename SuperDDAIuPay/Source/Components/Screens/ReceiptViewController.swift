@@ -9,8 +9,8 @@ import UIKit
 
 public class ReceiptViewController: UIViewController {
 
-    @objc public var handleShareClick: (() -> ())?
-    @objc public var handleOptionsClick: (() -> ())?
+    public var handleShareClick: (() -> ())?
+    public var handleOptionsClick: (() -> ())?
     
     private var cedentName: String?
     private var cnpj: String?
@@ -151,7 +151,7 @@ public class ReceiptViewController: UIViewController {
         self.stackView.trailingAnchor.constraint(equalTo: self.scrollView.trailingAnchor).isActive = true
         self.stackView.bottomAnchor.constraint(equalTo: self.scrollView.bottomAnchor).isActive = true
         self.stackView.heightAnchor.constraint(equalToConstant: 600).isActive = true
-
+        self.stackView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
         scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height+300)
 
         self.mainButton.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -.mediumMargin).isActive = true
@@ -184,7 +184,7 @@ public class ReceiptViewController: UIViewController {
                                                      textColor: .grayKit))
         
         self.stackView.addArrangedSubview(self.label(caption: "Código de Barras:",
-                                                     text: cedentName ?? "",
+                                                     text: barcode ?? "",
                                                      sizeCaption: 13,
                                                      sizeText: 15,
                                                      textColor: .grayKit))

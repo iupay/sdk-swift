@@ -158,6 +158,7 @@
 		AB68539EAB8EB20B3D8F77FCF27AD462 /* MotionProgressRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D8FC2F69C3BFC64901EAEE8AE46F26 /* MotionProgressRunner.swift */; };
 		ABDE93CFDAA758B83C10246DB8D09907 /* Material+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7A808D9155CF3371906EF50A496659 /* Material+Array.swift */; };
 		AC3D4AB29C7D77925F24139AE2C9427D /* MotionViewTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08A0D04965149930BC0CA3912E45722 /* MotionViewTransition.swift */; };
+		AD876F33252DF0C900F60D5E /* BeneficiaryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD876F32252DF0C900F60D5E /* BeneficiaryDetailsViewController.swift */; };
 		ADA1837B2526AEED00BAC5D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA1837A2526AEED00BAC5D5 /* Assets.xcassets */; };
 		ADA18380252B7AB500BAC5D5 /* PaidDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA1837F252B7AB500BAC5D5 /* PaidDetailsViewController.swift */; };
 		ADA18382252BFAF300BAC5D5 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA18381252BFAF300BAC5D5 /* PaddingLabel.swift */; };
@@ -534,6 +535,7 @@
 		AA38BF30D8D7F673BD47E03FDB1B1E18 /* MotionTransition+Start.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotionTransition+Start.swift"; path = "Sources/Transition/MotionTransition+Start.swift"; sourceTree = "<group>"; };
 		ABFE9BE69A144323039D4E32EC7857A5 /* MotionCAAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionCAAnimation.swift; path = Sources/MotionCAAnimation.swift; sourceTree = "<group>"; };
 		ACE893452ADE8FA3E8D22F288F63A17A /* BaseButtonGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseButtonGroup.swift; path = Sources/iOS/ButtonGroup/BaseButtonGroup.swift; sourceTree = "<group>"; };
+		AD876F32252DF0C900F60D5E /* BeneficiaryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeneficiaryDetailsViewController.swift; sourceTree = "<group>"; };
 		ADA1837A2526AEED00BAC5D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Assets/Assets.xcassets; sourceTree = "<group>"; };
 		ADA1837F252B7AB500BAC5D5 /* PaidDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaidDetailsViewController.swift; sourceTree = "<group>"; };
 		ADA18381252BFAF300BAC5D5 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
@@ -1011,6 +1013,7 @@
 				ADA1837F252B7AB500BAC5D5 /* PaidDetailsViewController.swift */,
 				ADA18385252D582700BAC5D5 /* PaymentDetailsViewController.swift */,
 				ADA18389252DD26D00BAC5D5 /* ReceiptViewController.swift */,
+				AD876F32252DF0C900F60D5E /* BeneficiaryDetailsViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -1920,6 +1923,7 @@
 				460112DD5699B1B809CFDE37BAAFB606 /* BeneficiaryCardView.swift in Sources */,
 				30E31DBC7373EAC584053FBB420C8B82 /* BillDetailsModalViewController.swift in Sources */,
 				9AAB091578FEF14EA06F8CD91BC8AF8A /* CardCollectionCell.swift in Sources */,
+				AD876F33252DF0C900F60D5E /* BeneficiaryDetailsViewController.swift in Sources */,
 				ADA18380252B7AB500BAC5D5 /* PaidDetailsViewController.swift in Sources */,
 				B6BF1F95C97435D7F5F46B69AD400260 /* CardListView.swift in Sources */,
 				0CC162144CDBD37D9BF64082A6B8A236 /* DateExtensions.swift in Sources */,
