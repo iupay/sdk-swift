@@ -125,7 +125,7 @@ public class MonthSelectorView: UIView {
         self.items = months
             .compactMap({ $0 })
             .map({ [weak self] item in
-                MonthItem(id: item.getMonthNumber, text: item.getMonthName.uppercased(), selected: item.getMonthNumber == self?.currentMonth)
+                MonthItem(id: item.getMonthNumber, text: item.getMonthName().uppercased(), selected: item.getMonthNumber == self?.currentMonth)
             })
     }
     

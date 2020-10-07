@@ -36,10 +36,10 @@ class IndividualCardsViewController: UIViewController {
         self.beneficiaryCard.handleSelectorChange = { [weak self] isOn in
             guard let self = self, isOn, let payment = self.generatePaymentData() else { return }
             
-            BillDetailsModalViewController.showModal(from: self, payment: payment,  highlightColor: .systemRed, type: .benificiary)
-//            PaymentLimitModalViewController.showModal(from: self) { [weak self] (selected, query) in
-//                self?.presentAlert(withTitle: "Result", message: "Selected: \(selected)\nQuery:\(String(describing: query))")
-//            }
+//            BillDetailsModalViewController.showModal(from: self, payment: payment,  highlightColor: .systemRed, type: .benificiary)
+            PaymentLimitModalViewController.showModal(from: self) { [weak self] (selected, query) in
+                self?.presentAlert(withTitle: "Result", message: "Selected: \(selected)\nQuery:\(String(describing: query))")
+            }
         }
         
         // MARK: Base Card View

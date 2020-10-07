@@ -24,10 +24,22 @@ extension Date {
         return Calendar.current.component(.day, from: self)
     }
     
-    var getMonthName: String {
+    var getYear: Int {
+        return Calendar.current.component(.year, from: self)
+    }
+    
+    func formatDate(format: String) -> String {
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.locale = Locale(identifier: "pt-BR")
+        dateFormatterPrint.dateFormat = format
+        
+        return dateFormatterPrint.string(from: self).uppercased()
+    }
+    
+    func getMonthName(full: Bool = false) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "pt-BR")
-        dateFormatter.dateFormat = "MMM"
+        dateFormatter.dateFormat = full ? "MMMM" : "MMM"
         return dateFormatter.string(from: self)
     }
 }

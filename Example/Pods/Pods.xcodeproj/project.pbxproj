@@ -159,6 +159,11 @@
 		ABDE93CFDAA758B83C10246DB8D09907 /* Material+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7A808D9155CF3371906EF50A496659 /* Material+Array.swift */; };
 		AC3D4AB29C7D77925F24139AE2C9427D /* MotionViewTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08A0D04965149930BC0CA3912E45722 /* MotionViewTransition.swift */; };
 		ADA1837B2526AEED00BAC5D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA1837A2526AEED00BAC5D5 /* Assets.xcassets */; };
+		ADA18380252B7AB500BAC5D5 /* PaidDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA1837F252B7AB500BAC5D5 /* PaidDetailsViewController.swift */; };
+		ADA18382252BFAF300BAC5D5 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA18381252BFAF300BAC5D5 /* PaddingLabel.swift */; };
+		ADA18386252D582700BAC5D5 /* PaymentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA18385252D582700BAC5D5 /* PaymentDetailsViewController.swift */; };
+		ADA18388252D723300BAC5D5 /* MessageModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA18387252D723300BAC5D5 /* MessageModalViewController.swift */; };
+		ADA1838A252DD26D00BAC5D5 /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA18389252DD26D00BAC5D5 /* ReceiptViewController.swift */; };
 		B0B2CF751B6CAF17D5BEC9EB3B4B2D87 /* MotionCoordinateSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9013CCF7B7CF3273C6497A0933718EA7 /* MotionCoordinateSpace.swift */; };
 		B0CF8B84EBFC7690145C99DFB2B73232 /* PresenterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ABEA06F6AFC9576A1873D5338CD016 /* PresenterCard.swift */; };
 		B1D5C76C788D9E26EC96CD4F69D4B36D /* ErrorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B73D2C5446EBBE28682B8EF8D5BFA7 /* ErrorTextField.swift */; };
@@ -530,6 +535,11 @@
 		ABFE9BE69A144323039D4E32EC7857A5 /* MotionCAAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionCAAnimation.swift; path = Sources/MotionCAAnimation.swift; sourceTree = "<group>"; };
 		ACE893452ADE8FA3E8D22F288F63A17A /* BaseButtonGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseButtonGroup.swift; path = Sources/iOS/ButtonGroup/BaseButtonGroup.swift; sourceTree = "<group>"; };
 		ADA1837A2526AEED00BAC5D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Assets/Assets.xcassets; sourceTree = "<group>"; };
+		ADA1837F252B7AB500BAC5D5 /* PaidDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaidDetailsViewController.swift; sourceTree = "<group>"; };
+		ADA18381252BFAF300BAC5D5 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		ADA18385252D582700BAC5D5 /* PaymentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailsViewController.swift; sourceTree = "<group>"; };
+		ADA18387252D723300BAC5D5 /* MessageModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModalViewController.swift; sourceTree = "<group>"; };
+		ADA18389252DD26D00BAC5D5 /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
 		B00B0E4F608EA03EB3782199FAD723D6 /* CollectionReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionReusableView.swift; path = Sources/iOS/Collection/CollectionReusableView.swift; sourceTree = "<group>"; };
 		B01C3E8FEA59521D49F43A36C2241DFA /* UITextView+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextView+Sweeter.swift"; path = "Source/UITextView+Sweeter.swift"; sourceTree = "<group>"; };
 		B38796E4493DE7D968D4D20C9B265B3C /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -746,6 +756,7 @@
 			isa = PBXGroup;
 			children = (
 				92326B2727BFDEE51F65CCEA1DABC034 /* BillDetailsModalViewController.swift */,
+				ADA18387252D723300BAC5D5 /* MessageModalViewController.swift */,
 				1ECBC0E5F80D25B9AEDF98D14FB40733 /* PaymentLimitModalViewController.swift */,
 			);
 			path = Modal;
@@ -992,6 +1003,16 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SweeterSwift";
+			sourceTree = "<group>";
+		};
+		ADA1837E252B7A5A00BAC5D5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				ADA1837F252B7AB500BAC5D5 /* PaidDetailsViewController.swift */,
+				ADA18385252D582700BAC5D5 /* PaymentDetailsViewController.swift */,
+				ADA18389252DD26D00BAC5D5 /* ReceiptViewController.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		AF6F4308FC0F154F4318F9C8F8A7BBAA /* Core */ = {
@@ -1242,6 +1263,7 @@
 				848D82FC332F45BD8F522D91A49A9E25 /* DesignAtoms.swift */,
 				C7465D37DB7E35C83F7FAD095D38BB15 /* Extensions */,
 				DD670755B6968657F8DFF029F84B6D26 /* Fonts */,
+				ADA18381252BFAF300BAC5D5 /* PaddingLabel.swift */,
 			);
 			name = Utils;
 			path = SuperDDAIuPay/Source/Utils;
@@ -1271,6 +1293,7 @@
 			isa = PBXGroup;
 			children = (
 				0A9CBE910D5A59479221A9371586EF19 /* Models.swift */,
+				ADA1837E252B7A5A00BAC5D5 /* Screens */,
 				77B957701E68774348CD53B5B4B3B70C /* Cards */,
 				6801B10FB98A039D62685397F4C1A8B6 /* Collection */,
 				3E946CA2C47D3695EA41D2872E735FAC /* Modal */,
@@ -1892,15 +1915,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA18388252D723300BAC5D5 /* MessageModalViewController.swift in Sources */,
 				9C075DE46E230667349B3199716C9FE3 /* BaseCardView.swift in Sources */,
 				460112DD5699B1B809CFDE37BAAFB606 /* BeneficiaryCardView.swift in Sources */,
 				30E31DBC7373EAC584053FBB420C8B82 /* BillDetailsModalViewController.swift in Sources */,
 				9AAB091578FEF14EA06F8CD91BC8AF8A /* CardCollectionCell.swift in Sources */,
+				ADA18380252B7AB500BAC5D5 /* PaidDetailsViewController.swift in Sources */,
 				B6BF1F95C97435D7F5F46B69AD400260 /* CardListView.swift in Sources */,
 				0CC162144CDBD37D9BF64082A6B8A236 /* DateExtensions.swift in Sources */,
 				0959F4B87ABCD13AE31E9B5E0A500BFC /* DesignAtoms.swift in Sources */,
 				05FC775C292B9D84AB18950F8FFA6EEB /* Models.swift in Sources */,
 				6AFE65B3B5947C6976BF19875AFAF44B /* MonthSelectorView.swift in Sources */,
+				ADA18382252BFAF300BAC5D5 /* PaddingLabel.swift in Sources */,
+				ADA1838A252DD26D00BAC5D5 /* ReceiptViewController.swift in Sources */,
+				ADA18386252D582700BAC5D5 /* PaymentDetailsViewController.swift in Sources */,
 				1CD523E4DDF9615A7CDF8D093E9ACBE3 /* NunitoSans-Bold.ttf in Sources */,
 				9FA0F460A77CE5721088D6DDF68A9AEA /* NunitoSans-Light.ttf in Sources */,
 				35A7F45207C18D2AA03D3CE84B42D5E3 /* NunitoSans-Regular.ttf in Sources */,
