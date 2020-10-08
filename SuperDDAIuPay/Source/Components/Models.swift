@@ -82,7 +82,7 @@ public enum BaseCardType {
 
 // MARK: - Payment
 public struct Payment: Codable {
-    let companyName, cnpj, cardNumber, companyLogo, cardHolderName, cardHolderAddress: String?
+    let companyName, cnpj, cardNumber, companyLogo, cardHolderName, cardHolderAddress, automaticDebitBankName: String?
     let autoPayment, isAutomaticDebit, isFromIuPay, isUserAdded, authorizedLimit: Bool?
     let paymentHistory: [PaymentHistory]?
     let billDetails: BillDetails?
@@ -101,4 +101,20 @@ public struct BillDetails: Codable {
 public struct PaymentHistory: Codable {
     let date: String
     let value: Double
+    
+    public init(date: String, value: Double) {
+        self.date = date
+        self.value = value
+    }
+}
+
+// MARK: - ChartData
+public struct ChartData: Codable {
+    let label: String
+    let value: Double
+    
+    public init(label: String, value: Double) {
+        self.label = label
+        self.value = value
+    }
 }

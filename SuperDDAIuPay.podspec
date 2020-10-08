@@ -34,7 +34,7 @@ TODO: Add long description of the pod here.
   s.dependency 'Material'
   s.dependency 'RadioGroup'
   s.source_files  = 'SuperDDAIuPay/Source/**/*'
-  s.resources = "SuperDDAIuPay/**/*.{ttf}"
+  s.resources = 'SuperDDAIuPay/**/*.{lproj,storyboard,xcdatamodeld,xib,xcassets,json}'
 
   s.resource_bundles = {
       'SuperDDAIuPay' => ['SuperDDAIuPay/Source/Resources/Assets/*.png']

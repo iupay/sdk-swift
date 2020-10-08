@@ -24,7 +24,7 @@ class MenuTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 7
+        return 8
     }
 
     /*
@@ -134,6 +134,24 @@ class MenuTableViewController: UITableViewController {
             benDetails.setupContent(payment: self.generatePaymentData(), baseColor: UIColor.from(hex: "#8e05c2"))
             benDetails.handleSeeDetails = {
                 BillDetailsModalViewController.showModal(from: benDetails, payment: self.generatePaymentData(),  highlightColor: UIColor.from(hex: "#8e05c2"), type: .benificiary)
+            }
+        } else if let paymentAccount = segue.destination as? PaymentAccountViewController {
+            paymentAccount.setupContent(payment: self.generatePaymentData(),
+                                        pdfAvailable: true,
+                                        paymentHistoryEnabled: true,
+                                        chartDataText: "OUTUBRO",
+                                        chartDataValue: "R$ 1.983,36",
+                                        chartLegend: "Resumo das Faturas Anteriores",
+                                        chartData: [ChartData(label: "JUN", value: 950),
+                                                    ChartData(label: "JUL", value: 1050),
+                                                    ChartData(label: "AGO", value: 800),
+                                                    ChartData(label: "SET", value: 970),
+                                                    ChartData(label: "OUT", value: 1300),
+                                                    ChartData(label: "NOV", value: 1500)],
+                                        baseColor: UIColor.from(hex: "#8e05c2"))
+            
+            paymentAccount.handleSeeDetails = {
+                BillDetailsModalViewController.showModal(from: paymentAccount, payment: self.generatePaymentData(),  highlightColor: UIColor.from(hex: "#8e05c2"), type: .bill)
             }
         }
     }

@@ -261,6 +261,31 @@
                                             <segue destination="fSW-FA-ext" kind="show" id="jtz-Bz-cJs"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="rA5-B1-Cq2" userLabel="payment account details">
+                                        <rect key="frame" x="0.0" y="332.5" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rA5-B1-Cq2" id="gSK-by-Xdb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Account Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPU-Zc-sLS" userLabel="Payment details">
+                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aPU-Zc-sLS" firstAttribute="top" secondItem="gSK-by-Xdb" secondAttribute="topMargin" id="0b5-xj-vtS"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="aPU-Zc-sLS" secondAttribute="trailing" id="Wnl-Ue-AvW"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="aPU-Zc-sLS" secondAttribute="bottom" id="eV0-BD-nli"/>
+                                                <constraint firstItem="aPU-Zc-sLS" firstAttribute="leading" secondItem="gSK-by-Xdb" secondAttribute="leadingMargin" id="htu-KS-Vfu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="bWo-7q-Dl4" kind="show" id="nuY-q4-KzL"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -450,6 +475,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KTc-TT-aVF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="930" y="-1571"/>
+        </scene>
+        <!--Payment Account View Controller-->
+        <scene sceneID="h2I-Xc-14G">
+            <objects>
+                <viewController id="bWo-7q-Dl4" customClass="PaymentAccountViewController" customModule="SuperDDAIuPay" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Axq-JU-NyB"/>
+                        <viewControllerLayoutGuide type="bottom" id="YCB-9A-tnR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1cg-hN-9Li">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bvG-89-fOi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Suq-eU-ehs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9" y="-1571"/>
         </scene>
     </scenes>
 </document>

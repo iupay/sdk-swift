@@ -32,7 +32,7 @@
     ]
   },
   "source_files": "SuperDDAIuPay/Source/**/*",
-  "resources": "SuperDDAIuPay/**/*.{ttf, xcassets}",
+  "resources": "SuperDDAIuPay/**/*.{lproj,storyboard,xcdatamodeld,xib,xcassets,json}",
   "resource_bundles": {
     "SuperDDAIuPay": [
       "SuperDDAIuPay/Source/Resources/Assets/*.png"
