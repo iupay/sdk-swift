@@ -41,27 +41,45 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrw-x0-QHt" customClass="FilterView" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="79.5" y="590" width="216" height="42"/>
+                                <rect key="frame" x="40" y="590" width="216" height="42"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="8BO-xn-tHA"/>
                                     <constraint firstAttribute="width" constant="216" id="SWX-FV-Fny"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJA-Zw-aZC" customClass="BarcodeButton" customModule="SuperDDAIuPay">
+                                <rect key="frame" x="263.5" y="593.5" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="9lX-2O-Gdv"/>
+                                    <constraint firstAttribute="width" constant="35" id="Gkq-FD-eW8"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noX-Qy-em8" customClass="SearchButton" customModule="SuperDDAIuPay">
+                                <rect key="frame" x="311" y="593.5" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="BKm-FQ-Osj"/>
+                                    <constraint firstAttribute="height" constant="35" id="Z1o-OA-UAA"/>
+                                </constraints>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="09e-Uw-LdI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="2UK-kU-bCS"/>
                             <constraint firstItem="IX0-XT-5sN" firstAttribute="top" secondItem="2MN-xb-bz1" secondAttribute="bottom" constant="76" id="2zw-La-Iea"/>
+                            <constraint firstItem="noX-Qy-em8" firstAttribute="centerY" secondItem="YJA-Zw-aZC" secondAttribute="centerY" id="3PS-Yt-g8J"/>
                             <constraint firstItem="09e-Uw-LdI" firstAttribute="top" secondItem="IX0-XT-5sN" secondAttribute="bottom" constant="20" id="5L2-D4-za6"/>
                             <constraint firstAttribute="trailing" secondItem="2MN-xb-bz1" secondAttribute="trailing" constant="16" id="8cK-5f-AYU"/>
+                            <constraint firstItem="noX-Qy-em8" firstAttribute="leading" secondItem="YJA-Zw-aZC" secondAttribute="trailing" constant="12.5" id="Et4-In-0eG"/>
                             <constraint firstItem="IX0-XT-5sN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="HS8-o1-f59"/>
                             <constraint firstItem="2MN-xb-bz1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="Lfl-nV-hNu"/>
                             <constraint firstAttribute="trailing" secondItem="09e-Uw-LdI" secondAttribute="trailing" id="RKH-1F-On3"/>
+                            <constraint firstItem="YJA-Zw-aZC" firstAttribute="leading" secondItem="wrw-x0-QHt" secondAttribute="trailing" constant="7.5" id="VDU-2D-Dgg"/>
                             <constraint firstItem="2MN-xb-bz1" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="32" id="Z4g-3n-XQa"/>
                             <constraint firstItem="wrw-x0-QHt" firstAttribute="top" secondItem="09e-Uw-LdI" secondAttribute="bottom" constant="8" id="aZg-kR-bNK"/>
                             <constraint firstItem="IX0-XT-5sN" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="cvq-XZ-5lc"/>
-                            <constraint firstItem="wrw-x0-QHt" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="p1o-1D-UPe"/>
+                            <constraint firstItem="wrw-x0-QHt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="24" id="rmu-Mr-Uzc"/>
+                            <constraint firstItem="YJA-Zw-aZC" firstAttribute="centerY" secondItem="wrw-x0-QHt" secondAttribute="centerY" id="t7r-4I-jzl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Cards and Month selector" id="z6f-JB-J3H"/>

@@ -32,10 +32,10 @@
     ]
   },
   "source_files": "SuperDDAIuPay/Source/**/*",
-  "resources": "SuperDDAIuPay/**/*.{lproj,storyboard,xcdatamodeld,xib,xcassets,json}",
+  "resources": "SuperDDAIuPay/**/*.{lproj,storyboard,xcdatamodeld,xib,xcassets,json,ttf, png}",
   "resource_bundles": {
     "SuperDDAIuPay": [
-      "SuperDDAIuPay/Source/Resources/Assets/*.png"
+      "SuperDDAIuPay/Assets/**/*"
     ]
   },
   "frameworks": "UIKit",

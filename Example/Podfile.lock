@@ -1,7 +1,4 @@
 PODS:
-  - Charts (3.6.0):
-    - Charts/Core (= 3.6.0)
-  - Charts/Core (3.6.0)
   - Material (3.1.8):
     - Material/Core (= 3.1.8)
   - Material/Core (3.1.8):
@@ -12,7 +9,6 @@ PODS:
   - RadioGroup (1.4.1):
     - SweeterSwift
   - SuperDDAIuPay (0.1.0):
-    - Charts
     - Material
     - RadioGroup
     - Valley
@@ -24,7 +20,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - Charts
     - Material
     - Motion
     - RadioGroup
@@ -36,11 +31,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
   Material: a2a3f400a3b549d53ef89e56c58c4535b29db387
   Motion: cf1e060e489f6661126374d5c60dbd2ed991605c
   RadioGroup: 6498cc40a548671c1a98738e85aab0d860d13fbc
-  SuperDDAIuPay: 41db45383d6c3d734288190ae0aa0a8dc4d7b52c
+  SuperDDAIuPay: aa4342fb4485bff87533dff12d367059a10dd16a
   SweeterSwift: d909211f6833405628c8c7c6bf9f8f2e8a0e9df9
   Valley: d1eb2cc9127dda761172828e2f97dcee2dc8ac33
 
