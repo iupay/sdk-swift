@@ -18,7 +18,7 @@ public class CardListView: UIView {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.backgroundColor = .clear
         $0.register(CardCollectionCell.self, forCellReuseIdentifier: CardCollectionCell.identifier)
-        $0.rowHeight = 60.0
+        $0.rowHeight = 70.0
         $0.delegate = self
         $0.dataSource = self
         $0.separatorStyle = .none

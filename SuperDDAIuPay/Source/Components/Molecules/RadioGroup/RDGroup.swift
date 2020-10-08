@@ -5,10 +5,9 @@
 //  Created by Yonat Sharon on 03.02.2019.
 //
 
-import SweeterSwift
 import UIKit
 
-@IBDesignable open class RadioGroup: UIControl {
+@IBDesignable open class RDGroup: UIControl {
     public convenience init(titles: [String]) {
         self.init(frame: .zero)
         self.titles = titles
@@ -168,19 +167,19 @@ import UIKit
 
 class RadioGroupItem: UIView {
     let titleLabel = UILabel()
-    let radioButton = RadioButton()
+    let radioButton = RDButton()
     let stackView = UIStackView()
 
-    unowned var group: RadioGroup
+    unowned var group: RDGroup
 
-    init(title: String?, group: RadioGroup) {
+    init(title: String?, group: RDGroup) {
         self.group = group
         super.init(frame: .zero)
         titleLabel.text = title
         setup()
     }
 
-    init(attributedTitle: NSAttributedString?, group: RadioGroup) {
+    init(attributedTitle: NSAttributedString?, group: RDGroup) {
         self.group = group
         super.init(frame: .zero)
         titleLabel.attributedText = attributedTitle

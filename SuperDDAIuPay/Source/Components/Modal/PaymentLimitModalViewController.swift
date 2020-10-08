@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import RadioGroup
 
 public class PaymentLimitModalViewController: UIViewController, UIGestureRecognizerDelegate {
 
@@ -55,18 +54,18 @@ public class PaymentLimitModalViewController: UIViewController, UIGestureRecogni
         return $0
     }(UITextField(frame: .zero))
     
-    private lazy var radioButtons: RadioGroup = {
+    private lazy var radioButtons: RDGroup = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.isVertical = false
         $0.tintColor = .grayKit
         $0.selectedColor = .grayKit
         $0.titleColor = .grayKit
         $0.buttonSize = .smallMargin
-        RadioButton.appearance().ringWidth = 1
+        RDButton.appearance().ringWidth = 1
         $0.titleFont = .customFont(ofSize: 16, weight: .semibold)
         $0.titleAlignment = .left
         return $0
-    }(RadioGroup(titles: ["SIM", "NÃO"]))
+    }(RDGroup(titles: ["SIM", "NÃO"]))
     
     private lazy var submitButton: UIButton = {
         $0.backgroundColor = .grayKit

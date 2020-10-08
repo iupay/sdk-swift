@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SuperDDAIuPay'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of SuperDDAIuPay.'
+  s.version          = '1.0.0'
+  s.summary          = 'UILibrary for IuPay DDA'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/lucianobohrer/SuperDDAIuPay'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'lucianobohrer' => 'bohrerluciano@gmail.com' }
+  s.author           = { 'lucianobohrer' => 'luciano@kodemy.dev' }
   s.source           = { :git => 'https://github.com/lucianobohrer/SuperDDAIuPay.git', :tag => s.version.to_s }
   s.social_media_url = 'https://linkedin.com/in/lucianobohrer'
 
@@ -32,7 +32,7 @@ TODO: Add long description of the pod here.
   s.swift_versions = '5.0'
   s.dependency 'Valley'
   s.dependency 'Material'
-  s.dependency 'RadioGroup'
+  s.dependency 'SweeterSwift'
   s.source_files  = 'SuperDDAIuPay/Source/**/*'
   s.resources = 'SuperDDAIuPay/**/*.{lproj,storyboard,xcdatamodeld,xib,xcassets,json,ttf, png}'
 

@@ -32,8 +32,15 @@ public class CardCollectionCell: UITableViewCell {
     
     private lazy var dateLabel: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
-        $0.font = .customFont(ofSize: 11, weight: .semibold)
-        $0.textColor = .lightGrayKit
+        $0.font = .customFont(ofSize: 11, weight: .regular)
+        $0.textColor = .grayKit
+        $0.textAlignment = .right
+        return $0
+    }(UILabel(frame: .zero))
+    
+    private lazy var paidLabel: UILabel = {
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.font = .customFont(ofSize: 11, weight: .bold)
         $0.textAlignment = .right
         return $0
     }(UILabel(frame: .zero))
@@ -90,17 +97,19 @@ public class CardCollectionCell: UITableViewCell {
         self.dateLabel.text = card.formattedDate()
         self.amountLabel.text = String(format: "R$ %.2f", card.amount)
         self.isLast = isLast
+        self.paidLabel.text = card.isPaid ? "PAGO" : "NÃO PAGO"
+        self.paidLabel.textColor = card.isPaid ? UIColor.from(hex: "#8aa626") : UIColor.from(hex: "#e30613")
+        self.titleLabel.textColor = card.isLocked ? card.barColor : .lightGrayKit
+        self.dateLabel.textColor = card.isLocked ? .lightGrayDarkerBg : .grayKit
+        self.amountLabel.textColor = card.isLocked ? .lightGrayDarkerBg : .grayKit
         switch card.type {
         case .standard(let url):
             if card.isLocked {
                 self.logoImageView.image = UIImage.bundleImage(named: "lock")?.tint(with: card.barColor)
                 self.imageWidthAnchor?.constant = .bigMediumMargin
                 self.titleLabel.text = "Boleto protegido por senha"
-                self.titleLabel.textColor = card.barColor
-                self.dateLabel.textColor = .lightGrayDarkerBg
                 self.dateLabel.text = "██"
                 self.amountLabel.text = "████"
-                self.amountLabel.textColor = .lightGrayDarkerBg
             } else {
                 self.logoImageView.valleyImage(url: url, transition: .curveEaseIn,
                                            onSuccess: { [weak self] (image) in
@@ -121,6 +130,7 @@ public class CardCollectionCell: UITableViewCell {
         self.contentView.addSubview(self.titleLabel)
         self.contentView.addSubview(self.dateLabel)
         self.contentView.addSubview(self.amountLabel)
+        self.contentView.addSubview(self.paidLabel)
 
         self.backgroundColor = .clear
         self.contentView.backgroundColor = .white
@@ -149,7 +159,7 @@ public class CardCollectionCell: UITableViewCell {
         }
         
         amountLabel: do {
-            self.amountLabel.centerYAnchor.constraint(equalTo: self.logoImageView.centerYAnchor, constant: .smallestMargin).isActive = true
+            self.amountLabel.topAnchor.constraint(equalTo: self.paidLabel.bottomAnchor, constant: .smallestMargin/2).isActive = true
             self.amountLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor,
                                                      constant: -.smallMargin).isActive = true
             self.amountLabel.leadingAnchor.constraint(equalTo: self.titleLabel.trailingAnchor,
@@ -157,8 +167,16 @@ public class CardCollectionCell: UITableViewCell {
         }
         
         dateLabel: do {
-            self.dateLabel.bottomAnchor.constraint(equalTo: self.amountLabel.topAnchor, constant: -4).isActive = true
+            self.dateLabel.bottomAnchor.constraint(equalTo: self.paidLabel.topAnchor,constant: -.smallestMargin/2).isActive = true
             self.dateLabel.trailingAnchor.constraint(equalTo: self.amountLabel.trailingAnchor).isActive = true
+        }
+
+        paidLabel: do {
+            self.paidLabel.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor, constant: -.smallestMargin/2).isActive = true
+            self.paidLabel.heightAnchor.constraint(equalToConstant: .smallMargin).isActive = true
+            self.paidLabel.leadingAnchor.constraint(equalTo: self.titleLabel.trailingAnchor,
+                                                          constant: .smallestMargin).isActive = true
+            self.paidLabel.trailingAnchor.constraint(equalTo: self.amountLabel.trailingAnchor).isActive = true
         }
     }
 }

@@ -199,7 +199,6 @@ fi
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Material/Material.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Motion/Motion.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RadioGroup/RadioGroup.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SuperDDAIuPay/SuperDDAIuPay.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SweeterSwift/SweeterSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Valley/Valley.framework"
@@ -207,7 +206,6 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Material/Material.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Motion/Motion.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RadioGroup/RadioGroup.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SuperDDAIuPay/SuperDDAIuPay.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SweeterSwift/SweeterSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Valley/Valley.framework"

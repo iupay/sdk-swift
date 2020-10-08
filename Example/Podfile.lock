@@ -6,13 +6,11 @@ PODS:
   - Motion (3.1.3):
     - Motion/Core (= 3.1.3)
   - Motion/Core (3.1.3)
-  - RadioGroup (1.4.1):
-    - SweeterSwift
-  - SuperDDAIuPay (0.1.0):
+  - SuperDDAIuPay (1.0.0):
     - Material
-    - RadioGroup
+    - SweeterSwift
     - Valley
-  - SweeterSwift (1.1.3)
+  - SweeterSwift (1.1.4)
   - Valley (1.2.1)
 
 DEPENDENCIES:
@@ -22,7 +20,6 @@ SPEC REPOS:
   trunk:
     - Material
     - Motion
-    - RadioGroup
     - SweeterSwift
     - Valley
 
@@ -33,11 +30,10 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Material: a2a3f400a3b549d53ef89e56c58c4535b29db387
   Motion: cf1e060e489f6661126374d5c60dbd2ed991605c
-  RadioGroup: 6498cc40a548671c1a98738e85aab0d860d13fbc
-  SuperDDAIuPay: aa4342fb4485bff87533dff12d367059a10dd16a
-  SweeterSwift: d909211f6833405628c8c7c6bf9f8f2e8a0e9df9
+  SuperDDAIuPay: d2d71287df7bb2dc174cd297bf8eb25ea6ca195e
+  SweeterSwift: 8a90cf3156f5a1b6f39785c479369a16633b5ea9
   Valley: d1eb2cc9127dda761172828e2f97dcee2dc8ac33
 
-PODFILE CHECKSUM: ab147d08de6d71c464c57b8203fd64a5488e8278
+PODFILE CHECKSUM: 3c917db4eb3adf086ad8dadc9536485fe4055120
 
 COCOAPODS: 1.9.3

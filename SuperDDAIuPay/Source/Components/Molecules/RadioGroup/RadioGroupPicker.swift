@@ -11,8 +11,8 @@ import SwiftUI
 
 /// The missing iOS radio buttons group
 @available(iOS 13.0, *) public struct RadioGroupPicker: UIViewRepresentable {
-    public typealias UIViewType = RadioGroup
-    private let uiView = RadioGroup()
+    public typealias UIViewType = RDGroup
+    private let uiView = RDGroup()
 
     @Binding var selectedIndex: Int
 
@@ -44,12 +44,12 @@ import SwiftUI
         uiView.titleFont =? titleFont
     }
 
-    public func makeUIView(context: UIViewRepresentableContext<RadioGroupPicker>) -> RadioGroup {
+    public func makeUIView(context: UIViewRepresentableContext<RadioGroupPicker>) -> RDGroup {
         uiView.addTarget(context.coordinator, action: #selector(Coordinator.valueChanged), for: .valueChanged)
         return uiView
     }
 
-    public func updateUIView(_ uiView: RadioGroup, context: UIViewRepresentableContext<RadioGroupPicker>) {
+    public func updateUIView(_ uiView: RDGroup, context: UIViewRepresentableContext<RadioGroupPicker>) {
         uiView.selectedIndex = selectedIndex
     }
 
@@ -64,7 +64,7 @@ import SwiftUI
             self.parent = parent
         }
 
-        @objc func valueChanged(_ sender: RadioGroup) {
+        @objc func valueChanged(_ sender: RDGroup) {
             parent.selectedIndex = sender.selectedIndex
         }
     }

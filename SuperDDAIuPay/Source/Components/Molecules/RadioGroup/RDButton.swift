@@ -7,7 +7,7 @@
 
 import UIKit
 
-@IBDesignable open class RadioButton: UIView {
+@IBDesignable open class RDButton: UIView {
     @IBInspectable open var isSelected: Bool = false {
         didSet {
             selectedCenterView.isHidden = !isSelected
