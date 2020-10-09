@@ -19,7 +19,6 @@ public class BillDetailsModalViewController: UIViewController, UIGestureRecogniz
 
     private lazy var titleLabel: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
-        $0.text = "Detalhes da conta"
         $0.textAlignment = .left
         $0.textColor = .grayKit
         $0.font = .customFont(ofSize: 16, weight: .bold)
@@ -77,7 +76,7 @@ public class BillDetailsModalViewController: UIViewController, UIGestureRecogniz
         self.headerView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor).isActive = true
         self.headerView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
         self.headerView.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        self.contentView.heightAnchor.constraint(equalToConstant: self.type == .bill ? 490 : 430).isActive = true
+        self.contentView.heightAnchor.constraint(equalToConstant: self.type == .bill ? 490 : 412).isActive = true
         self.contentView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: .bigMediumMargin).isActive = true
         self.contentView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -.bigMediumMargin).isActive = true
         self.contentView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
@@ -85,7 +84,7 @@ public class BillDetailsModalViewController: UIViewController, UIGestureRecogniz
         self.stackView.topAnchor.constraint(equalTo: self.headerView.bottomAnchor, constant: .smallestMargin).isActive = true
         self.stackView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: .bigMediumMargin).isActive = true
         self.stackView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -.bigMediumMargin).isActive = true
-        self.stackView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
+        self.stackView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -.smallestMargin).isActive = true
         
         self.titleLabel.leadingAnchor.constraint(equalTo: self.headerView.leadingAnchor, constant: .bigMediumMargin).isActive = true
         self.titleLabel.topAnchor.constraint(equalTo: self.headerView.topAnchor).isActive = true
@@ -108,6 +107,7 @@ public class BillDetailsModalViewController: UIViewController, UIGestureRecogniz
         var html = ""
         switch self.type {
         case .bill:
+            self.titleLabel.text = "Detalhes da conta"
             html =
                 "CNPJ \(self.paymentDetails.cnpj ?? "--")<br>" +
                 "Cartão \(self.paymentDetails.cardNumber ?? "--")<br><br>" +
@@ -126,6 +126,7 @@ public class BillDetailsModalViewController: UIViewController, UIGestureRecogniz
                 "Juros e mora em caso de atraso:<br>" +
                 "\(details.interestInstallmentRate ?? 0)% am + \(details.interestInstallmentFine ?? 0)% multa CET: \(details.interestInstallmentRateCET ?? 0)% aa"
         case .benificiary:
+            self.titleLabel.text = "Detalhes do beneficiário"
             html =
                 "CNPJ \(self.paymentDetails.cnpj ?? "--")<br>" +
                 "Cartão \(self.paymentDetails.cardNumber ?? "--")<br><br>" +
@@ -147,7 +148,7 @@ public class BillDetailsModalViewController: UIViewController, UIGestureRecogniz
         
         let companyName = UILabel(frame: .zero)
         companyName.text = self.paymentDetails.companyName ?? "-"
-        companyName.font = UIFont.customFont(ofSize: 15, weight: .bold)
+        companyName.font = UIFont.customFont(ofSize: 15, weight: .regular)
         companyName.textColor = self.highlightColor
         self.stackView.addArrangedSubview(companyName)
         self.stackView.addArrangedSubview(contentLabel)

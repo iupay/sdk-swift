@@ -161,9 +161,11 @@ public class ReceiptViewController: UIViewController {
     }
     
     private func setupLayout() {
-        self.mainButton.backgroundColor = self.baseColor
-        self.mainButton.setTitleColor(.white, for: .normal)
+        self.mainButton.backgroundColor = .clear
+        self.mainButton.setTitleColor(self.baseColor, for: .normal)
         self.mainButton.setTitle("Compartilhar Comprovante", for: .normal)
+        self.mainButton.layer.borderColor = self.baseColor?.cgColor
+        self.mainButton.layer.borderWidth = 2
         
         self.stackView.addArrangedSubview(self.label(caption: "Cedente:",
                                                      text: cedentName ?? "",

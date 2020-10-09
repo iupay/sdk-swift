@@ -101,10 +101,12 @@ public struct BillDetails: Codable {
 public struct PaymentHistory: Codable {
     let date: String
     let value: Double
+    let isOpen: Bool?
     
-    public init(date: String, value: Double) {
+    public init(date: String, value: Double, isOpen: Bool) {
         self.date = date
         self.value = value
+        self.isOpen = isOpen
     }
 }
 

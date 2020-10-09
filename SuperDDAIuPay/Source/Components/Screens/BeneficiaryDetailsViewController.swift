@@ -325,8 +325,20 @@ public class BeneficiaryDetailsViewController: UIViewController {
         textLabel.translatesAutoresizingMaskIntoConstraints = false
         textLabel.font = UIFont.customFont(ofSize: 15, weight: .regular)
         textLabel.textColor = .darkGray
-        textLabel.text = item.date.formatDate(format: "MMMM yyyy", fromFormat: "yyyy-MM")
+        textLabel.numberOfLines = 2
+        textLabel.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width/2).isActive = true
+        let attText = NSMutableAttributedString(string: item.date.formatDate(format: "MMMM yyyy", fromFormat: "yyyy-MM"))
         
+        let captionAttribute = [
+            NSAttributedString.Key.font: UIFont.customFont(ofSize: 13, weight: .regular),
+            NSAttributedString.Key.foregroundColor: UIColor.darkGray
+        ]
+         
+         let openText = NSAttributedString(string: "\nem aberto", attributes: captionAttribute as [NSAttributedString.Key : Any])
+        if let isOpen = item.isOpen, isOpen == true {
+            attText.append(openText)
+        }
+        textLabel.attributedText = attText
         content.addSubview(textLabel)
         
         textLabel.topAnchor.constraint(equalTo: content.topAnchor).isActive = true

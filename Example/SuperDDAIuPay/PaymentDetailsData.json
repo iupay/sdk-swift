@@ -3,11 +3,9 @@
   "companyName": "Nu Pagamentos S.A.",
   "cnpj": "18.236.120/0001-58",
   "cardNumber": "5162 **** **** 9090",
-  "isAutomaticDebit": true,
-  "automaticDebitBankName": "Banco Itaú",
   "isFromIuPay": true,
   "isUserAdded": false,
-  "authorizedLimit": true,
+  "authorizedLimit": false,
   "autoPayment": false,
   "cardHolderName": "Roberto de Oliveira Santos",
   "cardHolderAddress": "Avenida Sete de Setembro 32/1101 Icaraí - Niterói - RJ",
@@ -30,7 +28,12 @@
     },
     {
       "date": "2020-05",
-      "value": 1289.55
+      "value": 1174.13
+    },
+    {
+      "date": "2020-06",
+      "value": 1289.55,
+      "isOpen": true
     }
   ],
   "billDetails": {

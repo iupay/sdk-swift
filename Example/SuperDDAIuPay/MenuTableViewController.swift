@@ -86,7 +86,7 @@ class MenuTableViewController: UITableViewController {
             navTitle: "CERJ",
             imageUrl: "https://i.imgur.com/WyzDPRP.png",
             paymentAmount: 223.24,
-            baseColor: UIColor(red: 247/255, green: 140/255, blue: 73/255, alpha: 1.0),
+            baseColor: UIColor.from(hex: "#f78c49"),
             receiptAvailable: true,
             paymentMessage: "Sua conta está paga")
             
@@ -94,10 +94,10 @@ class MenuTableViewController: UITableViewController {
             payDetailsVC.setContent(beneficiaryName: "John Doe",
                                     scheduledDueDate: Date(),
                                     dueDate: Date(),
-                                    navTitle: "Pagamento",
+                                    navTitle: "PAGAMENTO",
                                     paymentAmount: 223.24,
                                     currentBalance: 3250,
-                                    baseColor: .systemRed,
+                                    baseColor: UIColor.from(hex: "#f78c49"),
                                     paymentMessage: "",
                                     payerName: "Jane Doe",
                                     bankName: "ITAU",
@@ -121,7 +121,7 @@ class MenuTableViewController: UITableViewController {
                                  fine: 0.0,
                                  chargedValue: 223.24,
                                  authCode: "A.6DE.DF4.75E.DBB,128",
-                                 baseColor: .systemRed)
+                                 baseColor: UIColor.from(hex: "#f78c49"))
             
             receiptVC.handleShareClick = {
                 print("SHARE")

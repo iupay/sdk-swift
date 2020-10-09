@@ -58,7 +58,7 @@ class IndividualCardsViewController: UIViewController {
         
         // MARK: Base Card View as Featured
         self.featuredCardView.configure(settings:
-            BaseConfig(barColor: UIColor(red: 30/255, green: 215/255, blue: 96/255, alpha: 1.0),
+                                            BaseConfig(barColor: .systemYellow,
                                         dueText: "Vencendo hoje",
                                         cardTextColor: .darkGray,
                                         cnpj: "99.999.999.0001-99",
