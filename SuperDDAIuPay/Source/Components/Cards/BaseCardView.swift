@@ -225,15 +225,14 @@ public class BaseCardView: UIView {
     }
     
     public override func layoutSubviews() {
-        contentView.layer.cornerRadius = .smallestMargin
-        contentView.clipsToBounds = true
-        contentView.layer.masksToBounds = false
-        contentView.layer.shadowRadius = 7
-        contentView.layer.shadowOpacity = 0.6
-        contentView.layer.shadowOffset = CGSize(width: 0, height: 0.5)
-        contentView.layer.shadowColor = UIColor.darkGray.cgColor
-        
-        self.leftBarView.roundCorners(corners: [.bottomLeft, .topLeft], radius: .smallestMargin)
+        let shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: 8.0)
+        self.clipsToBounds = false
+        self.layer.cornerRadius = .smallestMargin
+        self.layer.masksToBounds = false
+        self.layer.shadowColor = UIColor.gray.cgColor
+        self.layer.shadowOffset = CGSize(width: 0, height: 1)
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowPath = shadowPath.cgPath
     }
     
     // MARK: Private methods

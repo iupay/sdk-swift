@@ -10,7 +10,7 @@ public struct CardItem {
     var barColor: UIColor
     var cardTitle: String?
     var dueDate: Date
-    var isPaid: Bool
+    var isPaid: Bool?
     var type: BaseCardType
     var amount: Double
     var isLocked: Bool
@@ -18,7 +18,7 @@ public struct CardItem {
     public init(barColor: UIColor,
                 cardTitle: String?,
                 dueDate: Date,
-                isPaid: Bool,
+                isPaid: Bool? = nil,
                 type: BaseCardType,
                 amount: Double,
                 isLocked: Bool) {

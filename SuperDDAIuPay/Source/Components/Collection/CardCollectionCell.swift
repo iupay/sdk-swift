@@ -54,6 +54,7 @@ public class CardCollectionCell: UITableViewCell {
     }(UILabel(frame: .zero))
     
     private var imageWidthAnchor: NSLayoutConstraint?
+    private var paidLabelHeightAnchor: NSLayoutConstraint?
     
     private var isLast: Bool = false
     
@@ -97,11 +98,17 @@ public class CardCollectionCell: UITableViewCell {
         self.dateLabel.text = card.formattedDate()
         self.amountLabel.text = String(format: "R$ %.2f", card.amount)
         self.isLast = isLast
-        self.paidLabel.text = card.isPaid ? "PAGO" : "NÃO PAGO"
-        self.paidLabel.textColor = card.isPaid ? UIColor.from(hex: "#8aa626") : UIColor.from(hex: "#e30613")
         self.titleLabel.textColor = card.isLocked ? card.barColor : .lightGrayKit
         self.dateLabel.textColor = card.isLocked ? .lightGrayDarkerBg : .grayKit
         self.amountLabel.textColor = card.isLocked ? .lightGrayDarkerBg : .grayKit
+        self.paidLabel.textColor = card.isLocked ? .lightGrayDarkerBg : .grayKit
+        
+        if let isPaid = card.isPaid, card.isLocked == false {
+            self.paidLabel.text = isPaid ? "PAGO" : "NÃO PAGO"
+            self.paidLabel.textColor = isPaid ? UIColor.from(hex: "#8aa626") : UIColor.from(hex: "#e30613")
+        } else {
+            self.paidLabelHeightAnchor?.constant = 0.0
+        }
         switch card.type {
         case .standard(let url):
             if card.isLocked {
@@ -173,7 +180,8 @@ public class CardCollectionCell: UITableViewCell {
 
         paidLabel: do {
             self.paidLabel.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor, constant: -.smallestMargin/2).isActive = true
-            self.paidLabel.heightAnchor.constraint(equalToConstant: .smallMargin).isActive = true
+            self.paidLabelHeightAnchor = self.paidLabel.heightAnchor.constraint(equalToConstant: .smallMargin)
+            self.paidLabelHeightAnchor?.isActive = true
             self.paidLabel.leadingAnchor.constraint(equalTo: self.titleLabel.trailingAnchor,
                                                           constant: .smallestMargin).isActive = true
             self.paidLabel.trailingAnchor.constraint(equalTo: self.amountLabel.trailingAnchor).isActive = true

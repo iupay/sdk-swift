@@ -18,7 +18,6 @@ public class CardListView: UIView {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.backgroundColor = .clear
         $0.register(CardCollectionCell.self, forCellReuseIdentifier: CardCollectionCell.identifier)
-        $0.rowHeight = 70.0
         $0.delegate = self
         $0.dataSource = self
         $0.separatorStyle = .none
@@ -34,6 +33,9 @@ public class CardListView: UIView {
        return $0
    }(UILabel(frame: .zero))
     
+    private var featuredTextColor: UIColor = .darkGray
+    private var headerTitle: String?
+    
     private var source: [CardItem] = [] {
         didSet {
             DispatchQueue.main.async {
@@ -47,7 +49,6 @@ public class CardListView: UIView {
         super.init(coder: coder)
         self.initialSetup()
     }
-    
     
     // MARK: Overridden methods
     public override func layoutSubviews() {
@@ -73,11 +74,15 @@ public class CardListView: UIView {
                           featured: Bool = false,
                           featuredColor: UIColor = .clear,
                           featuredTextColor: UIColor = .darkText,
-                          totalPaymentText: String = "",
+                          titleText: String? = nil,
+                          totalPaymentText: NSAttributedString = NSAttributedString(string:""),
                           totalAlignment: NSTextAlignment = .center,
                           totalDueOnly: Bool = false) {
         
         self.source = source
+        
+        self.headerTitle = titleText
+        self.featuredTextColor = featuredTextColor
         
         if featured {
             self.backgroundColor = featuredColor
@@ -89,23 +94,25 @@ public class CardListView: UIView {
             NSAttributedString.Key.foregroundColor: featuredTextColor
         ]
         
-        let symbol = NSAttributedString(string: "\(totalPaymentText) R$ ", attributes: captionAttribute as [NSAttributedString.Key : Any])
+        let symbol = NSAttributedString(string: "R$ ", attributes: captionAttribute as [NSAttributedString.Key : Any])
         
         let focusedAttribute = [
             NSAttributedString.Key.font: UIFont.customFont(ofSize: 17, weight: .bold),
             NSAttributedString.Key.foregroundColor: featuredTextColor
         ]
+    
         
         let totalAmount = NSAttributedString(string: String(format: "%2.f", self.calculateTotal(dueOnly: totalDueOnly)), attributes: focusedAttribute as [NSAttributedString.Key : Any])
         
         let combination = NSMutableAttributedString()
+        combination.append(totalPaymentText)
         combination.append(symbol)
         combination.append(totalAmount)
                 
-        self.footerLabel.frame = .init(x: 0, y: 0, width: self.frame.width, height: .defaultArea)
+        self.footerLabel.frame = .init(x: 0, y: 0, width: self.frame.width, height: 56)
         self.footerLabel.attributedText = combination
         self.footerLabel.textAlignment = totalAlignment
-        
+        self.footerLabel.numberOfLines = 0
         
         self.tableView.tableFooterView = self.footerLabel
     }
@@ -138,17 +145,33 @@ public class CardListView: UIView {
 extension CardListView: UITableViewDelegate, UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.source.count
+        return self.source.count + 1
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard
             let cell = tableView.dequeueReusableCell(withIdentifier: CardCollectionCell.identifier) as? CardCollectionCell
         else { fatalError("reusable cell not found") }
-        cell.configure(card: self.source[indexPath.row], isLast: self.source.count == indexPath.row + 1)
+        
+        if indexPath.row == 0 {
+            let cellHeader = UITableViewCell(frame: .zero)
+            cellHeader.backgroundColor = .clear
+            cellHeader.textLabel?.text = self.headerTitle
+            cellHeader.textLabel?.textColor = featuredTextColor
+            cellHeader.textLabel?.font = UIFont.customFont(ofSize: 14, weight: .bold)
+            return cellHeader
+        }
+        cell.configure(card: self.source[indexPath.row-1], isLast: self.source.count == indexPath.row)
         cell.layer.zPosition = CGFloat(indexPath.row)
 
         return cell
+    }
+    
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+            return .defaultArea
+        }
+        return 70
     }
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

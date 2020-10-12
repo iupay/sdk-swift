@@ -29,13 +29,13 @@ extension String {
     }
     
     /// Convert HTML to NSAttributedString
-    func convertHtml() -> NSAttributedString {
+    public func convertHtml(textColor: UIColor = .darkGray) -> NSAttributedString {
         guard let data = data(using: .utf16) else { return NSAttributedString() }
         if let attributedString = try? NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil) {
             let string = NSMutableAttributedString(attributedString: attributedString)
 
             // Apply text color
-            string.addAttributes([.foregroundColor: UIColor.lightGrayKit], range: NSRange(location: 0, length: attributedString.length))
+            string.addAttributes([.foregroundColor: textColor], range: NSRange(location: 0, length: attributedString.length))
 
             // Update fonts
             let regularFont =  UIFont.customFont(ofSize: 15, weight: .regular) // DEFAULT FONT (REGUALR)
