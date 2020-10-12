@@ -1,5 +1,5 @@
 //
-//  MessageModalViewController.swift
+//  IPMessageModalViewController.swift
 //  SuperDDAIuPay
 //
 //  Created by Luciano Bohrer on 07/10/2020.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class MessageModalViewController: UIViewController, UIGestureRecognizerDelegate {
+public class IPMessageModalViewController: UIViewController, UIGestureRecognizerDelegate {
     
     private lazy var contentView: UIView = {
         $0.backgroundColor = .white
@@ -123,10 +123,10 @@ public class MessageModalViewController: UIViewController, UIGestureRecognizerDe
     }
 }
 
-extension MessageModalViewController {
+extension IPMessageModalViewController {
     
     public static func showModal(from vc: UIViewController, title: String, message: String) {
-        let modalViewController = MessageModalViewController(title: title, message: message)
+        let modalViewController = IPMessageModalViewController(title: title, message: message)
         modalViewController.modalPresentationStyle = .overCurrentContext
         vc.present(modalViewController, animated: false, completion: nil)
     }

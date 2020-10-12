@@ -1,5 +1,5 @@
 //
-//  FeaturedCardView.swift
+//  IPBaseCardView.swift
 //  SuperDDAIuPay
 //
 //  Created by Luciano Bohrer on 15/08/2020.
@@ -8,7 +8,7 @@
 import UIKit
 
 // MARK: - Class
-public class BaseCardView: UIView {
+public class IPBaseCardView: UIView {
     
     // MARK: Private variables
     

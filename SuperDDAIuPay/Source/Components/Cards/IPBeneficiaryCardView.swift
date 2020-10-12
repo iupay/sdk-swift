@@ -1,5 +1,5 @@
 //
-//  BeneficiaryCardView.swift
+//  IPBeneficiaryCardView.swift
 //  SuperDDAIuPay
 //
 //  Created by Luciano Bohrer on 12/08/2020.
@@ -10,7 +10,7 @@ import Valley
 import Material
 
 // MARK: - Class
-public class BeneficiaryCardView: UIView {
+public class IPBeneficiaryCardView: UIView {
 
     // MARK: Public variables
     public var handleSelectorChange: ((Bool) -> ())?

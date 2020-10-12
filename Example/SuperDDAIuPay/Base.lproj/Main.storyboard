@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xzv-Ri-Wfo">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xzv-Ri-Wfo">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,47 +15,47 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2MN-xb-bz1" customClass="BeneficiaryCardView" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="16" y="76" width="343" height="125"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2MN-xb-bz1" customClass="IPBeneficiaryCardView" customModule="SuperDDAIuPay">
+                                <rect key="frame" x="16" y="76" width="568" height="125"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="bPd-lm-M8S"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IX0-XT-5sN" customClass="BaseCardView" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="16" y="277" width="343" height="125"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IX0-XT-5sN" customClass="IPBaseCardView" customModule="SuperDDAIuPay">
+                                <rect key="frame" x="20" y="277" width="560" height="125"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="5wH-vc-72z"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09e-Uw-LdI" customClass="BaseCardView" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="0.0" y="422" width="375" height="160"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09e-Uw-LdI" customClass="IPBaseCardView" customModule="SuperDDAIuPay">
+                                <rect key="frame" x="0.0" y="422" width="600" height="160"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="goF-6A-iNd"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrw-x0-QHt" customClass="FilterView" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="40" y="590" width="216" height="42"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrw-x0-QHt" customClass="IPFilterView" customModule="SuperDDAIuPay">
+                                <rect key="frame" x="44" y="590" width="216" height="42"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="8BO-xn-tHA"/>
                                     <constraint firstAttribute="width" constant="216" id="SWX-FV-Fny"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJA-Zw-aZC" customClass="BarcodeButton" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="263.5" y="593.5" width="35" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJA-Zw-aZC" customClass="IPBarcodeButton" customModule="SuperDDAIuPay">
+                                <rect key="frame" x="267.5" y="593.5" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="9lX-2O-Gdv"/>
                                     <constraint firstAttribute="width" constant="35" id="Gkq-FD-eW8"/>
                                 </constraints>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noX-Qy-em8" customClass="SearchButton" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="311" y="593.5" width="35" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noX-Qy-em8" customClass="IPSearchButton" customModule="SuperDDAIuPay">
+                                <rect key="frame" x="315" y="593.5" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="BKm-FQ-Osj"/>
                                     <constraint firstAttribute="height" constant="35" id="Z1o-OA-UAA"/>
@@ -98,21 +97,21 @@
             <objects>
                 <tableViewController id="Xcp-uB-etc" customClass="MenuTableViewController" customModule="SuperDDAIuPay_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="i0Y-Nn-bNR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
                             <tableViewSection id="qhJ-lM-XkH">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="9Ul-iO-N2f" userLabel="individual cards">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="600" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Ul-iO-N2f" id="BjZ-OS-ora">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Individual cards and month selector" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yc-Gw-ieF">
-                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <rect key="frame" x="20" y="11" width="560" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -130,14 +129,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Khb-YU-KCJ" userLabel="card collection">
-                                        <rect key="frame" x="0.0" y="71.5" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="71.5" width="600" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Khb-YU-KCJ" id="rsn-nM-gxY">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card collection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hE2-ua-7BD">
-                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <rect key="frame" x="20" y="11" width="560" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -155,14 +154,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="lcm-vF-yU4" userLabel="selectors">
-                                        <rect key="frame" x="0.0" y="115" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="115" width="600" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lcm-vF-yU4" id="n0C-cU-VY0">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selectors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlZ-nl-AtP">
-                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <rect key="frame" x="20" y="11" width="560" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -180,14 +179,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="01T-31-enY" userLabel="paid controller">
-                                        <rect key="frame" x="0.0" y="158.5" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="158.5" width="600" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="01T-31-enY" id="Db8-IY-StP">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paid Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QU7-0n-sjZ">
-                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <rect key="frame" x="20" y="11" width="560" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -205,14 +204,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="cVa-He-5FF" userLabel="payment details">
-                                        <rect key="frame" x="0.0" y="202" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="202" width="600" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cVa-He-5FF" id="6f2-ZL-VVc">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdu-kp-IHF" userLabel="Payment details">
-                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <rect key="frame" x="20" y="11" width="560" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -230,14 +229,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="9Bu-pz-1Ss" userLabel="payment receipt">
-                                        <rect key="frame" x="0.0" y="245.5" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="245.5" width="600" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Bu-pz-1Ss" id="FHP-U0-3DP">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Receipt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPC-1I-3no" userLabel="Payment details">
-                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <rect key="frame" x="20" y="11" width="560" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -255,14 +254,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="AJ4-tb-giZ" userLabel="beneficiary details">
-                                        <rect key="frame" x="0.0" y="289" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="289" width="600" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AJ4-tb-giZ" id="Cck-Zo-Tji">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beneficiary Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unp-Mi-e7f" userLabel="Payment details">
-                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <rect key="frame" x="20" y="11" width="560" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -280,14 +279,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="rA5-B1-Cq2" userLabel="payment account details">
-                                        <rect key="frame" x="0.0" y="332.5" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="332.5" width="600" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rA5-B1-Cq2" id="gSK-by-Xdb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Account Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPU-Zc-sLS" userLabel="Payment details">
-                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <rect key="frame" x="20" y="11" width="560" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -347,12 +346,12 @@
                         <viewControllerLayoutGuide type="bottom" id="lop-in-Hz3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yHw-FZ-Bqf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bcj-qO-erX" customClass="CardListView" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="0.0" y="92" width="375" height="328"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bcj-qO-erX" customClass="IPCardListView" customModule="SuperDDAIuPay">
+                                <rect key="frame" x="0.0" y="92" width="600" height="261"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -381,18 +380,18 @@
                         <viewControllerLayoutGuide type="bottom" id="tVC-eg-o29"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Hit-sY-qsE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AHM-S4-uIu" customClass="TabSelectorView" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="0.0" y="63" width="375" height="46"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AHM-S4-uIu" customClass="IPTabSelectorView" customModule="SuperDDAIuPay">
+                                <rect key="frame" x="0.0" y="63" width="600" height="46"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="Ipg-1T-OId"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dyb-Qf-OmY" customClass="MonthSelectorView" customModule="SuperDDAIuPay">
-                                <rect key="frame" x="0.0" y="109" width="375" height="33"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dyb-Qf-OmY" customClass="IPMonthSelectorView" customModule="SuperDDAIuPay">
+                                <rect key="frame" x="0.0" y="109" width="600" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="Cuo-mS-t1i"/>
                                 </constraints>
@@ -421,15 +420,15 @@
         <!--Paid Details View Controller-->
         <scene sceneID="9PR-jE-DsQ">
             <objects>
-                <viewController id="WfG-BG-3xi" customClass="PaidDetailsViewController" customModule="SuperDDAIuPay" sceneMemberID="viewController">
+                <viewController id="WfG-BG-3xi" customClass="IPPaidDetailsViewController" customModule="SuperDDAIuPay" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ohi-8h-Qej"/>
                         <viewControllerLayoutGuide type="bottom" id="Sfh-lh-JBa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="q08-8d-a8a">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="uDS-Sq-Z8I"/>
                 </viewController>
@@ -440,15 +439,15 @@
         <!--Payment Details View Controller-->
         <scene sceneID="P5o-Od-TIr">
             <objects>
-                <viewController id="IdI-EI-Bg6" customClass="PaymentDetailsViewController" customModule="SuperDDAIuPay" sceneMemberID="viewController">
+                <viewController id="IdI-EI-Bg6" customClass="IPPaymentDetailsViewController" customModule="SuperDDAIuPay" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iCv-x7-dqp"/>
                         <viewControllerLayoutGuide type="bottom" id="fQz-0w-x9H"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="brL-74-hyU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="WAm-Xi-8Aw"/>
                 </viewController>
@@ -459,15 +458,15 @@
         <!--Receipt View Controller-->
         <scene sceneID="XgO-Wg-iTr">
             <objects>
-                <viewController id="4Yt-dm-JQ3" customClass="ReceiptViewController" customModule="SuperDDAIuPay" sceneMemberID="viewController">
+                <viewController id="4Yt-dm-JQ3" customClass="IPReceiptViewController" customModule="SuperDDAIuPay" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jT3-cG-gBf"/>
                         <viewControllerLayoutGuide type="bottom" id="qdz-5C-XvQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="78k-Yz-eCG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="O8U-sN-9wY"/>
                 </viewController>
@@ -478,15 +477,15 @@
         <!--Beneficiary Details View Controller-->
         <scene sceneID="S8r-UM-Sfz">
             <objects>
-                <viewController id="fSW-FA-ext" customClass="BeneficiaryDetailsViewController" customModule="SuperDDAIuPay" sceneMemberID="viewController">
+                <viewController id="fSW-FA-ext" customClass="IPBeneficiaryDetailsViewController" customModule="SuperDDAIuPay" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YIF-L8-WSC"/>
                         <viewControllerLayoutGuide type="bottom" id="iF1-nT-12U"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3DB-I3-laN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="1vU-N6-tQf"/>
                 </viewController>
@@ -497,15 +496,15 @@
         <!--Payment Account View Controller-->
         <scene sceneID="h2I-Xc-14G">
             <objects>
-                <viewController id="bWo-7q-Dl4" customClass="PaymentAccountViewController" customModule="SuperDDAIuPay" sceneMemberID="viewController">
+                <viewController id="bWo-7q-Dl4" customClass="IPPaymentAccountViewController" customModule="SuperDDAIuPay" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Axq-JU-NyB"/>
                         <viewControllerLayoutGuide type="bottom" id="YCB-9A-tnR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1cg-hN-9Li">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="bvG-89-fOi"/>
                 </viewController>
@@ -514,4 +513,9 @@
             <point key="canvasLocation" x="-9" y="-1571"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

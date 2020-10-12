@@ -1,22 +1,30 @@
 //
-//  TabSelectorView.swift
+//  IPMonthSelectorView.swift
 //  SuperDDAIuPay
 //
-//  Created by Luciano Bohrer on 25/08/2020.
+//  Created by Luciano Bohrer on 14/08/2020.
 //
 
 import UIKit
+import Material
 
 // MARK: - Class
-public class TabSelectorView: UIView {
+public class IPMonthSelectorView: UIView {
+    
+    // MARK: - Definitions
+    struct MonthItem {
+        var id: Int
+        var text: String
+        var selected: Bool
+    }
     
     // MARK: Public variables
-    public var handleItemChange: ((Int) -> ())?
+    public var handleMonthChange: ((Int) -> ())?
     
     // MARK: Private variables
-    private var currentItem: Int = 0 {
+    private var currentMonth: Int = Calendar.current.component(.month, from: Date()) {
         didSet {
-            self.collectionView.reloadData()
+            self.buildMenu()
         }
     }
     
@@ -24,8 +32,8 @@ public class TabSelectorView: UIView {
     
     private lazy var collectionView: UICollectionView = {
         
-        $0.register(TabCollectionCell.self,
-                    forCellWithReuseIdentifier: TabCollectionCell.identifier)
+        $0.register(MonthCollectionCell.self,
+                    forCellWithReuseIdentifier: MonthCollectionCell.identifier)
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -35,7 +43,7 @@ public class TabSelectorView: UIView {
         if let layout = $0.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.minimumInteritemSpacing = 0
             layout.minimumLineSpacing = 0
-            layout.itemSize = CGSize(width: 100, height: 46)
+            layout.itemSize = CGSize(width: 80, height: 34)
             layout.invalidateLayout()
         }
         $0.bounces = false
@@ -48,27 +56,29 @@ public class TabSelectorView: UIView {
         return $0
     }(UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout()))
     
-    private var items: [String] = [] {
+    private var items: [MonthItem] = [] {
         didSet {
             self.collectionView.reloadData()
         }
     }
     
     // MARK: Initializers
-    init(items: [String], tabColor: UIColor) {
+    init(tabColor: UIColor) {
         super.init(frame: .zero)
-        self.configure(items: items, tabColor: tabColor)
+        self.configure(tabColor: tabColor)
         self.setupConstraints()
+        self.buildMenu()
     }
-    
     public override init(frame: CGRect) {
         super.init(frame: .zero)
         self.setupConstraints()
+        self.buildMenu()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.setupConstraints()
+        self.buildMenu()
     }
     
     // MARK: Public methods
@@ -79,9 +89,8 @@ public class TabSelectorView: UIView {
     /// - Parameters:
     ///     - tabColor: Main color that will be use as theme for the component
 
-    public func configure(items: [String], tabColor: UIColor) {
+    public func configure(tabColor: UIColor) {
         self.tabColor = tabColor
-        self.items = items
     }
     
     /// Set settings for the component
@@ -89,8 +98,8 @@ public class TabSelectorView: UIView {
     ///
     /// - Parameters:
     ///     - currentMonth: Month that will be presented in the center of the component
-    public func set(currentIndex index: Int) {
-        self.currentItem = index
+    public func set(currentMonth: Int) {
+        self.currentMonth = currentMonth
     }
     
     // MARK: Private methods
@@ -99,42 +108,76 @@ public class TabSelectorView: UIView {
         self.collectionView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         self.collectionView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         self.collectionView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        self.collectionView.heightAnchor.constraint(equalToConstant: 46).isActive = true
+        self.collectionView.heightAnchor.constraint(equalToConstant: 34).isActive = true
+    }
+    
+    private func buildMenu() {
+        var months: [Date?] = [
+            self.currentMonthDate().getPreviousMonth(byDecreasing: 2),
+            self.currentMonthDate().getPreviousMonth(byDecreasing: 1),
+            self.currentMonthDate()
+        ]
+        
+        for i in 1...9 {
+            months.append(self.currentMonthDate().getNextMonth(byAdding: i))
+        }
+        
+        self.items = months
+            .compactMap({ $0 })
+            .map({ [weak self] item in
+                MonthItem(id: item.getMonthNumber, text: item.getMonthName().uppercased(), selected: item.getMonthNumber == self?.currentMonth)
+            })
+    }
+    
+    private func updateSelected(forId id: Int) {
+        for i in 0..<self.items.count {
+            self.items[i].selected = items[i].id == id
+        }
+    }
+    
+    private func currentMonthDate() -> Date {
+        var dateComponents = DateComponents()
+        dateComponents.month = self.currentMonth
+        dateComponents.day = 1
+        guard let date = Calendar.current.date(from: dateComponents) else {
+            fatalError("Date is mandatory")
+        }
+        return date
     }
 }
 
 // MARK: - UICollectionView Delegate & DataSource
-extension TabSelectorView: UICollectionViewDelegate, UICollectionViewDataSource {
+extension IPMonthSelectorView: UICollectionViewDelegate, UICollectionViewDataSource {
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.items.count
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TabCollectionCell.identifier, for: indexPath) as? TabCollectionCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MonthCollectionCell.identifier, for: indexPath) as? MonthCollectionCell else {
             return UICollectionViewCell()
         }
-        
-        cell.setup(withItem: self.items[indexPath.row],
-                   selected: self.currentItem == indexPath.row,
-                   color: self.tabColor)
+        cell.setup(withMonth: self.items[indexPath.row], color: self.tabColor)
         return cell
     }
     
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let index = indexPath.row
-        self.currentItem = index
+        let item = items[indexPath.row]
+        self.updateSelected(forId: item.id)
         
         DispatchQueue.main.async {
-            self.handleItemChange?(index)
+            collectionView.reloadData()
+            self.handleMonthChange?(item.id)
         }
     }
 }
 
 // MARK: - Month Cell
-private final class TabCollectionCell: UICollectionViewCell {
+private final class MonthCollectionCell: UICollectionViewCell {
     
     // MARK: Static variable for cell identifier
-    static let identifier = String(describing: TabCollectionCell.self)
+    static let identifier = String(describing: MonthCollectionCell.self)
+    
+    private var monthItem: IPMonthSelectorView.MonthItem?
     
     private lazy var titleLabel: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
@@ -160,15 +203,11 @@ private final class TabCollectionCell: UICollectionViewCell {
         self.titleLabel.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         self.titleLabel.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
         self.titleLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        
-        self.layer.cornerRadius = .smallestMargin
-        self.clipsToBounds = true
-        self.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
    
-    func setup(withItem item: String, selected: Bool, color: UIColor) {
-        self.titleLabel.text = item
-        self.titleLabel.textColor = selected ? color : .lightGrayKit
-        self.titleLabel.backgroundColor = color.withAlphaComponent(selected ? 0.2 : 0.0)
+    func setup(withMonth monthItem: IPMonthSelectorView.MonthItem, color: UIColor) {
+        self.titleLabel.text = monthItem.text
+        self.titleLabel.textColor = monthItem.selected ? .white : color
+        self.titleLabel.backgroundColor = color.withAlphaComponent(monthItem.selected ? 1.0 : 0.2)
     }
 }

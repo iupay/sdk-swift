@@ -1,5 +1,5 @@
 //
-//  ReceiptViewController.swift
+//  IPReceiptViewController.swift
 //  SuperDDAIuPay
 //
 //  Created by Luciano Bohrer on 07/10/2020.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class ReceiptViewController: UIViewController {
+public class IPReceiptViewController: UIViewController {
 
     public var handleShareClick: (() -> ())?
     public var handleOptionsClick: (() -> ())?
@@ -269,36 +269,6 @@ public class ReceiptViewController: UIViewController {
         self.baseColor = baseColor
         self.setupLayout()
     }
-    
-    private func label(caption: String,
-                       text: String,
-                       sizeCaption: CGFloat,
-                       sizeText: CGFloat,
-                       textColor: UIColor? = .darkGray) -> PaddingLabel {
-       let captionAttribute = [
-            NSAttributedString.Key.font: UIFont.customFont(ofSize: sizeCaption, weight: .regular),
-            NSAttributedString.Key.foregroundColor: textColor
-        ]
-        
-        let caption = NSAttributedString(string: caption + "\n", attributes: captionAttribute as [NSAttributedString.Key : Any])
-        
-        let focusedAttribute = [
-            NSAttributedString.Key.font: UIFont.customFont(ofSize: sizeText, weight: .bold),
-            NSAttributedString.Key.foregroundColor: textColor
-        ]
-        
-        let totalAmount = NSAttributedString(string: text, attributes: focusedAttribute as [NSAttributedString.Key : Any])
-        
-        let combination = NSMutableAttributedString()
-        combination.append(caption)
-        combination.append(totalAmount)
-        
-        let label = PaddingLabel(frame: .zero)
-        label.attributedText = combination
-        label.numberOfLines = 0
-        
-        return label
-    }
         
     private func horizontalView(caption: String, text: String, textColor: UIColor? = .darkGray) -> UIView {
         let container = UIStackView(frame: .zero)
@@ -307,14 +277,14 @@ public class ReceiptViewController: UIViewController {
 
         container.heightAnchor.constraint(equalToConstant: .defaultArea).isActive = true
         
-        let captionLabel = PaddingLabel(frame: .zero)
+        let captionLabel = IPPaddingLabel(frame: .zero)
         captionLabel.text = caption
         captionLabel.font = UIFont.customFont(ofSize: 15, weight: .regular)
         captionLabel.textColor = .darkGray
         captionLabel.textAlignment = .left
         
         
-        let textLabel = PaddingLabel(frame: .zero)
+        let textLabel = IPPaddingLabel(frame: .zero)
         textLabel.text = text
         textLabel.font = UIFont.customFont(ofSize: 15, weight: .bold)
         textLabel.textColor = textColor

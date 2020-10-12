@@ -78,7 +78,7 @@ class MenuTableViewController: UITableViewController {
 //     In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if let paidVC = segue.destination as? PaidDetailsViewController {
+        if let paidVC = segue.destination as? IPPaidDetailsViewController {
             
             paidVC.setContent(beneficiaryName: "John Doe",
             paidDate: Date(),
@@ -90,7 +90,7 @@ class MenuTableViewController: UITableViewController {
             receiptAvailable: true,
             paymentMessage: "Sua conta está paga")
             
-        } else if let payDetailsVC = segue.destination as? PaymentDetailsViewController {
+        } else if let payDetailsVC = segue.destination as? IPPaymentDetailsViewController {
             payDetailsVC.setContent(beneficiaryName: "John Doe",
                                     scheduledDueDate: Date(),
                                     dueDate: Date(),
@@ -106,9 +106,9 @@ class MenuTableViewController: UITableViewController {
                                     isPayment: false)
             
             payDetailsVC.handleButtonClick = {
-                MessageModalViewController.showModal(from: self, title: "Agendamento da Conta", message: "O seu pagamento será debitado às 16h do dia de pagamento\n\nVocê pode cancelar o agendamento / pagamento até às 16hs do dia.")
+                IPMessageModalViewController.showModal(from: self, title: "Agendamento da Conta", message: "O seu pagamento será debitado às 16h do dia de pagamento\n\nVocê pode cancelar o agendamento / pagamento até às 16hs do dia.")
             }
-        } else if let receiptVC = segue.destination as? ReceiptViewController {
+        } else if let receiptVC = segue.destination as? IPReceiptViewController {
             receiptVC.setContent(cedentName: "COMPANHIA DE ELETRICIDADE DO RIO DE JANEIRO",
                                  cnpj: "15.139.629/0001-99",
                                  payerName: "ROBERTO DE OLIVEIRA SANTOS",
@@ -130,28 +130,28 @@ class MenuTableViewController: UITableViewController {
             receiptVC.handleOptionsClick = {
                 print("OPTIONS")
             }
-        } else if let benDetails = segue.destination as? BeneficiaryDetailsViewController {
+        } else if let benDetails = segue.destination as? RDBeneficiaryDetailsViewController {
             benDetails.setupContent(payment: self.generatePaymentData(), baseColor: UIColor.from(hex: "#8e05c2"))
             benDetails.handleSeeDetails = {
-                BillDetailsModalViewController.showModal(from: benDetails, payment: self.generatePaymentData(),  highlightColor: UIColor.from(hex: "#8e05c2"), type: .benificiary)
+                IPBillDetailsModalViewController.showModal(from: benDetails, payment: self.generatePaymentData(),  highlightColor: UIColor.from(hex: "#8e05c2"), type: .benificiary)
             }
-        } else if let paymentAccount = segue.destination as? PaymentAccountViewController {
+        } else if let paymentAccount = segue.destination as? IPPaymentAccountViewController {
             paymentAccount.setupContent(payment: self.generatePaymentData(),
                                         pdfAvailable: true,
                                         paymentHistoryEnabled: true,
                                         chartDataText: "OUTUBRO",
                                         chartDataValue: "R$ 1.983,36",
                                         chartLegend: "Resumo das Faturas Anteriores",
-                                        chartData: [ChartData(label: "JUN", value: 950),
-                                                    ChartData(label: "JUL", value: 1050),
-                                                    ChartData(label: "AGO", value: 800),
-                                                    ChartData(label: "SET", value: 970),
-                                                    ChartData(label: "OUT", value: 1300),
-                                                    ChartData(label: "NOV", value: 1500)],
+                                        chartData: [IPChartData(label: "JUN", value: 950),
+                                                    IPChartData(label: "JUL", value: 1050),
+                                                    IPChartData(label: "AGO", value: 800),
+                                                    IPChartData(label: "SET", value: 970),
+                                                    IPChartData(label: "OUT", value: 1300),
+                                                    IPChartData(label: "NOV", value: 1500)],
                                         baseColor: UIColor.from(hex: "#8e05c2"))
             
             paymentAccount.handleSeeDetails = {
-                BillDetailsModalViewController.showModal(from: paymentAccount, payment: self.generatePaymentData(),  highlightColor: UIColor.from(hex: "#8e05c2"), type: .bill)
+                IPBillDetailsModalViewController.showModal(from: paymentAccount, payment: self.generatePaymentData(),  highlightColor: UIColor.from(hex: "#8e05c2"), type: .bill)
             }
         }
     }

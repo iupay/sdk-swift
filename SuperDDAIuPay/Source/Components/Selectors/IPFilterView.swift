@@ -1,5 +1,5 @@
 //
-//  FilterView.swift
+//  IPFilterView.swift
 //  SuperDDAIuPay
 //
 //  Created by Luciano Bohrer on 07/10/2020.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class FilterView: UIView {
+public class IPFilterView: UIView {
     
     public enum Sort {
         case asc

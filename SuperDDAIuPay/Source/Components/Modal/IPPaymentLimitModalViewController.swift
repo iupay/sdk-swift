@@ -1,5 +1,5 @@
 //
-//  PaymentLimitModalViewController.swift
+//  IPPaymentLimitModalViewController.swift
 //  SuperDDAIuPay
 //
 //  Created by Luciano Bohrer on 02/09/2020.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class PaymentLimitModalViewController: UIViewController, UIGestureRecognizerDelegate {
+public class IPPaymentLimitModalViewController: UIViewController, UIGestureRecognizerDelegate {
 
     public var handleSubmit: ((Bool, String?) -> ())?
     
@@ -172,10 +172,10 @@ public class PaymentLimitModalViewController: UIViewController, UIGestureRecogni
     }
 }
 
-extension PaymentLimitModalViewController {
+extension IPPaymentLimitModalViewController {
     
     public static func showModal(from vc: UIViewController, handleSubmit:  ((Bool, String?) -> ())?)  {
-        let modalViewController = PaymentLimitModalViewController()
+        let modalViewController = IPPaymentLimitModalViewController()
         modalViewController.modalPresentationStyle = .overCurrentContext
         vc.present(modalViewController, animated: false, completion: nil)
         modalViewController.handleSubmit = handleSubmit

@@ -1,5 +1,5 @@
 //
-//  BeneficiaryDetailsViewController.swift
+//  RDBeneficiaryDetailsViewController.swift
 //  SuperDDAIuPay
 //
 //  Created by Luciano Bohrer on 07/10/2020.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class BeneficiaryDetailsViewController: UIViewController {
+public class IPBeneficiaryDetailsViewController: UIViewController {
 
     public var handleSeeDetails: (() -> ())?
     public var handleViewCard: (() -> ())?
@@ -113,7 +113,7 @@ public class BeneficiaryDetailsViewController: UIViewController {
     
     private lazy var baseCard = UIView(frame: .zero)
     
-    init(payment: Payment, baseColor: UIColor) {
+    init(payment: IPPayment, baseColor: UIColor) {
         super.init(nibName: nil, bundle: nil)
         self.setupContent(payment: payment, baseColor: baseColor)
     }
@@ -137,7 +137,7 @@ public class BeneficiaryDetailsViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
-    public func setupContent(payment: Payment, baseColor: UIColor) {
+    public func setupContent(payment: IPPayment, baseColor: UIColor) {
         
         let mainBtn = self.mainButton.subviews.compactMap({ $0 as? UIButton}).first
         self.mainButton.backgroundColor = .clear
@@ -162,7 +162,7 @@ public class BeneficiaryDetailsViewController: UIViewController {
 
         self.stackView.addArrangedSubview(cnpjLabel)
         
-        let card = PaddingLabel(frame: .zero)
+        let card = IPPaddingLabel(frame: .zero)
         card.text = "Cartão" + (payment.cardNumber ?? "")
         card.font = UIFont.customFont(ofSize: 15, weight: .regular)
         card.textColor = .darkGray
@@ -268,43 +268,7 @@ public class BeneficiaryDetailsViewController: UIViewController {
         self.stackView.bottomAnchor.constraint(equalTo: self.scrollView.bottomAnchor).isActive = true
     }
     
-    private func label(caption: String,
-                       text: String,
-                       sizeCaption: CGFloat,
-                       sizeText: CGFloat,
-                       textColor: UIColor? = .darkGray,
-                       breakLine: Bool = true,
-                       underlined: Bool = false) -> PaddingLabel {
-       let captionAttribute = [
-            NSAttributedString.Key.font: UIFont.customFont(ofSize: sizeCaption, weight: .regular),
-            NSAttributedString.Key.foregroundColor: UIColor.darkGray
-        ]
-        
-        let caption = NSAttributedString(string: caption + (breakLine ? "\n" : ""), attributes: captionAttribute as [NSAttributedString.Key : Any])
-        
-        var focusedAttribute = [
-            NSAttributedString.Key.font: UIFont.customFont(ofSize: sizeText, weight: .bold),
-            NSAttributedString.Key.foregroundColor: textColor
-        ]
-        
-        if underlined {
-            focusedAttribute[NSAttributedString.Key.underlineStyle] = NSUnderlineStyle.single.rawValue as NSObject
-        }
-        
-        let totalAmount = NSAttributedString(string: text, attributes: focusedAttribute as [NSAttributedString.Key : Any])
-        
-        let combination = NSMutableAttributedString()
-        combination.append(caption)
-        combination.append(totalAmount)
-        
-        let label = PaddingLabel(frame: .zero)
-        label.attributedText = combination
-        label.numberOfLines = 0
-        
-        return label
-    }
-    
-    private func cellView(item: PaymentHistory) -> UIView {
+    private func cellView(item: IPPaymentHistory) -> UIView {
         let cell = UIView(frame: .zero)
         cell.backgroundColor = .lightGrayKitBg
         cell.translatesAutoresizingMaskIntoConstraints = false

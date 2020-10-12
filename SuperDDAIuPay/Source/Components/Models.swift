@@ -6,12 +6,12 @@
 //
 
 // MARK: - CardItem
-public struct CardItem {
+public struct IPCardItem {
     var barColor: UIColor
     var cardTitle: String?
     var dueDate: Date
     var isPaid: Bool?
-    var type: BaseCardType
+    var type: IPBaseCardType
     var amount: Double
     var isLocked: Bool
     
@@ -19,7 +19,7 @@ public struct CardItem {
                 cardTitle: String?,
                 dueDate: Date,
                 isPaid: Bool? = nil,
-                type: BaseCardType,
+                type: IPBaseCardType,
                 amount: Double,
                 isLocked: Bool) {
         self.barColor = barColor
@@ -37,8 +37,8 @@ public struct CardItem {
 }
 
 
-// MARK: - BaseCardType ENUM
-public enum BaseCardType {
+// MARK: - IPBaseCardType ENUM
+public enum IPBaseCardType {
     case netflix
     case nubank
     case lightbill(flag: BillFlagStatus)
@@ -80,16 +80,16 @@ public enum BaseCardType {
     }
 }
 
-// MARK: - Payment
-public struct Payment: Codable {
+// MARK: - IPPayment
+public struct IPPayment: Codable {
     let companyName, cnpj, cardNumber, companyLogo, cardHolderName, cardHolderAddress, automaticDebitBankName: String?
     let autoPayment, isAutomaticDebit, isFromIuPay, isUserAdded, authorizedLimit: Bool?
-    let paymentHistory: [PaymentHistory]?
-    let billDetails: BillDetails?
+    let paymentHistory: [IPPaymentHistory]?
+    let billDetails: IPBillDetails?
 }
 
-// MARK: - BillDetails
-public struct BillDetails: Codable {
+// MARK: - IPBillDetails
+public struct IPBillDetails: Codable {
     let barCode, billDate, dueDate, emissionDate: String?
     let interestInstallmentFine, interestInstallmentRate, interestInstallmentRateCET, interestRate: Int?
     let interestRateCET: Double?
@@ -97,8 +97,8 @@ public struct BillDetails: Codable {
     let value: Double?
 }
 
-// MARK: - PaymentHistory
-public struct PaymentHistory: Codable {
+// MARK: - IPPaymentHistory
+public struct IPPaymentHistory: Codable {
     let date: String
     let value: Double
     let isOpen: Bool?
@@ -110,8 +110,8 @@ public struct PaymentHistory: Codable {
     }
 }
 
-// MARK: - ChartData
-public struct ChartData: Codable {
+// MARK: - IPChartData
+public struct IPChartData: Codable {
     let label: String
     let value: Double
     

@@ -11,8 +11,8 @@ import SuperDDAIuPay
 
 class SelectorsViewController: UIViewController {
 
-    @IBOutlet weak var tabSelector: TabSelectorView!
-    @IBOutlet weak var monthSelector: MonthSelectorView!
+    @IBOutlet weak var tabSelector: IPTabSelectorView!
+    @IBOutlet weak var monthSelector: IPMonthSelectorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

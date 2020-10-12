@@ -1,5 +1,5 @@
 //
-//  RadioGroupPicker.swift
+//  RDGroupPicker.swift
 //
 //  Copyright © 2019 Yonat Sharon. All rights reserved.
 //
@@ -10,7 +10,7 @@ import SweeterSwift
 import SwiftUI
 
 /// The missing iOS radio buttons group
-@available(iOS 13.0, *) public struct RadioGroupPicker: UIViewRepresentable {
+@available(iOS 13.0, *) public struct RDGroupPicker: UIViewRepresentable {
     public typealias UIViewType = RDGroup
     private let uiView = RDGroup()
 
@@ -44,12 +44,12 @@ import SwiftUI
         uiView.titleFont =? titleFont
     }
 
-    public func makeUIView(context: UIViewRepresentableContext<RadioGroupPicker>) -> RDGroup {
+    public func makeUIView(context: UIViewRepresentableContext<RDGroupPicker>) -> RDGroup {
         uiView.addTarget(context.coordinator, action: #selector(Coordinator.valueChanged), for: .valueChanged)
         return uiView
     }
 
-    public func updateUIView(_ uiView: RDGroup, context: UIViewRepresentableContext<RadioGroupPicker>) {
+    public func updateUIView(_ uiView: RDGroup, context: UIViewRepresentableContext<RDGroupPicker>) {
         uiView.selectedIndex = selectedIndex
     }
 
@@ -58,9 +58,9 @@ import SwiftUI
     }
 
     public class Coordinator: NSObject {
-        let parent: RadioGroupPicker
+        let parent: RDGroupPicker
 
-        init(_ parent: RadioGroupPicker) {
+        init(_ parent: RDGroupPicker) {
             self.parent = parent
         }
 
@@ -70,7 +70,7 @@ import SwiftUI
     }
 }
 
-@available(iOS 13.0, *) public extension RadioGroupPicker {
+@available(iOS 13.0, *) public extension RDGroupPicker {
     func buttonSize(_ buttonSize: CGFloat) -> Self {
         uiView.buttonSize = buttonSize
         return self

@@ -1,5 +1,5 @@
 //
-//  CardCollectionCell.swift
+//  IPCardCollectionCell.swift
 //  SuperDDAIuPay
 //
 //  Created by Luciano Bohrer on 21/08/2020.
@@ -8,7 +8,7 @@
 import UIKit
 import Valley
 
-public class CardCollectionCell: UITableViewCell {
+public class IPCardCollectionCell: UITableViewCell {
 
     private lazy var leftBarView: UIView = {
         $0.translatesAutoresizingMaskIntoConstraints = false
@@ -92,7 +92,7 @@ public class CardCollectionCell: UITableViewCell {
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: -.smallMargin/2, left: 0, bottom: 0, right: 0))
     }
     
-    func configure(card: CardItem, isLast: Bool) {
+    func configure(card: IPCardItem, isLast: Bool) {
         self.titleLabel.text = card.cardTitle
         self.leftBarView.backgroundColor = card.barColor
         self.dateLabel.text = card.formattedDate()
@@ -189,6 +189,6 @@ public class CardCollectionCell: UITableViewCell {
     }
 }
 
-public extension CardCollectionCell {
-    static let identifier = String(describing: CardCollectionCell.self)
+public extension IPCardCollectionCell {
+    static let identifier = String(describing: IPCardCollectionCell.self)
 }

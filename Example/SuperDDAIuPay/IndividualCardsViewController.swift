@@ -11,9 +11,9 @@ import SuperDDAIuPay
 
 class IndividualCardsViewController: UIViewController {
 
-    @IBOutlet weak var beneficiaryCard: BeneficiaryCardView!
-    @IBOutlet weak var baseCardView: BaseCardView!
-    @IBOutlet weak var featuredCardView: BaseCardView!
+    @IBOutlet weak var beneficiaryCard: IPBeneficiaryCardView!
+    @IBOutlet weak var baseCardView: IPBaseCardView!
+    @IBOutlet weak var featuredCardView: IPBaseCardView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +36,7 @@ class IndividualCardsViewController: UIViewController {
         self.beneficiaryCard.handleSelectorChange = { [weak self] isOn in
             guard let self = self, isOn else { return }
             
-            PaymentLimitModalViewController.showModal(from: self) { [weak self] (selected, query) in
+            IPPaymentLimitModalViewController.showModal(from: self) { [weak self] (selected, query) in
                 self?.presentAlert(withTitle: "Result", message: "Selected: \(selected)\nQuery:\(String(describing: query))")
             }
         }
@@ -86,11 +86,11 @@ extension UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
-    func generatePaymentData() -> Payment {
+    func generatePaymentData() -> IPPayment {
         guard
             let url = Bundle.main.url(forResource: "PaymentDetailsData", withExtension: "json"),
             let data = try? Data(contentsOf: url),
-            let payment = try? JSONDecoder().decode(Payment.self, from: data)
+            let payment = try? JSONDecoder().decode(IPPayment.self, from: data)
         else {
             fatalError()
         }

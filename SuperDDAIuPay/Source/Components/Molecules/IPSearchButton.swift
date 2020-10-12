@@ -1,5 +1,5 @@
 //
-//  BarcodeButton.swift
+//  IPSearchButton.swift
 //  SuperDDAIuPay
 //
 //  Created by Luciano Bohrer on 08/10/2020.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class BarcodeButton: UIButton {
+public class IPSearchButton: UIButton {
 
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -20,8 +20,8 @@ public class BarcodeButton: UIButton {
     }
     
     private func setup() {
-        let image = UIImage.bundleImage(named: "barcode")
-        self.setImage(image?.resize(toWidth: .largeMargin)?.tint(with: .darkGray), for: .normal)
+        let image = UIImage.bundleImage(named: "search")
+        self.setImage(image?.resize(toWidth: .preLargeMargin)?.tint(with: .darkGray), for: .normal)
         self.setTitle(nil, for: .normal)
         self.setTitle(nil, for: .disabled)
     }

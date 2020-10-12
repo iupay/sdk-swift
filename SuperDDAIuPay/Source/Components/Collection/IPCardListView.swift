@@ -1,5 +1,5 @@
 //
-//  CardListView.swift
+//  IPCardListView.swift
 //  SuperDDAIuPay
 //
 //  Created by Luciano Bohrer on 21/08/2020.
@@ -8,16 +8,16 @@
 import UIKit
 
 // MARK: - Class
-public class CardListView: UIView {
+public class IPCardListView: UIView {
     
     // MARK: Public variables
-    public var handleCardSelected: ((CardItem) -> ())?
+    public var handleCardSelected: ((IPCardItem) -> ())?
     
     // MARK: Private variables
     private lazy var tableView: UITableView = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.backgroundColor = .clear
-        $0.register(CardCollectionCell.self, forCellReuseIdentifier: CardCollectionCell.identifier)
+        $0.register(IPCardCollectionCell.self, forCellReuseIdentifier: IPCardCollectionCell.identifier)
         $0.delegate = self
         $0.dataSource = self
         $0.separatorStyle = .none
@@ -36,7 +36,7 @@ public class CardListView: UIView {
     private var featuredTextColor: UIColor = .darkGray
     private var headerTitle: String?
     
-    private var source: [CardItem] = [] {
+    private var source: [IPCardItem] = [] {
         didSet {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
@@ -70,7 +70,7 @@ public class CardListView: UIView {
     ///     - totalAlignment: Alignment for the featuredPaymentText
     ///     - totalDueOnly: set if should be displayed only the total for dueDates
     
-    public func configure(source: [CardItem],
+    public func configure(source: [IPCardItem],
                           featured: Bool = false,
                           featuredColor: UIColor = .clear,
                           featuredTextColor: UIColor = .darkText,
@@ -142,7 +142,7 @@ public class CardListView: UIView {
 }
 
 // MARK: - UITableViewDelegate and DataSource
-extension CardListView: UITableViewDelegate, UITableViewDataSource {
+extension IPCardListView: UITableViewDelegate, UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.source.count + 1
@@ -150,7 +150,7 @@ extension CardListView: UITableViewDelegate, UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard
-            let cell = tableView.dequeueReusableCell(withIdentifier: CardCollectionCell.identifier) as? CardCollectionCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: IPCardCollectionCell.identifier) as? IPCardCollectionCell
         else { fatalError("reusable cell not found") }
         
         if indexPath.row == 0 {

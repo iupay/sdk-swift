@@ -10,6 +10,6 @@ import UIKit
 extension UIImage {
     
     static func bundleImage(named: String) -> UIImage? {
-        return UIImage(named: named, in: Bundle(for: BaseCardView.self), compatibleWith: nil)
+        return UIImage(named: named, in: Bundle(for: IPBaseCardView.self), compatibleWith: nil)
     }
 }

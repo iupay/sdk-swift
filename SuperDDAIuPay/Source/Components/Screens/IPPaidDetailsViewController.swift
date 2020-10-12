@@ -1,5 +1,5 @@
 //
-//  PayScheduleViewController.swift
+//  IPPaidDetailsViewController.swift
 //  SuperDDAIuPay
 //
 //  Created by Luciano Bohrer on 05/10/2020.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class PaidDetailsViewController: UIViewController {
+public class IPPaidDetailsViewController: UIViewController {
 
     @objc public var handleReceiptClick: (() -> ())?
     
@@ -217,8 +217,8 @@ public class PaidDetailsViewController: UIViewController {
                        size: CGFloat,
                        weight: UIFont.Weight,
                        textColor: UIColor,
-                       height: CGFloat? = nil) -> PaddingLabel {
-        let label = PaddingLabel(frame: .zero)
+                       height: CGFloat? = nil) -> IPPaddingLabel {
+        let label = IPPaddingLabel(frame: .zero)
         label.text = text
         label.numberOfLines = 0
         label.font = UIFont.customFont(ofSize: size, weight: weight)

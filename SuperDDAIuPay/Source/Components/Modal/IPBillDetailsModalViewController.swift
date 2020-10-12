@@ -1,5 +1,5 @@
 //
-//  BillDetailsModalViewController.swift
+//  IPBillDetailsModalViewController.swift
 //  SuperDDAIuPay
 //
 //  Created by Luciano Bohrer on 08/09/2020.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class BillDetailsModalViewController: UIViewController, UIGestureRecognizerDelegate {
+public class IPBillDetailsModalViewController: UIViewController, UIGestureRecognizerDelegate {
     
     private lazy var contentView: UIView = {
         $0.backgroundColor = .white
@@ -46,11 +46,11 @@ public class BillDetailsModalViewController: UIViewController, UIGestureRecogniz
         return $0
     }(UIStackView(frame: .zero))
     
-    private let paymentDetails: Payment
+    private let paymentDetails: IPPayment
     private let highlightColor: UIColor
     private let type: ModalType
     
-    init(payment: Payment, type: ModalType, highlightColor: UIColor) {
+    init(payment: IPPayment, type: ModalType, highlightColor: UIColor) {
         self.paymentDetails = payment
         self.highlightColor = highlightColor
         self.type = type
@@ -169,15 +169,15 @@ public class BillDetailsModalViewController: UIViewController, UIGestureRecogniz
     }
 }
 
-extension BillDetailsModalViewController {
+extension IPBillDetailsModalViewController {
     
     public enum ModalType {
         case bill
         case benificiary
     }
     
-    public static func showModal(from vc: UIViewController, payment: Payment, highlightColor: UIColor, type: ModalType)  {
-        let modalViewController = BillDetailsModalViewController(payment: payment, type: type, highlightColor: highlightColor)
+    public static func showModal(from vc: UIViewController, payment: IPPayment, highlightColor: UIColor, type: ModalType)  {
+        let modalViewController = IPBillDetailsModalViewController(payment: payment, type: type, highlightColor: highlightColor)
         modalViewController.modalPresentationStyle = .overCurrentContext
         vc.present(modalViewController, animated: false, completion: nil)
     }

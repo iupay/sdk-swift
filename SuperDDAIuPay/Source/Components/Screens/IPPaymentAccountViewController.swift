@@ -1,5 +1,5 @@
 //
-//  PaymentAccountViewController.swift
+//  IPPaymentAccountViewController.swift
 //  SuperDDAIuPay
 //
 //  Created by Luciano Bohrer on 07/10/2020.
@@ -8,7 +8,7 @@
 import UIKit
 import Material
 
-public class PaymentAccountViewController: UIViewController {
+public class IPPaymentAccountViewController: UIViewController {
 
     public var handleSeeDetails: (() -> ())?
     public var handleCopyBarcode: ((String) -> ())?
@@ -146,15 +146,15 @@ public class PaymentAccountViewController: UIViewController {
     }(UIView(frame: .zero))
     
     private lazy var baseCard = UIView(frame: .zero)
-    private var payment: Payment?
+    private var payment: IPPayment?
     
-    init(payment: Payment,
+    init(payment: IPPayment,
          pdfAvailable: Bool,
          paymentHistoryEnabled: Bool,
          chartDataText: String,
          chartDataValue: String,
          chartLegend: String,
-         chartData: [ChartData],
+         chartData: [IPChartData],
          baseColor: UIColor) {
         super.init(nibName: nil, bundle: nil)
         self.setupContent(payment: payment,
@@ -238,13 +238,13 @@ public class PaymentAccountViewController: UIViewController {
         self.stackView.bottomAnchor.constraint(equalTo: self.scrollView.bottomAnchor).isActive = true
     }
     
-    public func setupContent(payment: Payment,
+    public func setupContent(payment: IPPayment,
                              pdfAvailable: Bool,
                              paymentHistoryEnabled: Bool,
                              chartDataText: String,
                              chartDataValue: String,
                              chartLegend: String,
-                             chartData: [ChartData],
+                             chartData: [IPChartData],
                              baseColor: UIColor) {
         self.payment = payment
         self.historyTitle.isHidden = !paymentHistoryEnabled
@@ -269,7 +269,7 @@ public class PaymentAccountViewController: UIViewController {
         let userAdd = payment.isUserAdded ?? false
         self.userBadge.image = UIImage.bundleImage(named: userAdd ? "user-check" : "user-x")?.tint(with: userAdd ? .systemGreen : .systemRed)
         
-        let headerData = PaddingLabel(frame: .zero)
+        let headerData = IPPaddingLabel(frame: .zero)
         headerData.translatesAutoresizingMaskIntoConstraints = false
         headerData.heightAnchor.constraint(equalToConstant: 130).isActive = true
         headerData.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
@@ -305,7 +305,7 @@ public class PaymentAccountViewController: UIViewController {
         return space
     }
     
-    private func viewWithSelector(payment: Payment, color: UIColor) -> UIView {
+    private func viewWithSelector(payment: IPPayment, color: UIColor) -> UIView {
         
         let content = UIView(frame: .zero)
         
@@ -414,44 +414,8 @@ public class PaymentAccountViewController: UIViewController {
         container.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.copyBarcodeAction)))
         return container
     }
-
-    private func label(caption: String,
-                       text: String,
-                       sizeCaption: CGFloat,
-                       sizeText: CGFloat,
-                       textColor: UIColor? = .darkGray,
-                       breakLine: Bool = true,
-                       underlined: Bool = false) -> PaddingLabel {
-       let captionAttribute = [
-            NSAttributedString.Key.font: UIFont.customFont(ofSize: sizeCaption, weight: .regular),
-            NSAttributedString.Key.foregroundColor: UIColor.darkGray
-        ]
-        
-        let caption = NSAttributedString(string: caption + (breakLine ? "\n" : ""), attributes: captionAttribute as [NSAttributedString.Key : Any])
-        
-        var focusedAttribute = [
-            NSAttributedString.Key.font: UIFont.customFont(ofSize: sizeText, weight: .bold),
-            NSAttributedString.Key.foregroundColor: textColor
-        ]
-        
-        if underlined {
-            focusedAttribute[NSAttributedString.Key.underlineStyle] = NSUnderlineStyle.single.rawValue as NSObject
-        }
-        
-        let totalAmount = NSAttributedString(string: text, attributes: focusedAttribute as [NSAttributedString.Key : Any])
-        
-        let combination = NSMutableAttributedString()
-        combination.append(caption)
-        combination.append(totalAmount)
-        
-        let label = PaddingLabel(frame: .zero)
-        label.attributedText = combination
-        label.numberOfLines = 0
-        
-        return label
-    }
     
-    private func chartView(data: [ChartData], caption: String, color: UIColor) -> UIView {
+    private func chartView(data: [IPChartData], caption: String, color: UIColor) -> UIView {
         let chart = UIView(frame: .zero)
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -509,7 +473,7 @@ public class PaymentAccountViewController: UIViewController {
         textLabel.leadingAnchor.constraint(equalTo: content.leadingAnchor, constant: .bigMediumMargin).isActive = true
         textLabel.bottomAnchor.constraint(equalTo: content.bottomAnchor).isActive = true
         
-        let price = PaddingLabel(frame: .zero)
+        let price = IPPaddingLabel(frame: .zero)
         price.text = value
         price.font = UIFont.customFont(ofSize: 15, weight: .bold)
         price.textColor = color
