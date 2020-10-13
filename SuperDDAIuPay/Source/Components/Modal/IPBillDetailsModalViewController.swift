@@ -7,8 +7,14 @@
 
 import UIKit
 
+// MARK: - Class
+
+/**
+ Modal to be used for Bill and Beneficary detail
+ */
 public class IPBillDetailsModalViewController: UIViewController, UIGestureRecognizerDelegate {
     
+    // MARK: Private variables
     private lazy var contentView: UIView = {
         $0.backgroundColor = .white
         $0.layer.cornerRadius = .smallestMargin
@@ -50,6 +56,16 @@ public class IPBillDetailsModalViewController: UIViewController, UIGestureRecogn
     private let highlightColor: UIColor
     private let type: ModalType
     
+    // MARK: - Initializers
+    
+    /**
+     Custom initializer
+     
+     - parameter payment: Payment data.
+     - parameter type: .bill or .beneficiary
+     - parameter highlightColor: main color
+    
+     */
     init(payment: IPPayment, type: ModalType, highlightColor: UIColor) {
         self.paymentDetails = payment
         self.highlightColor = highlightColor
@@ -61,6 +77,7 @@ public class IPBillDetailsModalViewController: UIViewController, UIGestureRecogn
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: Lifecycle methods
     public override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -101,7 +118,8 @@ public class IPBillDetailsModalViewController: UIViewController, UIGestureRecogn
         self.configure()
     }
     
-    public func configure() {
+    // MARK: Private methods
+    private func configure() {
         
         guard let details = self.paymentDetails.billDetails else { return }
         var html = ""
@@ -125,7 +143,7 @@ public class IPBillDetailsModalViewController: UIViewController, UIGestureRecogn
                 "consulte o app na contratação<br>" +
                 "Juros e mora em caso de atraso:<br>" +
                 "\(details.interestInstallmentRate ?? 0)% am + \(details.interestInstallmentFine ?? 0)% multa CET: \(details.interestInstallmentRateCET ?? 0)% aa"
-        case .benificiary:
+        case .beneficiary:
             self.titleLabel.text = "Detalhes do beneficiário"
             html =
                 "CNPJ \(self.paymentDetails.cnpj ?? "--")<br>" +
@@ -173,9 +191,17 @@ extension IPBillDetailsModalViewController {
     
     public enum ModalType {
         case bill
-        case benificiary
+        case beneficiary
     }
     
+    /**
+     Static method to present the current controller modally and with transparent background
+     
+     - parameter vc: reference to the controller presenting it.
+     - parameter payment: payment data to load into it
+     - parameter highlightColor: main color
+     - parameter type: .bill or .beneficiary
+     */
     public static func showModal(from vc: UIViewController, payment: IPPayment, highlightColor: UIColor, type: ModalType)  {
         let modalViewController = IPBillDetailsModalViewController(payment: payment, type: type, highlightColor: highlightColor)
         modalViewController.modalPresentationStyle = .overCurrentContext

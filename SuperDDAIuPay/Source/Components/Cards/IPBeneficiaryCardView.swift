@@ -10,6 +10,11 @@ import Valley
 import Material
 
 // MARK: - Class
+
+/**
+    View for the Beneficiary Card
+ */
+
 public class IPBeneficiaryCardView: UIView {
 
     // MARK: Public variables
@@ -95,20 +100,11 @@ public class IPBeneficiaryCardView: UIView {
         
     // MARK: Public methods
     
-    /// Creates the Beneficiary Card View
-    /// from the given parameters.
-    ///
-    /// - Parameters:
-    ///     - frame: Default value is .zero
-    ///     - barColor: Left bar color
-    ///     - cardTextColor: Text color
-    ///     - selectorColor: Selector color
-    ///     - cardTitle: Card's title text
-    ///     - cnpj: cnpj text
-    ///     - activated: Set if selector is activated
-    ///     - amountLimit: Amount limit value
-    ///     - amountLimitText: Amount limit text
-    ///     - imageUrl: Color of the left bar
+    /**
+     Configures the Beneficiary Card View from the given parameters.
+     
+     - parameter settings: Object containg layout configuration
+     */
     
     public func configure(settings: BeneficiaryConfig) {
         
@@ -237,6 +233,9 @@ public class IPBeneficiaryCardView: UIView {
 
 // MARK: Definitions
 
+/**
+ Configuration class for config Benificiary Card
+ */
 public struct BeneficiaryConfig {
     public init(barColor: UIColor,
                 cardTextColor: UIColor,

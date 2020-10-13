@@ -7,8 +7,15 @@
 
 import UIKit
 
+// MARK: - Class
+
+/**
+ Basic Modal for messages
+
+ */
 public class IPMessageModalViewController: UIViewController, UIGestureRecognizerDelegate {
     
+    // MARK: Private variables
     private lazy var contentView: UIView = {
         $0.backgroundColor = .white
         $0.layer.cornerRadius = .smallestMargin
@@ -48,6 +55,14 @@ public class IPMessageModalViewController: UIViewController, UIGestureRecognizer
     
     private let titleText, message: String
     
+    // MARK: Initializers
+    
+    /**
+     Custom initializer
+     
+     - parameter title: modal title text.
+     - parameter message: modal message content.
+     */
     init(title: String, message: String) {
         self.titleText = title
         self.message = message
@@ -58,6 +73,7 @@ public class IPMessageModalViewController: UIViewController, UIGestureRecognizer
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: Life cycle methods
     public override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -98,7 +114,8 @@ public class IPMessageModalViewController: UIViewController, UIGestureRecognizer
         self.configure()
     }
     
-    public func configure() {
+    // MARK: - Private methods
+    private func configure() {
         let contentLabel = UILabel(frame: .zero)
         contentLabel.numberOfLines = 0
         contentLabel.font = UIFont.customFont(ofSize: 15, weight: .regular)
@@ -124,7 +141,14 @@ public class IPMessageModalViewController: UIViewController, UIGestureRecognizer
 }
 
 extension IPMessageModalViewController {
-    
+    /**
+     Static method to present the current controller modally and with transparent background
+     
+     - parameter vc: reference to the controller presenting it.
+     - parameter title: title text
+     - parameter message: message text
+
+     */
     public static func showModal(from vc: UIViewController, title: String, message: String) {
         let modalViewController = IPMessageModalViewController(title: title, message: message)
         modalViewController.modalPresentationStyle = .overCurrentContext

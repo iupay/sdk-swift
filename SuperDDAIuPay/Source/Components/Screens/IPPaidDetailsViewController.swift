@@ -218,11 +218,9 @@ public class IPPaidDetailsViewController: UIViewController {
                        weight: UIFont.Weight,
                        textColor: UIColor,
                        height: CGFloat? = nil) -> IPPaddingLabel {
-        let label = IPPaddingLabel(frame: .zero)
+        let label = IPPaddingLabel(text: text, fontSize: size, weight: weight, textColor: textColor)
         label.text = text
         label.numberOfLines = 0
-        label.font = UIFont.customFont(ofSize: size, weight: weight)
-        label.textColor = textColor
         if let height = height {
             label.heightAnchor.constraint(equalToConstant: height).isActive = true
         }

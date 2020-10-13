@@ -221,17 +221,12 @@ public class IPPaymentDetailsViewController: UIViewController {
 
         container.heightAnchor.constraint(equalToConstant: .defaultArea).isActive = true
         
-        let captionLabel = IPPaddingLabel(frame: .zero)
-        captionLabel.text = caption
-        captionLabel.font = UIFont.customFont(ofSize: 15, weight: .regular)
-        captionLabel.textColor = .darkGray
+        let captionLabel = IPPaddingLabel(text: caption, fontSize: 15, weight: .regular, textColor: .darkGray)
+        captionLabel.text = text
         captionLabel.textAlignment = .left
         
         
-        let textLabel = IPPaddingLabel(frame: .zero)
-        textLabel.text = text
-        textLabel.font = UIFont.customFont(ofSize: 15, weight: .bold)
-        textLabel.textColor = textColor
+        let textLabel = IPPaddingLabel(text: text, fontSize: 15, weight: .bold, textColor: textColor ?? .darkGray)
         textLabel.textAlignment = .right
         
         container.addArrangedSubview(captionLabel)

@@ -162,10 +162,10 @@ public class IPBeneficiaryDetailsViewController: UIViewController {
 
         self.stackView.addArrangedSubview(cnpjLabel)
         
-        let card = IPPaddingLabel(frame: .zero)
-        card.text = "Cartão" + (payment.cardNumber ?? "")
-        card.font = UIFont.customFont(ofSize: 15, weight: .regular)
-        card.textColor = .darkGray
+        let card = IPPaddingLabel(text: "Cartão" + (payment.cardNumber ?? ""),
+                                  fontSize: 15,
+                                  weight: .regular,
+                                  textColor: .darkGray)
         card.heightAnchor.constraint(equalToConstant: 21).isActive = true
         card.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
         self.stackView.addArrangedSubview(card)

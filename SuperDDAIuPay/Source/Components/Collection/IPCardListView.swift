@@ -8,6 +8,10 @@
 import UIKit
 
 // MARK: - Class
+
+/**
+ View to be used to display a collection of cards
+ */
 public class IPCardListView: UIView {
     
     // MARK: Public variables
@@ -50,25 +54,25 @@ public class IPCardListView: UIView {
         self.initialSetup()
     }
     
-    // MARK: Overridden methods
+    // MARK: Lifecycle methods
     public override func layoutSubviews() {
         super.layoutSubviews()
         self.tableView.backgroundColor = .clear
     }
     
     // MARK: Public methods
-    
-    /// Set settings for the component
-    /// from the given parameters.
-    ///
-    /// - Parameters:
-    ///     - source: List of cards to fill the component
-    ///     - featured: Flag to set as spotlight
-    ///     - featuredColor: Spotlight color
-    ///     - featuredTextColor: Color of bottom text (Default: .darkText)
-    ///     - featuredPaymentText: Text to describe the total amount displayed at the bottom of the view
-    ///     - totalAlignment: Alignment for the featuredPaymentText
-    ///     - totalDueOnly: set if should be displayed only the total for dueDates
+        
+    /**
+     Set settings for the component  the given parameters.
+     
+     - parameter source: List of cards to fill the component.
+     - parameter featured: Flag to set as spotlight
+     - parameter featuredColor: Spotlight color.
+     - parameter featuredTextColor: Color of bottom text (Default: .darkText)..
+     - parameter featuredPaymentText: Text to describe the total amount displayed at the bottom of the view..
+     - parameter totalAlignment: Alignment for the featuredPaymentText..
+     - parameter totalDueOnly: set if should be displayed only the total for dueDates..
+     */
     
     public func configure(source: [IPCardItem],
                           featured: Bool = false,

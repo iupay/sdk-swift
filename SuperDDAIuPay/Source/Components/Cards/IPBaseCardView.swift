@@ -11,7 +11,6 @@ import UIKit
 public class IPBaseCardView: UIView {
     
     // MARK: Private variables
-    
     private lazy var leftBarView: UIView = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         return $0
@@ -105,23 +104,16 @@ public class IPBaseCardView: UIView {
         
     // MARK: Public methods
     
-    /// Creates the Beneficiary Card View
-    /// from the given parameters.
-    ///
-    /// - Parameters:
-    ///     - barColor: Left bar color
-    ///     - cardTextColor: Text color
-    ///     - cardTitle: Card's title text
-    ///     - cnpj: cnpj text
-    ///     - paid: if bill was paid
-    ///     - due: if is due date
-    ///     - amount: Amount value
-    ///     - date: date to be displayed
-    ///     - text: text description
-    ///     - imageUrl: Color of the left bar
+    /**
+     Creates the Beneficiary Card View
+     from the given parameters inside the Settings object.
+     
+     - parameter settings: Object containing all settings to configure the card layout.
+     
+     */
     
     public func configure(settings: BaseConfig) {
-        
+
         [self.titleLabel,
          self.amountLabel,
          self.dateLabel,
@@ -136,7 +128,7 @@ public class IPBaseCardView: UIView {
         
         let captionAttribute = [
             NSAttributedString.Key.font: UIFont.customFont(ofSize: 13, weight: .regular),
-            NSAttributedString.Key.foregroundColor: UIColor.from(hex: "#7a7a7b")
+            NSAttributedString.Key.foregroundColor: UIColor.lightGrayKit
         ]
         
         let symbol = NSAttributedString(string: "R$ ", attributes: captionAttribute as [NSAttributedString.Key : Any])
@@ -201,7 +193,7 @@ public class IPBaseCardView: UIView {
             self.imageView.widthAnchor.constraint(equalToConstant: self.imageView.image?.size.width ?? .largeMargin).isActive = true
         }
         
-        if case BaseCardType.locked = settings.type {
+        if case IPBaseCardType.locked = settings.type {
             self.imageView.image = settings.type.image?.tint(with: settings.barColor)
             self.titleLabel.text = "Boleto protegido por senha"
             self.titleLabel.textColor = settings.barColor
@@ -347,6 +339,11 @@ public class IPBaseCardView: UIView {
 }
 
 // MARK: - Definitions
+
+/**
+ Configuration class for config Cards
+ */
+
 public struct BaseConfig {
     var barColor: UIColor
     var dueText: String
@@ -363,8 +360,11 @@ public struct BaseConfig {
     var imageUrl: String? = nil
     var featured: Bool = false
     var featuredColor: UIColor? = nil
-    var type: BaseCardType = .standard(imageUrl: "")
+    var type: IPBaseCardType = .standard(imageUrl: "")
     
+    /**
+     Set data to be used when building Cards
+     */
     public init(barColor: UIColor,
          dueText: String,
          cardTextColor: UIColor,
@@ -380,7 +380,7 @@ public struct BaseConfig {
          imageUrl: String? = nil,
          featured: Bool = false,
          featuredColor: UIColor? = nil,
-         type: BaseCardType = .standard(imageUrl: "")) {
+         type: IPBaseCardType = .standard(imageUrl: "")) {
         self.barColor = barColor
         self.dueText = dueText
         self.cardTextColor = cardTextColor

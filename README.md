@@ -1,4 +1,4 @@
- cd E# SuperDDAIuPay
+# SuperDDAIuPay
 
 [![Build Status](https://travis-ci.com/lucianobohrer/superdda-iupay.svg?branch=develop)](https://travis-ci.com/lucianobohrer/superdda-iupay)
 [![Version](https://img.shields.io/cocoapods/v/SuperDDAIuPay.svg?style=flat)](https://cocoapods.org/pods/SuperDDAIuPay)

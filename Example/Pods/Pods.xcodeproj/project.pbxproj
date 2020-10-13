@@ -26,7 +26,6 @@
 		14F7A4B3D4B1B8D9280AF23F6504A312 /* Motion-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30A37BF476F7ABEEEA145133493EB50A /* Motion-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1523EBEF61063145127A4EF93DE3D39F /* TransitionPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37474E937F2B1B8FF3FCA3B26D5B36A /* TransitionPreprocessor.swift */; };
 		16AD11C3C4D2CEFDA87C12252DC4CDC1 /* ImageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C00133982B6D6879EF91F2B3AC200F /* ImageCard.swift */; };
-		17687EFF6B1C1A158A386173D8933D1E /* BeneficiaryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9B2CDFDDA784DC16F92B308177BDEC /* BeneficiaryDetailsViewController.swift */; };
 		189EF13FD1244E21E814A1420A249095 /* MotionCAAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB7286CAD51D52B5217F9D63162E562 /* MotionCAAnimation.swift */; };
 		1A05DB308236070F3B1678B09B648CF7 /* ToolbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857DB9922B842A5E84421D89F8055A45 /* ToolbarController.swift */; };
 		1B53D90C0A6010B9C5BE23257FEF06A6 /* IPReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF2A10D022E4BB4F654CF1C07514631 /* IPReceiptViewController.swift */; };
@@ -103,7 +102,6 @@
 		62D07568354C22C0D65FDF76A8765C95 /* Motion+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A92D88956DC153F2296DE5C08576F0 /* Motion+Array.swift */; };
 		6335DFA0E7BE36603C326CAA11370FFE /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C6194C9E53C1E69FA3E87B854087B5 /* TextView.swift */; };
 		6695F6A6D6A91AF3F02679866187DFB2 /* Material+MotionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551B0BCBECAB53C1BD1D06FC6C580192 /* Material+MotionAnimation.swift */; };
-		66D2743BD120783D4A1D7F406A8D0E89 /* PaidDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221FB324461D87EEA39E5E8542F6CDC0 /* PaidDetailsViewController.swift */; };
 		6752A58981BC2FE286E9CAD2A29BB46D /* RDGroupPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F806A1E3620FF5624E743ACC0E8C7EA8 /* RDGroupPicker.swift */; };
 		6A04C7D56FA66748B7DB36422B813AB0 /* MotionSnapshotType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003896B0141917CC297A843DC3A095C /* MotionSnapshotType.swift */; };
 		6A482FE30FB143545584695D66DBDEE1 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EA55D4894D57259C777C0593A00344 /* Theme.swift */; };
@@ -166,7 +164,6 @@
 		AA2F9FEC2CBB36FCFAC8C1F1B09203DE /* MotionTransition+Complete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E023464E53FA7CB246538FBCF2E2A38 /* MotionTransition+Complete.swift */; };
 		AB59D369AA5C7772EBEACCD07202381E /* Valley-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F31C28C4D0CCE83F577F225EB60E18A3 /* Valley-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABDE93CFDAA758B83C10246DB8D09907 /* Material+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5DA240550D568E08E666FDD9C5768 /* Material+Array.swift */; };
-		AC502D70A53F427319C28A3D6916A433 /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89882BE7B9102DC96E0C81CDD38979D8 /* ReceiptViewController.swift */; };
 		AFAAFAE7775014E284D58F7C692A848B /* SweeterSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 023D2BE976DFACF3D0235D1326422D52 /* SweeterSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0CF8B84EBFC7690145C99DFB2B73232 /* PresenterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E07F61B694B7F0AF8703B354BA2DB86 /* PresenterCard.swift */; };
 		B0D461AB814DE54E58073B04C5670D96 /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25D243082F21136C5B508D08EE778E0 /* Material.framework */; };
@@ -233,7 +230,6 @@
 		E6B79506CD8744E0CB2B42B0AF53AB2B /* ConditionalPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9427640414E7D936E6A2A4ADA95132 /* ConditionalPreprocessor.swift */; };
 		E700C87AF139A86082E468EEFFDC68AB /* CurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7F2E59D9E00CEB0B0AF845A5CDE16 /* CurveAlgorithm.swift */; };
 		E76CCC9C9C0FB3BE102A9292A25E7133 /* TextStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6456DDAC031B9AFDC0B3FA2562C926 /* TextStorage.swift */; };
-		E84ADC35E28EAD5EB94F1A589F95FA17 /* PaymentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82AD8E841429CCEF3C50E88DBCF4CAB /* PaymentDetailsViewController.swift */; };
 		E9DD26ECD190B2537C86C08BE0372477 /* MotionViewPropertyViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C82D7707E4BAE1252C52D21CF55CD7 /* MotionViewPropertyViewContext.swift */; };
 		EAAA3D6568641206C57796AB2560CBCA /* Motion+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB08B52B1F9044F3F1D77D89616AEEBB /* Motion+UIView.swift */; };
 		EAFBF73E22862C729E6F27E699EEBB7D /* MotionAnimationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E6573464335793ABCCDEE863AEBE7F /* MotionAnimationState.swift */; };
@@ -353,52 +349,52 @@
 /* Begin PBXFileReference section */
 		0003896B0141917CC297A843DC3A095C /* MotionSnapshotType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionSnapshotType.swift; path = Sources/MotionSnapshotType.swift; sourceTree = "<group>"; };
 		01ACCF98BBDAB60F57A95A8081BAA803 /* MotionCoreAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionCoreAnimator.swift; path = Sources/Animator/MotionCoreAnimator.swift; sourceTree = "<group>"; };
-		021A600989582F153709767C6D0EB89F /* ReceiptViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ReceiptViewController.html; path = docs/Classes/ReceiptViewController.html; sourceTree = "<group>"; };
+		021A600989582F153709767C6D0EB89F /* ReceiptViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = ReceiptViewController.html; path = docs/Classes/ReceiptViewController.html; sourceTree = "<group>"; };
 		023D2BE976DFACF3D0235D1326422D52 /* SweeterSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SweeterSwift-umbrella.h"; sourceTree = "<group>"; };
 		0371BD4208533EBAB6867D5C400D73CF /* Shape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shape.swift; path = Sources/iOS/Type/Shape.swift; sourceTree = "<group>"; };
-		0387B1AF09F170CD0CB9503C57DF9F84 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0387B1AF09F170CD0CB9503C57DF9F84 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		047BE3A2FC3EB6FBDCB14C8709CF0375 /* Switch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Switch.swift; path = Sources/iOS/Switch/Switch.swift; sourceTree = "<group>"; };
 		052E54445AEB21F1535D3BAF94788B9C /* Motion-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Motion-Info.plist"; sourceTree = "<group>"; };
 		06F2CA390D6A807322C3E06F6269CF54 /* Material+UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIButton.swift"; path = "Sources/iOS/Extension/Material+UIButton.swift"; sourceTree = "<group>"; };
-		0768525B936125CC93DC8FBA3E060DB3 /* RadioGroupPicker.html */ = {isa = PBXFileReference; includeInIndex = 1; name = RadioGroupPicker.html; path = docs/Structs/RadioGroupPicker.html; sourceTree = "<group>"; };
+		0768525B936125CC93DC8FBA3E060DB3 /* RadioGroupPicker.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = RadioGroupPicker.html; path = docs/Structs/RadioGroupPicker.html; sourceTree = "<group>"; };
 		07F74812E624E9949D72AD8D22494C77 /* Grid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Grid.swift; path = Sources/iOS/Grid/Grid.swift; sourceTree = "<group>"; };
-		0813A800725AAC5A2750C8DDECE7B583 /* FilterView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = FilterView.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/FilterView.html; sourceTree = "<group>"; };
-		081E79E022F53D97D5B18797DC83BF58 /* BeneficiaryDetailsViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BeneficiaryDetailsViewController.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/BeneficiaryDetailsViewController.html; sourceTree = "<group>"; };
+		0813A800725AAC5A2750C8DDECE7B583 /* FilterView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = FilterView.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/FilterView.html; sourceTree = "<group>"; };
+		081E79E022F53D97D5B18797DC83BF58 /* BeneficiaryDetailsViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = BeneficiaryDetailsViewController.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/BeneficiaryDetailsViewController.html; sourceTree = "<group>"; };
 		083027CF89C437DAD03E20073EEFF2AB /* Material.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Material.release.xcconfig; sourceTree = "<group>"; };
-		096DAC6E59E0D27DCECDA4093C894A4C /* BarcodeButton.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BarcodeButton.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/BarcodeButton.html; sourceTree = "<group>"; };
-		0B64B1F820A7FF3A8CD8BEAA689B16FB /* PaddingLabel.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PaddingLabel.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/PaddingLabel.html; sourceTree = "<group>"; };
+		096DAC6E59E0D27DCECDA4093C894A4C /* BarcodeButton.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = BarcodeButton.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/BarcodeButton.html; sourceTree = "<group>"; };
+		0B64B1F820A7FF3A8CD8BEAA689B16FB /* PaddingLabel.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = PaddingLabel.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/PaddingLabel.html; sourceTree = "<group>"; };
 		0B7DE9EA90B396141D886D419C7B02EE /* Pods-SuperDDAIuPay_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SuperDDAIuPay_Example-frameworks.sh"; sourceTree = "<group>"; };
 		0B942615B6105818903B02539DDA4520 /* MatchPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchPreprocessor.swift; path = Sources/Preprocessors/MatchPreprocessor.swift; sourceTree = "<group>"; };
 		0C080CEFF6044F11733CA7822D8DB702 /* UIApplication+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+Sweeter.swift"; path = "Source/UIApplication+Sweeter.swift"; sourceTree = "<group>"; };
 		0C2D273824C97919DA29D3B9031DB6C1 /* Material+UILabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UILabel.swift"; path = "Sources/iOS/Extension/Material+UILabel.swift"; sourceTree = "<group>"; };
 		0C6D3865C88AA5F124A010BB0DE053F2 /* BottomNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BottomNavigationController.swift; path = Sources/iOS/BottomTabBar/BottomNavigationController.swift; sourceTree = "<group>"; };
-		0CD261F2648746829C4523879AF97C48 /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery.min.js; path = docs/js/jquery.min.js; sourceTree = "<group>"; };
+		0CD261F2648746829C4523879AF97C48 /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = docs/js/jquery.min.js; sourceTree = "<group>"; };
 		0D16F842FC9AB49EB952F2D0B00C8B45 /* Motion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Motion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DDA1907D5E1E57B9D4A0006E8E64FA3 /* typeahead.jquery.js */ = {isa = PBXFileReference; includeInIndex = 1; name = typeahead.jquery.js; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/js/typeahead.jquery.js; sourceTree = "<group>"; };
+		0DDA1907D5E1E57B9D4A0006E8E64FA3 /* typeahead.jquery.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = typeahead.jquery.js; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/js/typeahead.jquery.js; sourceTree = "<group>"; };
 		0F2BCFCD91C08BA00757328A339547DA /* ErrorTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorTextField.swift; path = Sources/iOS/Text/ErrorTextField.swift; sourceTree = "<group>"; };
 		10623AAAB84AC520BE1529F9E5A1A35A /* Material+UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIImage.swift"; path = "Sources/iOS/Extension/Material+UIImage.swift"; sourceTree = "<group>"; };
-		115CF9F8715CD1D4D5FC90FE5E29202C /* Roboto-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Medium.ttf"; path = "Sources/Font/Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
-		116506CDD8FAB64E0188A2330B14A63C /* lunr.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = lunr.min.js; path = docs/js/lunr.min.js; sourceTree = "<group>"; };
+		115CF9F8715CD1D4D5FC90FE5E29202C /* Roboto-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "Sources/Font/Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		116506CDD8FAB64E0188A2330B14A63C /* lunr.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = lunr.min.js; path = docs/js/lunr.min.js; sourceTree = "<group>"; };
 		124077692B25C04360A01137401488B7 /* Bundle+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Sweeter.swift"; path = "Source/Bundle+Sweeter.swift"; sourceTree = "<group>"; };
 		1248FB6EA056DEF035E411E5333B09CD /* ResourceBundle-SuperDDAIuPay-SuperDDAIuPay-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SuperDDAIuPay-SuperDDAIuPay-Info.plist"; sourceTree = "<group>"; };
-		129127088744C99890CBF58420B0496A /* BillFlagStatus.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BillFlagStatus.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Enums/BaseCardType/BillFlagStatus.html; sourceTree = "<group>"; };
+		129127088744C99890CBF58420B0496A /* BillFlagStatus.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = BillFlagStatus.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Enums/BaseCardType/BillFlagStatus.html; sourceTree = "<group>"; };
 		139F1081D4CF55FDD84F8C1B87410DC4 /* IPPaidDetailsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IPPaidDetailsViewController.swift; sourceTree = "<group>"; };
 		13C1038AA340B713F67A059ACD83E919 /* spinner.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = spinner.gif; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/img/spinner.gif; sourceTree = "<group>"; };
-		14CC663A850CD934CAF0919EB89E4774 /* BarcodeButton.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BarcodeButton.html; path = docs/Classes/BarcodeButton.html; sourceTree = "<group>"; };
-		14DF847B59644E08A11118C031322003 /* TabSelectorView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = TabSelectorView.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/TabSelectorView.html; sourceTree = "<group>"; };
+		14CC663A850CD934CAF0919EB89E4774 /* BarcodeButton.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = BarcodeButton.html; path = docs/Classes/BarcodeButton.html; sourceTree = "<group>"; };
+		14DF847B59644E08A11118C031322003 /* TabSelectorView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = TabSelectorView.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/TabSelectorView.html; sourceTree = "<group>"; };
 		14EA55D4894D57259C777C0593A00344 /* Theme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = Sources/iOS/Theme/Theme.swift; sourceTree = "<group>"; };
 		14FD4A01EBD5E4FEBF93ECFB2F257E7E /* Motion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Motion.modulemap; sourceTree = "<group>"; };
 		153AD60AFF92D0117B6206C145137673 /* MotionTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionTransition.swift; path = Sources/Transition/MotionTransition.swift; sourceTree = "<group>"; };
 		1593A4E552DAEE0B9A51A27189203573 /* Motion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Motion.release.xcconfig; sourceTree = "<group>"; };
 		160B2658948B6F0454C4C48FE889835C /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/img/gh.png; sourceTree = "<group>"; };
-		16431CA3D43EA58736415F6BE84AFC25 /* String.html */ = {isa = PBXFileReference; includeInIndex = 1; name = String.html; path = docs/Extensions/String.html; sourceTree = "<group>"; };
+		16431CA3D43EA58736415F6BE84AFC25 /* String.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = String.html; path = docs/Extensions/String.html; sourceTree = "<group>"; };
 		168C185712B49A9C31782B97CEE0AAF5 /* Layer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layer.swift; path = Sources/iOS/Layer/Layer.swift; sourceTree = "<group>"; };
-		169A335622B62367B4EA8E42B8E29CE9 /* TabSelectorView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = TabSelectorView.html; path = docs/Classes/TabSelectorView.html; sourceTree = "<group>"; };
+		169A335622B62367B4EA8E42B8E29CE9 /* TabSelectorView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = TabSelectorView.html; path = docs/Classes/TabSelectorView.html; sourceTree = "<group>"; };
 		1703686FD9A749B4FA750C5C531C4473 /* FlatButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatButton.swift; path = Sources/iOS/Button/FlatButton.swift; sourceTree = "<group>"; };
-		18C6DA60DAB9BCF1A44B48A64E73130E /* ReceiptViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ReceiptViewController.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/ReceiptViewController.html; sourceTree = "<group>"; };
-		18FE9669C4CA45CC785A42A653A2711B /* UIFont.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UIFont.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Extensions/UIFont.html; sourceTree = "<group>"; };
+		18C6DA60DAB9BCF1A44B48A64E73130E /* ReceiptViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = ReceiptViewController.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/ReceiptViewController.html; sourceTree = "<group>"; };
+		18FE9669C4CA45CC785A42A653A2711B /* UIFont.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = UIFont.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Extensions/UIFont.html; sourceTree = "<group>"; };
 		195FFB878DC9B30E8BAF4C5544138940 /* UIColorExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
-		19706FDC967DBABDA6D299FC08516D31 /* Pods_SuperDDAIuPay_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SuperDDAIuPay_Tests.framework; path = "Pods-SuperDDAIuPay_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19706FDC967DBABDA6D299FC08516D31 /* Pods_SuperDDAIuPay_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperDDAIuPay_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		199ABA00FCAADE16002BCBB5A31E9AFF /* LayoutAnchor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutAnchor.swift; path = Sources/iOS/Layout/LayoutAnchor.swift; sourceTree = "<group>"; };
 		1AAC084ADEB27FE5580E6ECC68FE295E /* DesignAtoms.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DesignAtoms.swift; sourceTree = "<group>"; };
 		1AC632306FEA04E03AE8E8B849D353CC /* CascadePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CascadePreprocessor.swift; path = Sources/Preprocessors/CascadePreprocessor.swift; sourceTree = "<group>"; };
@@ -406,15 +402,14 @@
 		1D5B139168B283C15CBEF78E8EF62F8B /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SuperDDAIuPay/Assets/Assets.xcassets; sourceTree = "<group>"; };
 		1DD057577DF72A2B1D0C470E9D474D0F /* IPPaymentLimitModalViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IPPaymentLimitModalViewController.swift; sourceTree = "<group>"; };
 		1E3C245183C706DFFADF1AAAF50E5C4A /* InterimSpace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterimSpace.swift; path = Sources/iOS/Type/InterimSpace.swift; sourceTree = "<group>"; };
-		1E95D869B8B2E9C28706D23A93D2A3D8 /* PaymentLimitModalViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PaymentLimitModalViewController.html; path = docs/Classes/PaymentLimitModalViewController.html; sourceTree = "<group>"; };
+		1E95D869B8B2E9C28706D23A93D2A3D8 /* PaymentLimitModalViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = PaymentLimitModalViewController.html; path = docs/Classes/PaymentLimitModalViewController.html; sourceTree = "<group>"; };
 		1F64CBBDF89338351817FBD4796F608F /* SweeterSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SweeterSwift-Info.plist"; sourceTree = "<group>"; };
 		1F6CB0D78C15B3F1F2B67C8CAE1A72B1 /* Pods-SuperDDAIuPay_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SuperDDAIuPay_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2155F804CE4918C47337CA0D1A7D7910 /* IPMonthSelectorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IPMonthSelectorView.swift; sourceTree = "<group>"; };
 		21C4EE1CB84298D7A85BEF2DED24B41F /* FABButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FABButton.swift; path = Sources/iOS/Button/FABButton.swift; sourceTree = "<group>"; };
-		221FB324461D87EEA39E5E8542F6CDC0 /* PaidDetailsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaidDetailsViewController.swift; sourceTree = "<group>"; };
-		24798DD063FAA2DFEC73BFB7F14BD30E /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
+		24798DD063FAA2DFEC73BFB7F14BD30E /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
 		25222EFDB4C379611909101B6D88C852 /* RDButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RDButton.swift; sourceTree = "<group>"; };
-		25833F7B82962EC5CC8FCA05D1BDDB37 /* SuperDDAIuPay.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SuperDDAIuPay.bundle; path = "SuperDDAIuPay-SuperDDAIuPay.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25833F7B82962EC5CC8FCA05D1BDDB37 /* SuperDDAIuPay.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperDDAIuPay.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		25C06D9ACA939FB6AF7FF33C5E169EB8 /* ValleyCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValleyCache.swift; path = Valley/Source/ValleyCache.swift; sourceTree = "<group>"; };
 		26EFE235121C7F302CFC25B6F0D90A59 /* IPMainButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IPMainButton.swift; sourceTree = "<group>"; };
 		270CA444F4FD7CA1B8B952E5634B2FDA /* MotionCorePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionCorePreprocessor.swift; path = Sources/Preprocessors/MotionCorePreprocessor.swift; sourceTree = "<group>"; };
@@ -422,59 +417,58 @@
 		28CCBDFFB84FC5662E6DA0995990A0FE /* Motion-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Motion-dummy.m"; sourceTree = "<group>"; };
 		29E0FE1B9D14956C9AB2F1CD8DCF03E2 /* Valley-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Valley-dummy.m"; sourceTree = "<group>"; };
 		2A341C506C51D05C473BEC4BAF30413B /* SweeterSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SweeterSwift.debug.xcconfig; sourceTree = "<group>"; };
-		2B9B2CDFDDA784DC16F92B308177BDEC /* BeneficiaryDetailsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BeneficiaryDetailsViewController.swift; sourceTree = "<group>"; };
-		2BC322DF5FFD8C5EFD1A8AF068BB7BE3 /* ModalType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ModalType.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/BillDetailsModalViewController/ModalType.html; sourceTree = "<group>"; };
-		2CB0EFA8C37DE45B1FC607ECCBCD7E73 /* PaymentDetailsViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PaymentDetailsViewController.html; path = docs/Classes/PaymentDetailsViewController.html; sourceTree = "<group>"; };
+		2BC322DF5FFD8C5EFD1A8AF068BB7BE3 /* ModalType.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = ModalType.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/BillDetailsModalViewController/ModalType.html; sourceTree = "<group>"; };
+		2CB0EFA8C37DE45B1FC607ECCBCD7E73 /* PaymentDetailsViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = PaymentDetailsViewController.html; path = docs/Classes/PaymentDetailsViewController.html; sourceTree = "<group>"; };
 		2F3EEB3AD23EDA11FE8266FF1E157B80 /* IPPaymentDetailsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IPPaymentDetailsViewController.swift; sourceTree = "<group>"; };
 		2F542F6192C86AD4694FBE451047F278 /* RDGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RDGroup.swift; sourceTree = "<group>"; };
 		2FC0D90F576B897B66384EB0F5A2472D /* UIImageExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
-		2FF043881723D3604B62EE6D76F78841 /* SuperDDAIuPay.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SuperDDAIuPay.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2FF043881723D3604B62EE6D76F78841 /* SuperDDAIuPay.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SuperDDAIuPay.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		30A37BF476F7ABEEEA145133493EB50A /* Motion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Motion-umbrella.h"; sourceTree = "<group>"; };
-		3161909BC3B5AC3E2AB57962D5D8504A /* BeneficiaryConfig.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BeneficiaryConfig.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Structs/BeneficiaryConfig.html; sourceTree = "<group>"; };
-		318F1C9FC95C824A329FAD4CD7A74CD4 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Bold.ttf"; path = "Sources/Font/Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		3161909BC3B5AC3E2AB57962D5D8504A /* BeneficiaryConfig.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = BeneficiaryConfig.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Structs/BeneficiaryConfig.html; sourceTree = "<group>"; };
+		318F1C9FC95C824A329FAD4CD7A74CD4 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "Sources/Font/Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		33A61362175718CD453888B2C0EB788C /* IPPaddingLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IPPaddingLabel.swift; sourceTree = "<group>"; };
 		33B493F22F2A6B9293F971F273226BE3 /* TextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextField.swift; path = Sources/iOS/Text/TextField.swift; sourceTree = "<group>"; };
 		3448E101BC841AF269B3009B7E1D4374 /* CollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = Sources/iOS/Collection/CollectionViewCell.swift; sourceTree = "<group>"; };
-		34596DB7BCB235CD18ACAFCA106D5B94 /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.css; path = docs/css/highlight.css; sourceTree = "<group>"; };
-		34CA3A75323CE42960CFCA46AA46E302 /* FilterView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = FilterView.html; path = docs/Classes/FilterView.html; sourceTree = "<group>"; };
-		35E57386C9F524CE9003397394BE3C75 /* String.html */ = {isa = PBXFileReference; includeInIndex = 1; name = String.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Extensions/String.html; sourceTree = "<group>"; };
+		34596DB7BCB235CD18ACAFCA106D5B94 /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = highlight.css; path = docs/css/highlight.css; sourceTree = "<group>"; };
+		34CA3A75323CE42960CFCA46AA46E302 /* FilterView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = FilterView.html; path = docs/Classes/FilterView.html; sourceTree = "<group>"; };
+		35E57386C9F524CE9003397394BE3C75 /* String.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = String.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Extensions/String.html; sourceTree = "<group>"; };
 		37D1F5FADF5DC7D61D3B665D8CC5CEB9 /* SuperDDAIuPay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SuperDDAIuPay.modulemap; sourceTree = "<group>"; };
-		380C37CFB209B488786074DA6802757C /* RDButton.html */ = {isa = PBXFileReference; includeInIndex = 1; name = RDButton.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/RDButton.html; sourceTree = "<group>"; };
+		380C37CFB209B488786074DA6802757C /* RDButton.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = RDButton.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/RDButton.html; sourceTree = "<group>"; };
 		394CC9EF61702B0B8BFB22D5A1FC893A /* Pods-SuperDDAIuPay_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SuperDDAIuPay_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3A634F8F91E485FAFDC3ED5D4B1C729B /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; name = search.json; path = docs/search.json; sourceTree = "<group>"; };
+		3A634F8F91E485FAFDC3ED5D4B1C729B /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = search.json; path = docs/search.json; sourceTree = "<group>"; };
 		3AFA31B679566DFD9E35B002ACB8817A /* TableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = Sources/iOS/Table/TableViewController.swift; sourceTree = "<group>"; };
-		3B012B9D6D84E6566D6336662636BAD8 /* Pods_SuperDDAIuPay_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SuperDDAIuPay_Example.framework; path = "Pods-SuperDDAIuPay_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BC62E085FD6B80A47228C8DA0C7CF62 /* CardListView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = CardListView.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/CardListView.html; sourceTree = "<group>"; };
+		3B012B9D6D84E6566D6336662636BAD8 /* Pods_SuperDDAIuPay_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperDDAIuPay_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC62E085FD6B80A47228C8DA0C7CF62 /* CardListView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = CardListView.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/CardListView.html; sourceTree = "<group>"; };
 		3C2A3E65E917B5161CCEB90C2206E6ED /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardCollectionViewCell.swift; path = Sources/iOS/Collection/CardCollectionView/CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		3C8CBD6A62D51EB9EE935EADD930FFA0 /* TimeInterval+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TimeInterval+Sweeter.swift"; path = "Source/TimeInterval+Sweeter.swift"; sourceTree = "<group>"; };
 		3EB7286CAD51D52B5217F9D63162E562 /* MotionCAAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionCAAnimation.swift; path = Sources/MotionCAAnimation.swift; sourceTree = "<group>"; };
 		40A0CCFA55B7DC0E524038772F2311C8 /* Material-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Material-Info.plist"; sourceTree = "<group>"; };
 		426169826E40E39217D817EB16238944 /* String+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Sweeter.swift"; path = "Source/String+Sweeter.swift"; sourceTree = "<group>"; };
 		442EA648B8A4A2A2DA1B5D7EA60AEE26 /* LineChart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
-		443FA6EAD8AD94038AA34DE1C97850C9 /* Material.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Material.framework; path = Material.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		443FA6EAD8AD94038AA34DE1C97850C9 /* Material.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Material.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44925926323AB21F497749A685CC6952 /* Pods-SuperDDAIuPay_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SuperDDAIuPay_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		4548380F47808BC1725D429E94673859 /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.css; path = docs/css/jazzy.css; sourceTree = "<group>"; };
-		459E90C8D204E0CD2BC38DA6C66B5AB2 /* PaymentLimitModalViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PaymentLimitModalViewController.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/PaymentLimitModalViewController.html; sourceTree = "<group>"; };
+		4548380F47808BC1725D429E94673859 /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = jazzy.css; path = docs/css/jazzy.css; sourceTree = "<group>"; };
+		459E90C8D204E0CD2BC38DA6C66B5AB2 /* PaymentLimitModalViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = PaymentLimitModalViewController.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/PaymentLimitModalViewController.html; sourceTree = "<group>"; };
 		4629468CF26C924289C501F1ED9C132A /* UIViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
-		4631D46CA809F900BBE108B444C07BF8 /* RDGroup.html */ = {isa = PBXFileReference; includeInIndex = 1; name = RDGroup.html; path = docs/Classes/RDGroup.html; sourceTree = "<group>"; };
+		4631D46CA809F900BBE108B444C07BF8 /* RDGroup.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = RDGroup.html; path = docs/Classes/RDGroup.html; sourceTree = "<group>"; };
 		476B656393ACDEBC276C55D7319F9D01 /* MotionPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionPlugin.swift; path = Sources/MotionPlugin.swift; sourceTree = "<group>"; };
 		476D1B6BD97EE8C6DB3E4D97FAEB3B33 /* MotionTransition+Animate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotionTransition+Animate.swift"; path = "Sources/Transition/MotionTransition+Animate.swift"; sourceTree = "<group>"; };
 		486C3B29A0B952B4AA4B01D50AA57B43 /* Material+UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIViewController.swift"; path = "Sources/iOS/Extension/Material+UIViewController.swift"; sourceTree = "<group>"; };
-		487AA334D6FA7E9B1FFFD311670A7D92 /* CardCollectionCell.html */ = {isa = PBXFileReference; includeInIndex = 1; name = CardCollectionCell.html; path = docs/Classes/CardCollectionCell.html; sourceTree = "<group>"; };
+		487AA334D6FA7E9B1FFFD311670A7D92 /* CardCollectionCell.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = CardCollectionCell.html; path = docs/Classes/CardCollectionCell.html; sourceTree = "<group>"; };
 		48C70BFC41052DC104253ECF2CBDFFBE /* UIView+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Sweeter.swift"; path = "Source/UIView+Sweeter.swift"; sourceTree = "<group>"; };
 		4A49EF6AC4C0FBC77AC39A386352BBF6 /* SnackbarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnackbarController.swift; path = Sources/iOS/Snackbar/SnackbarController.swift; sourceTree = "<group>"; };
 		4AE87D6D0AA617F21B22F20805B76361 /* MotionViewOrderStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionViewOrderStrategy.swift; path = Sources/MotionViewOrderStrategy.swift; sourceTree = "<group>"; };
-		4AE8A8FF44D0551057BC201F11F76F15 /* jazzy.search.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.search.js; path = docs/js/jazzy.search.js; sourceTree = "<group>"; };
+		4AE8A8FF44D0551057BC201F11F76F15 /* jazzy.search.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = jazzy.search.js; path = docs/js/jazzy.search.js; sourceTree = "<group>"; };
 		4B4D3FE89E29357C5B391F872DB56383 /* Pods-SuperDDAIuPay_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SuperDDAIuPay_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4C9404370406B6F1200A229E710F0FED /* Material+CALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+CALayer.swift"; path = "Sources/iOS/Extension/Material+CALayer.swift"; sourceTree = "<group>"; };
 		4D2BE2C3477DEA7093D48927B1825DD1 /* StringExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		4E5FE21ACE9D884CF7CFC60BB66A0539 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4EC5A66DF9948C3E85EFD581655D94F8 /* StatusBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusBarController.swift; path = Sources/iOS/StatusBar/StatusBarController.swift; sourceTree = "<group>"; };
-		500107F37FF0E5ECC80F7D0BF41CBE35 /* MessageModalViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MessageModalViewController.html; path = docs/Classes/MessageModalViewController.html; sourceTree = "<group>"; };
+		500107F37FF0E5ECC80F7D0BF41CBE35 /* MessageModalViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = MessageModalViewController.html; path = docs/Classes/MessageModalViewController.html; sourceTree = "<group>"; };
 		504DEE09BE1E5E68B8DFE756750F1E4B /* CollectionReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionReusableView.swift; path = Sources/iOS/Collection/CollectionReusableView.swift; sourceTree = "<group>"; };
 		5088E9E079CB5CC332EBA7980996A0FD /* Toolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toolbar.swift; path = Sources/iOS/Toolbar/Toolbar.swift; sourceTree = "<group>"; };
 		512F5E991BB16346881858D264A6FFB9 /* Pods-SuperDDAIuPay_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SuperDDAIuPay_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5349C9049F4AC7EBB2987C1EE4DF96FB /* jazzy.search.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.search.js; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/js/jazzy.search.js; sourceTree = "<group>"; };
+		5349C9049F4AC7EBB2987C1EE4DF96FB /* jazzy.search.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = jazzy.search.js; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/js/jazzy.search.js; sourceTree = "<group>"; };
 		53DD5A221DACE467A8DED7B6490486AD /* NavigationDrawerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationDrawerController.swift; path = Sources/iOS/NavigationDrawer/NavigationDrawerController.swift; sourceTree = "<group>"; };
 		543C659D27E52C6B2F537F98F16C9213 /* MotionAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionAnimation.swift; path = Sources/MotionAnimation.swift; sourceTree = "<group>"; };
 		54C9B935FC037C974B9116130352FC51 /* IgnoreSubviewModifiersPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IgnoreSubviewModifiersPreprocessor.swift; path = Sources/Preprocessors/IgnoreSubviewModifiersPreprocessor.swift; sourceTree = "<group>"; };
@@ -487,216 +481,215 @@
 		58F107183B6B16D60DEC901B6DC96871 /* TableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = Sources/iOS/Table/TableViewCell.swift; sourceTree = "<group>"; };
 		5963A9D1B7042309D7EC8203F406083B /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Sources/iOS/Layout/LayoutConstraint.swift; sourceTree = "<group>"; };
 		5B782DA00B33E083C36B1409E78254B2 /* Valley.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Valley.modulemap; sourceTree = "<group>"; };
-		5BC3EE5F992959A115A18E9B83A7056A /* BeneficiaryType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BeneficiaryType.html; path = docs/Structs/BeneficiaryConfig/BeneficiaryType.html; sourceTree = "<group>"; };
-		5C8CC5AA79A17CA98271958218E42E0D /* BeneficiaryCardView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BeneficiaryCardView.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/BeneficiaryCardView.html; sourceTree = "<group>"; };
-		5CBCC6786D99A1522325312FD2FD3405 /* RadioGroupPicker.html */ = {isa = PBXFileReference; includeInIndex = 1; name = RadioGroupPicker.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Structs/RadioGroupPicker.html; sourceTree = "<group>"; };
+		5BC3EE5F992959A115A18E9B83A7056A /* BeneficiaryType.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = BeneficiaryType.html; path = docs/Structs/BeneficiaryConfig/BeneficiaryType.html; sourceTree = "<group>"; };
+		5C8CC5AA79A17CA98271958218E42E0D /* BeneficiaryCardView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = BeneficiaryCardView.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/BeneficiaryCardView.html; sourceTree = "<group>"; };
+		5CBCC6786D99A1522325312FD2FD3405 /* RadioGroupPicker.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = RadioGroupPicker.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Structs/RadioGroupPicker.html; sourceTree = "<group>"; };
 		5CC9971A7B02A311453CB5811D09CD2D /* SweeterSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SweeterSwift.release.xcconfig; sourceTree = "<group>"; };
 		5E07F61B694B7F0AF8703B354BA2DB86 /* PresenterCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresenterCard.swift; path = Sources/iOS/Card/PresenterCard.swift; sourceTree = "<group>"; };
-		5E18EFD3D35FAB0C068F549990B44C5F /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.css; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/css/jazzy.css; sourceTree = "<group>"; };
-		5E949FA1BD71294E9C97077DAE1799AB /* BillDetailsModalViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BillDetailsModalViewController.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/BillDetailsModalViewController.html; sourceTree = "<group>"; };
-		5EA8634179518E2FD9FC2BBD3DB895EC /* Structs.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Structs.html; path = docs/Structs.html; sourceTree = "<group>"; };
+		5E18EFD3D35FAB0C068F549990B44C5F /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = jazzy.css; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/css/jazzy.css; sourceTree = "<group>"; };
+		5E949FA1BD71294E9C97077DAE1799AB /* BillDetailsModalViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = BillDetailsModalViewController.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/BillDetailsModalViewController.html; sourceTree = "<group>"; };
+		5EA8634179518E2FD9FC2BBD3DB895EC /* Structs.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = Structs.html; path = docs/Structs.html; sourceTree = "<group>"; };
 		5EB4CD60146727E882C0691D46AADD06 /* Font.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Font.swift; path = Sources/iOS/Font/Font.swift; sourceTree = "<group>"; };
 		5EEE612150810E26FCC4ED506493B7E6 /* SearchBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = Sources/iOS/SearchBar/SearchBar.swift; sourceTree = "<group>"; };
-		5F275072CA9F282D56B08786A5EB974C /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; name = search.json; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/search.json; sourceTree = "<group>"; };
+		5F275072CA9F282D56B08786A5EB974C /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = search.json; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/search.json; sourceTree = "<group>"; };
 		5F38FD527F38145D7D186B59924E71A7 /* Snackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Snackbar.swift; path = Sources/iOS/Snackbar/Snackbar.swift; sourceTree = "<group>"; };
 		5F9427640414E7D936E6A2A4ADA95132 /* ConditionalPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConditionalPreprocessor.swift; path = Sources/Preprocessors/ConditionalPreprocessor.swift; sourceTree = "<group>"; };
-		606F717E517E76F91528C7C03000646A /* PaymentHistory.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PaymentHistory.html; path = docs/Structs/PaymentHistory.html; sourceTree = "<group>"; };
-		6078A8ABFAE9EAB3201BF440642C5EE2 /* UIColor.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UIColor.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Extensions/UIColor.html; sourceTree = "<group>"; };
+		606F717E517E76F91528C7C03000646A /* PaymentHistory.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = PaymentHistory.html; path = docs/Structs/PaymentHistory.html; sourceTree = "<group>"; };
+		6078A8ABFAE9EAB3201BF440642C5EE2 /* UIColor.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = UIColor.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Extensions/UIColor.html; sourceTree = "<group>"; };
 		62B9CA90EC3C8B87DDF472F184C4DE76 /* TabsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabsController.swift; path = Sources/iOS/Tab/TabsController.swift; sourceTree = "<group>"; };
 		6332C51DE6218986857B774F13E1A84B /* UIImageView+Valley.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Valley.swift"; path = "Valley/Source/Extensions/UIImageView+Valley.swift"; sourceTree = "<group>"; };
 		654AFCF3E559156E45502BB62BA3C465 /* RobotoFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RobotoFont.swift; path = Sources/iOS/Font/RobotoFont.swift; sourceTree = "<group>"; };
 		6740A0BB59884F11105D3EFBF2D705FF /* CardCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardCollectionViewController.swift; path = Sources/iOS/Collection/CardCollectionView/CardCollectionViewController.swift; sourceTree = "<group>"; };
 		68309D67F64D7181874EC2C6C98C0144 /* CollectionViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewLayout.swift; path = Sources/iOS/Collection/CollectionViewLayout.swift; sourceTree = "<group>"; };
-		68E77A9A4A773C8313F974DAF08D806E /* Sort.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Sort.html; path = docs/Classes/FilterView/Sort.html; sourceTree = "<group>"; };
+		68E77A9A4A773C8313F974DAF08D806E /* Sort.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = Sort.html; path = docs/Classes/FilterView/Sort.html; sourceTree = "<group>"; };
 		695BE66E663EA38F8F7020F99F88E627 /* Material-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Material-umbrella.h"; sourceTree = "<group>"; };
 		6A2E9F0A3DCF00A4C7650B0A5E3FD799 /* Motion+CAMediaTimingFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Motion+CAMediaTimingFunction.swift"; path = "Sources/Extensions/Motion+CAMediaTimingFunction.swift"; sourceTree = "<group>"; };
 		6A6C2A13B0CB428953B4D6D8A45DC2F3 /* Motion+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Motion+UIKit.swift"; path = "Sources/Extensions/Motion+UIKit.swift"; sourceTree = "<group>"; };
 		6AB7371126626E9484685BF5EE492779 /* Motion-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Motion-prefix.pch"; sourceTree = "<group>"; };
 		6BB5B49073EDFAA0F8ECE8B4445367EC /* Pods-SuperDDAIuPay_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SuperDDAIuPay_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6BE18273AF1074AF22FCA88C50787F6D /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Extensions.html; path = docs/Extensions.html; sourceTree = "<group>"; };
+		6BE18273AF1074AF22FCA88C50787F6D /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = Extensions.html; path = docs/Extensions.html; sourceTree = "<group>"; };
 		6BFEB0091F3EF83D65C7F0992863E57E /* NSManagedObjectContext+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectContext+Sweeter.swift"; path = "Source/NSManagedObjectContext+Sweeter.swift"; sourceTree = "<group>"; };
 		6C0A94EEE6655EB71B0B33F3AEA4E223 /* Material+UIColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIColor.swift"; path = "Sources/iOS/Extension/Material+UIColor.swift"; sourceTree = "<group>"; };
 		6D2AEBDBFF240480B53EE92FD8452FDB /* Material+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIView.swift"; path = "Sources/iOS/Extension/Material+UIView.swift"; sourceTree = "<group>"; };
 		6D6BC6D6F86B7D6BD1E86ECB3EA1204D /* UIStackView+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStackView+Sweeter.swift"; path = "Source/UIStackView+Sweeter.swift"; sourceTree = "<group>"; };
 		6DB929C627354CC11B6F09753866AE7E /* FABMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FABMenuController.swift; path = Sources/iOS/FABMenu/FABMenuController.swift; sourceTree = "<group>"; };
-		6E26D647127A02063D3DDCFF977CD8B9 /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Extensions.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Extensions.html; sourceTree = "<group>"; };
-		6E74C74159C0984911EAE7C95FE5B02D /* undocumented.json */ = {isa = PBXFileReference; includeInIndex = 1; name = undocumented.json; path = docs/undocumented.json; sourceTree = "<group>"; };
-		6EC49E6FEBBB84C83A60F675CF53CB09 /* BaseConfig.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BaseConfig.html; path = docs/Structs/BaseConfig.html; sourceTree = "<group>"; };
+		6E26D647127A02063D3DDCFF977CD8B9 /* Extensions.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = Extensions.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Extensions.html; sourceTree = "<group>"; };
+		6E74C74159C0984911EAE7C95FE5B02D /* undocumented.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = undocumented.json; path = docs/undocumented.json; sourceTree = "<group>"; };
+		6EC49E6FEBBB84C83A60F675CF53CB09 /* BaseConfig.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = BaseConfig.html; path = docs/Structs/BaseConfig.html; sourceTree = "<group>"; };
 		6F2F19A5BF22E379A1079C542511BF9F /* UIViewController+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Sweeter.swift"; path = "Source/UIViewController+Sweeter.swift"; sourceTree = "<group>"; };
 		6F99D5E8AF381C1BD8FE4329D59C6AF2 /* MotionProgressRunner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionProgressRunner.swift; path = Sources/Transition/MotionProgressRunner.swift; sourceTree = "<group>"; };
 		6FF2A10D022E4BB4F654CF1C07514631 /* IPReceiptViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IPReceiptViewController.swift; sourceTree = "<group>"; };
 		703D698C1AAA1DB1C430603F48DB9C50 /* ChipBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChipBar.swift; path = Sources/iOS/Chip/ChipBar.swift; sourceTree = "<group>"; };
 		70C82D7707E4BAE1252C52D21CF55CD7 /* MotionViewPropertyViewContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionViewPropertyViewContext.swift; path = Sources/Animator/MotionViewPropertyViewContext.swift; sourceTree = "<group>"; };
 		717CBAD90C617F1E22D59A28D2CEDB5C /* Valley.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Valley.debug.xcconfig; sourceTree = "<group>"; };
-		71DE371690AFA9DD40E85F06C3876648 /* SearchButton.html */ = {isa = PBXFileReference; includeInIndex = 1; name = SearchButton.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/SearchButton.html; sourceTree = "<group>"; };
+		71DE371690AFA9DD40E85F06C3876648 /* SearchButton.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = SearchButton.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/SearchButton.html; sourceTree = "<group>"; };
 		72489A5238D937AE0B9D17F06420F984 /* IPFilterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IPFilterView.swift; sourceTree = "<group>"; };
 		731C1630BD3532CA1DB3E49C0E836882 /* PulseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulseView.swift; path = Sources/iOS/View/PulseView.swift; sourceTree = "<group>"; };
-		734259D7B4DC7051CBDEDDD9D7D06C34 /* PaymentAccountViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PaymentAccountViewController.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/PaymentAccountViewController.html; sourceTree = "<group>"; };
+		734259D7B4DC7051CBDEDDD9D7D06C34 /* PaymentAccountViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = PaymentAccountViewController.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/PaymentAccountViewController.html; sourceTree = "<group>"; };
 		742275EFF3AA5317CE4A2A6FD5A7F80D /* LayoutAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutAttribute.swift; path = Sources/iOS/Layout/LayoutAttribute.swift; sourceTree = "<group>"; };
 		74571C4625E0D1CD0FE4DD506273E477 /* CollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = Sources/iOS/Collection/CollectionViewController.swift; sourceTree = "<group>"; };
 		74DE0B990814BB7EA1DE3A100F1DCE4D /* FABMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FABMenu.swift; path = Sources/iOS/FABMenu/FABMenu.swift; sourceTree = "<group>"; };
-		75FB86DDD4D3BC747BC305D669041FA6 /* Enums.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Enums.html; path = docs/Enums.html; sourceTree = "<group>"; };
-		770F7C06D764C9C2E73E7ED7AF4DF7E8 /* BillFlagStatus.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BillFlagStatus.html; path = docs/Enums/BaseCardType/BillFlagStatus.html; sourceTree = "<group>"; };
-		77B0AF429DE4A6EEBB5A0B4396186AEC /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/index.html; sourceTree = "<group>"; };
+		75FB86DDD4D3BC747BC305D669041FA6 /* Enums.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = Enums.html; path = docs/Enums.html; sourceTree = "<group>"; };
+		770F7C06D764C9C2E73E7ED7AF4DF7E8 /* BillFlagStatus.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = BillFlagStatus.html; path = docs/Enums/BaseCardType/BillFlagStatus.html; sourceTree = "<group>"; };
+		77B0AF429DE4A6EEBB5A0B4396186AEC /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = index.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/index.html; sourceTree = "<group>"; };
 		786469B419A7819F2151329AB17AC4DF /* MotionTransition+Interactive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotionTransition+Interactive.swift"; path = "Sources/Transition/MotionTransition+Interactive.swift"; sourceTree = "<group>"; };
 		78AE0B7638DDE612A1D89F58F7C2E871 /* Valley-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valley-prefix.pch"; sourceTree = "<group>"; };
 		78EB993D4A3DA1B47A8746E7E5C9D490 /* MotionTargetState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionTargetState.swift; path = Sources/MotionTargetState.swift; sourceTree = "<group>"; };
 		79B0FA5A4802B86D5159AC595BD089D7 /* PulseAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulseAnimation.swift; path = Sources/iOS/Animation/PulseAnimation.swift; sourceTree = "<group>"; };
-		7A76A8BFAC749C39F91D1C5D03533FE3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7A76A8BFAC749C39F91D1C5D03533FE3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7B5F84FB281044F53866187C5B9793B5 /* DisplayStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DisplayStyle.swift; path = Sources/iOS/Transition/DisplayStyle.swift; sourceTree = "<group>"; };
-		7BDEF089A234F06A390DF76BDCD7A2BB /* SuperDDAIuPay.tgz */ = {isa = PBXFileReference; includeInIndex = 1; name = SuperDDAIuPay.tgz; path = docs/docsets/SuperDDAIuPay.tgz; sourceTree = "<group>"; };
+		7BDEF089A234F06A390DF76BDCD7A2BB /* SuperDDAIuPay.tgz */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = SuperDDAIuPay.tgz; path = docs/docsets/SuperDDAIuPay.tgz; sourceTree = "<group>"; };
 		7D4233BFE35EE4B155655E9A0AB74B92 /* IPBarcodeButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IPBarcodeButton.swift; sourceTree = "<group>"; };
-		7E4AC7356362305B9DD126A41C1E6EA1 /* PaymentDetailsViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PaymentDetailsViewController.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/PaymentDetailsViewController.html; sourceTree = "<group>"; };
-		7E6C5FCD4E12DACDF6BC322BCACFFA23 /* BaseCardView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BaseCardView.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/BaseCardView.html; sourceTree = "<group>"; };
+		7E4AC7356362305B9DD126A41C1E6EA1 /* PaymentDetailsViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = PaymentDetailsViewController.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/PaymentDetailsViewController.html; sourceTree = "<group>"; };
+		7E6C5FCD4E12DACDF6BC322BCACFFA23 /* BaseCardView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = BaseCardView.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/BaseCardView.html; sourceTree = "<group>"; };
 		7EB7ECE69882F668AC7762935C372103 /* Material.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Material.modulemap; sourceTree = "<group>"; };
 		8109E66123906381AEB1A45F2E030674 /* IPPaymentAccountViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IPPaymentAccountViewController.swift; sourceTree = "<group>"; };
 		829F23C510A176A30A25241EF549232D /* MotionTransition+CustomTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotionTransition+CustomTransition.swift"; path = "Sources/Transition/MotionTransition+CustomTransition.swift"; sourceTree = "<group>"; };
 		82C6194C9E53C1E69FA3E87B854087B5 /* TextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextView.swift; path = Sources/iOS/Text/TextView.swift; sourceTree = "<group>"; };
-		84524885D045AC1AA38F9318DAFE9E6B /* lunr.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = lunr.min.js; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/js/lunr.min.js; sourceTree = "<group>"; };
+		84524885D045AC1AA38F9318DAFE9E6B /* lunr.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = lunr.min.js; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/js/lunr.min.js; sourceTree = "<group>"; };
 		84532E92C9E07F9AFB83A16885D69A89 /* CollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionView.swift; path = Sources/iOS/Collection/CollectionView.swift; sourceTree = "<group>"; };
 		857DB9922B842A5E84421D89F8055A45 /* ToolbarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToolbarController.swift; path = Sources/iOS/Toolbar/ToolbarController.swift; sourceTree = "<group>"; };
 		869B245EDFAEFC2D88CB31539D7529F7 /* Pods-SuperDDAIuPay_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SuperDDAIuPay_Tests.modulemap"; sourceTree = "<group>"; };
 		88EB6B54B0A80AB138D2A3266E27F0C0 /* Material-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Material-dummy.m"; sourceTree = "<group>"; };
-		89882BE7B9102DC96E0C81CDD38979D8 /* ReceiptViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
 		8A12E10E11C8041CA52AABB2DE6877B1 /* Application.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Application.swift; path = Sources/Application.swift; sourceTree = "<group>"; };
 		8BE9FC2D2D5107E3E9DB92ED661A9E78 /* TabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabBar.swift; path = Sources/iOS/Tab/TabBar.swift; sourceTree = "<group>"; };
 		8C97BF6F055F6855E95A8AA87DC4F829 /* Pods-SuperDDAIuPay_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SuperDDAIuPay_Example.modulemap"; sourceTree = "<group>"; };
 		8CB93C0ED709DF684964225C9DD87F12 /* Bar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bar.swift; path = Sources/iOS/Bar/Bar.swift; sourceTree = "<group>"; };
 		8D13D836EFB97387E36B51CD4A296ED5 /* SweeterSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SweeterSwift.modulemap; sourceTree = "<group>"; };
 		8D6456DDAC031B9AFDC0B3FA2562C926 /* TextStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextStorage.swift; path = Sources/iOS/Text/TextStorage.swift; sourceTree = "<group>"; };
-		8DA8AC0BAF6DA6AB76879A745BE8DB91 /* MonthSelectorView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MonthSelectorView.html; path = docs/Classes/MonthSelectorView.html; sourceTree = "<group>"; };
+		8DA8AC0BAF6DA6AB76879A745BE8DB91 /* MonthSelectorView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = MonthSelectorView.html; path = docs/Classes/MonthSelectorView.html; sourceTree = "<group>"; };
 		8E023464E53FA7CB246538FBCF2E2A38 /* MotionTransition+Complete.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotionTransition+Complete.swift"; path = "Sources/Transition/MotionTransition+Complete.swift"; sourceTree = "<group>"; };
-		8E67782881047BC1A42499E7C5FF4426 /* PaymentAccountViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PaymentAccountViewController.html; path = docs/Classes/PaymentAccountViewController.html; sourceTree = "<group>"; };
-		8E6B9C3B69ED59E43D8F4E21D6A3457C /* BaseCardType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BaseCardType.html; path = docs/Enums/BaseCardType.html; sourceTree = "<group>"; };
-		906DCF7AE09E64FEC6089566F3CDD431 /* com.cosmicmind.material.fonts.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = com.cosmicmind.material.fonts.bundle; path = "Material-com.cosmicmind.material.fonts.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		90F5032A27DFF596DD70DBFD95D51E0A /* BillDetailsModalViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BillDetailsModalViewController.html; path = docs/Classes/BillDetailsModalViewController.html; sourceTree = "<group>"; };
+		8E67782881047BC1A42499E7C5FF4426 /* PaymentAccountViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = PaymentAccountViewController.html; path = docs/Classes/PaymentAccountViewController.html; sourceTree = "<group>"; };
+		8E6B9C3B69ED59E43D8F4E21D6A3457C /* BaseCardType.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = BaseCardType.html; path = docs/Enums/BaseCardType.html; sourceTree = "<group>"; };
+		906DCF7AE09E64FEC6089566F3CDD431 /* com.cosmicmind.material.fonts.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.cosmicmind.material.fonts.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		90F5032A27DFF596DD70DBFD95D51E0A /* BillDetailsModalViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = BillDetailsModalViewController.html; path = docs/Classes/BillDetailsModalViewController.html; sourceTree = "<group>"; };
 		919E25C933215F1B96DF6A88BB34C8A3 /* NSObject+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Sweeter.swift"; path = "Source/NSObject+Sweeter.swift"; sourceTree = "<group>"; };
 		926AA9DB8CFB02835E491EEB58EC391C /* spinner.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = spinner.gif; path = docs/img/spinner.gif; sourceTree = "<group>"; };
 		9341035FCA6F072581C3F7576973404D /* Pods-SuperDDAIuPay_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SuperDDAIuPay_Example-umbrella.h"; sourceTree = "<group>"; };
 		936ECCA6396A31F74BE2841A0EC2EF57 /* MotionTransitionObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionTransitionObserver.swift; path = Sources/MotionTransitionObserver.swift; sourceTree = "<group>"; };
-		948CB6E781EFDFA247A67D073EFFC7D8 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Regular.ttf"; path = "Sources/Font/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
-		955B6C8227285832C5E3BC610E8E6579 /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.js; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/js/jazzy.js; sourceTree = "<group>"; };
-		963DEBFE6DE1C3FC0DE61D3B9A7A8C73 /* Fonts */ = {isa = PBXFileReference; includeInIndex = 1; name = Fonts; path = SuperDDAIuPay/Assets/Fonts; sourceTree = "<group>"; };
+		948CB6E781EFDFA247A67D073EFFC7D8 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "Sources/Font/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		955B6C8227285832C5E3BC610E8E6579 /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = jazzy.js; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/js/jazzy.js; sourceTree = "<group>"; };
+		963DEBFE6DE1C3FC0DE61D3B9A7A8C73 /* Fonts */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = Fonts; path = SuperDDAIuPay/Assets/Fonts; sourceTree = "<group>"; };
 		974580A22485755029B2B61A8C1EF1F8 /* ErrorTextFieldValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorTextFieldValidator.swift; path = Sources/iOS/Text/ErrorTextFieldValidator.swift; sourceTree = "<group>"; };
 		976890C0BCA41425FCD0E620E6CA1058 /* MotionViewTransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionViewTransitionAnimator.swift; path = Sources/Animator/MotionViewTransitionAnimator.swift; sourceTree = "<group>"; };
 		97AA716B5E7553D1D157B56F9FF7BDE4 /* ValleyFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValleyFile.swift; path = Valley/Source/ValleyFile.swift; sourceTree = "<group>"; };
 		98E6573464335793ABCCDEE863AEBE7F /* MotionAnimationState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionAnimationState.swift; path = Sources/MotionAnimationState.swift; sourceTree = "<group>"; };
 		995047E77758904A1E908C444AB224FC /* Pods-SuperDDAIuPay_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SuperDDAIuPay_Tests-umbrella.h"; sourceTree = "<group>"; };
 		999EFF21652C79D4CFBA301B0F96E768 /* Offset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Offset.swift; path = Sources/iOS/Type/Offset.swift; sourceTree = "<group>"; };
-		9A24C02030E4750CD7648665514D7E54 /* ChartData.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ChartData.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Structs/ChartData.html; sourceTree = "<group>"; };
+		9A24C02030E4750CD7648665514D7E54 /* ChartData.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = ChartData.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Structs/ChartData.html; sourceTree = "<group>"; };
 		9AB8A045B31E902873193A400AF3459E /* Pods-SuperDDAIuPay_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SuperDDAIuPay_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9B0A0FC62A937B78ECEDED45E71DC133 /* SuperDDAIuPay-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SuperDDAIuPay-prefix.pch"; sourceTree = "<group>"; };
 		9B78551C03815F9A51F4F54384B2FBCC /* SuperDDAIuPay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SuperDDAIuPay-dummy.m"; sourceTree = "<group>"; };
 		9B93B75ECE21027FC13B2833ACD97906 /* UIImage+Valley.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Valley.swift"; path = "Valley/Source/Extensions/UIImage+Valley.swift"; sourceTree = "<group>"; };
 		9B95BC336014B67FF9C3EFE09C746AFC /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/img/gh.png; sourceTree = "<group>"; };
-		9BC766CD263033CF3870D56E77A226E4 /* Structs.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Structs.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Structs.html; sourceTree = "<group>"; };
+		9BC766CD263033CF3870D56E77A226E4 /* Structs.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = Structs.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Structs.html; sourceTree = "<group>"; };
 		9BF882B9B107FAF9108A28299DC2C07A /* TableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableView.swift; path = Sources/iOS/Table/TableView.swift; sourceTree = "<group>"; };
 		9CC8C8643B61A71290BD955DCE47DC8E /* NSAttributedString+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSAttributedString+Sweeter.swift"; path = "Source/NSAttributedString+Sweeter.swift"; sourceTree = "<group>"; };
 		9D18C340B89AD2FD40F78F8A68C3CD25 /* IPCardListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IPCardListView.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F585A6FD4D2AAD5EA209861619169F3 /* CornerRadius.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CornerRadius.swift; path = Sources/iOS/Type/CornerRadius.swift; sourceTree = "<group>"; };
 		9F8909500BBBCDAC787675717A94C20C /* DataSourceItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataSourceItem.swift; path = Sources/iOS/Data/DataSourceItem.swift; sourceTree = "<group>"; };
-		A04CEA6BBB1613F9783A4296CC3E939D /* CardItem.html */ = {isa = PBXFileReference; includeInIndex = 1; name = CardItem.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Structs/CardItem.html; sourceTree = "<group>"; };
+		A04CEA6BBB1613F9783A4296CC3E939D /* CardItem.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = CardItem.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Structs/CardItem.html; sourceTree = "<group>"; };
 		A09E0767A16CEEE2487A2C0EAD8AC721 /* Editor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Editor.swift; path = Sources/iOS/Text/Editor.swift; sourceTree = "<group>"; };
 		A15DD3F2C4414A300F5BAB2538D4548C /* MotionContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionContext.swift; path = Sources/MotionContext.swift; sourceTree = "<group>"; };
 		A2310D81955727A9569F2650833F9D70 /* MotionCoordinateSpace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionCoordinateSpace.swift; path = Sources/MotionCoordinateSpace.swift; sourceTree = "<group>"; };
 		A387AEA9F3CEC2F3EE89DEE53EB53402 /* MotionTransition+Start.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotionTransition+Start.swift"; path = "Sources/Transition/MotionTransition+Start.swift"; sourceTree = "<group>"; };
-		A4CCCEE4555A5D1EE0BCBECB8E86D312 /* docSet.dsidx */ = {isa = PBXFileReference; includeInIndex = 1; name = docSet.dsidx; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/docSet.dsidx; sourceTree = "<group>"; };
+		A4CCCEE4555A5D1EE0BCBECB8E86D312 /* docSet.dsidx */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = docSet.dsidx; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/docSet.dsidx; sourceTree = "<group>"; };
 		A5522C5BD2DF8FD90D7AA6459D4BBF8E /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Sources/iOS/View/ViewController.swift; sourceTree = "<group>"; };
-		A6D7EA843E4160DFF9A7B192750C7ECB /* BaseCardType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BaseCardType.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Enums/BaseCardType.html; sourceTree = "<group>"; };
+		A6D7EA843E4160DFF9A7B192750C7ECB /* BaseCardType.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = BaseCardType.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Enums/BaseCardType.html; sourceTree = "<group>"; };
 		A790575688A313A01463615F0FAA0F2C /* Material+NSMutableAttributedString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+NSMutableAttributedString.swift"; path = "Sources/iOS/Extension/Material+NSMutableAttributedString.swift"; sourceTree = "<group>"; };
 		A8791A218BF9AC003C4A968021E8B708 /* DialogController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogController.swift; path = Sources/iOS/Dialogs/DialogController.swift; sourceTree = "<group>"; };
 		AAE7515ADD7C22144D7A92FFD508AB5D /* Codable+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Codable+Sweeter.swift"; path = "Source/Codable+Sweeter.swift"; sourceTree = "<group>"; };
 		ABC7F2E59D9E00CEB0B0AF845A5CDE16 /* CurveAlgorithm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CurveAlgorithm.swift; sourceTree = "<group>"; };
 		ABE5DA240550D568E08E666FDD9C5768 /* Material+Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+Array.swift"; path = "Sources/iOS/Extension/Material+Array.swift"; sourceTree = "<group>"; };
-		AC0D1B48E34BBB9DDDA655620DF4103E /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = docs/index.html; sourceTree = "<group>"; };
-		AC4C08B89142833E5EAB79605BE8F43A /* BaseConfig.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BaseConfig.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Structs/BaseConfig.html; sourceTree = "<group>"; };
+		AC0D1B48E34BBB9DDDA655620DF4103E /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = index.html; path = docs/index.html; sourceTree = "<group>"; };
+		AC4C08B89142833E5EAB79605BE8F43A /* BaseConfig.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = BaseConfig.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Structs/BaseConfig.html; sourceTree = "<group>"; };
 		ADC2BB21A7FE8EEC23E5F355286AA8F0 /* Motion+UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Motion+UIViewController.swift"; path = "Sources/Extensions/Motion+UIViewController.swift"; sourceTree = "<group>"; };
 		AEFC3B0BC78B6B6728021F4EF2569754 /* Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = Sources/iOS/Layout/Layout.swift; sourceTree = "<group>"; };
-		AF72F9703DEFB71020C1F15759A379CD /* Enums.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Enums.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Enums.html; sourceTree = "<group>"; };
+		AF72F9703DEFB71020C1F15759A379CD /* Enums.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = Enums.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Enums.html; sourceTree = "<group>"; };
 		AFC1BAA92B921730682FD5205C2889D0 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sources/Assets.xcassets; sourceTree = "<group>"; };
-		B0D3E523837324C82B6E6DCE49CE311F /* UIFont.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UIFont.html; path = docs/Extensions/UIFont.html; sourceTree = "<group>"; };
+		B0D3E523837324C82B6E6DCE49CE311F /* UIFont.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = UIFont.html; path = docs/Extensions/UIFont.html; sourceTree = "<group>"; };
 		B0E2090B3BA19C4EDBD179CAA0843E2E /* ChipBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChipBarController.swift; path = Sources/iOS/Chip/ChipBarController.swift; sourceTree = "<group>"; };
 		B1F181F3814015A9ADD7F1F3DB247121 /* Material+UIFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIFont.swift"; path = "Sources/iOS/Extension/Material+UIFont.swift"; sourceTree = "<group>"; };
 		B20277DC112E883E182CC7833E67C8CA /* MotionAnimatorViewContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionAnimatorViewContext.swift; path = Sources/Animator/MotionAnimatorViewContext.swift; sourceTree = "<group>"; };
 		B25BE07004332C7F928C8AAC2A3308EA /* HeightPreset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeightPreset.swift; path = Sources/iOS/Height/HeightPreset.swift; sourceTree = "<group>"; };
 		B25D243082F21136C5B508D08EE778E0 /* Material.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Material.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B299AE49576BE277A27C420CDE611C2D /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery.min.js; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/js/jquery.min.js; sourceTree = "<group>"; };
-		B2E78F2EE26F6AEE345F6063B621CBD6 /* PaidDetailsViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PaidDetailsViewController.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/PaidDetailsViewController.html; sourceTree = "<group>"; };
+		B299AE49576BE277A27C420CDE611C2D /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/js/jquery.min.js; sourceTree = "<group>"; };
+		B2E78F2EE26F6AEE345F6063B621CBD6 /* PaidDetailsViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = PaidDetailsViewController.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/PaidDetailsViewController.html; sourceTree = "<group>"; };
 		B326E5BF87F6D25B26F6191A32614AFF /* IPSearchButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IPSearchButton.swift; sourceTree = "<group>"; };
 		B345A4B00D9A334DC180E46376632FAE /* Button.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Button.swift; path = Sources/iOS/Button/Button.swift; sourceTree = "<group>"; };
-		B48611EA1EDB2211E6754FF4CC6AF566 /* RDButton.html */ = {isa = PBXFileReference; includeInIndex = 1; name = RDButton.html; path = docs/Classes/RDButton.html; sourceTree = "<group>"; };
+		B48611EA1EDB2211E6754FF4CC6AF566 /* RDButton.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = RDButton.html; path = docs/Classes/RDButton.html; sourceTree = "<group>"; };
 		B4F9A9604F958693B44E4B3FEB6F7193 /* SpringAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringAnimation.swift; path = Sources/iOS/Animation/SpringAnimation.swift; sourceTree = "<group>"; };
 		B511B8DDAD7D7F82748503AB62ACDF43 /* TransitionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionController.swift; path = Sources/iOS/Transition/TransitionController.swift; sourceTree = "<group>"; };
-		B56DA68CDF390C3C4E693E710AB6C70D /* BeneficiaryDetailsViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BeneficiaryDetailsViewController.html; path = docs/Classes/BeneficiaryDetailsViewController.html; sourceTree = "<group>"; };
+		B56DA68CDF390C3C4E693E710AB6C70D /* BeneficiaryDetailsViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = BeneficiaryDetailsViewController.html; path = docs/Classes/BeneficiaryDetailsViewController.html; sourceTree = "<group>"; };
 		B580B6664E1FEDEDDB0C1D06FADBC577 /* DotCALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DotCALayer.swift; sourceTree = "<group>"; };
-		B62CB21CBD272B860AE23CA195CF56EF /* SuperDDAIuPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SuperDDAIuPay.framework; path = SuperDDAIuPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62CB21CBD272B860AE23CA195CF56EF /* SuperDDAIuPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SuperDDAIuPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B38F40BD47CCC3E489EB331774F08B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = docs/docsets/SuperDDAIuPay.docset/Contents/Info.plist; sourceTree = "<group>"; };
-		B6D68CFE4935144FCFB49484DA566E2B /* Valley.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Valley.framework; path = Valley.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B76CD9F952582A6A4387D799501B3950 /* SweeterSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SweeterSwift.framework; path = SweeterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8536C827032129F49572DA9FCCEF843 /* NunitoSans-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "NunitoSans-Light.ttf"; sourceTree = "<group>"; };
+		B6D68CFE4935144FCFB49484DA566E2B /* Valley.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Valley.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B76CD9F952582A6A4387D799501B3950 /* SweeterSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SweeterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8536C827032129F49572DA9FCCEF843 /* NunitoSans-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "NunitoSans-Light.ttf"; sourceTree = "<group>"; };
 		B8DBDBA6D00B623412F115F464B7FD2A /* Motion+CG.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Motion+CG.swift"; path = "Sources/Extensions/Motion+CG.swift"; sourceTree = "<group>"; };
 		BA0372E0FA21D495E93B6C7E43A01109 /* Icon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = Sources/iOS/Icon/Icon.swift; sourceTree = "<group>"; };
-		BAE1B45AB333C07FC42CA5227FF0583F /* Roboto-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Light.ttf"; path = "Sources/Font/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
-		BE59A07C188AA52EA11FB2303BF9580E /* ChartData.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ChartData.html; path = docs/Structs/ChartData.html; sourceTree = "<group>"; };
+		BAE1B45AB333C07FC42CA5227FF0583F /* Roboto-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "Sources/Font/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		BE59A07C188AA52EA11FB2303BF9580E /* ChartData.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = ChartData.html; path = docs/Structs/ChartData.html; sourceTree = "<group>"; };
 		BE7CD21673222BEA680BBED109015B03 /* Pods-SuperDDAIuPay_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SuperDDAIuPay_Tests-Info.plist"; sourceTree = "<group>"; };
 		BEE4E3E189A7D1DCDB571F9C97802F0F /* Divider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Divider.swift; path = Sources/iOS/Divider/Divider.swift; sourceTree = "<group>"; };
 		BFCAD1695B23ADC83816A80DC697B964 /* MotionCoreAnimationViewContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionCoreAnimationViewContext.swift; path = Sources/Animator/MotionCoreAnimationViewContext.swift; sourceTree = "<group>"; };
 		C08170B791BDF81620C08FF4B5FB99EF /* IPMessageModalViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IPMessageModalViewController.swift; sourceTree = "<group>"; };
-		C17F2DF1A4EF2B8D44079974B3E4136B /* NunitoSans-SemiBold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "NunitoSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		C17F2DF1A4EF2B8D44079974B3E4136B /* NunitoSans-SemiBold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "NunitoSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		C1B7FFCCD03ACB890FEF5E95DB893F30 /* Depth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Depth.swift; path = Sources/iOS/Type/Depth.swift; sourceTree = "<group>"; };
 		C1CFEF8608889273CA1124FAD8C5CDAD /* Card.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Sources/iOS/Card/Card.swift; sourceTree = "<group>"; };
 		C2A13EF441A388B38D498C5B52130006 /* SuperDDAIuPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SuperDDAIuPay.debug.xcconfig; sourceTree = "<group>"; };
 		C2A92D88956DC153F2296DE5C08576F0 /* Motion+Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Motion+Array.swift"; path = "Sources/Extensions/Motion+Array.swift"; sourceTree = "<group>"; };
-		C308529D05707BA6594BAF0B5A9371CC /* PaidDetailsViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PaidDetailsViewController.html; path = docs/Classes/PaidDetailsViewController.html; sourceTree = "<group>"; };
+		C308529D05707BA6594BAF0B5A9371CC /* PaidDetailsViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = PaidDetailsViewController.html; path = docs/Classes/PaidDetailsViewController.html; sourceTree = "<group>"; };
 		C414B978E5D7D74D4041C698E5C0F9DB /* Material-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Material-prefix.pch"; sourceTree = "<group>"; };
-		C4785B0B38F47282A11D634BD3C57A8C /* ModalType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ModalType.html; path = docs/Classes/BillDetailsModalViewController/ModalType.html; sourceTree = "<group>"; };
+		C4785B0B38F47282A11D634BD3C57A8C /* ModalType.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = ModalType.html; path = docs/Classes/BillDetailsModalViewController/ModalType.html; sourceTree = "<group>"; };
 		C4BF6B0830A8F913C25C055C03ADD6A4 /* Models.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		C51F996B0E30618B2F81E144C1153930 /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.js; path = docs/js/jazzy.js; sourceTree = "<group>"; };
+		C51F996B0E30618B2F81E144C1153930 /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = jazzy.js; path = docs/js/jazzy.js; sourceTree = "<group>"; };
 		C6A6E4EBF15388B6141E74E42A7B3440 /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/img/dash.png; sourceTree = "<group>"; };
-		C6ACF09D79138C5A9A6B52C01A7724D2 /* badge.svg */ = {isa = PBXFileReference; includeInIndex = 1; name = badge.svg; path = docs/badge.svg; sourceTree = "<group>"; };
+		C6ACF09D79138C5A9A6B52C01A7724D2 /* badge.svg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = badge.svg; path = docs/badge.svg; sourceTree = "<group>"; };
 		C828D518E5A29266A178F3D1D8F7F74C /* UITextView+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextView+Sweeter.swift"; path = "Source/UITextView+Sweeter.swift"; sourceTree = "<group>"; };
 		C854C942F2BCF7687E50F2A26935E318 /* Valley.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Valley.swift; path = Valley/Source/Valley.swift; sourceTree = "<group>"; };
 		C87FA01A6A1D40D1402C04A91CC65E85 /* IPTabSelectorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IPTabSelectorView.swift; sourceTree = "<group>"; };
-		C928E08D0E66EAA2A8A975133A8519F0 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Thin.ttf"; path = "Sources/Font/Roboto/Roboto-Thin.ttf"; sourceTree = "<group>"; };
-		C9EF0C300B88750E9B487C46928E7136 /* typeahead.jquery.js */ = {isa = PBXFileReference; includeInIndex = 1; name = typeahead.jquery.js; path = docs/js/typeahead.jquery.js; sourceTree = "<group>"; };
+		C928E08D0E66EAA2A8A975133A8519F0 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Thin.ttf"; path = "Sources/Font/Roboto/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		C9EF0C300B88750E9B487C46928E7136 /* typeahead.jquery.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = typeahead.jquery.js; path = docs/js/typeahead.jquery.js; sourceTree = "<group>"; };
 		CA6AA4A67976E4BF6E9A2B87EEDEC474 /* Material+String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+String.swift"; path = "Sources/iOS/Extension/Material+String.swift"; sourceTree = "<group>"; };
 		CA9B89F2E27D26FFD4FEC81AE0B7F6AF /* ValleyPinning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValleyPinning.swift; path = Valley/Source/ValleyPinning.swift; sourceTree = "<group>"; };
-		CABB0AA9183D9E1ACD3FE8B2A4C9DDB7 /* CardCollectionCell.html */ = {isa = PBXFileReference; includeInIndex = 1; name = CardCollectionCell.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/CardCollectionCell.html; sourceTree = "<group>"; };
+		CABB0AA9183D9E1ACD3FE8B2A4C9DDB7 /* CardCollectionCell.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = CardCollectionCell.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/CardCollectionCell.html; sourceTree = "<group>"; };
 		CBC6EC3001D4E26DCF9C681AE9198846 /* DateExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		CC793A6C43EEFB2C84E2639E34BE0F20 /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Sources/iOS/View/View.swift; sourceTree = "<group>"; };
 		CCCA19521F77F55D1988F624259A5C08 /* MotionViewTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionViewTransition.swift; path = Sources/MotionViewTransition.swift; sourceTree = "<group>"; };
 		CDD704443AABB7FEC3786E6CD9A7CF70 /* IPCardCollectionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IPCardCollectionCell.swift; sourceTree = "<group>"; };
-		CE10B5541FAF52C6FE77C451F96F2134 /* PaymentHistory.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PaymentHistory.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Structs/PaymentHistory.html; sourceTree = "<group>"; };
-		CEBCE28413316741F071B68CFAF2C1B8 /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; path = "NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
-		CFAE590A0A39B1E5AC5E870AD5B936EC /* BeneficiaryCardView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BeneficiaryCardView.html; path = docs/Classes/BeneficiaryCardView.html; sourceTree = "<group>"; };
+		CE10B5541FAF52C6FE77C451F96F2134 /* PaymentHistory.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = PaymentHistory.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Structs/PaymentHistory.html; sourceTree = "<group>"; };
+		CEBCE28413316741F071B68CFAF2C1B8 /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
+		CFAE590A0A39B1E5AC5E870AD5B936EC /* BeneficiaryCardView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = BeneficiaryCardView.html; path = docs/Classes/BeneficiaryCardView.html; sourceTree = "<group>"; };
 		D0E0529A722DBEABBF6007E5F18794F5 /* CheckButtonGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckButtonGroup.swift; path = Sources/iOS/ButtonGroup/CheckButtonGroup.swift; sourceTree = "<group>"; };
 		D20BDF3B78A245C34E289CF5C372F32B /* ValleyDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValleyDownloader.swift; path = Valley/Source/ValleyDownloader.swift; sourceTree = "<group>"; };
-		D23160B7336822D4FF636F8251B252D1 /* Classes.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Classes.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes.html; sourceTree = "<group>"; };
+		D23160B7336822D4FF636F8251B252D1 /* Classes.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = Classes.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes.html; sourceTree = "<group>"; };
 		D2A58235F56CE8D811CB6FBC32C3276B /* EdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeInsets.swift; path = Sources/iOS/Type/EdgeInsets.swift; sourceTree = "<group>"; };
-		D315491CBA52ADE092A320794BB28CBC /* CardListView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = CardListView.html; path = docs/Classes/CardListView.html; sourceTree = "<group>"; };
+		D315491CBA52ADE092A320794BB28CBC /* CardListView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = CardListView.html; path = docs/Classes/CardListView.html; sourceTree = "<group>"; };
 		D32095E67759A6F9D15275D990BF8554 /* Screen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Screen.swift; path = Sources/iOS/Screen/Screen.swift; sourceTree = "<group>"; };
 		D337572D10F9FE57D14DB1A90EEEED66 /* BaseIconLayerButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseIconLayerButton.swift; path = Sources/iOS/Button/BaseIconLayerButton.swift; sourceTree = "<group>"; };
 		D34F7C98AC5D0241C2DD6D0E9FBC940B /* Swift+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Swift+Sweeter.swift"; path = "Source/Swift+Sweeter.swift"; sourceTree = "<group>"; };
 		D3A1A6312354682E617E27BFEB8C4264 /* Pods-SuperDDAIuPay_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SuperDDAIuPay_Example-dummy.m"; sourceTree = "<group>"; };
 		D4272CCBA5082A79FDE68CDD3B226C66 /* NavigationBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationBar.swift; path = Sources/iOS/Navigation/NavigationBar.swift; sourceTree = "<group>"; };
-		D4F6A2860CB523B85235F862573290FC /* com.cosmicmind.material.icons.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = com.cosmicmind.material.icons.bundle; path = "Material-com.cosmicmind.material.icons.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F6A2860CB523B85235F862573290FC /* com.cosmicmind.material.icons.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.cosmicmind.material.icons.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D698CAA3AF7F4047CE68A096D45AFDBF /* SweeterSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SweeterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86AD6EB9D0E61A514B1C81F6E1E148B /* NavigationItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationItem.swift; path = Sources/iOS/Navigation/NavigationItem.swift; sourceTree = "<group>"; };
 		D97E279B2B08205B957B5D963DDB3881 /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/img/dash.png; sourceTree = "<group>"; };
-		DA1DC4747167B1394533A4499E4CE436 /* Sort.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Sort.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/FilterView/Sort.html; sourceTree = "<group>"; };
+		DA1DC4747167B1394533A4499E4CE436 /* Sort.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = Sort.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/FilterView/Sort.html; sourceTree = "<group>"; };
 		DAA825D2968AEFAFB5CD3222C54F6DEA /* IconButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IconButton.swift; path = Sources/iOS/Button/IconButton.swift; sourceTree = "<group>"; };
 		DB5C0D65C839BBC30160A2E06C7C8230 /* Pods-SuperDDAIuPay_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SuperDDAIuPay_Example-Info.plist"; sourceTree = "<group>"; };
 		DC044D81FF200022421D77756433F218 /* MotionTransition+UIViewControllerTransitioningDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotionTransition+UIViewControllerTransitioningDelegate.swift"; path = "Sources/Transition/MotionTransition+UIViewControllerTransitioningDelegate.swift"; sourceTree = "<group>"; };
 		DCC2E21CAB8C96E116CD3909CC454C0F /* Dialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dialog.swift; path = Sources/iOS/Dialogs/Dialog.swift; sourceTree = "<group>"; };
 		DD19416570B5541F96D20FE7BB87B49C /* Border.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Border.swift; path = Sources/iOS/Type/Border.swift; sourceTree = "<group>"; };
-		DE1ADBBD77704C11A44EF6614220CE93 /* RDGroup.html */ = {isa = PBXFileReference; includeInIndex = 1; name = RDGroup.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/RDGroup.html; sourceTree = "<group>"; };
-		DF9C4A358FB9F84921E8B171E44109B1 /* BaseCardView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BaseCardView.html; path = docs/Classes/BaseCardView.html; sourceTree = "<group>"; };
+		DE1ADBBD77704C11A44EF6614220CE93 /* RDGroup.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = RDGroup.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/RDGroup.html; sourceTree = "<group>"; };
+		DF9C4A358FB9F84921E8B171E44109B1 /* BaseCardView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = BaseCardView.html; path = docs/Classes/BaseCardView.html; sourceTree = "<group>"; };
 		E034A489A734E5C9E6D926C834449FCC /* SuperDDAIuPay-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SuperDDAIuPay-Info.plist"; sourceTree = "<group>"; };
-		E1B74796933285DA4A60BAD0F8055BA5 /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.css; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/css/highlight.css; sourceTree = "<group>"; };
+		E1B74796933285DA4A60BAD0F8055BA5 /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.css; name = highlight.css; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/css/highlight.css; sourceTree = "<group>"; };
 		E24C38552CD5ACF03D11D44584073951 /* Material+UIWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIWindow.swift"; path = "Sources/iOS/Extension/Material+UIWindow.swift"; sourceTree = "<group>"; };
 		E30F579A666DDDC8BF0077A7039A5662 /* Material.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Material.debug.xcconfig; sourceTree = "<group>"; };
-		E3C8F0C2E10D5310EF2ABD68766C4BFC /* MonthSelectorView.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MonthSelectorView.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/MonthSelectorView.html; sourceTree = "<group>"; };
+		E3C8F0C2E10D5310EF2ABD68766C4BFC /* MonthSelectorView.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = MonthSelectorView.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/MonthSelectorView.html; sourceTree = "<group>"; };
 		E404172475D9DDCACF3FED01149A20B0 /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = Sources/iOS/Device/Device.swift; sourceTree = "<group>"; };
 		E43FC9AC4828F868B8FE599B975BFE3E /* IPBeneficiaryCardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IPBeneficiaryCardView.swift; sourceTree = "<group>"; };
 		E49D16F0B2DCAA858CAE6BF61CE9A37B /* MotionTransition+UITabBarControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MotionTransition+UITabBarControllerDelegate.swift"; path = "Sources/Transition/MotionTransition+UITabBarControllerDelegate.swift"; sourceTree = "<group>"; };
@@ -704,31 +697,30 @@
 		E706019D216569CE88E721E8EAD76C85 /* DateFormatter+Sweeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateFormatter+Sweeter.swift"; path = "Source/DateFormatter+Sweeter.swift"; sourceTree = "<group>"; };
 		E72B2359574374F9D3F9C2F0AF061B12 /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/img/carat.png; sourceTree = "<group>"; };
 		E825BFE711F9DCA3FCDC0A42486571B6 /* IPBillDetailsModalViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IPBillDetailsModalViewController.swift; sourceTree = "<group>"; };
-		E82AD8E841429CCEF3C50E88DBCF4CAB /* PaymentDetailsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentDetailsViewController.swift; sourceTree = "<group>"; };
-		E86864ADFA097CD007793E6770797D48 /* BeneficiaryConfig.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BeneficiaryConfig.html; path = docs/Structs/BeneficiaryConfig.html; sourceTree = "<group>"; };
-		E93134AC3BA36A71F7B2DC3FF3709A24 /* CardItem.html */ = {isa = PBXFileReference; includeInIndex = 1; name = CardItem.html; path = docs/Structs/CardItem.html; sourceTree = "<group>"; };
+		E86864ADFA097CD007793E6770797D48 /* BeneficiaryConfig.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = BeneficiaryConfig.html; path = docs/Structs/BeneficiaryConfig.html; sourceTree = "<group>"; };
+		E93134AC3BA36A71F7B2DC3FF3709A24 /* CardItem.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = CardItem.html; path = docs/Structs/CardItem.html; sourceTree = "<group>"; };
 		E982EF1E7407D87726C1EB6CB58A0A98 /* Application.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Application.swift; path = Sources/iOS/Application/Application.swift; sourceTree = "<group>"; };
 		E9C00133982B6D6879EF91F2B3AC200F /* ImageCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCard.swift; path = Sources/iOS/Card/ImageCard.swift; sourceTree = "<group>"; };
-		E9E83947349F7E8028823F3766451329 /* Motion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Motion.framework; path = Motion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E83947349F7E8028823F3766451329 /* Motion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Motion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1A25EDEE758FEC224B5095D14B7113 /* SweeterSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SweeterSwift-prefix.pch"; sourceTree = "<group>"; };
-		EAFA8F8F04C148C42F7BE3537829CA3B /* MessageModalViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MessageModalViewController.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/MessageModalViewController.html; sourceTree = "<group>"; };
+		EAFA8F8F04C148C42F7BE3537829CA3B /* MessageModalViewController.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = MessageModalViewController.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Classes/MessageModalViewController.html; sourceTree = "<group>"; };
 		EB2A4331C2EF8E7A48B8DEA831C3ADB4 /* IPBeneficiaryDetailsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IPBeneficiaryDetailsViewController.swift; sourceTree = "<group>"; };
 		EBF5F078B4F6B0CE20C9BF5E8763253A /* MotionPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionPreprocessor.swift; path = Sources/Preprocessors/MotionPreprocessor.swift; sourceTree = "<group>"; };
 		EC3A43B94C01F010C8D8FE4463259F46 /* SourcePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourcePreprocessor.swift; path = Sources/Preprocessors/SourcePreprocessor.swift; sourceTree = "<group>"; };
 		EC6E3192ED9DD131864F28888E840470 /* Valley.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Valley.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3BBB447A2B142A4CB840FF072AF922 /* BaseButtonGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseButtonGroup.swift; path = Sources/iOS/ButtonGroup/BaseButtonGroup.swift; sourceTree = "<group>"; };
-		EEAFB7FA830604CF76D443D16BCE37B8 /* UIColor.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UIColor.html; path = docs/Extensions/UIColor.html; sourceTree = "<group>"; };
-		EECA952CDF62F93BCD12E71EECD2494C /* PaddingLabel.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PaddingLabel.html; path = docs/Classes/PaddingLabel.html; sourceTree = "<group>"; };
+		EEAFB7FA830604CF76D443D16BCE37B8 /* UIColor.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = UIColor.html; path = docs/Extensions/UIColor.html; sourceTree = "<group>"; };
+		EECA952CDF62F93BCD12E71EECD2494C /* PaddingLabel.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = PaddingLabel.html; path = docs/Classes/PaddingLabel.html; sourceTree = "<group>"; };
 		EEF9A0642C9C7976E029F44840DABA54 /* DialogView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogView.swift; path = Sources/iOS/Dialogs/DialogView.swift; sourceTree = "<group>"; };
 		EF7B70B4636A9EBA14F309331442214D /* SweeterSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SweeterSwift-dummy.m"; sourceTree = "<group>"; };
-		EF9B4E544218A8C469E2511B658146AF /* Classes.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Classes.html; path = docs/Classes.html; sourceTree = "<group>"; };
+		EF9B4E544218A8C469E2511B658146AF /* Classes.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = Classes.html; path = docs/Classes.html; sourceTree = "<group>"; };
 		EFAD279C434528FC0C0C971B2E3F7F21 /* Pods-SuperDDAIuPay_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SuperDDAIuPay_Tests-dummy.m"; sourceTree = "<group>"; };
-		F12615E50D0507D11E014B20AB33C24E /* BeneficiaryType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BeneficiaryType.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Structs/BeneficiaryConfig/BeneficiaryType.html; sourceTree = "<group>"; };
+		F12615E50D0507D11E014B20AB33C24E /* BeneficiaryType.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html.documentation; name = BeneficiaryType.html; path = docs/docsets/SuperDDAIuPay.docset/Contents/Resources/Documents/Structs/BeneficiaryConfig/BeneficiaryType.html; sourceTree = "<group>"; };
 		F1B9B22879F536088FB930831A3139A4 /* CheckButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckButton.swift; path = Sources/iOS/Button/CheckButton.swift; sourceTree = "<group>"; };
 		F24C22BFEB6A91EEC75834259B1B4C5C /* RadioButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadioButton.swift; path = Sources/iOS/Button/RadioButton.swift; sourceTree = "<group>"; };
 		F31C28C4D0CCE83F577F225EB60E18A3 /* Valley-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valley-umbrella.h"; sourceTree = "<group>"; };
 		F37474E937F2B1B8FF3FCA3B26D5B36A /* TransitionPreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionPreprocessor.swift; path = Sources/Preprocessors/TransitionPreprocessor.swift; sourceTree = "<group>"; };
-		F61F1DA708C9BA54EF74F15CA1241E71 /* SearchButton.html */ = {isa = PBXFileReference; includeInIndex = 1; name = SearchButton.html; path = docs/Classes/SearchButton.html; sourceTree = "<group>"; };
+		F61F1DA708C9BA54EF74F15CA1241E71 /* SearchButton.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = SearchButton.html; path = docs/Classes/SearchButton.html; sourceTree = "<group>"; };
 		F632B59F0C2998C9FCA11A9BFC28AF86 /* ResourceBundle-com.cosmicmind.material.fonts-Material-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-com.cosmicmind.material.fonts-Material-Info.plist"; sourceTree = "<group>"; };
 		F6A107E397701D32A24C6BEEEB295E6C /* SuperDDAIuPay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SuperDDAIuPay-umbrella.h"; sourceTree = "<group>"; };
 		F806A1E3620FF5624E743ACC0E8C7EA8 /* RDGroupPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RDGroupPicker.swift; sourceTree = "<group>"; };
@@ -851,7 +843,6 @@
 				CDD704443AABB7FEC3786E6CD9A7CF70 /* IPCardCollectionCell.swift */,
 				9D18C340B89AD2FD40F78F8A68C3CD25 /* IPCardListView.swift */,
 			);
-			name = Collection;
 			path = Collection;
 			sourceTree = "<group>";
 		};
@@ -861,7 +852,6 @@
 				4707E1FB0DA561207F895C46882CBBAF /* Core */,
 				938E90063A451AC80B66D72E6838C5F2 /* Support Files */,
 			);
-			name = Motion;
 			path = Motion;
 			sourceTree = "<group>";
 		};
@@ -897,17 +887,12 @@
 		30AB80A416EA18E09972A19C3CF4CA6D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				2B9B2CDFDDA784DC16F92B308177BDEC /* BeneficiaryDetailsViewController.swift */,
 				EB2A4331C2EF8E7A48B8DEA831C3ADB4 /* IPBeneficiaryDetailsViewController.swift */,
 				139F1081D4CF55FDD84F8C1B87410DC4 /* IPPaidDetailsViewController.swift */,
 				8109E66123906381AEB1A45F2E030674 /* IPPaymentAccountViewController.swift */,
 				2F3EEB3AD23EDA11FE8266FF1E157B80 /* IPPaymentDetailsViewController.swift */,
 				6FF2A10D022E4BB4F654CF1C07514631 /* IPReceiptViewController.swift */,
-				221FB324461D87EEA39E5E8542F6CDC0 /* PaidDetailsViewController.swift */,
-				E82AD8E841429CCEF3C50E88DBCF4CAB /* PaymentDetailsViewController.swift */,
-				89882BE7B9102DC96E0C81CDD38979D8 /* ReceiptViewController.swift */,
 			);
-			name = Screens;
 			path = Screens;
 			sourceTree = "<group>";
 		};
@@ -917,7 +902,6 @@
 				C52C9FBCEEA754CAF1F5975E90299E9E /* Core */,
 				475F5E230B961E6CF6448151D3AFB9DA /* Support Files */,
 			);
-			name = Material;
 			path = Material;
 			sourceTree = "<group>";
 		};
@@ -940,7 +924,6 @@
 				6F2F19A5BF22E379A1079C542511BF9F /* UIViewController+Sweeter.swift */,
 				710DF12AEE72ACF39D8BF2453D62E9EA /* Support Files */,
 			);
-			name = SweeterSwift;
 			path = SweeterSwift;
 			sourceTree = "<group>";
 		};
@@ -969,7 +952,6 @@
 				7CB75367701BD79F8FA777354226137C /* Chart */,
 				61DDD0A61E6D044BB232997CDECA3AA1 /* RadioGroup */,
 			);
-			name = Molecules;
 			path = Molecules;
 			sourceTree = "<group>";
 		};
@@ -983,7 +965,6 @@
 				58C7B49B6A652627062C61E0F601E376 /* UIViewControllerExtensions.swift */,
 				4629468CF26C924289C501F1ED9C132A /* UIViewExtensions.swift */,
 			);
-			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
@@ -1102,7 +1083,6 @@
 				2155F804CE4918C47337CA0D1A7D7910 /* IPMonthSelectorView.swift */,
 				C87FA01A6A1D40D1402C04A91CC65E85 /* IPTabSelectorView.swift */,
 			);
-			name = Selectors;
 			path = Selectors;
 			sourceTree = "<group>";
 		};
@@ -1230,7 +1210,6 @@
 				2F542F6192C86AD4694FBE451047F278 /* RDGroup.swift */,
 				F806A1E3620FF5624E743ACC0E8C7EA8 /* RDGroupPicker.swift */,
 			);
-			name = RadioGroup;
 			path = RadioGroup;
 			sourceTree = "<group>";
 		};
@@ -1240,7 +1219,6 @@
 				54E25CF7EB82E899981A19F5D8CB6290 /* IPBaseCardView.swift */,
 				E43FC9AC4828F868B8FE599B975BFE3E /* IPBeneficiaryCardView.swift */,
 			);
-			name = Cards;
 			path = Cards;
 			sourceTree = "<group>";
 		};
@@ -1288,7 +1266,6 @@
 				CA9B89F2E27D26FFD4FEC81AE0B7F6AF /* ValleyPinning.swift */,
 				93F405FE8592425161D56F4018CEBD40 /* Support Files */,
 			);
-			name = Valley;
 			path = Valley;
 			sourceTree = "<group>";
 		};
@@ -1299,7 +1276,6 @@
 				B580B6664E1FEDEDDB0C1D06FADBC577 /* DotCALayer.swift */,
 				442EA648B8A4A2A2DA1B5D7EA60AEE26 /* LineChart.swift */,
 			);
-			name = Chart;
 			path = Chart;
 			sourceTree = "<group>";
 		};
@@ -1523,7 +1499,6 @@
 				C08170B791BDF81620C08FF4B5FB99EF /* IPMessageModalViewController.swift */,
 				1DD057577DF72A2B1D0C470E9D474D0F /* IPPaymentLimitModalViewController.swift */,
 			);
-			name = Modal;
 			path = Modal;
 			sourceTree = "<group>";
 		};
@@ -2114,7 +2089,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17687EFF6B1C1A158A386173D8933D1E /* BeneficiaryDetailsViewController.swift in Sources */,
 				E700C87AF139A86082E468EEFFDC68AB /* CurveAlgorithm.swift in Sources */,
 				C5195472FCE6DDE05DB22A45F79E92F7 /* DateExtensions.swift in Sources */,
 				ED075CEF765AF808BB6A2624EBEB58F5 /* DesignAtoms.swift in Sources */,
@@ -2140,12 +2114,9 @@
 				8CBF8D4059CECB690C9D3BFD5F1F741B /* IPTabSelectorView.swift in Sources */,
 				593454AD30B9155573D220E03AADB070 /* LineChart.swift in Sources */,
 				7FC0D59F8E35BB56A57811363A669220 /* Models.swift in Sources */,
-				66D2743BD120783D4A1D7F406A8D0E89 /* PaidDetailsViewController.swift in Sources */,
-				E84ADC35E28EAD5EB94F1A589F95FA17 /* PaymentDetailsViewController.swift in Sources */,
 				47CA4CB353C8D346AAC55EF2E42459D6 /* RDButton.swift in Sources */,
 				1D8745930375AB80274836FC1FA3E24C /* RDGroup.swift in Sources */,
 				6752A58981BC2FE286E9CAD2A29BB46D /* RDGroupPicker.swift in Sources */,
-				AC502D70A53F427319C28A3D6916A433 /* ReceiptViewController.swift in Sources */,
 				58A1158B415EDB1CE3FC935F5C36EAC7 /* StringExtensions.swift in Sources */,
 				32DEE6A626C9805CD2EC3F3DB16BCBB5 /* SuperDDAIuPay-dummy.m in Sources */,
 				5E8E52EE2D2AEEB11C7048AB6C47755F /* UIColorExtensions.swift in Sources */,
@@ -2403,8 +2374,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

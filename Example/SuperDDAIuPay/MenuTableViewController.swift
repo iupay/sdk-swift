@@ -130,10 +130,10 @@ class MenuTableViewController: UITableViewController {
             receiptVC.handleOptionsClick = {
                 print("OPTIONS")
             }
-        } else if let benDetails = segue.destination as? RDBeneficiaryDetailsViewController {
+        } else if let benDetails = segue.destination as? IPBeneficiaryDetailsViewController {
             benDetails.setupContent(payment: self.generatePaymentData(), baseColor: UIColor.from(hex: "#8e05c2"))
             benDetails.handleSeeDetails = {
-                IPBillDetailsModalViewController.showModal(from: benDetails, payment: self.generatePaymentData(),  highlightColor: UIColor.from(hex: "#8e05c2"), type: .benificiary)
+                IPBillDetailsModalViewController.showModal(from: benDetails, payment: self.generatePaymentData(),  highlightColor: UIColor.from(hex: "#8e05c2"), type: .beneficiary)
             }
         } else if let paymentAccount = segue.destination as? IPPaymentAccountViewController {
             paymentAccount.setupContent(payment: self.generatePaymentData(),

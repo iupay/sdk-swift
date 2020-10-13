@@ -7,12 +7,19 @@
 
 import UIKit
 
+// MARK: - IPPaddingLabel
 public final class IPPaddingLabel: UILabel {
     
-    init(fontSize: CGFloat, weight: UIFont.Weight, textColor: UIColor) {
+    // MARK: Custom initializer
+    init(text: String? = nil, fontSize: CGFloat, weight: UIFont.Weight, textColor: UIColor) {
         super.init(frame: .zero)
         self.textColor = textColor
         self.font = UIFont.customFont(ofSize: fontSize, weight: weight)
+        self.text = text
+    }
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
     }
     
     required init?(coder: NSCoder) {

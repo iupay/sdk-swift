@@ -473,10 +473,7 @@ public class IPPaymentAccountViewController: UIViewController {
         textLabel.leadingAnchor.constraint(equalTo: content.leadingAnchor, constant: .bigMediumMargin).isActive = true
         textLabel.bottomAnchor.constraint(equalTo: content.bottomAnchor).isActive = true
         
-        let price = IPPaddingLabel(frame: .zero)
-        price.text = value
-        price.font = UIFont.customFont(ofSize: 15, weight: .bold)
-        price.textColor = color
+        let price = IPPaddingLabel(text: value, fontSize: 15, weight: .bold, textColor: color)
         price.translatesAutoresizingMaskIntoConstraints = false
         price.textAlignment = .right
         content.addSubview(price)

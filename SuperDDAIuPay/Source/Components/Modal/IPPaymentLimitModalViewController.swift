@@ -7,10 +7,13 @@
 
 import UIKit
 
+// MARK: - Class
 public class IPPaymentLimitModalViewController: UIViewController, UIGestureRecognizerDelegate {
-
+    
+    /** Closure to handle the submit action  */
     public var handleSubmit: ((Bool, String?) -> ())?
     
+    // MARK: - Private variables
     private lazy var contentRadio: UIView = {
         $0.backgroundColor = .white
         $0.layer.cornerRadius = .smallestMargin
@@ -76,6 +79,8 @@ public class IPPaymentLimitModalViewController: UIViewController, UIGestureRecog
         return $0
     }(UIButton(frame: .zero))
     
+    
+    // MARK: - Lifecycle methods
     public override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -135,12 +140,14 @@ public class IPPaymentLimitModalViewController: UIViewController, UIGestureRecog
         self.submitButton.addTarget(self, action: #selector(self.submitAction), for: .touchUpInside)
     }
     
+    // MARK: - Public methods
     public func setup(title: String, searchTitle: String, buttonTitle: String) {
         self.titleLabel.text = title
         self.titleSearch.text = searchTitle
         self.submitButton.setTitle(buttonTitle, for: .normal)
     }
     
+    // MARK: - Private methods
     @objc private func submitAction() {
         self.view.endEditing(true)
         self.dismiss(animated: true) {
@@ -153,7 +160,7 @@ public class IPPaymentLimitModalViewController: UIViewController, UIGestureRecog
         self.dismiss(animated: false, completion: nil)
     }
     
-    @objc func textDidChange(_ textField: UITextField) {
+    @objc private func textDidChange(_ textField: UITextField) {
 
         if let amountString = textField.text?.currencyInputFormatting() {
             textField.text = amountString
@@ -173,7 +180,12 @@ public class IPPaymentLimitModalViewController: UIViewController, UIGestureRecog
 }
 
 extension IPPaymentLimitModalViewController {
-    
+    /**
+     Static method to present the current controller modally and with transparent background
+     
+     - parameter vc: reference to the controller presenting it.
+     - parameter handleSubmit: closure that will pass the user inputs
+     */
     public static func showModal(from vc: UIViewController, handleSubmit:  ((Bool, String?) -> ())?)  {
         let modalViewController = IPPaymentLimitModalViewController()
         modalViewController.modalPresentationStyle = .overCurrentContext
