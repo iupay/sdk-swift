@@ -21,12 +21,12 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/lucianobohrer/SuperDDAIuPay'
+  s.homepage         = 'https://github.com/lucianobohrer/superdda-iupay'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lucianobohrer' => 'luciano@kodemy.dev' }
-  s.source           = { :git => 'https://github.com/lucianobohrer/SuperDDAIuPay.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://linkedin.com/in/lucianobohrer'
+  s.source           = { :git => 'https://github.com/lucianobohrer/superdda-iupay.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://www.linkedin.com/in/lucianobohrer/'
 
   s.ios.deployment_target = '11.4'
   s.swift_versions = '5.0'
