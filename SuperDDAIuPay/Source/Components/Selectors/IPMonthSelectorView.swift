@@ -63,7 +63,7 @@ public class IPMonthSelectorView: UIView {
     }
     
     // MARK: Initializers
-    init(tabColor: UIColor) {
+    public init(tabColor: UIColor) {
         super.init(frame: .zero)
         self.configure(tabColor: tabColor)
         self.setupConstraints()

@@ -48,19 +48,19 @@ public class IPPaymentDetailsViewController: UIViewController {
         return $0
     }(UIButton(frame: .zero))
     
-    init(beneficiaryName: String,
-         scheduledDueDate: Date,
-         dueDate: Date,
-         navTitle: String,
-         paymentAmount: Double,
-         currentBalance: Double,
-         baseColor: UIColor,
-         paymentMessage: String,
-         payerName: String,
-         bankName: String,
-         barcode: String,
-         payWithType: String,
-         isPayment: Bool) {
+    public init(beneficiaryName: String,
+                scheduledDueDate: Date,
+                dueDate: Date,
+                navTitle: String,
+                paymentAmount: Double,
+                currentBalance: Double,
+                baseColor: UIColor,
+                paymentMessage: String,
+                payerName: String,
+                bankName: String,
+                barcode: String,
+                payWithType: String,
+                isPayment: Bool) {
         
         super.init(nibName: nil, bundle: nil)
         self.setContent(beneficiaryName: beneficiaryName,

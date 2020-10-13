@@ -140,14 +140,13 @@ public class IPPaymentLimitModalViewController: UIViewController, UIGestureRecog
         self.submitButton.addTarget(self, action: #selector(self.submitAction), for: .touchUpInside)
     }
     
-    // MARK: - Public methods
-    public func setup(title: String, searchTitle: String, buttonTitle: String) {
+    // MARK: - Private methods
+    private func setup(title: String, searchTitle: String, buttonTitle: String) {
         self.titleLabel.text = title
         self.titleSearch.text = searchTitle
         self.submitButton.setTitle(buttonTitle, for: .normal)
     }
     
-    // MARK: - Private methods
     @objc private func submitAction() {
         self.view.endEditing(true)
         self.dismiss(animated: true) {

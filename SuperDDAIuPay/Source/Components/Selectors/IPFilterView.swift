@@ -55,7 +55,7 @@ public class IPFilterView: UIView {
         return $0
     }(UIImageView(frame: .zero))
     
-    init(caption: String) {
+    public init(caption: String) {
         super.init(frame: .zero)
         self.captionLabel.text = caption
         self.setupContent()

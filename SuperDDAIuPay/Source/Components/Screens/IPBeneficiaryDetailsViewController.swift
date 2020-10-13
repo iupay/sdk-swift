@@ -113,7 +113,7 @@ public class IPBeneficiaryDetailsViewController: UIViewController {
     
     private lazy var baseCard = UIView(frame: .zero)
     
-    init(payment: IPPayment, baseColor: UIColor) {
+    public init(payment: IPPayment, baseColor: UIColor) {
         super.init(nibName: nil, bundle: nil)
         self.setupContent(payment: payment, baseColor: baseColor)
     }
@@ -147,7 +147,6 @@ public class IPBeneficiaryDetailsViewController: UIViewController {
         mainBtn?.setTitle("Ver detalhes do beneficiário", for: .normal)
         
         let totalHeight: CGFloat = CGFloat((payment.paymentHistory?.count ?? 0) + 1) * 64 + 292
-//        self.stackView.heightAnchor.constraint(equalToConstant: totalHeight).isActive = true
         self.scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: totalHeight)
         
         self.companyLabel.text = payment.companyName

@@ -148,14 +148,14 @@ public class IPPaymentAccountViewController: UIViewController {
     private lazy var baseCard = UIView(frame: .zero)
     private var payment: IPPayment?
     
-    init(payment: IPPayment,
-         pdfAvailable: Bool,
-         paymentHistoryEnabled: Bool,
-         chartDataText: String,
-         chartDataValue: String,
-         chartLegend: String,
-         chartData: [IPChartData],
-         baseColor: UIColor) {
+    public init(payment: IPPayment,
+                pdfAvailable: Bool,
+                paymentHistoryEnabled: Bool,
+                chartDataText: String,
+                chartDataValue: String,
+                chartLegend: String,
+                chartData: [IPChartData],
+                baseColor: UIColor) {
         super.init(nibName: nil, bundle: nil)
         self.setupContent(payment: payment,
                           pdfAvailable: pdfAvailable,

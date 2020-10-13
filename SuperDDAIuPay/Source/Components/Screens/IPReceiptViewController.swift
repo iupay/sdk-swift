@@ -70,19 +70,19 @@ public class IPReceiptViewController: UIViewController {
         return $0
     }(UIButton(frame: .zero))
     
-    init(cedentName: String,
-         cnpj: String,
-         payerName: String,
-         barcode: String,
-         dueDate: Date,
-         paidDate: Date,
-         value: Double,
-         discount: Double,
-         interest: Double,
-         fine: Double,
-         chargedValue: Double,
-         authCode: String,
-         baseColor: UIColor) {
+    public init(cedentName: String,
+                cnpj: String,
+                payerName: String,
+                barcode: String,
+                dueDate: Date,
+                paidDate: Date,
+                value: Double,
+                discount: Double,
+                interest: Double,
+                fine: Double,
+                chargedValue: Double,
+                authCode: String,
+                baseColor: UIColor) {
         
         super.init(nibName: nil, bundle: nil)
         self.setContent(cedentName: cedentName,

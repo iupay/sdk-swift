@@ -66,7 +66,7 @@ public class IPBillDetailsModalViewController: UIViewController, UIGestureRecogn
      - parameter highlightColor: main color
     
      */
-    init(payment: IPPayment, type: ModalType, highlightColor: UIColor) {
+    public init(payment: IPPayment, type: ModalType, highlightColor: UIColor) {
         self.paymentDetails = payment
         self.highlightColor = highlightColor
         self.type = type

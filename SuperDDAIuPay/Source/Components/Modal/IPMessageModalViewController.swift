@@ -63,7 +63,7 @@ public class IPMessageModalViewController: UIViewController, UIGestureRecognizer
      - parameter title: modal title text.
      - parameter message: modal message content.
      */
-    init(title: String, message: String) {
+    public init(title: String, message: String) {
         self.titleText = title
         self.message = message
         super.init(nibName: nil, bundle: nil)

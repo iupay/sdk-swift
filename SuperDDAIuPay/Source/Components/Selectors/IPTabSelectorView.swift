@@ -55,7 +55,7 @@ public class IPTabSelectorView: UIView {
     }
     
     // MARK: Initializers
-    init(items: [String], tabColor: UIColor) {
+    public init(items: [String], tabColor: UIColor) {
         super.init(frame: .zero)
         self.configure(items: items, tabColor: tabColor)
         self.setupConstraints()

@@ -57,15 +57,15 @@ public class IPPaidDetailsViewController: UIViewController {
         return $0
     }(UIButton(frame: .zero))
     
-    init(beneficiaryName: String,
-         paidDate: Date,
-         dueDate: Date,
-         navTitle: String,
-         imageUrl: String,
-         paymentAmount: Double,
-         baseColor: UIColor,
-         receiptAvailable: Bool,
-         paymentMessage: String) {
+    public init(beneficiaryName: String,
+                paidDate: Date,
+                dueDate: Date,
+                navTitle: String,
+                imageUrl: String,
+                paymentAmount: Double,
+                baseColor: UIColor,
+                receiptAvailable: Bool,
+                paymentMessage: String) {
         
         super.init(nibName: nil, bundle: nil)
         self.setContent(beneficiaryName: beneficiaryName,

@@ -95,7 +95,7 @@ public class IPCardCollectionCell: UITableViewCell {
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: -.smallMargin/2, left: 0, bottom: 0, right: 0))
     }
     
-    internal func configure(card: IPCardItem, isLast: Bool) {
+    func configure(card: IPCardItem, isLast: Bool) {
         self.titleLabel.text = card.cardTitle
         self.leftBarView.backgroundColor = card.barColor
         self.dateLabel.text = card.formattedDate()

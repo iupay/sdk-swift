@@ -7,6 +7,7 @@
 
 import UIKit
 
+// MARK: - Class
 public class IPBarcodeButton: UIButton {
 
     public override init(frame: CGRect) {
