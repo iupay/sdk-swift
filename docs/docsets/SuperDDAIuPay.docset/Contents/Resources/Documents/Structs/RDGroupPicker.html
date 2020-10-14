@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RDGroupPicker Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/RDGroupPicker" class="dashAnchor"></a>
+    <a title="RDGroupPicker Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SuperDDAIuPay 1.0.1 Docs</a> (23% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SuperDDAIuPay Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        RDGroupPicker Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/IPBarcodeButton.html">IPBarcodeButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPBaseCardView.html">IPBaseCardView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPBeneficiaryCardView.html">IPBeneficiaryCardView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPBeneficiaryDetailsViewController.html">IPBeneficiaryDetailsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPBillDetailsModalViewController.html">IPBillDetailsModalViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPBillDetailsModalViewController/ModalType.html">– ModalType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPCardCollectionCell.html">IPCardCollectionCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPCardListView.html">IPCardListView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPFilterView.html">IPFilterView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPFilterView/Sort.html">– Sort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPMessageModalViewController.html">IPMessageModalViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPMonthSelectorView.html">IPMonthSelectorView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPPaddingLabel.html">IPPaddingLabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPPaidDetailsViewController.html">IPPaidDetailsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPPaymentAccountViewController.html">IPPaymentAccountViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPPaymentDetailsViewController.html">IPPaymentDetailsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPPaymentLimitModalViewController.html">IPPaymentLimitModalViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPReceiptViewController.html">IPReceiptViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPSearchButton.html">IPSearchButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPTabSelectorView.html">IPTabSelectorView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RDButton.html">RDButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RDGroup.html">RDGroup</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/IPBaseCardType.html">IPBaseCardType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IPBaseCardType/BillFlagStatus.html">– BillFlagStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIFont.html">UIFont</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/BaseConfig.html">BaseConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BeneficiaryConfig.html">BeneficiaryConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BeneficiaryConfig/BeneficiaryType.html">– BeneficiaryType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13SuperDDAIuPay13IPBillDetailsV">IPBillDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IPCardItem.html">IPCardItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IPChartData.html">IPChartData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13SuperDDAIuPay9IPPaymentV">IPPayment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IPPaymentHistory.html">IPPaymentHistory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RDGroupPicker.html">RDGroupPicker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RDGroupPicker.html#/s:7SwiftUI19UIViewRepresentableP11CoordinatorQa">– Coordinator</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RDGroupPicker</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@available(iOS 13.0, *)</span>
+<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RDGroupPicker</span> <span class="p">:</span> <span class="kt">UIViewRepresentable</span></code></pre>
+
+                </div>
+              </div>
+            <p>The missing iOS radio buttons group</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SwiftUI19UIViewRepresentableP0C4TypeQa"></a>
+                    <a name="//apple_ref/swift/Alias/UIViewType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SwiftUI19UIViewRepresentableP0C4TypeQa">UIViewType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">UIViewType</span> <span class="o">=</span> <span class="kt"><a href="../Classes/RDGroup.html">RDGroup</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SuperDDAIuPay13RDGroupPickerV13selectedIndex6titles16attributedTitles0F5Color10isVertical10buttonSize7spacing11itemSpacing0L16ButtonAfterTitle05titleK00V9Alignment0V4FontAC7SwiftUI7BindingVySiG_SaySSGSgSaySo18NSAttributedStringCGSgSo7UIColorCSgSbSg12CoreGraphics7CGFloatVSgA5_A5_A1_A0_So06NSTextW0VSgSo6UIFontCSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(selectedIndex:titles:attributedTitles:selectedColor:isVertical:buttonSize:spacing:itemSpacing:isButtonAfterTitle:titleColor:titleAlignment:titleFont:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SuperDDAIuPay13RDGroupPickerV13selectedIndex6titles16attributedTitles0F5Color10isVertical10buttonSize7spacing11itemSpacing0L16ButtonAfterTitle05titleK00V9Alignment0V4FontAC7SwiftUI7BindingVySiG_SaySSGSgSaySo18NSAttributedStringCGSgSo7UIColorCSgSbSg12CoreGraphics7CGFloatVSgA5_A5_A1_A0_So06NSTextW0VSgSo6UIFontCSgtcfc">init(selectedIndex:<wbr>titles:<wbr>attributedTitles:<wbr>selectedColor:<wbr>isVertical:<wbr>buttonSize:<wbr>spacing:<wbr>itemSpacing:<wbr>isButtonAfterTitle:<wbr>titleColor:<wbr>titleAlignment:<wbr>titleFont:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">selectedIndex</span><span class="p">:</span> <span class="kt">Binding</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="nv">titles</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">attributedTitles</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSAttributedString</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">selectedColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">isVertical</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">buttonSize</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">spacing</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">itemSpacing</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">isButtonAfterTitle</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">titleColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">titleAlignment</span><span class="p">:</span> <span class="kt">NSTextAlignment</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">titleFont</span><span class="p">:</span> <span class="kt">UIFont</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SwiftUI19UIViewRepresentableP04makeC07context0C4TypeQzAA0cD7ContextVyxG_tF"></a>
+                    <a name="//apple_ref/swift/Method/makeUIView(context:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SwiftUI19UIViewRepresentableP04makeC07context0C4TypeQzAA0cD7ContextVyxG_tF">makeUIView(context:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeUIView</span><span class="p">(</span><span class="nv">context</span><span class="p">:</span> <span class="kt">UIViewRepresentableContext</span><span class="o">&lt;</span><span class="kt">RDGroupPicker</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/RDGroup.html">RDGroup</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SwiftUI19UIViewRepresentableP06updateC0_7contexty0C4TypeQz_AA0cD7ContextVyxGtF"></a>
+                    <a name="//apple_ref/swift/Method/updateUIView(_:context:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SwiftUI19UIViewRepresentableP06updateC0_7contexty0C4TypeQz_AA0cD7ContextVyxGtF">updateUIView(_:<wbr>context:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateUIView</span><span class="p">(</span><span class="n">_</span> <span class="nv">uiView</span><span class="p">:</span> <span class="kt"><a href="../Classes/RDGroup.html">RDGroup</a></span><span class="p">,</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">UIViewRepresentableContext</span><span class="o">&lt;</span><span class="kt">RDGroupPicker</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SwiftUI19UIViewRepresentableP15makeCoordinator0F0QzyF"></a>
+                    <a name="//apple_ref/swift/Method/makeCoordinator()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SwiftUI19UIViewRepresentableP15makeCoordinator0F0QzyF">makeCoordinator()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeCoordinator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/RDGroupPicker.html#/s:7SwiftUI19UIViewRepresentableP11CoordinatorQa">Coordinator</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SwiftUI19UIViewRepresentableP11CoordinatorQa"></a>
+                    <a name="//apple_ref/swift/Class/Coordinator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SwiftUI19UIViewRepresentableP11CoordinatorQa">Coordinator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Coordinator</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SuperDDAIuPay13RDGroupPickerV10buttonSizeyAC12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/buttonSize(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SuperDDAIuPay13RDGroupPickerV10buttonSizeyAC12CoreGraphics7CGFloatVF">buttonSize(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">buttonSize</span><span class="p">(</span><span class="n">_</span> <span class="nv">buttonSize</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RDGroupPicker</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SuperDDAIuPay13RDGroupPickerV18isButtonAfterTitleyACSbF"></a>
+                    <a name="//apple_ref/swift/Method/isButtonAfterTitle(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SuperDDAIuPay13RDGroupPickerV18isButtonAfterTitleyACSbF">isButtonAfterTitle(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isButtonAfterTitle</span><span class="p">(</span><span class="n">_</span> <span class="nv">isButtonAfterTitle</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RDGroupPicker</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SuperDDAIuPay13RDGroupPickerV10isVerticalyACSbF"></a>
+                    <a name="//apple_ref/swift/Method/isVertical(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SuperDDAIuPay13RDGroupPickerV10isVerticalyACSbF">isVertical(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isVertical</span><span class="p">(</span><span class="n">_</span> <span class="nv">isVertical</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RDGroupPicker</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SuperDDAIuPay13RDGroupPickerV11itemSpacingyAC12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/itemSpacing(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SuperDDAIuPay13RDGroupPickerV11itemSpacingyAC12CoreGraphics7CGFloatVF">itemSpacing(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">itemSpacing</span><span class="p">(</span><span class="n">_</span> <span class="nv">itemSpacing</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RDGroupPicker</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SuperDDAIuPay13RDGroupPickerV13selectedColoryACSo7UIColorCF"></a>
+                    <a name="//apple_ref/swift/Method/selectedColor(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SuperDDAIuPay13RDGroupPickerV13selectedColoryACSo7UIColorCF">selectedColor(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">selectedColor</span><span class="p">(</span><span class="n">_</span> <span class="nv">selectedColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RDGroupPicker</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SuperDDAIuPay13RDGroupPickerV7spacingyAC12CoreGraphics7CGFloatVF"></a>
+                    <a name="//apple_ref/swift/Method/spacing(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SuperDDAIuPay13RDGroupPickerV7spacingyAC12CoreGraphics7CGFloatVF">spacing(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">spacing</span><span class="p">(</span><span class="n">_</span> <span class="nv">spacing</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RDGroupPicker</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SuperDDAIuPay13RDGroupPickerV14titleAlignmentyACSo06NSTextG0VF"></a>
+                    <a name="//apple_ref/swift/Method/titleAlignment(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SuperDDAIuPay13RDGroupPickerV14titleAlignmentyACSo06NSTextG0VF">titleAlignment(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">titleAlignment</span><span class="p">(</span><span class="n">_</span> <span class="nv">titleAlignment</span><span class="p">:</span> <span class="kt">NSTextAlignment</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RDGroupPicker</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SuperDDAIuPay13RDGroupPickerV10titleColoryACSo7UIColorCF"></a>
+                    <a name="//apple_ref/swift/Method/titleColor(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SuperDDAIuPay13RDGroupPickerV10titleColoryACSo7UIColorCF">titleColor(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">titleColor</span><span class="p">(</span><span class="n">_</span> <span class="nv">titleColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RDGroupPicker</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SuperDDAIuPay13RDGroupPickerV9titleFontyACSo6UIFontCF"></a>
+                    <a name="//apple_ref/swift/Method/titleFont(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SuperDDAIuPay13RDGroupPickerV9titleFontyACSo6UIFontCF">titleFont(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">titleFont</span><span class="p">(</span><span class="n">_</span> <span class="nv">titleFont</span><span class="p">:</span> <span class="kt">UIFont</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">RDGroupPicker</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://github.com/lucianobohrer/superdda-iupay" target="_blank" rel="external">lucianobohrer</a>. All rights reserved. (Last updated: 2020-10-14)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

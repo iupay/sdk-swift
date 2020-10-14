@@ -1,0 +1,1146 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Cards/IPBaseCardView.swift",
+      "line": 123,
+      "symbol": "IPBaseCardView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Cards/IPBaseCardView.swift",
+      "line": 128,
+      "symbol": "IPBaseCardView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Cards/IPBaseCardView.swift",
+      "line": 133,
+      "symbol": "IPBaseCardView.init(settings:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Cards/IPBaseCardView.swift",
+      "line": 253,
+      "symbol": "IPBaseCardView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Cards/IPBeneficiaryCardView.swift",
+      "line": 46,
+      "symbol": "IPBeneficiaryCardView.handleSelectorChange",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Cards/IPBeneficiaryCardView.swift",
+      "line": 116,
+      "symbol": "IPBeneficiaryCardView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Cards/IPBeneficiaryCardView.swift",
+      "line": 121,
+      "symbol": "IPBeneficiaryCardView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Cards/IPBeneficiaryCardView.swift",
+      "line": 126,
+      "symbol": "IPBeneficiaryCardView.init(settings:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Cards/IPBeneficiaryCardView.swift",
+      "line": 169,
+      "symbol": "IPBeneficiaryCardView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Cards/IPBeneficiaryCardView.swift",
+      "line": 271,
+      "symbol": "BeneficiaryConfig.init(barColor:cardTextColor:selectorColor:cardTitle:cnpj:activated:amount:amountLabel:text:imageUrl:type:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Cards/IPBeneficiaryCardView.swift",
+      "line": 296,
+      "symbol": "BeneficiaryConfig.BeneficiaryType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Cards/IPBeneficiaryCardView.swift",
+      "line": 297,
+      "symbol": "BeneficiaryConfig.BeneficiaryType.account",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Cards/IPBeneficiaryCardView.swift",
+      "line": 298,
+      "symbol": "BeneficiaryConfig.BeneficiaryType.monthly",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Collection/IPCardCollectionCell.swift",
+      "line": 64,
+      "symbol": "IPCardCollectionCell.setSelected(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Collection/IPCardCollectionCell.swift",
+      "line": 68,
+      "symbol": "IPCardCollectionCell.init(style:reuseIdentifier:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Collection/IPCardCollectionCell.swift",
+      "line": 73,
+      "symbol": "IPCardCollectionCell.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Collection/IPCardCollectionCell.swift",
+      "line": 78,
+      "symbol": "IPCardCollectionCell.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Collection/IPCardCollectionCell.swift",
+      "line": 196,
+      "symbol": "IPCardCollectionCell.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Collection/IPCardListView.swift",
+      "line": 62,
+      "symbol": "IPCardListView.handleCardSelected",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Collection/IPCardListView.swift",
+      "line": 96,
+      "symbol": "IPCardListView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Collection/IPCardListView.swift",
+      "line": 101,
+      "symbol": "IPCardListView.init(source:featured:featuredColor:featuredTextColor:titleText:totalPaymentText:totalAlignment:totalDueOnly:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Collection/IPCardListView.swift",
+      "line": 122,
+      "symbol": "IPCardListView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Collection/IPCardListView.swift",
+      "line": 215,
+      "symbol": "IPCardListView.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Collection/IPCardListView.swift",
+      "line": 219,
+      "symbol": "IPCardListView.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Collection/IPCardListView.swift",
+      "line": 238,
+      "symbol": "IPCardListView.tableView(_:heightForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Collection/IPCardListView.swift",
+      "line": 245,
+      "symbol": "IPCardListView.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Modal/IPBillDetailsModalViewController.swift",
+      "line": 92,
+      "symbol": "IPBillDetailsModalViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Modal/IPBillDetailsModalViewController.swift",
+      "line": 186,
+      "symbol": "IPBillDetailsModalViewController.gestureRecognizer(_:shouldReceive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Modal/IPBillDetailsModalViewController.swift",
+      "line": 203,
+      "symbol": "IPBillDetailsModalViewController.ModalType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Modal/IPBillDetailsModalViewController.swift",
+      "line": 204,
+      "symbol": "IPBillDetailsModalViewController.ModalType.bill",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Modal/IPBillDetailsModalViewController.swift",
+      "line": 205,
+      "symbol": "IPBillDetailsModalViewController.ModalType.beneficiary",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Modal/IPMessageModalViewController.swift",
+      "line": 85,
+      "symbol": "IPMessageModalViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Modal/IPMessageModalViewController.swift",
+      "line": 136,
+      "symbol": "IPMessageModalViewController.gestureRecognizer(_:shouldReceive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Modal/IPPaymentLimitModalViewController.swift",
+      "line": 91,
+      "symbol": "IPPaymentLimitModalViewController.init(title:searchTitle:buttonTitle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Modal/IPPaymentLimitModalViewController.swift",
+      "line": 102,
+      "symbol": "IPPaymentLimitModalViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Modal/IPPaymentLimitModalViewController.swift",
+      "line": 187,
+      "symbol": "IPPaymentLimitModalViewController.gestureRecognizer(_:shouldReceive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Models.swift",
+      "line": 9,
+      "symbol": "IPCardItem",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Models.swift",
+      "line": 18,
+      "symbol": "IPCardItem.init(barColor:cardTitle:dueDate:isPaid:type:amount:isLocked:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Models.swift",
+      "line": 41,
+      "symbol": "IPBaseCardType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Models.swift",
+      "line": 42,
+      "symbol": "IPBaseCardType.netflix",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Models.swift",
+      "line": 43,
+      "symbol": "IPBaseCardType.nubank",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Models.swift",
+      "line": 44,
+      "symbol": "IPBaseCardType.lightbill(flag:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Models.swift",
+      "line": 45,
+      "symbol": "IPBaseCardType.spotify",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Models.swift",
+      "line": 46,
+      "symbol": "IPBaseCardType.standard(imageUrl:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Models.swift",
+      "line": 47,
+      "symbol": "IPBaseCardType.locked",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Models.swift",
+      "line": 66,
+      "symbol": "IPBaseCardType.BillFlagStatus",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Models.swift",
+      "line": 67,
+      "symbol": "IPBaseCardType.BillFlagStatus.green",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Models.swift",
+      "line": 68,
+      "symbol": "IPBaseCardType.BillFlagStatus.yellow",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Models.swift",
+      "line": 69,
+      "symbol": "IPBaseCardType.BillFlagStatus.red",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Models.swift",
+      "line": 70,
+      "symbol": "IPBaseCardType.BillFlagStatus.none",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Models.swift",
+      "line": 84,
+      "symbol": "IPPayment",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Models.swift",
+      "line": 92,
+      "symbol": "IPBillDetails",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Models.swift",
+      "line": 101,
+      "symbol": "IPPaymentHistory",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Models.swift",
+      "line": 106,
+      "symbol": "IPPaymentHistory.init(date:value:isOpen:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Models.swift",
+      "line": 114,
+      "symbol": "IPChartData",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Models.swift",
+      "line": 118,
+      "symbol": "IPChartData.init(label:value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/IPBarcodeButton.swift",
+      "line": 24,
+      "symbol": "IPBarcodeButton.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/IPBarcodeButton.swift",
+      "line": 29,
+      "symbol": "IPBarcodeButton.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/IPPaddingLabel.swift",
+      "line": 31,
+      "symbol": "IPPaddingLabel.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/IPPaddingLabel.swift",
+      "line": 39,
+      "symbol": "IPPaddingLabel.drawText(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/IPSearchButton.swift",
+      "line": 22,
+      "symbol": "IPSearchButton.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/IPSearchButton.swift",
+      "line": 27,
+      "symbol": "IPSearchButton.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDButton.swift",
+      "line": 10,
+      "symbol": "RDButton",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDButton.swift",
+      "line": 11,
+      "symbol": "RDButton.isSelected",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDButton.swift",
+      "line": 22,
+      "symbol": "RDButton.size",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDButton.swift",
+      "line": 31,
+      "symbol": "RDButton.ringWidth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDButton.swift",
+      "line": 37,
+      "symbol": "RDButton.ringSpacing",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDButton.swift",
+      "line": 44,
+      "symbol": "RDButton.selectedColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDButton.swift",
+      "line": 76,
+      "symbol": "RDButton.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDButton.swift",
+      "line": 81,
+      "symbol": "RDButton.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDButton.swift",
+      "line": 86,
+      "symbol": "RDButton.tintColorDidChange()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDButton.swift",
+      "line": 95,
+      "symbol": "RDButton.intrinsicContentSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroup.swift",
+      "line": 10,
+      "symbol": "RDGroup",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroup.swift",
+      "line": 11,
+      "symbol": "RDGroup.init(titles:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroup.swift",
+      "line": 16,
+      "symbol": "RDGroup.titles",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroup.swift",
+      "line": 27,
+      "symbol": "RDGroup.attributedTitles",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroup.swift",
+      "line": 38,
+      "symbol": "RDGroup.selectedIndex",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroup.swift",
+      "line": 45,
+      "symbol": "RDGroup.selectedColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroup.swift",
+      "line": 51,
+      "symbol": "RDGroup.isVertical",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroup.swift",
+      "line": 57,
+      "symbol": "RDGroup.buttonSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroup.swift",
+      "line": 63,
+      "symbol": "RDGroup.spacing",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroup.swift",
+      "line": 69,
+      "symbol": "RDGroup.itemSpacing",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroup.swift",
+      "line": 75,
+      "symbol": "RDGroup.isButtonAfterTitle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroup.swift",
+      "line": 82,
+      "symbol": "RDGroup.titleColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroup.swift",
+      "line": 89,
+      "symbol": "RDGroup.titleAlignment",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroup.swift",
+      "line": 95,
+      "symbol": "RDGroup.titleFont",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroup.swift",
+      "line": 145,
+      "symbol": "RDGroup.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroup.swift",
+      "line": 150,
+      "symbol": "RDGroup.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroup.swift",
+      "line": 155,
+      "symbol": "RDGroup.intrinsicContentSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroup.swift",
+      "line": 162,
+      "symbol": "RDGroup.prepareForInterfaceBuilder()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroupPicker.swift",
+      "line": 19,
+      "symbol": "RDGroupPicker.init(selectedIndex:titles:attributedTitles:selectedColor:isVertical:buttonSize:spacing:itemSpacing:isButtonAfterTitle:titleColor:titleAlignment:titleFont:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroupPicker.swift",
+      "line": 74,
+      "symbol": "RDGroupPicker.buttonSize(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroupPicker.swift",
+      "line": 79,
+      "symbol": "RDGroupPicker.isButtonAfterTitle(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroupPicker.swift",
+      "line": 84,
+      "symbol": "RDGroupPicker.isVertical(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroupPicker.swift",
+      "line": 89,
+      "symbol": "RDGroupPicker.itemSpacing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroupPicker.swift",
+      "line": 94,
+      "symbol": "RDGroupPicker.selectedColor(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroupPicker.swift",
+      "line": 99,
+      "symbol": "RDGroupPicker.spacing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroupPicker.swift",
+      "line": 104,
+      "symbol": "RDGroupPicker.titleAlignment(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroupPicker.swift",
+      "line": 109,
+      "symbol": "RDGroupPicker.titleColor(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Molecules/RadioGroup/RDGroupPicker.swift",
+      "line": 114,
+      "symbol": "RDGroupPicker.titleFont(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPBeneficiaryDetailsViewController.swift",
+      "line": 38,
+      "symbol": "IPBeneficiaryDetailsViewController.handleSeeDetails",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPBeneficiaryDetailsViewController.swift",
+      "line": 39,
+      "symbol": "IPBeneficiaryDetailsViewController.handleViewCard",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPBeneficiaryDetailsViewController.swift",
+      "line": 40,
+      "symbol": "IPBeneficiaryDetailsViewController.handleOptionsClick",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPBeneficiaryDetailsViewController.swift",
+      "line": 142,
+      "symbol": "IPBeneficiaryDetailsViewController.init(payment:baseColor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPBeneficiaryDetailsViewController.swift",
+      "line": 151,
+      "symbol": "IPBeneficiaryDetailsViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPBeneficiaryDetailsViewController.swift",
+      "line": 156,
+      "symbol": "IPBeneficiaryDetailsViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPBeneficiaryDetailsViewController.swift",
+      "line": 161,
+      "symbol": "IPBeneficiaryDetailsViewController.viewWillDisappear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPBeneficiaryDetailsViewController.swift",
+      "line": 166,
+      "symbol": "IPBeneficiaryDetailsViewController.setupContent(payment:baseColor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaidDetailsViewController.swift",
+      "line": 44,
+      "symbol": "IPPaidDetailsViewController.handleReceiptClick",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaidDetailsViewController.swift",
+      "line": 92,
+      "symbol": "IPPaidDetailsViewController.init(beneficiaryName:paidDate:dueDate:navTitle:imageUrl:paymentAmount:baseColor:receiptAvailable:paymentMessage:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaidDetailsViewController.swift",
+      "line": 118,
+      "symbol": "IPPaidDetailsViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaidDetailsViewController.swift",
+      "line": 123,
+      "symbol": "IPPaidDetailsViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaidDetailsViewController.swift",
+      "line": 128,
+      "symbol": "IPPaidDetailsViewController.viewWillDisappear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaidDetailsViewController.swift",
+      "line": 227,
+      "symbol": "IPPaidDetailsViewController.setContent(beneficiaryName:paidDate:dueDate:navTitle:imageUrl:paymentAmount:baseColor:receiptAvailable:paymentMessage:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaymentAccountViewController.swift",
+      "line": 78,
+      "symbol": "IPPaymentAccountViewController.handleSeeDetails",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaymentAccountViewController.swift",
+      "line": 79,
+      "symbol": "IPPaymentAccountViewController.handleCopyBarcode",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaymentAccountViewController.swift",
+      "line": 80,
+      "symbol": "IPPaymentAccountViewController.handleSeePDF",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaymentAccountViewController.swift",
+      "line": 81,
+      "symbol": "IPPaymentAccountViewController.handleRejectBill",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaymentAccountViewController.swift",
+      "line": 82,
+      "symbol": "IPPaymentAccountViewController.handleAutoPaymentChange",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaymentAccountViewController.swift",
+      "line": 83,
+      "symbol": "IPPaymentAccountViewController.handleOptionsClick",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaymentAccountViewController.swift",
+      "line": 84,
+      "symbol": "IPPaymentAccountViewController.handlePaySchedule",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaymentAccountViewController.swift",
+      "line": 85,
+      "symbol": "IPPaymentAccountViewController.handleSeeHistory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaymentAccountViewController.swift",
+      "line": 215,
+      "symbol": "IPPaymentAccountViewController.init(payment:pdfAvailable:paymentHistoryEnabled:chartDataText:chartDataValue:chartLegend:chartData:baseColor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaymentAccountViewController.swift",
+      "line": 238,
+      "symbol": "IPPaymentAccountViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaymentAccountViewController.swift",
+      "line": 243,
+      "symbol": "IPPaymentAccountViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaymentAccountViewController.swift",
+      "line": 248,
+      "symbol": "IPPaymentAccountViewController.viewWillDisappear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaymentAccountViewController.swift",
+      "line": 305,
+      "symbol": "IPPaymentAccountViewController.setupContent(payment:pdfAvailable:paymentHistoryEnabled:chartDataText:chartDataValue:chartLegend:chartData:baseColor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaymentDetailsViewController.swift",
+      "line": 57,
+      "symbol": "IPPaymentDetailsViewController.handleButtonClick",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaymentDetailsViewController.swift",
+      "line": 96,
+      "symbol": "IPPaymentDetailsViewController.init(beneficiaryName:scheduledDueDate:dueDate:navTitle:paymentAmount:currentBalance:baseColor:paymentMessage:payerName:bankName:barcode:payWithType:isPayment:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaymentDetailsViewController.swift",
+      "line": 130,
+      "symbol": "IPPaymentDetailsViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaymentDetailsViewController.swift",
+      "line": 135,
+      "symbol": "IPPaymentDetailsViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaymentDetailsViewController.swift",
+      "line": 140,
+      "symbol": "IPPaymentDetailsViewController.viewWillDisappear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPPaymentDetailsViewController.swift",
+      "line": 234,
+      "symbol": "IPPaymentDetailsViewController.setContent(beneficiaryName:scheduledDueDate:dueDate:navTitle:paymentAmount:currentBalance:baseColor:paymentMessage:payerName:bankName:barcode:payWithType:isPayment:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPReceiptViewController.swift",
+      "line": 62,
+      "symbol": "IPReceiptViewController.handleShareClick",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPReceiptViewController.swift",
+      "line": 63,
+      "symbol": "IPReceiptViewController.handleOptionsClick",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPReceiptViewController.swift",
+      "line": 123,
+      "symbol": "IPReceiptViewController.init(cedentName:cnpj:payerName:barcode:dueDate:paidDate:value:discount:interest:fine:chargedValue:authCode:baseColor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPReceiptViewController.swift",
+      "line": 157,
+      "symbol": "IPReceiptViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPReceiptViewController.swift",
+      "line": 162,
+      "symbol": "IPReceiptViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPReceiptViewController.swift",
+      "line": 167,
+      "symbol": "IPReceiptViewController.viewWillDisappear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Screens/IPReceiptViewController.swift",
+      "line": 294,
+      "symbol": "IPReceiptViewController.setContent(cedentName:cnpj:payerName:barcode:dueDate:paidDate:value:discount:interest:fine:chargedValue:authCode:baseColor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Selectors/IPFilterView.swift",
+      "line": 33,
+      "symbol": "IPFilterView.Sort",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Selectors/IPFilterView.swift",
+      "line": 34,
+      "symbol": "IPFilterView.Sort.asc",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Selectors/IPFilterView.swift",
+      "line": 35,
+      "symbol": "IPFilterView.Sort.dsc",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Selectors/IPFilterView.swift",
+      "line": 38,
+      "symbol": "IPFilterView.handleFilter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Selectors/IPFilterView.swift",
+      "line": 39,
+      "symbol": "IPFilterView.handleSearch",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Selectors/IPFilterView.swift",
+      "line": 78,
+      "symbol": "IPFilterView.init(caption:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Selectors/IPFilterView.swift",
+      "line": 83,
+      "symbol": "IPFilterView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Selectors/IPFilterView.swift",
+      "line": 93,
+      "symbol": "IPFilterView.set(caption:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Selectors/IPMonthSelectorView.swift",
+      "line": 42,
+      "symbol": "IPMonthSelectorView.handleMonthChange",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Selectors/IPMonthSelectorView.swift",
+      "line": 86,
+      "symbol": "IPMonthSelectorView.init(tabColor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Selectors/IPMonthSelectorView.swift",
+      "line": 92,
+      "symbol": "IPMonthSelectorView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Selectors/IPMonthSelectorView.swift",
+      "line": 171,
+      "symbol": "IPMonthSelectorView.collectionView(_:numberOfItemsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Selectors/IPMonthSelectorView.swift",
+      "line": 175,
+      "symbol": "IPMonthSelectorView.collectionView(_:cellForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Selectors/IPMonthSelectorView.swift",
+      "line": 183,
+      "symbol": "IPMonthSelectorView.collectionView(_:didSelectItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Selectors/IPTabSelectorView.swift",
+      "line": 33,
+      "symbol": "IPTabSelectorView.handleItemChange",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Selectors/IPTabSelectorView.swift",
+      "line": 77,
+      "symbol": "IPTabSelectorView.init(items:tabColor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Selectors/IPTabSelectorView.swift",
+      "line": 83,
+      "symbol": "IPTabSelectorView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Selectors/IPTabSelectorView.swift",
+      "line": 127,
+      "symbol": "IPTabSelectorView.collectionView(_:numberOfItemsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Selectors/IPTabSelectorView.swift",
+      "line": 131,
+      "symbol": "IPTabSelectorView.collectionView(_:cellForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Components/Selectors/IPTabSelectorView.swift",
+      "line": 142,
+      "symbol": "IPTabSelectorView.collectionView(_:didSelectItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Utils/DesignAtoms.swift",
+      "line": 30,
+      "symbol": "UIFont.loadIuPayFonts",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Utils/Extensions/UIColorExtensions.swift",
+      "line": 11,
+      "symbol": "UIColor.from(hex:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay/SuperDDAIuPay/Source/Utils/Extensions/UIColorExtensions.swift",
+      "line": 33,
+      "symbol": "UIColor.toHex(alpha:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/lucianobohrer/Documents/work/SuperDDAIuPay"
+}

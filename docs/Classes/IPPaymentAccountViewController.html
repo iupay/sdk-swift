@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IPPaymentAccountViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/IPPaymentAccountViewController" class="dashAnchor"></a>
+    <a title="IPPaymentAccountViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SuperDDAIuPay 1.0.1 Docs</a> (23% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SuperDDAIuPay Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        IPPaymentAccountViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/IPBarcodeButton.html">IPBarcodeButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPBaseCardView.html">IPBaseCardView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPBeneficiaryCardView.html">IPBeneficiaryCardView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPBeneficiaryDetailsViewController.html">IPBeneficiaryDetailsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPBillDetailsModalViewController.html">IPBillDetailsModalViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPBillDetailsModalViewController/ModalType.html">– ModalType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPCardCollectionCell.html">IPCardCollectionCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPCardListView.html">IPCardListView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPFilterView.html">IPFilterView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPFilterView/Sort.html">– Sort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPMessageModalViewController.html">IPMessageModalViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPMonthSelectorView.html">IPMonthSelectorView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPPaddingLabel.html">IPPaddingLabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPPaidDetailsViewController.html">IPPaidDetailsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPPaymentAccountViewController.html">IPPaymentAccountViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPPaymentDetailsViewController.html">IPPaymentDetailsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPPaymentLimitModalViewController.html">IPPaymentLimitModalViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPReceiptViewController.html">IPReceiptViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPSearchButton.html">IPSearchButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IPTabSelectorView.html">IPTabSelectorView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RDButton.html">RDButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RDGroup.html">RDGroup</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/IPBaseCardType.html">IPBaseCardType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IPBaseCardType/BillFlagStatus.html">– BillFlagStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIFont.html">UIFont</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/BaseConfig.html">BaseConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BeneficiaryConfig.html">BeneficiaryConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BeneficiaryConfig/BeneficiaryType.html">– BeneficiaryType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13SuperDDAIuPay13IPBillDetailsV">IPBillDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IPCardItem.html">IPCardItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IPChartData.html">IPChartData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13SuperDDAIuPay9IPPaymentV">IPPayment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IPPaymentHistory.html">IPPaymentHistory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RDGroupPicker.html">RDGroupPicker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RDGroupPicker.html#/s:7SwiftUI19UIViewRepresentableP11CoordinatorQa">– Coordinator</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>IPPaymentAccountViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">IPPaymentAccountViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
+
+                </div>
+              </div>
+            <p>Screen for payment details including chart</p>
+
+<p>### Usage: ###</p>
+<pre class="highlight swift"><code>
+ <span class="k">let</span> <span class="nv">paymentAccount</span> <span class="o">=</span> <span class="kt">IPPaymentAccountViewController</span><span class="p">(</span><span class="nv">payment</span><span class="p">:</span> <span class="n">paymentObject</span><span class="p">,</span>
+                                                     <span class="nv">pdfAvailable</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                                                     <span class="nv">paymentHistoryEnabled</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                                                     <span class="nv">chartDataText</span><span class="p">:</span> <span class="s">"OUTUBRO"</span><span class="p">,</span>
+                                                     <span class="nv">chartDataValue</span><span class="p">:</span> <span class="s">"R$ 1.983,36"</span><span class="p">,</span>
+                                                     <span class="nv">chartLegend</span><span class="p">:</span> <span class="s">"Resumo das Faturas Anteriores"</span><span class="p">,</span>
+                                                     <span class="nv">chartData</span><span class="p">:</span> <span class="p">[</span><span class="kt">IPChartData</span><span class="p">(</span><span class="nv">label</span><span class="p">:</span> <span class="s">"JUN"</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="mi">950</span><span class="p">),</span>
+                                                                 <span class="kt">IPChartData</span><span class="p">(</span><span class="nv">label</span><span class="p">:</span> <span class="s">"JUL"</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="mi">1050</span><span class="p">),</span>
+                                                                 <span class="kt">IPChartData</span><span class="p">(</span><span class="nv">label</span><span class="p">:</span> <span class="s">"AGO"</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="mi">800</span><span class="p">),</span>
+                                                                 <span class="kt">IPChartData</span><span class="p">(</span><span class="nv">label</span><span class="p">:</span> <span class="s">"SET"</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="mi">970</span><span class="p">),</span>
+                                                                 <span class="kt">IPChartData</span><span class="p">(</span><span class="nv">label</span><span class="p">:</span> <span class="s">"OUT"</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="mi">1300</span><span class="p">),</span>
+                                                                 <span class="kt">IPChartData</span><span class="p">(</span><span class="nv">label</span><span class="p">:</span> <span class="s">"NOV"</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="mi">1500</span><span class="p">)],</span>
+                                                     <span class="nv">baseColor</span><span class="p">:</span> <span class="o">.</span><span class="n">systemRed</span><span class="p">)</span>
+
+<span class="c1">// Alternative setup method to use when initialized with .xibs/.storyboards</span>
+
+ <span class="n">paymentAccount</span><span class="o">.</span><span class="nf">setupContent</span><span class="p">(</span><span class="nv">payment</span><span class="p">:</span> <span class="kt">IPPayment</span><span class="p">,</span> <span class="nv">pdfAvailable</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">paymentHistoryEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">chartDataText</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">chartDataValue</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">chartLegend</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">chartData</span><span class="p">:</span> <span class="p">[</span><span class="kt">IPChartData</span><span class="p">],</span> <span class="nv">baseColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">)</span>
+
+
+ <span class="c1">// Closures for handling user interaction</span>
+
+<span class="n">paymentAccount</span><span class="o">.</span><span class="n">handleSeeDetails</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="kt">IPBillDetailsModalViewController</span><span class="o">.</span><span class="nf">showModal</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="n">paymentAccount</span><span class="p">,</span>
+                                               <span class="nv">payment</span><span class="p">:</span> <span class="k">self</span><span class="o">.</span><span class="nf">generatePaymentData</span><span class="p">(),</span>
+                                               <span class="nv">highlightColor</span><span class="p">:</span> <span class="o">.</span><span class="n">systemRed</span><span class="p">,</span>
+                                               <span class="nv">type</span><span class="p">:</span> <span class="o">.</span><span class="n">bill</span><span class="p">)</span>
+<span class="p">}</span>
+
+ <span class="n">paymentAccount</span><span class="o">.</span><span class="n">handleCopyBarcode</span> <span class="o">=</span> <span class="p">{</span> <span class="n">barcode</span> <span class="k">in</span>
+    <span class="c1">// Closure to handle barcode copy</span>
+ <span class="p">}</span>
+
+ <span class="n">paymentAccount</span><span class="o">.</span><span class="n">handleSeePDF</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="c1">// Closure to handle opening PDF</span>
+ <span class="p">}</span>
+
+ <span class="n">paymentAccount</span><span class="o">.</span><span class="n">handleRejectBill</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="c1">// Closure to handle bill rejection</span>
+ <span class="p">}</span>
+
+ <span class="n">paymentAccount</span><span class="o">.</span><span class="n">handleAutoPaymentChange</span> <span class="o">=</span> <span class="p">{</span> <span class="n">isOn</span> <span class="k">in</span>
+    <span class="c1">// Closure to handle auto payment toggle</span>
+ <span class="p">}</span>
+
+ <span class="n">paymentAccount</span><span class="o">.</span><span class="n">handleOptionsClick</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="c1">// Closure to handle options button click</span>
+ <span class="p">}</span>
+
+ <span class="n">paymentAccount</span><span class="o">.</span><span class="n">handlePaySchedule</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="c1">// Closure to handle payment/schedule button click</span>
+ <span class="p">}</span>
+
+ <span class="n">paymentAccount</span><span class="o">.</span><span class="n">handleSeeHistory</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="c1">// Closure to handle see history button click</span>
+ <span class="p">}</span>
+
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SuperDDAIuPay30IPPaymentAccountViewControllerC16handleSeeDetailsyycSgvp"></a>
+                    <a name="//apple_ref/swift/Property/handleSeeDetails" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SuperDDAIuPay30IPPaymentAccountViewControllerC16handleSeeDetailsyycSgvp">handleSeeDetails</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">handleSeeDetails</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="p">())?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SuperDDAIuPay30IPPaymentAccountViewControllerC17handleCopyBarcodeySScSgvp"></a>
+                    <a name="//apple_ref/swift/Property/handleCopyBarcode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SuperDDAIuPay30IPPaymentAccountViewControllerC17handleCopyBarcodeySScSgvp">handleCopyBarcode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">handleCopyBarcode</span><span class="p">:</span> <span class="p">((</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SuperDDAIuPay30IPPaymentAccountViewControllerC12handleSeePDFyycSgvp"></a>
+                    <a name="//apple_ref/swift/Property/handleSeePDF" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SuperDDAIuPay30IPPaymentAccountViewControllerC12handleSeePDFyycSgvp">handleSeePDF</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">handleSeePDF</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="p">())?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SuperDDAIuPay30IPPaymentAccountViewControllerC16handleRejectBillyycSgvp"></a>
+                    <a name="//apple_ref/swift/Property/handleRejectBill" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SuperDDAIuPay30IPPaymentAccountViewControllerC16handleRejectBillyycSgvp">handleRejectBill</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">handleRejectBill</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="p">())?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SuperDDAIuPay30IPPaymentAccountViewControllerC23handleAutoPaymentChangeySbcSgvp"></a>
+                    <a name="//apple_ref/swift/Property/handleAutoPaymentChange" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SuperDDAIuPay30IPPaymentAccountViewControllerC23handleAutoPaymentChangeySbcSgvp">handleAutoPaymentChange</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">handleAutoPaymentChange</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SuperDDAIuPay30IPPaymentAccountViewControllerC18handleOptionsClickyycSgvp"></a>
+                    <a name="//apple_ref/swift/Property/handleOptionsClick" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SuperDDAIuPay30IPPaymentAccountViewControllerC18handleOptionsClickyycSgvp">handleOptionsClick</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">handleOptionsClick</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="p">())?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SuperDDAIuPay30IPPaymentAccountViewControllerC06handleC8ScheduleyycSgvp"></a>
+                    <a name="//apple_ref/swift/Property/handlePaySchedule" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SuperDDAIuPay30IPPaymentAccountViewControllerC06handleC8ScheduleyycSgvp">handlePaySchedule</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">handlePaySchedule</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="p">())?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SuperDDAIuPay30IPPaymentAccountViewControllerC16handleSeeHistoryyycSgvp"></a>
+                    <a name="//apple_ref/swift/Property/handleSeeHistory" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SuperDDAIuPay30IPPaymentAccountViewControllerC16handleSeeHistoryyycSgvp">handleSeeHistory</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">handleSeeHistory</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="p">())?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SuperDDAIuPay30IPPaymentAccountViewControllerC7payment12pdfAvailable0H14HistoryEnabled13chartDataText0mN5Value0M6Legend0mN09baseColorAcA0D0V_S2bS3SSayAA07IPChartN0VGSo7UIColorCtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(payment:pdfAvailable:paymentHistoryEnabled:chartDataText:chartDataValue:chartLegend:chartData:baseColor:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SuperDDAIuPay30IPPaymentAccountViewControllerC7payment12pdfAvailable0H14HistoryEnabled13chartDataText0mN5Value0M6Legend0mN09baseColorAcA0D0V_S2bS3SSayAA07IPChartN0VGSo7UIColorCtcfc">init(payment:<wbr>pdfAvailable:<wbr>paymentHistoryEnabled:<wbr>chartDataText:<wbr>chartDataValue:<wbr>chartLegend:<wbr>chartData:<wbr>baseColor:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">payment</span><span class="p">:</span> <span class="kt"><a href="../Structs.html#/s:13SuperDDAIuPay9IPPaymentV">IPPayment</a></span><span class="p">,</span>
+            <span class="nv">pdfAvailable</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">paymentHistoryEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">chartDataText</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">chartDataValue</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">chartLegend</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">chartData</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/IPChartData.html">IPChartData</a></span><span class="p">],</span>
+            <span class="nv">baseColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperDDAIuPay@objc(cs)IPPaymentAccountViewController(im)viewDidLoad"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperDDAIuPay@objc(cs)IPPaymentAccountViewController(im)viewDidLoad">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperDDAIuPay@objc(cs)IPPaymentAccountViewController(im)viewWillAppear:"></a>
+                    <a name="//apple_ref/swift/Method/viewWillAppear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperDDAIuPay@objc(cs)IPPaymentAccountViewController(im)viewWillAppear:">viewWillAppear(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">viewWillAppear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperDDAIuPay@objc(cs)IPPaymentAccountViewController(im)viewWillDisappear:"></a>
+                    <a name="//apple_ref/swift/Method/viewWillDisappear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperDDAIuPay@objc(cs)IPPaymentAccountViewController(im)viewWillDisappear:">viewWillDisappear(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">viewWillDisappear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SuperDDAIuPay30IPPaymentAccountViewControllerC12setupContent7payment12pdfAvailable0J14HistoryEnabled13chartDataText0oP5Value0O6Legend0oP09baseColoryAA0D0V_S2bS3SSayAA07IPChartP0VGSo7UIColorCtF"></a>
+                    <a name="//apple_ref/swift/Method/setupContent(payment:pdfAvailable:paymentHistoryEnabled:chartDataText:chartDataValue:chartLegend:chartData:baseColor:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SuperDDAIuPay30IPPaymentAccountViewControllerC12setupContent7payment12pdfAvailable0J14HistoryEnabled13chartDataText0oP5Value0O6Legend0oP09baseColoryAA0D0V_S2bS3SSayAA07IPChartP0VGSo7UIColorCtF">setupContent(payment:<wbr>pdfAvailable:<wbr>paymentHistoryEnabled:<wbr>chartDataText:<wbr>chartDataValue:<wbr>chartLegend:<wbr>chartData:<wbr>baseColor:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setupContent</span><span class="p">(</span><span class="nv">payment</span><span class="p">:</span> <span class="kt"><a href="../Structs.html#/s:13SuperDDAIuPay9IPPaymentV">IPPayment</a></span><span class="p">,</span>
+                         <span class="nv">pdfAvailable</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+                         <span class="nv">paymentHistoryEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+                         <span class="nv">chartDataText</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                         <span class="nv">chartDataValue</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                         <span class="nv">chartLegend</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                         <span class="nv">chartData</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/IPChartData.html">IPChartData</a></span><span class="p">],</span>
+                         <span class="nv">baseColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://github.com/lucianobohrer/superdda-iupay" target="_blank" rel="external">lucianobohrer</a>. All rights reserved. (Last updated: 2020-10-14)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
