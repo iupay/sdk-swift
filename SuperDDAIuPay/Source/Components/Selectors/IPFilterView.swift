@@ -7,6 +7,27 @@
 
 import UIKit
 
+/**
+View containing asc and desc button for sorting list and also button to trigger search intention
+
+### Usage: ###
+```
+let filterView = IPFilterView(caption: "my caption:")
+ 
+ // Alternative when using with .xibs
+ filterView.set(caption: "my caption:")
+ 
+ filterView.handleFilter = { sort in
+ // Closure to handle filter buttons
+ }
+ 
+ filterView.handleFilter = { sort in
+ // Closure to handle search button
+ }
+```
+### Notes: ###
+ 1.  It can be inherited on .xibs/.storyboards
+ */
 public class IPFilterView: UIView {
     
     public enum Sort {
@@ -18,7 +39,6 @@ public class IPFilterView: UIView {
     public var handleSearch: (() -> ())?
 
     private lazy var captionLabel: UILabel = {
-        $0.text = "Ordenar por:"
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.font = UIFont.customFont(ofSize: 14, weight: .regular)
         $0.widthAnchor.constraint(equalToConstant: 80).isActive = true
@@ -57,8 +77,7 @@ public class IPFilterView: UIView {
     
     public init(caption: String) {
         super.init(frame: .zero)
-        self.captionLabel.text = caption
-        self.setupContent()
+        self.setupContent(text: caption)
     }
     
     public override init(frame: CGRect) {
@@ -71,7 +90,12 @@ public class IPFilterView: UIView {
         self.setupContent()
     }
     
-    private func setupContent() {
+    public func set(caption: String) {
+        self.captionLabel.text = caption
+    }
+    
+    private func setupContent(text: String = "Ordenar por:") {
+        self.captionLabel.text = text
         self.addSubview(self.captionLabel)
         self.addSubview(self.ascButton)
         self.addSubview(self.dscButton)

@@ -8,13 +8,77 @@
 import UIKit
 import Material
 
+/**
+ Screen for payment details including chart
+ 
+ ### Usage: ###
+``` 
+ 
+ let paymentAccount = IPPaymentAccountViewController(payment: paymentObject,
+                                                     pdfAvailable: true,
+                                                     paymentHistoryEnabled: true,
+                                                     chartDataText: "OUTUBRO",
+                                                     chartDataValue: "R$ 1.983,36",
+                                                     chartLegend: "Resumo das Faturas Anteriores",
+                                                     chartData: [IPChartData(label: "JUN", value: 950),
+                                                                 IPChartData(label: "JUL", value: 1050),
+                                                                 IPChartData(label: "AGO", value: 800),
+                                                                 IPChartData(label: "SET", value: 970),
+                                                                 IPChartData(label: "OUT", value: 1300),
+                                                                 IPChartData(label: "NOV", value: 1500)],
+                                                     baseColor: .systemRed)
+ 
+// Alternative setup method to use when initialized with .xibs/.storyboards
+
+ paymentAccount.setupContent(payment: IPPayment, pdfAvailable: Bool, paymentHistoryEnabled: Bool, chartDataText: String, chartDataValue: String, chartLegend: String, chartData: [IPChartData], baseColor: UIColor)
+
+ 
+ // Closures for handling user interaction
+ 
+paymentAccount.handleSeeDetails = {
+    IPBillDetailsModalViewController.showModal(from: paymentAccount,
+                                               payment: self.generatePaymentData(),
+                                               highlightColor: .systemRed,
+                                               type: .bill)
+}
+ 
+ paymentAccount.handleCopyBarcode = { barcode in
+    // Closure to handle barcode copy
+ }
+
+ paymentAccount.handleSeePDF = {
+    // Closure to handle opening PDF
+ }
+ 
+ paymentAccount.handleRejectBill = {
+    // Closure to handle bill rejection
+ }
+ 
+ paymentAccount.handleAutoPaymentChange = { isOn in
+    // Closure to handle auto payment toggle
+ }
+ 
+ paymentAccount.handleOptionsClick = {
+    // Closure to handle options button click
+ }
+ 
+ paymentAccount.handlePaySchedule = {
+    // Closure to handle payment/schedule button click
+ }
+ 
+ paymentAccount.handleSeeHistory = {
+    // Closure to handle see history button click
+ }
+
+```
+*/
+
 public class IPPaymentAccountViewController: UIViewController {
 
     public var handleSeeDetails: (() -> ())?
     public var handleCopyBarcode: ((String) -> ())?
-    public var handleAccountDetails: (() -> ())?
     public var handleSeePDF: (() -> ())?
-    public var handleRejectAccount: (() -> ())?
+    public var handleRejectBill: (() -> ())?
     public var handleAutoPaymentChange: ((Bool) -> ())?
     public var handleOptionsClick: (() -> ())?
     public var handlePaySchedule: (() -> ())?
@@ -518,7 +582,7 @@ public class IPPaymentAccountViewController: UIViewController {
     }
     
     @objc private func rejectAction() {
-        self.handleRejectAccount?()
+        self.handleRejectBill?()
     }
     
     @objc private func seeDetailsAction() {

@@ -8,6 +8,16 @@
 import UIKit
 
 // MARK: - IPPaddingLabel
+/**
+Label with default paddings on sides
+
+### Usage: ###
+```
+let label = IPPaddingLabel(text: "text", fontSize: 15, weight: .regular, textColor: .darkGray)
+```
+### Notes: ###
+ 1.  It can be inherited on .xibs/.storyboards
+ */
 public final class IPPaddingLabel: UILabel {
     
     // MARK: Custom initializer

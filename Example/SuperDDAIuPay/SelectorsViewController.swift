@@ -22,7 +22,7 @@ class SelectorsViewController: UIViewController {
             self?.presentAlert(withTitle: "Month Tab", message: "Month selected \(month)")
         }
         
-        self.tabSelector.configure(items: ["Pagamentos", "Beneficiários", "Serviços", "Recusados"], tabColor: .systemRed)
+        self.tabSelector.set(items: ["Pagamentos", "Beneficiários", "Serviços", "Recusados"], tabColor: .systemRed)
         
         self.tabSelector.handleItemChange = { [weak self] item in
             self?.presentAlert(withTitle: "Tab", message: "Item selected \(item)")

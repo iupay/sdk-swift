@@ -7,6 +7,51 @@
 
 import UIKit
 
+/**
+ Screen for payment details
+ 
+ ### Usage: ###
+``` 
+ let payDetailsVc = IPPaymentDetailsViewController(beneficiaryName: "John Doe",
+                                                   scheduledDueDate: Date(),
+                                                   dueDate: Date(),
+                                                   navTitle: "PAGAMENTO",
+                                                   paymentAmount: 223.24,
+                                                   currentBalance: 3250,
+                                                   baseColor: .systemRed,
+                                                   paymentMessage: "",
+                                                   payerName: "Jane Doe",
+                                                   bankName: "ITAU",
+                                                   barcode: "34191.09065 44830. 1285 40141.906 8 00001.83120.59475",
+                                                   payWithType: "My Banking",
+                                                   isPayment: false)
+ 
+ // As an alternative when usigin .xibs this method can be call to setup the screen
+ payDetailsVC.setContent(beneficiaryName: "John Doe",
+                         scheduledDueDate: Date(),
+                         dueDate: Date(),
+                         navTitle: "PAGAMENTO",
+                         paymentAmount: 223.24,
+                         currentBalance: 3250,
+                         baseColor: .systemRed,
+                         paymentMessage: "",
+                         payerName: "Jane Doe",
+                         bankName: "ITAU",
+                         barcode: "34191.09065 44830. 1285 40141.906 8 00001.83120.59475",
+                         payWithType: "My Banking",
+                         isPayment: false)
+ 
+ // Closure to handle button on the screen
+ payDetailsVC.handleButtonClick = {
+     IPMessageModalViewController.showModal(from: payDetailsVC,
+                                            title: "Title text",
+                                            message: "message text")
+ }
+```
+ # Notes:
+ - isPayment false means schedule payment
+ 
+ */
 public class IPPaymentDetailsViewController: UIViewController {
 
     @objc public var handleButtonClick: (() -> ())?

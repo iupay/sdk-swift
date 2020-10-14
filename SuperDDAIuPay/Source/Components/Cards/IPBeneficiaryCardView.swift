@@ -12,9 +12,34 @@ import Material
 // MARK: - Class
 
 /**
-    View for the Beneficiary Card
+ 
+ Beneficiary Card View
+ ### Usage by programatically init: ###
+ ```
+ let config = BeneficiaryConfig(barColor: .systemRed,
+                                cardTextColor: .darkGray,
+                                selectorColor: .systemRed,
+                                cardTitle: "CERJ",
+                                cnpj: "99.999.999.0001-99",
+                                activated: false,
+                                amount: 300,
+                                amountLabel: "Valor Limite:",
+                                text: "Débito automático no dia do vencimento",
+                                imageUrl: "https://devshift.biz/wp-content/uploads/2017/04/profile-icon-png-898.png",
+                                type: .monthly)
+ 
+ let cardView = IPBeneficiaryCardView(settings: config)
+ ```
+ ### Alternative to init configuration: ###
+ ```
+ 
+ cardView.configure(settings: config)
+ ```
+ 
+ ### Notes: ###
+ 1.  It can be inherited on .xibs/.storyboards
+ or initialized with the configuration values
  */
-
 public class IPBeneficiaryCardView: UIView {
 
     // MARK: Public variables
@@ -96,6 +121,12 @@ public class IPBeneficiaryCardView: UIView {
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.setupConstraints()
+    }
+    
+    public init(settings: BeneficiaryConfig) {
+        super.init(frame: .zero)
+        self.setupConstraints()
+        self.configure(settings: settings)
     }
         
     // MARK: Public methods

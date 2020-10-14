@@ -7,6 +7,16 @@
 
 import UIKit
 
+/**
+Button with magnifying glass Icon
+
+ ### Usage: ###
+```
+let searchButton = IPSearchButton(frame: .zero)
+```
+ ### Notes: ###
+ 1.  It can be inherited on .xibs/.storyboards
+ */
 public class IPSearchButton: UIButton {
 
     public override init(frame: CGRect) {

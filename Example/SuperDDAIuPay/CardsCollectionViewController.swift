@@ -36,5 +36,6 @@ class CardsCollectionViewController: UIViewController {
                                  totalPaymentText: text,
                                  totalAlignment: .center,
                                  totalDueOnly: true)
+
     }
 }

@@ -7,6 +7,56 @@
 
 import UIKit
 
+/**
+ Screen for payment receipt
+ 
+ ### Usage: ###
+``` 
+ let receiptVc = IPReceiptViewController(cedentName: "COMPANHIA DE ELETRICIDADE DO RIO DE JANEIRO",
+                                         cnpj: "15.139.629/0001-99",
+                                         payerName: "ROBERTO DE OLIVEIRA SANTOS",
+                                         barcode: "34191.09065 44830. 1285 40141.906 8 00001.83120.59475",
+                                         dueDate: Date(),
+                                         paidDate: Date(),
+                                         value: 223.24,
+                                         discount: 0.0,
+                                         interest: 0.0,
+                                         fine: 0.0,
+                                         chargedValue: 223.24,
+                                         authCode: "A.6DE.DF4.75E.DBB,128",
+                                         baseColor: .systemRed)
+ 
+ // As an alternative when usigin .xibs this method can be call to setup the screen
+ receiptVC.setContent(cedentName: "COMPANHIA DE ELETRICIDADE DO RIO DE JANEIRO",
+                      cnpj: "15.139.629/0001-99",
+                      payerName: "ROBERTO DE OLIVEIRA SANTOS",
+                      barcode: "34191.09065 44830. 1285 40141.906 8 00001.83120.59475",
+                      dueDate: Date(),
+                      paidDate: Date(),
+                      value: 223.24,
+                      discount: 0.0,
+                      interest: 0.0,
+                      fine: 0.0,
+                      chargedValue: 223.24,
+                      authCode: "A.6DE.DF4.75E.DBB,128",
+                      baseColor: .systemRed)
+ 
+ receiptVC.handleShareClick = {
+     // Closure for handling share button click
+ }
+ 
+ receiptVC.handleOptionsClick = {
+ // Closure for handling option button click
+ }
+ 
+ // Closure to handle button on the screen
+ payDetailsVC.handleButtonClick = {
+     IPMessageModalViewController.showModal(from: payDetailsVC,
+                                            title: "Title text",
+                                            message: "message text")
+ }
+```
+ */
 public class IPReceiptViewController: UIViewController {
 
     public var handleShareClick: (() -> ())?

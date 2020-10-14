@@ -8,6 +8,18 @@
 import UIKit
 
 // MARK: - Class
+
+/**
+Basic Modal for messages
+
+ 
+ ### Usage: ###
+```
+IPMessageModalViewController.showModal(from: self,
+                                       title: "Modal title text",
+                                       message: "message text")
+```
+ */
 public class IPPaymentLimitModalViewController: UIViewController, UIGestureRecognizerDelegate {
     
     /** Closure to handle the submit action  */
@@ -30,7 +42,6 @@ public class IPPaymentLimitModalViewController: UIViewController, UIGestureRecog
     
     private lazy var titleLabel: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
-        $0.text = "Deseja colocar limite de pagamento?"
         $0.textAlignment = .center
         $0.textColor = .grayKit
         $0.font = .customFont(ofSize: 16, weight: .semibold)
@@ -39,7 +50,6 @@ public class IPPaymentLimitModalViewController: UIViewController, UIGestureRecog
     
     private lazy var titleSearch: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
-        $0.text = "Valor para Limite Máximo:"
         $0.textAlignment = .center
         $0.textColor = .grayKit
         $0.font = .customFont(ofSize: 16, weight: .semibold)
@@ -73,12 +83,20 @@ public class IPPaymentLimitModalViewController: UIViewController, UIGestureRecog
     private lazy var submitButton: UIButton = {
         $0.backgroundColor = .grayKit
         $0.setTitleColor(.white, for: .normal)
-        $0.setTitle("ok", for: .normal)
         $0.layer.cornerRadius = .smallestMargin
         $0.translatesAutoresizingMaskIntoConstraints = false
         return $0
     }(UIButton(frame: .zero))
     
+    public init(title: String, searchTitle: String, buttonTitle: String) {
+        super.init(nibName: nil, bundle: nil)
+        self.setup(title: title, searchTitle: searchTitle, buttonTitle: buttonTitle)
+        self.modalPresentationStyle = .overCurrentContext
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
     
     // MARK: - Lifecycle methods
     public override func viewDidLoad() {
@@ -185,9 +203,10 @@ extension IPPaymentLimitModalViewController {
      - parameter vc: reference to the controller presenting it.
      - parameter handleSubmit: closure that will pass the user inputs
      */
-    public static func showModal(from vc: UIViewController, handleSubmit:  ((Bool, String?) -> ())?)  {
-        let modalViewController = IPPaymentLimitModalViewController()
-        modalViewController.modalPresentationStyle = .overCurrentContext
+    public static func showModal(title: String = "Deseja colocar limite de pagamento?", searchTitle: String = "Valor para Limite Máximo:", buttonTitle: String = "ok", from vc: UIViewController, handleSubmit:  ((Bool, String?) -> ())?)  {
+        let modalViewController = IPPaymentLimitModalViewController(title: title,
+                                                                    searchTitle: searchTitle,
+                                                                    buttonTitle: buttonTitle)
         vc.present(modalViewController, animated: false, completion: nil)
         modalViewController.handleSubmit = handleSubmit
     }

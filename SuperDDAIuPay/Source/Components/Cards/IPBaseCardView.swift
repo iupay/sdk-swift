@@ -6,8 +6,36 @@
 //
 
 import UIKit
-
-// MARK: - Class
+/**
+ 
+ Base CardView
+### Usage by programatically init: ###
+ ```
+ let config = BaseConfig(barColor: .systemRed,
+                        dueText: "Vencendo hoje,",
+                        cardTextColor: .darkGray,
+                        cnpj: "99.999.999.0001-99",
+                        paid: true,
+                        isDue: false,
+                        fromEmail: false,
+                        addedByUser: false,
+                        amount: 50,
+                        date: "03 Ago",
+                        text: "Tipo de Plano: Premium ULTRA HD",
+                        type: .netflix)
+ 
+ let cardView = IPBaseCardView(settings: config)
+ ```
+### Alternative to init configuration: ###
+ ```
+ 
+ cardView.configure(settings: config)
+ ```
+ 
+ ### Notes: ###
+ 1.  It can be inherited on .xibs/.storyboards
+ or initialized with the configuration values
+ */
 public class IPBaseCardView: UIView {
     
     // MARK: Private variables
@@ -100,6 +128,12 @@ public class IPBaseCardView: UIView {
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.setupConstraints()
+    }
+    
+    public init(settings: BaseConfig) {
+        super.init(frame: .zero)
+        self.setupConstraints()
+        self.configure(settings: settings)
     }
         
     // MARK: Public methods

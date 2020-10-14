@@ -9,6 +9,26 @@ import UIKit
 import Material
 
 // MARK: - Class
+
+/**
+Month selector view
+
+ ### Usage: ###
+```
+let monthSelectorView = IPMonthSelectorView(tabColor: .systemRed)
+ 
+ // Alternative when using with .xibs
+ monthSelectorView.set(tabColor: .systemRed)
+ monthSelectorView.set(currentMonth: 6)
+ 
+ monthSelectorView.handleMonthChange = { month in
+ // Closure to handle month selection
+ }
+ 
+```
+ ### Notes: ###
+ 1.  It can be inherited on .xibs/.storyboards
+ */
 public class IPMonthSelectorView: UIView {
     
     // MARK: - Definitions
@@ -65,7 +85,7 @@ public class IPMonthSelectorView: UIView {
     // MARK: Initializers
     public init(tabColor: UIColor) {
         super.init(frame: .zero)
-        self.configure(tabColor: tabColor)
+        self.set(tabColor: tabColor)
         self.setupConstraints()
         self.buildMenu()
     }
@@ -89,7 +109,7 @@ public class IPMonthSelectorView: UIView {
     /// - Parameters:
     ///     - tabColor: Main color that will be use as theme for the component
 
-    public func configure(tabColor: UIColor) {
+    public func set(tabColor: UIColor) {
         self.tabColor = tabColor
     }
     

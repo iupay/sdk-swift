@@ -9,7 +9,7 @@ import UIKit
 import Valley
 
 /**
- Card class used on IPCardListView
+ Card class used on IPCardListView for SDK internal use
  */
 public class IPCardCollectionCell: UITableViewCell {
 

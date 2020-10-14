@@ -11,6 +11,15 @@ import UIKit
 
 /**
  Modal to be used for Bill and Beneficary detail
+ 
+ ### Usage: ###
+```
+// Check ModalType for options
+IPBillDetailsModalViewController.showModal(from: benDetails,
+                                            payment: # IPPayment object instance #,
+                                            highlightColor: .systemRed,
+                                            type: .beneficiary)
+```
  */
 public class IPBillDetailsModalViewController: UIViewController, UIGestureRecognizerDelegate {
     
@@ -71,6 +80,8 @@ public class IPBillDetailsModalViewController: UIViewController, UIGestureRecogn
         self.highlightColor = highlightColor
         self.type = type
         super.init(nibName: nil, bundle: nil)
+        
+        self.modalPresentationStyle = .overCurrentContext
     }
     
     required init?(coder: NSCoder) {
@@ -204,7 +215,6 @@ extension IPBillDetailsModalViewController {
      */
     public static func showModal(from vc: UIViewController, payment: IPPayment, highlightColor: UIColor, type: ModalType)  {
         let modalViewController = IPBillDetailsModalViewController(payment: payment, type: type, highlightColor: highlightColor)
-        modalViewController.modalPresentationStyle = .overCurrentContext
         vc.present(modalViewController, animated: false, completion: nil)
     }
 }

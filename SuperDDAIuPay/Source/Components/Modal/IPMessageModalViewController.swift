@@ -9,10 +9,17 @@ import UIKit
 
 // MARK: - Class
 
-/**
+ /**
  Basic Modal for messages
 
- */
+  
+ ### Usage: ###
+ ```
+ IPMessageModalViewController.showModal(from: self,
+                                        title: "Modal title text",
+                                        message: "message text")
+ ```
+  */
 public class IPMessageModalViewController: UIViewController, UIGestureRecognizerDelegate {
     
     // MARK: Private variables
@@ -67,6 +74,7 @@ public class IPMessageModalViewController: UIViewController, UIGestureRecognizer
         self.titleText = title
         self.message = message
         super.init(nibName: nil, bundle: nil)
+        self.modalPresentationStyle = .overCurrentContext
     }
     
     required init?(coder: NSCoder) {
@@ -151,7 +159,6 @@ extension IPMessageModalViewController {
      */
     public static func showModal(from vc: UIViewController, title: String, message: String) {
         let modalViewController = IPMessageModalViewController(title: title, message: message)
-        modalViewController.modalPresentationStyle = .overCurrentContext
         vc.present(modalViewController, animated: false, completion: nil)
     }
 }

@@ -7,6 +7,38 @@
 
 import UIKit
 
+/**
+ Screen for paid billds
+ 
+ ### Usage: ###
+``` 
+ 
+ let paidVc = IPPaidDetailsViewController(beneficiaryName: "John Doe",
+                                         paidDate: Date(),
+                                         dueDate: Date(),
+                                         navTitle: "CERJ",
+                                         imageUrl: "https://myimageurl.com/image.png",
+                                         paymentAmount: 223.24,
+                                         baseColor: .systemRed,
+                                         receiptAvailable: true,
+                                         paymentMessage: "Sua conta está paga")
+ 
+ // Alternatively, when using with storyboard/xibs, component can be configured the following way:
+ paidVC.setContent(beneficiaryName: "John Doe",
+                   paidDate: Date(),
+                   dueDate: Date(),
+                   navTitle: "CERJ",
+                   imageUrl: "https://myimageurl.com/image.png",
+                   paymentAmount: 223.24,
+                   baseColor: .systemRed,
+                   receiptAvailable: true,
+                   paymentMessage: "Sua conta está paga")
+ 
+ beneficiaryDetailsController.handleReceiptClick = {
+     // Action for receipt button
+ }
+```
+*/
 public class IPPaidDetailsViewController: UIViewController {
 
     @objc public var handleReceiptClick: (() -> ())?

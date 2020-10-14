@@ -7,6 +7,32 @@
 
 import UIKit
 
+/**
+ Modal to be used for Bill and Beneficary detail
+ 
+ ### Usage: ###
+``` 
+ beneficiaryDetailsController.setupContent(payment: paymentObject,
+                                           baseColor: .systemRed)
+ 
+ beneficiaryDetailsController.handleSeeDetails = {
+     IPBillDetailsModalViewController.showModal(from: beneficiaryDetailsController,
+                                                payment: paymentObject,
+                                                highlightColor: .systemRed,
+                                                type: .beneficiary)
+ }
+ 
+ beneficiaryDetailsController.handleViewCard = {
+     // Action for view card button
+ }
+ 
+ beneficiaryDetailsController.handleOptionsClick = {
+     // Action for options button
+ }
+```
+ ### Notes: ###
+ Alternatively, can be instanciated programmatically passing the configuration instead of calling setupContent(payment:baseColor:)
+ */
 public class IPBeneficiaryDetailsViewController: UIViewController {
 
     public var handleSeeDetails: (() -> ())?

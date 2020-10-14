@@ -10,7 +10,51 @@ import UIKit
 // MARK: - Class
 
 /**
+ 
  View to be used to display a collection of cards
+
+ ### Prepare dataset: ###
+ ```
+ let items = [
+     IPCardItem(barColor: .systemRed, cardTitle: nil, dueDate: nextMonthDate, isPaid: false, type: .netflix, amount: 100.0, isLocked: false),
+     IPCardItem(barColor: UIColor.from(hex: "#0d56f3"), cardTitle: nil, dueDate: Date(), isPaid: true,  type: .nubank, amount: 150.0, isLocked: false),
+     IPCardItem(barColor: .systemGreen, cardTitle: nil, dueDate:Date(), isPaid: false, type: .spotify, amount: 400, isLocked: false),
+     IPCardItem(barColor: .systemRed, cardTitle: nil, dueDate:Date(), isPaid: false, type: .lightbill(flag: .red), amount: 400, isLocked: false),
+     IPCardItem(barColor: .lightGray, cardTitle: "ARNALDO PESSOA LEAL", dueDate: Date(), type: .standard(imageUrl: "https://devshift.biz/wp-content/uploads/2017/04/profile-icon-png-898.png"), amount: 100.0, isLocked: false),
+     IPCardItem(barColor: UIColor.from(hex: "#0d56f3"), cardTitle: nil, dueDate: Date(), isPaid: true, type: .standard(imageUrl: "https://logodownload.org/wp-content/uploads/2014/04/bmw-logo-2.png"), amount: 100.0, isLocked: true)
+ ]
+ 
+ let text = "Você tem 4 pagamentos vencendo em até <b>7 dias</b>, no valor total de: ".convertHtml(textColor: .white)
+ ```
+ 
+ ### Usage by programatically init: ###
+ ```
+ let cardListView = IPCardListView(source: items,
+                                    featured: true,
+                                    featuredColor: .systemOrange,
+                                    featuredTextColor: .white,
+                                    titleText: "Vencendo em até 7 dias",
+                                    totalPaymentText: text,
+                                    totalAlignment: .center,
+                                    totalDueOnly: true)
+ 
+ ```
+ ### Alternative to init configuration: ###
+ ```
+ 
+ cardListView.configure(source: items,
+                         featured: true,
+                         featuredColor: .systemOrange,
+                         featuredTextColor: .white,
+                         titleText: "Vencendo em até 7 dias",
+                         totalPaymentText: text,
+                         totalAlignment: .center,
+                         totalDueOnly: true)
+ ```
+ 
+ ### Notes: ###
+ 1.  It can be inherited on .xibs/.storyboards
+ or initialized with the configuration values
  */
 public class IPCardListView: UIView {
     
@@ -52,6 +96,26 @@ public class IPCardListView: UIView {
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.initialSetup()
+    }
+    
+    public init(source: [IPCardItem],
+                featured: Bool = false,
+                featuredColor: UIColor = .clear,
+                featuredTextColor: UIColor = .darkText,
+                titleText: String? = nil,
+                totalPaymentText: NSAttributedString = NSAttributedString(string:""),
+                totalAlignment: NSTextAlignment = .center,
+                totalDueOnly: Bool = false) {
+        super.init(frame: .zero)
+        
+        self.configure(source: source,
+                       featured: featured,
+                       featuredColor: featuredColor,
+                       featuredTextColor: featuredTextColor,
+                       titleText: titleText,
+                       totalPaymentText: totalPaymentText,
+                       totalAlignment: totalAlignment,
+                       totalDueOnly: totalDueOnly)
     }
     
     // MARK: Lifecycle methods

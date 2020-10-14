@@ -8,6 +8,17 @@
 import UIKit
 
 // MARK: - Class
+
+/**
+Button with Barcode Icon
+
+ ### Usage: ###
+```
+let barcodeButton = IPBarcodeButton(frame: .zero)
+```
+ ### Notes: ###
+ 1.  It can be inherited on .xibs/.storyboards
+ */
 public class IPBarcodeButton: UIButton {
 
     public override init(frame: CGRect) {

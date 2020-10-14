@@ -8,6 +8,25 @@
 import UIKit
 
 // MARK: - Class
+
+/**
+Tab  selector view
+
+ ### Usage: ###
+```
+let tabView = IPTabSelectorView(items: ["Item 1", "Item 2"], tabColor: .systemRed)
+ 
+ // Alternative when using with .xibs
+ tabView.set(items: ["Item 1", "Item 2"], tabColor: .systemRed)
+ 
+ tabView.handleItemChange = { itemIndex in
+ // Closure to handle item selection
+ }
+ 
+```
+ ### Notes: ###
+ 1.  It can be inherited on .xibs/.storyboards
+ */
 public class IPTabSelectorView: UIView {
     
     // MARK: Public variables
@@ -57,7 +76,7 @@ public class IPTabSelectorView: UIView {
     // MARK: Initializers
     public init(items: [String], tabColor: UIColor) {
         super.init(frame: .zero)
-        self.configure(items: items, tabColor: tabColor)
+        self.set(items: items, tabColor: tabColor)
         self.setupConstraints()
     }
     
@@ -79,7 +98,7 @@ public class IPTabSelectorView: UIView {
     /// - Parameters:
     ///     - tabColor: Main color that will be use as theme for the component
 
-    public func configure(items: [String], tabColor: UIColor) {
+    public func set(items: [String], tabColor: UIColor) {
         self.tabColor = tabColor
         self.items = items
     }
