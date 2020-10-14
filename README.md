@@ -23,7 +23,9 @@ Add the following line inside `didFinishLaunchingWithOptions` on app delegate:
 ```swift
 UIFont.loadIuPayFonts
 ```
-
+## Documentation
+You can find everything here: [Reference Link](https://lucianobohrer.github.io/superdda-iupay/)
+If something is missing, please let me know.
 ## Author
 
 lucianobohrer, bohrerluciano@gmail.com
