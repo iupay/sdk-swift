@@ -31,8 +31,8 @@ import UIKit
  
  cardView.configure(settings: config)
  ```
- 
- ### Notes: ###
+
+### Notes: ###
  1.  It can be inherited on .xibs/.storyboards
  or initialized with the configuration values
  */

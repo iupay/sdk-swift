@@ -14,7 +14,7 @@ import Material
 /**
  
  Beneficiary Card View
- ### Usage by programatically init: ###
+### Usage by programatically init: ###
  ```
  let config = BeneficiaryConfig(barColor: .systemRed,
                                 cardTextColor: .darkGray,

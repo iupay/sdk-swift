@@ -86,9 +86,9 @@ extension UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
-    func generatePaymentData() -> IPPayment {
+    func generatePaymentData(autoPayment: Bool = false) -> IPPayment {
         guard
-            let url = Bundle.main.url(forResource: "PaymentDetailsData", withExtension: "json"),
+            let url = Bundle.main.url(forResource: autoPayment ? "PaymentDetailsData2" : "PaymentDetailsData", withExtension: "json"),
             let data = try? Data(contentsOf: url),
             let payment = try? JSONDecoder().decode(IPPayment.self, from: data)
         else {

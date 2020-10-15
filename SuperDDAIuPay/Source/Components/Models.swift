@@ -7,13 +7,13 @@
 
 // MARK: - CardItem
 public struct IPCardItem {
-    var barColor: UIColor
-    var cardTitle: String?
-    var dueDate: Date
-    var isPaid: Bool?
-    var type: IPBaseCardType
-    var amount: Double
-    var isLocked: Bool
+    public var barColor: UIColor
+    public var cardTitle: String?
+    public var dueDate: Date
+    public var isPaid: Bool?
+    public var type: IPBaseCardType
+    public var amount: Double
+    public var isLocked: Bool
     
     public init(barColor: UIColor,
                 cardTitle: String?,
@@ -82,26 +82,26 @@ public enum IPBaseCardType {
 
 // MARK: - IPPayment
 public struct IPPayment: Codable {
-    let companyName, cnpj, cardNumber, companyLogo, cardHolderName, cardHolderAddress, automaticDebitBankName: String?
-    let autoPayment, isAutomaticDebit, isFromIuPay, isUserAdded, authorizedLimit: Bool?
-    let paymentHistory: [IPPaymentHistory]?
-    let billDetails: IPBillDetails?
+    public let companyName, cnpj, cardNumber, companyLogo, cardHolderName, cardHolderAddress, automaticDebitBankName: String?
+    public let autoPayment, isAutomaticDebit, isFromIuPay, isUserAdded, authorizedLimit: Bool?
+    public let paymentHistory: [IPPaymentHistory]?
+    public let billDetails: IPBillDetails?
 }
 
 // MARK: - IPBillDetails
 public struct IPBillDetails: Codable {
-    let barCode, billDate, dueDate, emissionDate: String?
-    let interestInstallmentFine, interestInstallmentRate, interestInstallmentRateCET, interestRate: Int?
-    let interestRateCET: Double?
-    let minimumPaymentValue, totalLimitValue, totalWithdrawLimitValue: Int?
-    let value: Double?
+    public let barCode, billDate, dueDate, emissionDate: String?
+    public let interestInstallmentFine, interestInstallmentRate, interestInstallmentRateCET, interestRate: Int?
+    public let interestRateCET: Double?
+    public let minimumPaymentValue, totalLimitValue, totalWithdrawLimitValue: Int?
+    public let value: Double?
 }
 
 // MARK: - IPPaymentHistory
 public struct IPPaymentHistory: Codable {
-    let date: String
-    let value: Double
-    let isOpen: Bool?
+    public let date: String
+    public let value: Double
+    public let isOpen: Bool?
     
     public init(date: String, value: Double, isOpen: Bool) {
         self.date = date
@@ -112,8 +112,8 @@ public struct IPPaymentHistory: Codable {
 
 // MARK: - IPChartData
 public struct IPChartData: Codable {
-    let label: String
-    let value: Double
+    public let label: String
+    public let value: Double
     
     public init(label: String, value: Double) {
         self.label = label

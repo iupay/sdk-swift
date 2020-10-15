@@ -24,7 +24,7 @@ class MenuTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 8
+        return 9
     }
 
      // MARK: - Navigation
@@ -93,7 +93,8 @@ class MenuTableViewController: UITableViewController {
                                                            type: .beneficiary)
             }
         } else if let paymentAccount = segue.destination as? IPPaymentAccountViewController {
-            paymentAccount.setupContent(payment: self.generatePaymentData(),
+            let payData = self.generatePaymentData(autoPayment: segue.identifier == "alternative" ? true : false)
+            paymentAccount.setupContent(payment: payData,
                                         pdfAvailable: true,
                                         paymentHistoryEnabled: true,
                                         chartDataText: "OUTUBRO",
