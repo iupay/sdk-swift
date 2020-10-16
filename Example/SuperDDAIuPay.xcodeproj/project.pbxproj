@@ -517,7 +517,7 @@
 				INFOPLIST_FILE = SuperDDAIuPay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.3035tech.SuperDDAIuPay-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,7 +534,7 @@
 				INFOPLIST_FILE = SuperDDAIuPay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.3035tech.SuperDDAIuPay-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
