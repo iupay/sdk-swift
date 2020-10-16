@@ -85,7 +85,8 @@ class MenuTableViewController: UITableViewController {
             }
         } else if let benDetails = segue.destination as? IPBeneficiaryDetailsViewController {
             benDetails.setupContent(payment: self.generatePaymentData(),
-                                    baseColor: UIColor.from(hex: "#8e05c2"))
+                                    baseColor: UIColor.from(hex: "#8e05c2"),
+                                    order: .dsc)
             benDetails.handleSeeDetails = {
                 IPBillDetailsModalViewController.showModal(from: benDetails,
                                                            payment: self.generatePaymentData(),

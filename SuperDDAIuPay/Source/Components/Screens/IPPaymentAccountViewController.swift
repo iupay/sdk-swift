@@ -290,7 +290,7 @@ public class IPPaymentAccountViewController: UIViewController {
         self.iupayBadge.centerYAnchor.constraint(equalTo: self.companyLabel.centerYAnchor).isActive = true
         self.iupayBadge.trailingAnchor.constraint(equalTo: self.userBadge.leadingAnchor, constant: -.smallestMargin).isActive = true
         
-        self.scrollView.topAnchor.constraint(equalTo: self.companyLabel.bottomAnchor, constant: .smallMargin).isActive = true
+        self.scrollView.topAnchor.constraint(equalTo: self.companyLabel.bottomAnchor).isActive = true
         self.scrollView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
         self.scrollView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
         self.scrollView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
@@ -324,7 +324,7 @@ public class IPPaymentAccountViewController: UIViewController {
         payScheduleButton?.backgroundColor = baseColor
         payScheduleButton?.setTitleColor(.white, for: .normal)
         
-        let totalHeight: CGFloat =  232
+        let totalHeight: CGFloat =  230
         self.scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: totalHeight)
         
         self.companyLabel.text = payment.companyName
@@ -340,9 +340,9 @@ public class IPPaymentAccountViewController: UIViewController {
         headerData.numberOfLines = 0
         let text = "CNPJ \(payment.cnpj ?? "--")<br>" +
             "Cartão \(payment.cardNumber ?? "--")<br><br>" +
-            "\(payment.cardHolderName ?? "--")<br>" +
             "<b>\(payment.billDetails?.billDate?.formatDate(format: "MMM yyyy", fromFormat: "yyyy-mm") ?? "")</b><br>" +
-            "Valor: <b>R$ \(String(describing: payment.billDetails?.value ?? 0.0).currencyInputFormatting(divide: false))</b><br>" +
+            "Valor: <b>R$ \(String(describing: payment.billDetails?.value ?? 0.0).currencyInputFormatting(divide: true))</b><br>" +
+            "Pagamento mínimo: <b>\(String(describing: payment.billDetails?.minimumPaymentValue).currencyInputFormatting(divide: true))</b><br>" +
             "Vencimento: <b>\(payment.billDetails?.dueDate?.formatDate(format: "dd MMM yyyy") ?? "")</b><br>"
         headerData.attributedText = text.convertHtml()
 

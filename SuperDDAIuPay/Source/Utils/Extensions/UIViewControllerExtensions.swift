@@ -13,13 +13,14 @@ extension UIViewController {
                text: String,
                sizeCaption: CGFloat,
                sizeText: CGFloat,
+               captionColor: UIColor? = .grayKit,
                textColor: UIColor? = .grayKit,
                breakLine: Bool = true,
                underlined: Bool = false) -> IPPaddingLabel {
         
        let captionAttribute = [
             NSAttributedString.Key.font: UIFont.customFont(ofSize: sizeCaption, weight: .regular),
-            NSAttributedString.Key.foregroundColor: textColor
+            NSAttributedString.Key.foregroundColor: captionColor
         ]
         
         let caption = NSAttributedString(string: caption + (breakLine ? "\n" : ""), attributes: captionAttribute as [NSAttributedString.Key : Any])

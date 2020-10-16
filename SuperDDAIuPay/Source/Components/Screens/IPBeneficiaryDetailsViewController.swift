@@ -13,7 +13,8 @@ import UIKit
  ### Usage: ###
 ``` 
  beneficiaryDetailsController.setupContent(payment: paymentObject,
-                                           baseColor: .systemRed)
+                                           baseColor: .systemRed,
+                                           order: .asc)
  
  beneficiaryDetailsController.handleSeeDetails = {
      IPBillDetailsModalViewController.showModal(from: beneficiaryDetailsController,
@@ -38,6 +39,11 @@ public class IPBeneficiaryDetailsViewController: UIViewController {
     public var handleSeeDetails: (() -> ())?
     public var handleViewCard: (() -> ())?
     public var handleOptionsClick: (() -> ())?
+    
+    public enum Sort {
+        case asc
+        case dsc
+    }
     
     private lazy var backButton: UIButton = {
         $0.translatesAutoresizingMaskIntoConstraints = false
@@ -139,9 +145,9 @@ public class IPBeneficiaryDetailsViewController: UIViewController {
     
     private lazy var baseCard = UIView(frame: .zero)
     
-    public init(payment: IPPayment, baseColor: UIColor) {
+    public init(payment: IPPayment, baseColor: UIColor, order: Sort) {
         super.init(nibName: nil, bundle: nil)
-        self.setupContent(payment: payment, baseColor: baseColor)
+        self.setupContent(payment: payment, baseColor: baseColor, order: order)
     }
     
     required init?(coder: NSCoder) {
@@ -163,7 +169,7 @@ public class IPBeneficiaryDetailsViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
-    public func setupContent(payment: IPPayment, baseColor: UIColor) {
+    public func setupContent(payment: IPPayment, baseColor: UIColor, order: Sort) {
         
         let mainBtn = self.mainButton.subviews.compactMap({ $0 as? UIButton}).first
         self.mainButton.backgroundColor = .clear
@@ -197,7 +203,13 @@ public class IPBeneficiaryDetailsViewController: UIViewController {
         
         self.stackView.addArrangedSubview(self.space())
         
-        let automaticLabel = self.label(caption: "Pagamento Automático ", text: (payment.autoPayment ?? false) ? "Ativado" : "Desativado", sizeCaption: 15, sizeText: 15, textColor: baseColor, breakLine: false, underlined: true)
+        let automaticLabel = self.label(caption: "Pagamento Automático ",
+                                        text: (payment.autoPayment ?? false) ? "Ativado" : "Desativado",
+                                        sizeCaption: 15,
+                                        sizeText: 15,
+                                        textColor: baseColor,
+                                        breakLine: false,
+                                        underlined: true)
         automaticLabel.heightAnchor.constraint(equalToConstant: 21).isActive = true
         automaticLabel.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
         self.stackView.addArrangedSubview(automaticLabel)
@@ -230,7 +242,14 @@ public class IPBeneficiaryDetailsViewController: UIViewController {
         self.stackView.addArrangedSubview(self.mainButton)
         self.stackView.addArrangedSubview(self.historyTitle)
         
-        payment.paymentHistory?.forEach({ (item) in
+        payment.paymentHistory?.sorted(by: { (pay1, pay2) -> Bool in
+            switch order {
+            case .asc:
+                return pay1.date < pay2.date
+            case .dsc:
+                return pay1.date > pay2.date
+            }
+        }).forEach({ (item) in
             self.stackView.addArrangedSubview(self.cellView(item: item))
         })
     }
@@ -316,7 +335,8 @@ public class IPBeneficiaryDetailsViewController: UIViewController {
         textLabel.textColor = .darkGray
         textLabel.numberOfLines = 2
         textLabel.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width/2).isActive = true
-        let attText = NSMutableAttributedString(string: item.date.formatDate(format: "MMMM yyyy", fromFormat: "yyyy-MM"))
+        let attText = NSMutableAttributedString(string: item.date.formatDate(format: "MMMM yyyy",
+                                                                             fromFormat: "yyyy-MM"))
         
         let captionAttribute = [
             NSAttributedString.Key.font: UIFont.customFont(ofSize: 13, weight: .regular),

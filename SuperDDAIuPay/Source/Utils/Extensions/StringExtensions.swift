@@ -25,7 +25,7 @@ extension String {
             return ""
         }
 
-        return formatter.string(from: number) ?? ""
+        return formatter.string(from: number)?.replacingOccurrences(of: ".", with: "") ?? ""
     }
     
     /// Convert HTML to NSAttributedString
@@ -69,7 +69,7 @@ extension String {
         dateFormatterPrint.dateFormat = format
 
         if let date = dateFormatterGet.date(from: self) {
-            return dateFormatterPrint.string(from: date).uppercased()
+            return dateFormatterPrint.string(from: date).uppercased().replacingOccurrences(of: ".", with: "")
         } else {
            print("There was an error decoding the string")
         }

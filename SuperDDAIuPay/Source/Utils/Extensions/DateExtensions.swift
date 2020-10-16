@@ -33,13 +33,13 @@ extension Date {
         dateFormatterPrint.locale = Locale(identifier: "pt-BR")
         dateFormatterPrint.dateFormat = format
         
-        return dateFormatterPrint.string(from: self).uppercased()
+        return dateFormatterPrint.string(from: self).uppercased().replacingOccurrences(of: ".", with: "")
     }
     
     func getMonthName(full: Bool = false) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "pt-BR")
         dateFormatter.dateFormat = full ? "MMMM" : "MMM"
-        return dateFormatter.string(from: self)
+        return dateFormatter.string(from: self).replacingOccurrences(of: ".", with: "")
     }
 }

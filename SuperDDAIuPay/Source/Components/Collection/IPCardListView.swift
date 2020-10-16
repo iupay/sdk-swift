@@ -170,7 +170,8 @@ public class IPCardListView: UIView {
         ]
     
         
-        let totalAmount = NSAttributedString(string: String(format: "%2.f", self.calculateTotal(dueOnly: totalDueOnly)), attributes: focusedAttribute as [NSAttributedString.Key : Any])
+        let totalAmount = NSAttributedString(string: "\(self.calculateTotal(dueOnly: totalDueOnly)/10)".currencyInputFormatting(divide: false),
+                                             attributes: focusedAttribute as [NSAttributedString.Key : Any])
         
         let combination = NSMutableAttributedString()
         combination.append(totalPaymentText)

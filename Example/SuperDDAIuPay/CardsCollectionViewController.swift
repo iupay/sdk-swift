@@ -20,10 +20,15 @@ class CardsCollectionViewController: UIViewController {
 
         let items = [
             IPCardItem(barColor: .systemRed, cardTitle: nil, dueDate: nextMonthDate, isPaid: false, type: .netflix, amount: 100.0, isLocked: false),
+            
             IPCardItem(barColor: UIColor.from(hex: "#0d56f3"), cardTitle: nil, dueDate: Date(), isPaid: true,  type: .nubank, amount: 150.0, isLocked: false),
+            
             IPCardItem(barColor: .systemGreen, cardTitle: nil, dueDate:Date(), isPaid: false, type: .spotify, amount: 400, isLocked: false),
+            
             IPCardItem(barColor: .systemRed, cardTitle: nil, dueDate:Date(), isPaid: false, type: .lightbill(flag: .red), amount: 400, isLocked: false),
+            
             IPCardItem(barColor: .lightGray, cardTitle: "ARNALDO PESSOA LEAL", dueDate: Date(), type: .standard(imageUrl: "https://devshift.biz/wp-content/uploads/2017/04/profile-icon-png-898.png"), amount: 100.0, isLocked: false),
+            
             IPCardItem(barColor: UIColor.from(hex: "#0d56f3"), cardTitle: nil, dueDate: Date(), isPaid: true, type: .standard(imageUrl: "https://logodownload.org/wp-content/uploads/2014/04/bmw-logo-2.png"), amount: 100.0, isLocked: true)
         ]
         
