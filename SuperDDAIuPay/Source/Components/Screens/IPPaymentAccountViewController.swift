@@ -342,7 +342,7 @@ public class IPPaymentAccountViewController: UIViewController {
             "Cartão \(payment.cardNumber ?? "--")<br><br>" +
             "<b>\(payment.billDetails?.billDate?.formatDate(format: "MMM yyyy", fromFormat: "yyyy-mm") ?? "")</b><br>" +
             "Valor: <b>R$ \(String(describing: payment.billDetails?.value ?? 0.0).currencyInputFormatting(divide: true))</b><br>" +
-            "Pagamento mínimo: <b>\(String(describing: payment.billDetails?.minimumPaymentValue).currencyInputFormatting(divide: true))</b><br>" +
+            "Pagamento mínimo: R$ <b>\(String(describing: payment.billDetails?.minimumPaymentValue).currencyInputFormatting(divide: false))</b><br>" +
             "Vencimento: <b>\(payment.billDetails?.dueDate?.formatDate(format: "dd MMM yyyy") ?? "")</b><br>"
         headerData.attributedText = text.convertHtml()
 
